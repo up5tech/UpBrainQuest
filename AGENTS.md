@@ -265,16 +265,19 @@ A change is complete when:
 
 ## 13. Available skills
 
-Three Flutter skills are installed for every agent runtime on this machine
-(`~/.workbuddy-ai/skills/`, `~/.agents/skills/`, `~/.claude/skills/`,
-`~/.gemini/skills/`). Load the one that matches the task instead of working from
-memory.
+Three Flutter skills ship **with this repository**, in `.workbuddy-ai/skills/`. They are
+project-scoped on purpose: nothing is installed globally, so the skill set travels with
+the checkout and cannot drift between machines.
 
 | Skill | Use it for |
 | --- | --- |
 | `flutter-dev` | Widget patterns, Riverpod/Bloc, GoRouter, responsive layout, perf profiling |
 | `flutter-master` | Audits and pre-release checks. Ships `references/` (architecture, code-style, state-management, testing, performance, security, ux-quality, audit-checklist, release-checklist) and `scripts/audit_scan.sh` |
 | `flutter-dev-skill` | Material 3, layout constraints, adaptive/responsive, large screens, Hero & staggered animations, navigation components |
+
+`.claude/skills/` and `.gemini/skills/` contain **relative symlinks** to the canonical
+copies, so Claude Code and Gemini CLI find the same skills without a second copy of the
+files. Do not add real copies there — it would let the two versions drift.
 
 Guidance:
 
