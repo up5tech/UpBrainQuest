@@ -59,6 +59,8 @@ dev_dependencies:
   drift_dev: ^2.35.2
   json_serializable: ^6.15.2
   riverpod_lint: ^3.1.9
+  integration_test:
+    sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

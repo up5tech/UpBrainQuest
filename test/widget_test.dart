@@ -1,30 +1,43 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:up_brain_quest/main.dart';
+import 'package:up_brain_quest/app/app.dart';
+import 'package:up_brain_quest/app/router.dart';
+import 'package:up_brain_quest/core/theme/app_theme.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('app boots and renders the home route', (
+    WidgetTester tester,
+  ) async {
+    await tester.pumpWidget(UpBrainQuestApp(router: createRouter()));
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    await tester.pumpAndSettle();
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    expect(find.text('UpBrainQuest'), findsOneWidget);
+  });
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  testWidgets('app uses the shared dark theme', (WidgetTester tester) async {
+    await tester.pumpWidget(UpBrainQuestApp(router: createRouter()));
+
+    await tester.pumpAndSettle();
+
+    final BuildContext context = tester.element(find.text('UpBrainQuest'));
+    final ThemeData theme = Theme.of(context);
+
+    expect(theme.brightness, Brightness.dark);
+    expect(theme.colorScheme.primary, AppTheme.dark().colorScheme.primary);
+  });
+
+  testWidgets('app renders without overflow at a narrow phone width', (
+    WidgetTester tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+
+    await tester.pumpWidget(UpBrainQuestApp(router: createRouter()));
+
+    await tester.pumpAndSettle();
+
+    expect(tester.takeException(), isNull);
   });
 }
