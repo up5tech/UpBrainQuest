@@ -263,10 +263,37 @@ A change is complete when:
 
 ---
 
-## 13. Reference
+## 13. Available skills
+
+Three Flutter skills are installed for every agent runtime on this machine
+(`~/.workbuddy-ai/skills/`, `~/.agents/skills/`, `~/.claude/skills/`,
+`~/.gemini/skills/`). Load the one that matches the task instead of working from
+memory.
+
+| Skill | Use it for |
+| --- | --- |
+| `flutter-dev` | Widget patterns, Riverpod/Bloc, GoRouter, responsive layout, perf profiling |
+| `flutter-master` | Audits and pre-release checks. Ships `references/` (architecture, code-style, state-management, testing, performance, security, ux-quality, audit-checklist, release-checklist) and `scripts/audit_scan.sh` |
+| `flutter-dev-skill` | Material 3, layout constraints, adaptive/responsive, large screens, Hero & staggered animations, navigation components |
+
+Guidance:
+
+- **Phase 1 / Phase 8 (UI, navigation, motion)** → `flutter-dev-skill` first, then
+  `flutter-master` for the quality bar.
+- **Before calling a phase complete, or before a release** → `flutter-master`'s
+  `audit-checklist.md` and `release-checklist.md`.
+- **Debugging a widget or layout problem** → `flutter-dev`.
+- Skills are reference material, not authority. `PLAN.md` and this file win when they
+  disagree — for example, `flutter-dev-skill` suggests patterns we deliberately do not
+  use (a light theme, `Hive`, `Dio`), because PLAN §8.2 and §7.4 forbid them here.
+
+---
+
+## 14. Reference
 
 | Document | Purpose |
 | --- | --- |
 | `PLAN.md` | Product requirements, architecture, roadmap, acceptance criteria |
 | `README.md` | Setup, baseline commands, package decisions, regeneration commands |
+| `CLAUDE.md` / `GEMINI.md` | Thin pointers to this file for agents that read those names |
 | `.workbuddy-ai/memory/` | Dated work log and long-term project notes |
