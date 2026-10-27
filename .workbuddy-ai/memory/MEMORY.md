@@ -79,7 +79,10 @@ extra `()` such as `dateTime()()();` instead of `dateTime()();`. Drift 2.x synta
 the trailing call: `text()()`, `text().withDefault(const Constant(''))()`,
 `dateTime()()`.
 
-## Installed Flutter skills (user level, `~/.workbuddy-ai/skills/`)
+## Installed Flutter skills (propagated to every agent runtime)
+
+Canonical copy in `~/.workbuddy-ai/skills/`, byte-identical copies installed into
+`~/.agents/skills/`, `~/.claude/skills/`, and `~/.gemini/skills/` (2026-10-27).
 
 - `flutter-dev` — cross-platform guide (widget patterns, Riverpod, GoRouter, perf).
 - `flutter-master` — audit/review toolkit; ships `scripts/audit_scan.sh` plus
@@ -88,6 +91,20 @@ the trailing call: `text()()`, `text().withDefault(const Constant(''))()`,
   staggered animations, large screens. **Its `name:` field was renamed from
   `flutter-dev` to `flutter-dev-skill`** to avoid colliding with the installed
   `flutter-dev` skill.
+
+`~/.copilot/skills` and `~/.windsurf/skills` do **not** exist on this machine and
+nothing in their configs references a skills directory, so nothing was created there.
+
+**Skill install path used by the built-in tool is unreliable:** `search_and_install_skills`
+returns HTTP 404. Use the SkillHub registry instead —
+`https://lightmake.site/api/v1/search?q=<query>` and
+`https://lightmake.site/api/v1/download?slug=<slug>`.
+
+## Agent entrypoint files
+
+`AGENTS.md` is the source of truth. `CLAUDE.md` and `GEMINI.md` are thin pointers to it,
+because Claude Code and Gemini CLI do not read `AGENTS.md` by name. Keep the pointers
+short — never duplicate the rules, or they will drift.
 
 ## Workflow
 
