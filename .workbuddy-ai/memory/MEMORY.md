@@ -79,38 +79,56 @@ extra `()` such as `dateTime()()();` instead of `dateTime()();`. Drift 2.x synta
 the trailing call: `text()()`, `text().withDefault(const Constant(''))()`,
 `dateTime()()`.
 
-## Skills are PROJECT-scoped (settled — do not move back to global)
+## Skills are PROJECT-scoped, canonical in `.agents/skills/` (settled)
 
 The user explicitly wants skills installed **into the project, not globally**, so the
 skill set travels with the checkout and cannot drift between machines.
 
-- **Canonical copies:** `.workbuddy-ai/skills/` in this repo.
-- **`flutter-dev`, `flutter-master`, `flutter-dev-skill`** — 44 files, 392K.
-- **`.claude/skills/` and `.gemini/skills/`** contain **relative symlinks** to the
-  canonical copies (`../../.workbuddy-ai/skills/<name>`), so Claude Code and Gemini CLI
-  resolve the same files. Git stores them as mode `120000`, not duplicated blobs.
-  **Never add real copies beside the symlinks** — the two versions would drift.
-- `flutter-dev-skill`'s `name:` field was renamed from `flutter-dev` to
-  `flutter-dev-skill` to avoid colliding with `flutter-dev`.
+**Canonical location: `.agents/skills/`** — real files live here and nowhere else.
+`flutter-dev` (15 files), `flutter-master` (13), `flutter-dev-skill` (16) — 44 files, 392K.
 
-- `flutter-dev` — cross-platform guide (widget patterns, Riverpod, GoRouter, perf).
-- `flutter-master` — audit/review toolkit; ships `scripts/audit_scan.sh` plus
-  release/audit checklists. Maps to PLAN §6, §9, §11, §14.
-- `flutter-dev-skill` — Material 3, layout constraints, adaptive/responsive, Hero &
-  staggered animations, large screens.
+**Every other agent directory holds relative symlinks back to it**
+(`../../.agents/skills/<name>`), 24 links total:
 
-**A global `~/.workbuddy-ai/skills/flutter-dev` still exists** and was deliberately left
-alone: three other Flutter projects on this machine (`UpTowerDefense`, `crmhub-mobile`,
-`penguin_nemt_app`) may depend on it. Do not delete it without checking those first.
+| Dir | Serves |
+| --- | --- |
+| `.agents/skills/` | amp, cline, codex, cursor, droid, fx, gemini-cli, github-copilot, kilo, kimi-code-cli, opencode, pi, warp, zed |
+| `.claude/skills/` | Claude Code |
+| `.windsurf/skills/` | Windsurf |
+| `.trae/skills/` | Trae |
+| `.qoder/skills/` | Qoder |
+| `.minimax/skills/` | MiniMax Code |
+| `.codebuddy/skills/` | CodeBuddy |
+| `.kiro/skills/` | Kiro CLI |
+| `.workbuddy-ai/skills/` | WorkBuddy |
 
-`~/.copilot/skills` and `~/.windsurf/skills` do **not** exist on this machine and nothing
-in their configs references a skills directory, so nothing was created there.
+**Never put a real copy inside a symlinked directory** — the versions would drift.
+Add or update skills in `.agents/skills/` only.
+
+### Two mistakes already made here — do not repeat
+
+1. **`.agents/skills/` is the shared project path for most agents.** It is not optional
+   or redundant with `.claude/skills/`. Leaving it out means 14 agents see nothing.
+2. **`.gemini/skills/` is Gemini CLI's GLOBAL path, not its project path.** In a project,
+   Gemini CLI reads `.agents/skills/`. A `.gemini/` directory in the repo is dead weight.
+
+The authoritative path table ships with the `skills` CLI:
+`~/.npm/_npx/*/node_modules/skills/docs/agents.md`.
+
+### Global state
+
+`~/.workbuddy-ai/skills/flutter-dev` still exists globally and was deliberately left
+alone: `UpTowerDefense`, `crmhub-mobile`, and `penguin_nemt_app` are also Flutter
+projects that may rely on it. Check those before removing it.
+
+Global copies added earlier were parked in
+`~/.workbuddy-ai/backups/skills-global-removed-20261027` (11 dirs, reversible).
 
 **Skill install path used by the built-in tool is unreliable:** `search_and_install_skills`
 returns HTTP 404. Use the SkillHub registry instead —
 `https://lightmake.site/api/v1/search?q=<query>` and
 `https://lightmake.site/api/v1/download?slug=<slug>`. Install into
-`.workbuddy-ai/skills/` in the project, not `~/.workbuddy-ai/skills/`.
+`.agents/skills/` in the project, never globally.
 
 ## Agent entrypoint files
 
