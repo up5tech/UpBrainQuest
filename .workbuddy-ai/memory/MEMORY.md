@@ -79,26 +79,38 @@ extra `()` such as `dateTime()()();` instead of `dateTime()();`. Drift 2.x synta
 the trailing call: `text()()`, `text().withDefault(const Constant(''))()`,
 `dateTime()()`.
 
-## Installed Flutter skills (propagated to every agent runtime)
+## Skills are PROJECT-scoped (settled — do not move back to global)
 
-Canonical copy in `~/.workbuddy-ai/skills/`, byte-identical copies installed into
-`~/.agents/skills/`, `~/.claude/skills/`, and `~/.gemini/skills/` (2026-10-27).
+The user explicitly wants skills installed **into the project, not globally**, so the
+skill set travels with the checkout and cannot drift between machines.
+
+- **Canonical copies:** `.workbuddy-ai/skills/` in this repo.
+- **`flutter-dev`, `flutter-master`, `flutter-dev-skill`** — 44 files, 392K.
+- **`.claude/skills/` and `.gemini/skills/`** contain **relative symlinks** to the
+  canonical copies (`../../.workbuddy-ai/skills/<name>`), so Claude Code and Gemini CLI
+  resolve the same files. Git stores them as mode `120000`, not duplicated blobs.
+  **Never add real copies beside the symlinks** — the two versions would drift.
+- `flutter-dev-skill`'s `name:` field was renamed from `flutter-dev` to
+  `flutter-dev-skill` to avoid colliding with `flutter-dev`.
 
 - `flutter-dev` — cross-platform guide (widget patterns, Riverpod, GoRouter, perf).
 - `flutter-master` — audit/review toolkit; ships `scripts/audit_scan.sh` plus
   release/audit checklists. Maps to PLAN §6, §9, §11, §14.
 - `flutter-dev-skill` — Material 3, layout constraints, adaptive/responsive, Hero &
-  staggered animations, large screens. **Its `name:` field was renamed from
-  `flutter-dev` to `flutter-dev-skill`** to avoid colliding with the installed
-  `flutter-dev` skill.
+  staggered animations, large screens.
 
-`~/.copilot/skills` and `~/.windsurf/skills` do **not** exist on this machine and
-nothing in their configs references a skills directory, so nothing was created there.
+**A global `~/.workbuddy-ai/skills/flutter-dev` still exists** and was deliberately left
+alone: three other Flutter projects on this machine (`UpTowerDefense`, `crmhub-mobile`,
+`penguin_nemt_app`) may depend on it. Do not delete it without checking those first.
+
+`~/.copilot/skills` and `~/.windsurf/skills` do **not** exist on this machine and nothing
+in their configs references a skills directory, so nothing was created there.
 
 **Skill install path used by the built-in tool is unreliable:** `search_and_install_skills`
 returns HTTP 404. Use the SkillHub registry instead —
 `https://lightmake.site/api/v1/search?q=<query>` and
-`https://lightmake.site/api/v1/download?slug=<slug>`.
+`https://lightmake.site/api/v1/download?slug=<slug>`. Install into
+`.workbuddy-ai/skills/` in the project, not `~/.workbuddy-ai/skills/`.
 
 ## Agent entrypoint files
 
