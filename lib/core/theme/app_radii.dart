@@ -1,7 +1,6 @@
 /// Corner radius scale used across the app.
 ///
-/// 12 for inputs, 16 for standard cards, 24 for large hero cards
-/// (PLAN §8.2).
+/// 12 for inputs, 16 for standard cards, 24 for large hero cards (PLAN §8.2).
 abstract final class AppRadii {
   const AppRadii._();
 

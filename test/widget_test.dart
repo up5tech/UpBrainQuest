@@ -1,26 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:up_brain_quest/app/app.dart';
-import 'package:up_brain_quest/app/router.dart';
+
 import 'package:up_brain_quest/core/theme/app_theme.dart';
+
+import 'support/test_app.dart';
 
 void main() {
   testWidgets('app boots and renders the home route', (
     WidgetTester tester,
   ) async {
-    await tester.pumpWidget(UpBrainQuestApp(router: createRouter()));
+    await tester.pumpWidget(buildTestApp());
 
     await tester.pumpAndSettle();
 
-    expect(find.text('UpBrainQuest'), findsOneWidget);
+    // The brand appears in both the AppBar title and the home hero card.
+    expect(find.text('UpBrainQuest'), findsWidgets);
   });
 
   testWidgets('app uses the shared dark theme', (WidgetTester tester) async {
-    await tester.pumpWidget(UpBrainQuestApp(router: createRouter()));
+    await tester.pumpWidget(buildTestApp());
 
     await tester.pumpAndSettle();
 
-    final BuildContext context = tester.element(find.text('UpBrainQuest'));
+    final BuildContext context = tester.element(
+      find.text('UpBrainQuest').first,
+    );
     final ThemeData theme = Theme.of(context);
 
     expect(theme.brightness, Brightness.dark);
@@ -34,7 +38,7 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
 
-    await tester.pumpWidget(UpBrainQuestApp(router: createRouter()));
+    await tester.pumpWidget(buildTestApp());
 
     await tester.pumpAndSettle();
 

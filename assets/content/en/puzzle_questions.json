@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "contentPackVersion": "0.2.0-draft",
+  "items": [
+    {
+      "id": "puzzle_mem_001",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Memorize the sequence, then reproduce it in order.",
+      "instructions": "Watch the tiles, then tap them in the same order.",
+      "expectedAnswer": [3, 7, 1, 9],
+      "interactionConfig": {
+        "length": 4,
+        "minValue": 1,
+        "maxValue": 9
+      },
+      "explanation": "The target order was 3, 7, 1, 9.",
+      "hint": "Group the first two numbers, then the last two.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": ["memory", "sequence"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_reorder_001",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "pattern_recognition",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Arrange the tiles into the correct order.",
+      "instructions": "Drag the tiles to form the right sequence.",
+      "expectedAnswer": ["a", "b", "c", "d"],
+      "interactionConfig": {
+        "tiles": ["a", "b", "c", "d"]
+      },
+      "explanation": "The intended order is a, b, c, d.",
+      "hint": "Look for the first step, then build from there.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": ["reorder", "ordering"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_mem_002",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Memorize the sequence, then reproduce it in order.",
+      "instructions": "Watch the tiles, then tap them in the same order.",
+      "expectedAnswer": [4, 8, 2, 6, 5],
+      "interactionConfig": {
+        "length": 5,
+        "minValue": 1,
+        "maxValue": 9
+      },
+      "explanation": "The target order was 4, 8, 2, 6, 5.",
+      "hint": "Chunk it as 48, 26, 5.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": ["memory", "sequence"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_mem_003",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Memorize the longer sequence, then reproduce it.",
+      "instructions": "Watch the tiles, then tap them in the same order.",
+      "expectedAnswer": [9, 1, 6, 3, 7, 2],
+      "interactionConfig": {
+        "length": 6,
+        "minValue": 1,
+        "maxValue": 9
+      },
+      "explanation": "The target order was 9, 1, 6, 3, 7, 2.",
+      "hint": "Split it into three pairs: 91, 63, 72.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": ["memory", "sequence"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_reorder_002",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "pattern_recognition",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Arrange the morning routine into a sensible order.",
+      "instructions": "Drag the tiles to form the sequence.",
+      "expectedAnswer": ["Wake up", "Breakfast", "Commute", "Start work"],
+      "interactionConfig": {
+        "tiles": ["Wake up", "Breakfast", "Commute", "Start work"]
+      },
+      "explanation": "A common order is: wake up, breakfast, commute, start work.",
+      "hint": "What happens first in the morning?",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": ["reorder", "ordering"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_reorder_003",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "pattern_recognition",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the numbers from smallest to largest.",
+      "instructions": "Drag the tiles to form the sequence.",
+      "expectedAnswer": ["2", "5", "9", "14"],
+      "interactionConfig": {
+        "tiles": ["2", "5", "9", "14"]
+      },
+      "explanation": "From smallest to largest: 2, 5, 9, 14.",
+      "hint": "Compare the single-digit numbers first.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": ["reorder", "numbers"],
+      "contentVersion": 1
+    }
+  ]
+}

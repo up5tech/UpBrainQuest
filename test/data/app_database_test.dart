@@ -14,15 +14,24 @@ void main() {
     await database.close();
   });
 
-  test('schema version is 1 and the metadata table exists', () async {
-    expect(database.schemaVersion, 1);
+  test('schema version is 3 and all tables exist', () async {
+    expect(database.schemaVersion, 3);
 
     final List<String> tables = await database
         .customSelect("SELECT name FROM sqlite_master WHERE type = 'table'")
         .map<String>((QueryRow row) => row.read<String>('name'))
         .get();
 
-    expect(tables, contains('app_metadata_entries'));
+    expect(
+      tables,
+      containsAll(<String>[
+        'app_metadata_entries',
+        'game_sessions',
+        'question_attempts',
+        'achievements',
+        'daily_activity',
+      ]),
+    );
   });
 
   test('readMetadata returns null for an unknown key', () async {
@@ -52,5 +61,49 @@ void main() {
         .getSingle();
 
     expect(count, 1);
+  });
+
+  test('migrates a v1 database to v3 without losing metadata', () async {
+    final AppDatabase migrated = AppDatabase(
+      NativeDatabase.memory(
+        setup: (database) {
+          // Recreate the v1 schema and stamp it as version 1 so opening the
+          // database runs onUpgrade(1 -> 2).
+          database
+            ..execute('''
+              CREATE TABLE app_metadata_entries (
+                key TEXT NOT NULL,
+                value TEXT NOT NULL DEFAULT '',
+                updated_at INTEGER NOT NULL,
+                PRIMARY KEY (key)
+              );
+            ''')
+            ..execute(
+              'INSERT INTO app_metadata_entries (key, value, updated_at) '
+              "VALUES ('content_pack_version', '1.0.0', 0);",
+            )
+            ..execute('PRAGMA user_version = 1;');
+        },
+      ),
+    );
+    addTearDown(migrated.close);
+
+    // Opening the database runs the migration.
+    expect(await migrated.readMetadata('content_pack_version'), '1.0.0');
+
+    final List<String> tables = await migrated
+        .customSelect("SELECT name FROM sqlite_master WHERE type = 'table'")
+        .map<String>((QueryRow row) => row.read<String>('name'))
+        .get();
+
+    expect(
+      tables,
+      containsAll(<String>[
+        'game_sessions',
+        'question_attempts',
+        'achievements',
+        'daily_activity',
+      ]),
+    );
   });
 }

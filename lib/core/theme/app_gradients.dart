@@ -4,9 +4,9 @@ import 'package:up_brain_quest/core/theme/app_colors.dart';
 
 /// Gradients used for hero cards and accent surfaces.
 ///
-/// Gradients are intentionally limited to short, high-contrast surfaces.
-/// PLAN §8.1 explicitly forbids gradients behind long paragraphs or
-/// low-contrast text.
+/// Gradients are intentionally limited to short, high-contrast surfaces. PLAN
+/// §8.1 explicitly forbids gradients behind long paragraphs or low-contrast
+/// text.
 abstract final class AppGradients {
   const AppGradients._();
 

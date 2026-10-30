@@ -22,8 +22,8 @@ constraints from PLAN §1.2, §7.4, §10 — never trade them away.
 
 ## Toolchain
 
-- Flutter **3.47.7** stable at `/Users/up5techjacky/Documents/sdk/flutter`,
-  Dart **3.13.5**. Already on `PATH`.
+- Flutter **3.47.8** stable at `/Users/up5techjacky/Documents/sdk/flutter`,
+  Dart **3.13.7**. Already on `PATH`.
 - Android: minSdk 24, compile/target 36, NDK 28.2.13676358, Java 17, AGP 9.1.0,
   Gradle 9.3.1. iOS deployment target **15.0**. Xcode 26.1.1, CocoaPods 1.16.2.
 - Runtime target for verification: **iPhone 17 Pro simulator**,
@@ -139,5 +139,103 @@ short — never duplicate the rules, or they will drift.
 ## Workflow
 
 One phase at a time — do not start the next phase while the current one has failing
-acceptance criteria. Phase 0 is complete; Phase 1 (app shell, theme, navigation,
-design system) is next.
+acceptance criteria.
+
+**Phases 0–9 are complete and verified** (Flutter 3.47.8 / Dart 3.13.7):
+`flutter analyze` → "No issues found!" (exit 0), `flutter test` → 109/109 passed,
+`flutter build apk --release` and `flutter build ios --release --no-codesign` succeed.
+
+### Verified baseline commands
+
+Always prefix with the proxy fix; `flutter analyze` here treats **info** lints as
+fatal, so run `dart format lib test` (and `dart fix --apply` when needed) first.
+
+```
+NO_PROXY="localhost,127.0.0.1,::1" no_proxy="localhost,127.0.0.1,::1" flutter pub get
+NO_PROXY="localhost,127.0.0.1,::1" no_proxy="localhost,127.0.0.1,::1" dart format lib test
+NO_PROXY="localhost,127.0.0.1,::1" no_proxy="localhost,127.0.0.1,::1" flutter analyze
+NO_PROXY="localhost,127.0.0.1,::1" no_proxy="localhost,127.0.0.1,::1" flutter test
+```
+
+### Model facts settled in Phase 4
+
+- `AppTypography` lives in `lib/core/theme/app_typography.dart` (moved out of
+  `app_theme.dart`; the rest of the code already imported it from there).
+- `EqScenarioItem` carries `options: List<QuestionOption>` (was missing).
+- `AnswerEvaluation` carries `dimensionPossible: Map<EqDimension,int>?` alongside
+  `rubricScores` (earned); `EqScoreCalculator` needs both for per-dimension scores.
+- `SessionResult` carries both `iqScore` and `eqScore`; `ActiveSession` mirrors both.
+- `SettingsRepository([SharedPreferencesAsync?])` is injectable; production passes a
+  client, tests inject a fake and never touch the platform.
+- `ContentLoader.bundle` is nullable and falls back to `rootBundle`.
+- EQ content: 16 draft scenarios, all 5 dimensions, every option has a rubric entry
+  (parser rejects an EQ item when an option lacks one).
+- The whole repo had never been compiled before Phase 4 — expect more latent issues
+  in untouched corners; run the baseline after every phase.
+
+### Model facts settled in Phase 5
+
+- Quick Quest uses `SessionBuilder.quickQuestMix` = `{iq:5, puzzle:2, eq:3}`;
+  `SessionRequest.domainMix` overrides it. `_selectMixed` requires every targeted
+  domain to be present (else `QuestionSelectionFailure`), rebalances within the same
+  domain set, and interleaves domains.
+- **No Quest Completion Score** is persisted/displayed — intentional (PLAN §4.4).
+- `SessionResult.questionCount / answeredCount / isComplete`.
+- `SessionResultPage` review shows the exact player response + correct answer or EQ
+  rubric summary; entrance fade is skipped under `MediaQuery.disableAnimations` or the
+  app reduced-motion setting.
+- Test gotchas: `Override` is not exported by `flutter_riverpod` (use an untyped
+  `overrides:` list); a lazy `ListView` review needs a tall `tester.view.physicalSize`
+  to build below the fold.
+
+### Model facts settled in Phase 6
+
+- DB schema **v2**: `game_sessions` + `question_attempts` (FK cascade, unique
+  session+question). `schemaVersion = 2`; `onUpgrade(1→2)` creates only the new tables
+  and preserves metadata. Regenerate `app_database.g.dart` with
+  `dart run build_runner build`.
+- `SessionHistoryRepository` (domain) + `DriftSessionHistoryRepository` (data):
+  `saveSession` writes the session + attempts in one transaction; `clearAll` deletes
+  attempts then sessions; `progressSummary` aggregates best IQ/EQ.
+- Providers: `sessionHistoryRepositoryProvider`, `sessionHistoryProvider`,
+  `progressSummaryProvider`.
+- The result page saves once on completion and shows saving/saved/failed + Retry;
+  a failed save is never presented as durable.
+- Home and Progress read the DB, so app-boot widget tests must override
+  `appDatabaseProvider` with an in-memory DB (`test/support/test_app.dart`).
+- Achievements/daily_activity tables are deferred to Phase 7.
+
+### Model facts settled in Phase 7
+
+- Schema **v3**: `achievements` + `daily_activity`; `onUpgrade` adds them without
+  touching prior data.
+- `AchievementCatalog` (5 achievements) + `AchievementEngine` are pure; the repository
+  unlocks **exactly once** (never re-dates `unlockedAt`).
+- `StreakCalculator` and `DailyChallengeSelector` are pure and date-injectable; the
+  daily seed is an FNV-1a hash of `localDate|contentVersion`, and daily selection must
+  **ignore recent question IDs** to stay deterministic.
+- `SessionCompletionService` = save → daily activity → achievement evaluate/persist.
+  Providers: `progressRepositoryProvider`, `sessionCompletionServiceProvider`,
+  `achievementsProvider`, `dailyStatusProvider`, `streakProvider`.
+- Replay avoidance: `SessionHistoryRepository.recentQuestionIds()` (last 2 sessions) is
+  passed by the setup page for non-daily modes.
+- Gotcha: Drift reads `DateTime` back as local time for the same instant; compare
+  `.toUtc()` in tests.
+
+### Model facts settled in Phase 8
+
+- `UpBrainQuestApp` is a `ConsumerWidget` that folds the reduced-motion setting into
+  `MediaQuery.disableAnimations`; `AppFeedback` wires haptics/system sound to the
+  settings toggles.
+- `AppColors.textOnAccent` is `#05070F` to clear WCAG AA 4.5:1 on the violet primary.
+- Accessibility patterns: `Semantics` on `ModeCard`/`AppProgressBar`, `MergeSemantics`
+  on composite cards; `NavigationBar` height scales with text; empty/error states
+  scroll.
+- Puzzle content is 6 items (manifest `puzzle: 6`); `docs/content-qa.md` holds the
+  content QA, accessibility, and localization-readiness notes.
+- Tests: `text_scaling_test`, `theme_contrast_test`; total suite 102.
+
+
+
+
+

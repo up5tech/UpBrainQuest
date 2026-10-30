@@ -19,7 +19,14 @@ void main() {
         .map<String>((QueryRow row) => row.read<String>('name'))
         .get();
 
-    expect(tables, contains('app_metadata_entries'));
+    expect(
+      tables,
+      containsAll(<String>[
+        'app_metadata_entries',
+        'game_sessions',
+        'question_attempts',
+      ]),
+    );
 
     // A write/read round-trip proves the bundled SQLite native library is
     // functional on the target platform, not just present in the bundle.

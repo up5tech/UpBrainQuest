@@ -43,5 +43,9 @@ abstract final class AppColors {
   static const Color textSecondary = Color(0xFFB4BCD8);
 
   /// Text colour used on top of saturated accent fills.
-  static const Color textOnAccent = Color(0xFF0B1020);
+  ///
+  /// Kept near-black (rather than the page background navy) so it clears the
+  /// WCAG AA 4.5:1 ratio on the violet primary fill as well as on the bright
+  /// positive/error fills (verified by `theme_contrast_test`).
+  static const Color textOnAccent = Color(0xFF05070F);
 }

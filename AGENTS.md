@@ -30,8 +30,9 @@ If a change would introduce any of the above, it is out of scope for the MVP.
 | Phase | Scope | Status |
 | --- | --- | --- |
 | 0 | Repository discovery and project baseline | **Complete** |
-| 1 | App shell, theme, navigation, design system | **Next** |
-| 2–9 | Content, session engine, gameplay, persistence, polish, release | Planned |
+| 1 | App shell, theme, navigation, design system | **Complete** |
+| 2–8 | Content, engine, gameplay, EQ, Quick Quest, persistence, achievements, polish | **Complete** |
+| 9 | Release readiness, offline audit, documentation | **Complete** |
 
 `PLAN.md` holds the full task list and acceptance criteria per phase.
 
@@ -63,8 +64,8 @@ flutter build apk --debug                          # Android debug build
   NO_PROXY="localhost,127.0.0.1,::1" no_proxy="localhost,127.0.0.1,::1" flutter test
   ```
 
-- **Flutter lives at `/Users/up5techjacky/Documents/sdk/flutter`** (3.47.7 stable,
-  Dart 3.13.5). It is already on `PATH`.
+- **Flutter lives at `/Users/up5techjacky/Documents/sdk/flutter`** (3.47.8 stable,
+  Dart 3.13.7). It is already on `PATH`.
 - **The Android toolchain is incomplete here**: `cmdline-tools` is missing and the SDK
   licences are not accepted. `flutter build apk --debug` succeeds, but no emulator image
   is available. Use the **iPhone 17 Pro simulator** (UDID
@@ -317,3 +318,45 @@ Guidance:
 | `README.md` | Setup, baseline commands, package decisions, regeneration commands |
 | `CLAUDE.md` / `GEMINI.md` | Thin pointers to this file for agents that read those names |
 | `.workbuddy-ai/memory/` | Dated work log and long-term project notes |
+
+<!-- trail:start -->
+## Trail — repo context graph
+
+This repo is indexed in `.trail/cache/`: small linked markdown nodes that explain each
+system and carry exact file:line spans, kept in sync with the code through git.
+
+For ANY task here — understanding how something works, finding where code lives,
+or scoping a change — get context from the graph before grepping or opening
+source files. Re-ask freely (it's cheap) and reuse literal identifiers you
+already have (symbol, error string, file name) as the query. New to this repo?
+Run `trail map` first — a token-budgeted orientation (dir clusters, hubs,
+hotspots), no LLM, no key.
+
+- Run `trail ask "<your question>" --source` → ranked nodes with the relevant
+  code spans inlined (each hit's ≤8-line crux by default; `--full` for whole
+  definitions when the crux isn't enough). Match the tool to the task shape:
+  for understanding or editing, the top node IS the answer — cite its
+  `covers:` file:line spans and edit straight from `--source`. For
+  exhaustive tasks ("every occurrence / every caller of this pattern"), ranked
+  results are top-N, not complete — run `trail grep "<literal>"` instead
+  (exhaustive over indexed files, grouped by enclosing symbol), falling back
+  to raw `grep -rn` only for unindexed files.
+- `trail skeleton <file>` → every definition's signature + span, ~10× cheaper
+  than reading the file; use it to skim an API surface.
+- `trail callers <symbol>` gives precomputed, exact edges — who calls this.
+  Add `--direction out` for what it calls, or `--depth N` to walk
+  transitively for the full blast radius. For structural questions, skip
+  ranking and use this directly.
+- Or browse: `.trail/cache/INDEX.md` lists every node; follow the links.
+- Monorepos and folders of multiple repos rank fairly across sub-projects —
+  hits carry `[scope/]` labels naming which one they're from. Narrow with
+  `trail ask "<task>" --in <scope>/` once you know where you're working.
+
+If a returned span is truncated ("+N more lines"), open the file at that exact
+range before finalizing. Only open source files when a node genuinely lacks a
+needed detail, and then at the exact file:line the node points to — never
+re-read whole files.
+
+After big code changes, refresh the graph with `trail build` (deterministic,
+no API key, $0).
+<!-- trail:end -->

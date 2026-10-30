@@ -1,5 +1,10 @@
 import 'package:drift/drift.dart';
 
+import 'package:up_brain_quest/data/database/tables/achievements.dart';
+import 'package:up_brain_quest/data/database/tables/daily_activity.dart';
+import 'package:up_brain_quest/data/database/tables/game_sessions.dart';
+import 'package:up_brain_quest/data/database/tables/question_attempts.dart';
+
 part 'app_database.g.dart';
 
 /// Lightweight metadata table used for database and content-pack bookkeeping.
@@ -29,7 +34,15 @@ class AppMetadataEntries extends Table {
 /// The database is the source of truth for completed sessions, attempts and
 /// progress (PLAN §7.1). It is opened locally on-device and never talks to a
 /// server.
-@DriftDatabase(tables: <Type>[AppMetadataEntries])
+@DriftDatabase(
+  tables: <Type>[
+    AppMetadataEntries,
+    GameSessions,
+    QuestionAttempts,
+    Achievements,
+    DailyActivity,
+  ],
+)
 class AppDatabase extends _$AppDatabase {
   /// Opens the database stored at [executor].
   AppDatabase(super.executor);
@@ -37,13 +50,26 @@ class AppDatabase extends _$AppDatabase {
   /// Current schema version. Bump this whenever [migration] is extended so
   /// that existing databases are migrated instead of reset (PLAN §7.3).
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 3;
 
   /// Migrations applied in sequence. Never delete an existing step: old
   /// installs must be able to upgrade without losing progress.
   @override
   MigrationStrategy get migration => MigrationStrategy(
     onCreate: (Migrator m) => m.createAll(),
+    onUpgrade: (Migrator m, int from, int to) async {
+      // v1 → v2: add session history tables. The existing app_metadata table
+      // (and any rows in it) is left untouched (PLAN §7.3).
+      if (from < 2) {
+        await m.createTable(gameSessions);
+        await m.createTable(questionAttempts);
+      }
+      // v2 → v3: add achievement and daily-activity tables.
+      if (from < 3) {
+        await m.createTable(achievements);
+        await m.createTable(dailyActivity);
+      }
+    },
     beforeOpen: (details) async {
       // Foreign keys are disabled by default in SQLite; drift enables them
       // per-connection, but we also make sure the pragma is applied for
