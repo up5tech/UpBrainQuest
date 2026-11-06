@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.4.0-draft",
+  "contentPackVersion": "0.5.0-draft",
   "items": [
     {
       "status": "draft",
@@ -379,6 +379,3135 @@
           "text": "Leaf"
         }
       ]
+    },
+    {
+      "id": "puz_pattern_easy_002",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which symbol comes next?",
+      "instructions": "Read the repeating pair before you choose.",
+      "expectedAnswer": [
+        "star"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "sun",
+          "text": "Sun"
+        }
+      ],
+      "explanation": "The symbols alternate star, moon, star, moon, so the next one is a star.",
+      "hint": "Say the pattern aloud in pairs.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "star",
+          "moon",
+          "star",
+          "moon",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_easy_003",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape comes next?",
+      "instructions": "Count the repeated shapes in each group.",
+      "expectedAnswer": [
+        "square"
+      ],
+      "options": [
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "explanation": "Two circles are followed by one square, so after two circles comes a square.",
+      "hint": "Look at the last group of shapes.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "circle",
+          "circle",
+          "square",
+          "circle",
+          "circle",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_easy_004",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape comes next?",
+      "instructions": "The pattern repeats every two shapes.",
+      "expectedAnswer": [
+        "triangle"
+      ],
+      "options": [
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        }
+      ],
+      "explanation": "Triangle and pentagon alternate, so the next shape is a triangle.",
+      "hint": "Which shape started the pattern?",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "triangle",
+          "pentagon",
+          "triangle",
+          "pentagon",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_easy_005",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which symbol comes next?",
+      "instructions": "Name the two symbols that take turns.",
+      "expectedAnswer": [
+        "sun"
+      ],
+      "options": [
+        {
+          "id": "sun",
+          "text": "Sun"
+        },
+        {
+          "id": "cloud",
+          "text": "Cloud"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "explanation": "The sun and the cloud alternate, so the next symbol is a sun.",
+      "hint": "The first symbol returns in the odd positions.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "sun",
+          "cloud",
+          "sun",
+          "cloud",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_easy_006",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which symbol comes next?",
+      "instructions": "The pattern repeats every two symbols.",
+      "expectedAnswer": [
+        "diamond"
+      ],
+      "options": [
+        {
+          "id": "diamond",
+          "text": "Diamond"
+        },
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "heart",
+          "text": "Heart"
+        }
+      ],
+      "explanation": "Diamond and circle alternate, so the next symbol is a diamond.",
+      "hint": "Compare the first and third positions.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "diamond",
+          "circle",
+          "diamond",
+          "circle",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_medium_002",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape starts the next group?",
+      "instructions": "Find how many shapes each group holds.",
+      "expectedAnswer": [
+        "circle"
+      ],
+      "options": [
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "hexagon",
+          "text": "Hexagon"
+        }
+      ],
+      "explanation": "The pattern repeats in groups of three: circle, square, square. The next group starts with a circle.",
+      "hint": "Group the shapes as 1 + 2.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "circle",
+          "square",
+          "square",
+          "circle",
+          "square",
+          "square",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_medium_003",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which symbol comes next?",
+      "instructions": "Count how many of the first symbol appear before the second.",
+      "expectedAnswer": [
+        "sun"
+      ],
+      "options": [
+        {
+          "id": "sun",
+          "text": "Sun"
+        },
+        {
+          "id": "cloud",
+          "text": "Cloud"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "bolt",
+          "text": "Bolt"
+        }
+      ],
+      "explanation": "Two suns are followed by a cloud, so after two suns comes a sun again.",
+      "hint": "The second symbol appears once per group.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "sun",
+          "sun",
+          "cloud",
+          "sun",
+          "sun",
+          "cloud",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_medium_004",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape comes next?",
+      "instructions": "Watch the number of sides grow inside each group.",
+      "expectedAnswer": [
+        "pentagon"
+      ],
+      "options": [
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "explanation": "Each group adds a side: triangle, square, pentagon. After triangle and square comes a pentagon.",
+      "hint": "Three sides, four sides, then how many?",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "triangle",
+          "square",
+          "pentagon",
+          "triangle",
+          "square",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_medium_005",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number comes next: 2, 6, 12, 20, 30, ?",
+      "instructions": "Write down the gap between each pair of numbers.",
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "40"
+        },
+        {
+          "id": "c",
+          "text": "42"
+        },
+        {
+          "id": "d",
+          "text": "44"
+        }
+      ],
+      "explanation": "The gaps are 4, 6, 8, 10, so the next gap is 12 and 30 + 12 = 42.",
+      "hint": "The gaps themselves grow by two.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_pattern_medium_006",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number comes next: 3, 6, 12, 24, ?",
+      "instructions": "Check whether one operation explains every step.",
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "42"
+        },
+        {
+          "id": "c",
+          "text": "48"
+        },
+        {
+          "id": "d",
+          "text": "54"
+        }
+      ],
+      "explanation": "Each number doubles: 3, 6, 12, 24, so the next number is 48.",
+      "hint": "Compare each number with the one before it.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_pattern_hard_001",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number comes next: 1, 2, 6, 24, 120, ?",
+      "instructions": "Look at what multiplies each step, not what is added.",
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "600"
+        },
+        {
+          "id": "b",
+          "text": "640"
+        },
+        {
+          "id": "c",
+          "text": "720"
+        },
+        {
+          "id": "d",
+          "text": "840"
+        }
+      ],
+      "explanation": "Each term is multiplied by one more than the step before: ×2, ×3, ×4, ×5, then ×6 = 720.",
+      "hint": "The multipliers are 2, 3, 4, 5, ...",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_pattern_hard_002",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number comes next: 1, 3, 4, 7, 11, ?",
+      "instructions": "Test whether each term is built from the two before it.",
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "explanation": "Each term is the sum of the previous two: 7 + 11 = 18.",
+      "hint": "Add the last two numbers you see.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_pattern_hard_003",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which symbol comes next?",
+      "instructions": "One symbol repeats on a fixed beat while the others change.",
+      "expectedAnswer": [
+        "star"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "hexagon",
+          "text": "Hexagon"
+        }
+      ],
+      "explanation": "The star appears in every second position, so the missing symbol is a star.",
+      "hint": "Ignore the changing shapes and follow one symbol.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "circle",
+          "star",
+          "square",
+          "star",
+          "triangle",
+          "star",
+          "pentagon",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_pattern_hard_004",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number comes next: 1, 4, 27, 256, ?",
+      "instructions": "Match each term to its position in the list.",
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "625"
+        },
+        {
+          "id": "b",
+          "text": "1024"
+        },
+        {
+          "id": "c",
+          "text": "3125"
+        },
+        {
+          "id": "d",
+          "text": "4096"
+        }
+      ],
+      "explanation": "Each term is the position raised to itself: 1, 2², 3³, 4⁴, then 5⁵ = 3125.",
+      "hint": "The second term is 2 × 2, the third is 3 × 3 × 3.",
+      "estimatedSeconds": 55,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_pattern_hard_005",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number comes next: 10, 11, 9, 12, 8, 13, ?",
+      "instructions": "Split the list into two alternating stories.",
+      "expectedAnswer": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "explanation": "The moves alternate +1, −2, +3, −4, +5, so the next move is −6 and 13 − 6 = 7.",
+      "hint": "The size of each move grows by one.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_pattern_hard_006",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which symbol starts the next group?",
+      "instructions": "Count the group sizes and the order of the symbols.",
+      "expectedAnswer": [
+        "star"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "heart",
+          "text": "Heart"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "hexagon",
+          "text": "Hexagon"
+        }
+      ],
+      "explanation": "Groups grow 1, 2, 3 and cycle circle, square, triangle, so the next group is four stars.",
+      "hint": "The fourth symbol in the cycle has not appeared yet.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "pattern"
+      ],
+      "contentVersion": 1,
+      "interactionConfig": {
+        "previewSymbols": [
+          "circle",
+          "square",
+          "square",
+          "triangle",
+          "triangle",
+          "triangle",
+          "blank"
+        ]
+      }
+    },
+    {
+      "id": "puz_odd_easy_002",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape has four equal straight sides?",
+      "instructions": "Count the sides of every shape.",
+      "expectedAnswer": [
+        "square"
+      ],
+      "options": [
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "explanation": "A square has four equal straight sides; the others have none, three, or ten.",
+      "hint": "Look for right-angled corners.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_easy_003",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape has exactly three sides?",
+      "instructions": "Count the straight edges.",
+      "expectedAnswer": [
+        "triangle"
+      ],
+      "options": [
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "circle",
+          "text": "Circle"
+        }
+      ],
+      "explanation": "A triangle has three sides; a square has four, a pentagon five, a circle none.",
+      "hint": "The shape with the fewest straight sides.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_easy_004",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape has five sides?",
+      "instructions": "Count one side at a time.",
+      "expectedAnswer": [
+        "pentagon"
+      ],
+      "options": [
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "explanation": "A pentagon has five sides, one more than a square.",
+      "hint": "Start at the top and count around.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_easy_005",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape is not a polygon?",
+      "instructions": "A polygon is closed and made only of straight sides.",
+      "expectedAnswer": [
+        "circle"
+      ],
+      "options": [
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "circle",
+          "text": "Circle"
+        }
+      ],
+      "explanation": "A circle has no straight sides, so it is not a polygon.",
+      "hint": "Look for the shape with no corners.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_easy_006",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape has the fewest straight sides?",
+      "instructions": "Compare all three shapes.",
+      "expectedAnswer": [
+        "triangle"
+      ],
+      "options": [
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        }
+      ],
+      "explanation": "A triangle has 3 sides, a square 4, and a pentagon 5.",
+      "hint": "The smallest number wins.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_medium_001",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape has more sides than a square but fewer than a hexagon?",
+      "instructions": "Write down the side count for each option.",
+      "expectedAnswer": [
+        "pentagon"
+      ],
+      "options": [
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "explanation": "A pentagon has five sides: more than four and fewer than six.",
+      "hint": "The answer sits between four and six.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_medium_002",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number is not a multiple of 3?",
+      "instructions": "Divide each number by 3.",
+      "expectedAnswer": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "explanation": "9, 12 and 15 divide evenly by 3; 20 leaves a remainder of 2.",
+      "hint": "Check the digit sum.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_medium_003",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number is not a square number?",
+      "instructions": "Ask which number is a whole number times itself.",
+      "expectedAnswer": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "36"
+        },
+        {
+          "id": "d",
+          "text": "40"
+        }
+      ],
+      "explanation": "16 = 4 × 4, 25 = 5 × 5, 36 = 6 × 6, but 40 is not a square.",
+      "hint": "List the squares near each option.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_medium_004",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number is not prime?",
+      "instructions": "A prime has exactly two factors: 1 and itself.",
+      "expectedAnswer": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "explanation": "21 = 3 × 7, so it has more than two factors.",
+      "hint": "Test division by 3.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_medium_005",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape has ten sides?",
+      "instructions": "A star outline has two edges for every point.",
+      "expectedAnswer": [
+        "star"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        }
+      ],
+      "explanation": "A five-pointed star outline has ten sides.",
+      "hint": "Count the points first.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_medium_006",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape is a square turned so it stands on a corner?",
+      "instructions": "Rotating a shape does not change its sides.",
+      "expectedAnswer": [
+        "diamond"
+      ],
+      "options": [
+        {
+          "id": "diamond",
+          "text": "Diamond"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        }
+      ],
+      "explanation": "A diamond is a square rotated 45 degrees, so it still has four equal sides.",
+      "hint": "Think about rotating the square.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_hard_001",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number is not a perfect cube?",
+      "instructions": "Multiply a whole number by itself three times.",
+      "expectedAnswer": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "27"
+        },
+        {
+          "id": "c",
+          "text": "64"
+        },
+        {
+          "id": "d",
+          "text": "100"
+        }
+      ],
+      "explanation": "8 = 2³, 27 = 3³, 64 = 4³; 100 is a square, not a cube.",
+      "hint": "Test 4 × 4 × 4 and 5 × 5 × 5.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_hard_002",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which value is not equal to one half?",
+      "instructions": "Reduce every fraction to its simplest form.",
+      "expectedAnswer": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "2/4"
+        },
+        {
+          "id": "c",
+          "text": "5/10"
+        },
+        {
+          "id": "d",
+          "text": "3/5"
+        }
+      ],
+      "explanation": "1/2, 2/4 and 5/10 all reduce to 1/2; 3/5 is 0.6.",
+      "hint": "Compare each denominator with its numerator.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_hard_003",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number is not a factor of 36?",
+      "instructions": "Divide 36 by each option.",
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "explanation": "36 ÷ 4 = 9, ÷ 6 = 6, ÷ 9 = 4, but 36 ÷ 8 is not a whole number.",
+      "hint": "List the factor pairs of 36.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_hard_004",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which shape is not a polygon with an even number of sides?",
+      "instructions": "Count the sides of every shape, including the star outline.",
+      "expectedAnswer": [
+        "pentagon"
+      ],
+      "options": [
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "hexagon",
+          "text": "Hexagon"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "explanation": "Square 4, hexagon 6 and star 10 are even; the pentagon has 5.",
+      "hint": "An odd number of sides is the odd one out.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_hard_005",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number does not fit the doubling sequence 2, 4, 8, 16, 32, 64?",
+      "instructions": "Write the sequence out and check each option against it.",
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "32"
+        }
+      ],
+      "explanation": "8, 16 and 32 are in the sequence; 24 is not.",
+      "hint": "The sequence doubles each time.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_odd_hard_006",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Which number is not a divisor of 48?",
+      "instructions": "Divide 48 by each option.",
+      "expectedAnswer": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "explanation": "48 ÷ 6 = 8, ÷ 8 = 6, ÷ 12 = 4, but 48 ÷ 18 is not a whole number.",
+      "hint": "Check the factor pairs of 48.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "odd-one-out"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_easy_001",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find both matching pairs.",
+      "instructions": "Tap two cards to turn them over. A matching pair stays open.",
+      "expectedAnswer": [
+        "star",
+        "heart"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "heart",
+          "text": "Heart"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 6
+      },
+      "explanation": "The board holds one star pair and one heart pair.",
+      "hint": "Say the symbol you saw out loud so it is easier to place.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_easy_002",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find both matching pairs.",
+      "instructions": "Turn over two cards at a time.",
+      "expectedAnswer": [
+        "moon",
+        "sun"
+      ],
+      "options": [
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "sun",
+          "text": "Sun"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 6
+      },
+      "explanation": "The board holds one moon pair and one sun pair.",
+      "hint": "Remember the first card before you pick the second.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_easy_003",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find both matching pairs.",
+      "instructions": "A pair means two cards with the same symbol.",
+      "expectedAnswer": [
+        "circle",
+        "square"
+      ],
+      "options": [
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 6
+      },
+      "explanation": "The board holds one circle pair and one square pair.",
+      "hint": "Look at the outline of each card.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_easy_004",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find both matching pairs.",
+      "instructions": "Both pairs use a curved symbol, so look carefully.",
+      "expectedAnswer": [
+        "leaf",
+        "drop"
+      ],
+      "options": [
+        {
+          "id": "leaf",
+          "text": "Leaf"
+        },
+        {
+          "id": "drop",
+          "text": "Drop"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 6
+      },
+      "explanation": "The board holds one leaf pair and one drop pair.",
+      "hint": "The leaf has a stem; the drop does not.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_easy_005",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find both matching pairs.",
+      "instructions": "Count the sides if two shapes look similar.",
+      "expectedAnswer": [
+        "triangle",
+        "diamond"
+      ],
+      "options": [
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "diamond",
+          "text": "Diamond"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 6
+      },
+      "explanation": "The board holds one triangle pair and one diamond pair.",
+      "hint": "A triangle has three sides, a diamond four.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_easy_006",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find both matching pairs.",
+      "instructions": "One symbol belongs to a storm.",
+      "expectedAnswer": [
+        "cloud",
+        "bolt"
+      ],
+      "options": [
+        {
+          "id": "cloud",
+          "text": "Cloud"
+        },
+        {
+          "id": "bolt",
+          "text": "Bolt"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 6
+      },
+      "explanation": "The board holds one cloud pair and one bolt pair.",
+      "hint": "The bolt is the pointed symbol.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_medium_001",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all three matching pairs.",
+      "instructions": "Ten card reveals are enough if you track positions.",
+      "expectedAnswer": [
+        "star",
+        "moon",
+        "sun"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "sun",
+          "text": "Sun"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 10
+      },
+      "explanation": "The board holds a star pair, a moon pair and a sun pair.",
+      "hint": "Keep a mental map of where each symbol sits.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_medium_002",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all three matching pairs.",
+      "instructions": "The three symbols differ by their number of sides.",
+      "expectedAnswer": [
+        "circle",
+        "square",
+        "triangle"
+      ],
+      "options": [
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 10
+      },
+      "explanation": "The board holds a circle, a square and a triangle pair.",
+      "hint": "Check the corners to tell the shapes apart.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_medium_003",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all three matching pairs.",
+      "instructions": "All three symbols are rounded, so slow down.",
+      "expectedAnswer": [
+        "heart",
+        "leaf",
+        "drop"
+      ],
+      "options": [
+        {
+          "id": "heart",
+          "text": "Heart"
+        },
+        {
+          "id": "leaf",
+          "text": "Leaf"
+        },
+        {
+          "id": "drop",
+          "text": "Drop"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 10
+      },
+      "explanation": "The board holds a heart pair, a leaf pair and a drop pair.",
+      "hint": "Compare the top of each symbol.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_medium_004",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all three matching pairs.",
+      "instructions": "Count sides: four, five, and six.",
+      "expectedAnswer": [
+        "diamond",
+        "hexagon",
+        "pentagon"
+      ],
+      "options": [
+        {
+          "id": "diamond",
+          "text": "Diamond"
+        },
+        {
+          "id": "hexagon",
+          "text": "Hexagon"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 10
+      },
+      "explanation": "The board holds a diamond pair, a pentagon pair and a hexagon pair.",
+      "hint": "Sort the shapes by side count first.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_medium_005",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all three matching pairs.",
+      "instructions": "Two symbols are weather, one is the sky behind it.",
+      "expectedAnswer": [
+        "cloud",
+        "bolt",
+        "sun"
+      ],
+      "options": [
+        {
+          "id": "cloud",
+          "text": "Cloud"
+        },
+        {
+          "id": "bolt",
+          "text": "Bolt"
+        },
+        {
+          "id": "sun",
+          "text": "Sun"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 10
+      },
+      "explanation": "The board holds a cloud pair, a bolt pair and a sun pair.",
+      "hint": "Notice which symbol has sharp edges.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_medium_006",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all three matching pairs.",
+      "instructions": "One symbol is pointed, two are rounded.",
+      "expectedAnswer": [
+        "star",
+        "heart",
+        "moon"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "heart",
+          "text": "Heart"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 10
+      },
+      "explanation": "The board holds a star pair, a heart pair and a moon pair.",
+      "hint": "Reveal cards in a fixed order so you never re-check one.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_hard_002",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all four matching pairs.",
+      "instructions": "Eight cards are on the board; plan the reveals.",
+      "expectedAnswer": [
+        "circle",
+        "square",
+        "triangle",
+        "star"
+      ],
+      "options": [
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 14
+      },
+      "explanation": "The board holds circle, square, triangle and star pairs.",
+      "hint": "Clear the easy outlines first.",
+      "estimatedSeconds": 55,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_hard_003",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all four matching pairs.",
+      "instructions": "Two sky symbols and two night symbols share the board.",
+      "expectedAnswer": [
+        "sun",
+        "moon",
+        "star",
+        "cloud"
+      ],
+      "options": [
+        {
+          "id": "sun",
+          "text": "Sun"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "cloud",
+          "text": "Cloud"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 14
+      },
+      "explanation": "The board holds sun, moon, star and cloud pairs.",
+      "hint": "Group the symbols by daylight and night.",
+      "estimatedSeconds": 55,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_hard_004",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all four matching pairs.",
+      "instructions": "Three symbols are rounded and one is sharp.",
+      "expectedAnswer": [
+        "heart",
+        "leaf",
+        "drop",
+        "bolt"
+      ],
+      "options": [
+        {
+          "id": "heart",
+          "text": "Heart"
+        },
+        {
+          "id": "leaf",
+          "text": "Leaf"
+        },
+        {
+          "id": "drop",
+          "text": "Drop"
+        },
+        {
+          "id": "bolt",
+          "text": "Bolt"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 14
+      },
+      "explanation": "The board holds heart, leaf, drop and bolt pairs.",
+      "hint": "Find the bolt pair first; it is unmistakable.",
+      "estimatedSeconds": 55,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_hard_005",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all four matching pairs.",
+      "instructions": "Three shapes are polygons, one is not.",
+      "expectedAnswer": [
+        "diamond",
+        "hexagon",
+        "pentagon",
+        "circle"
+      ],
+      "options": [
+        {
+          "id": "diamond",
+          "text": "Diamond"
+        },
+        {
+          "id": "hexagon",
+          "text": "Hexagon"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        },
+        {
+          "id": "circle",
+          "text": "Circle"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 14
+      },
+      "explanation": "The board holds diamond, hexagon, pentagon and circle pairs.",
+      "hint": "Count sides to separate the polygons.",
+      "estimatedSeconds": 60,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_match_hard_006",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Find all four matching pairs.",
+      "instructions": "Two symbols are pointed and two are rounded.",
+      "expectedAnswer": [
+        "star",
+        "heart",
+        "moon",
+        "leaf"
+      ],
+      "options": [
+        {
+          "id": "star",
+          "text": "Star"
+        },
+        {
+          "id": "heart",
+          "text": "Heart"
+        },
+        {
+          "id": "moon",
+          "text": "Moon"
+        },
+        {
+          "id": "leaf",
+          "text": "Leaf"
+        }
+      ],
+      "interactionConfig": {
+        "maxFlips": 16
+      },
+      "explanation": "The board holds star, heart, moon and leaf pairs.",
+      "hint": "Track each symbol by position, not by colour.",
+      "estimatedSeconds": 60,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_easy_002",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the numbers from largest to smallest.",
+      "instructions": "Drag the tiles until the biggest number comes first.",
+      "expectedAnswer": [
+        "8",
+        "4",
+        "1"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "4",
+          "1",
+          "8"
+        ]
+      },
+      "explanation": "The descending order is 8, 4, 1.",
+      "hint": "Find the largest number before you move anything.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "numbers"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_easy_003",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Put the steps of making tea in order.",
+      "instructions": "What must happen before the tea can be poured?",
+      "expectedAnswer": [
+        "Boil water",
+        "Add tea leaves",
+        "Pour and drink"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "Boil water",
+          "Add tea leaves",
+          "Pour and drink"
+        ]
+      },
+      "explanation": "Water boils first, then the leaves go in, then you pour.",
+      "hint": "Start with the step that needs nothing else.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "steps"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_easy_004",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the numbers from smallest to largest.",
+      "instructions": "Negative numbers sit below zero.",
+      "expectedAnswer": [
+        "-3",
+        "0",
+        "2",
+        "5"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "-3",
+          "2",
+          "0",
+          "5"
+        ]
+      },
+      "explanation": "The ascending order is -3, 0, 2, 5.",
+      "hint": "Place -3 relative to 0 first.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "numbers"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_easy_005",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the decimals from smallest to largest.",
+      "instructions": "Compare the digits after the decimal point.",
+      "expectedAnswer": [
+        "0.05",
+        "0.25",
+        "0.5"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "0.5",
+          "0.05",
+          "0.25"
+        ]
+      },
+      "explanation": "0.05 < 0.25 < 0.5.",
+      "hint": "Two digits after the point can still be smaller.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "decimals"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_easy_006",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the days from the start of the week.",
+      "instructions": "Monday is the first working day in this list.",
+      "expectedAnswer": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "Friday",
+          "Monday",
+          "Wednesday"
+        ]
+      },
+      "explanation": "The week runs Monday, Wednesday, Friday.",
+      "hint": "Count forward from Monday.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "time"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_medium_002",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the numbers from largest to smallest.",
+      "instructions": "Check both the tens and the units digit.",
+      "expectedAnswer": [
+        "20",
+        "12",
+        "8",
+        "5"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "12",
+          "5",
+          "20",
+          "8"
+        ]
+      },
+      "explanation": "The descending order is 20, 12, 8, 5.",
+      "hint": "The two-digit numbers come before the single digits.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "numbers"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_medium_003",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Put the travel steps in order.",
+      "instructions": "One step creates the reason for the next.",
+      "expectedAnswer": [
+        "Book the ticket",
+        "Pack the bag",
+        "Travel to the airport",
+        "Board the plane"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "Book the ticket",
+          "Pack the bag",
+          "Travel to the airport",
+          "Board the plane"
+        ]
+      },
+      "explanation": "You book first, pack, travel, then board.",
+      "hint": "Which step needs a booking already made?",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "steps"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_medium_004",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the decimals from smallest to largest.",
+      "instructions": "Compare the whole number part first.",
+      "expectedAnswer": [
+        "0.9",
+        "1.05",
+        "1.2",
+        "1.5"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "1.2",
+          "1.05",
+          "1.5",
+          "0.9"
+        ]
+      },
+      "explanation": "0.9 is below 1, then 1.05, 1.2 and 1.5.",
+      "hint": "Only one value is less than one.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "decimals"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_medium_005",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the people from oldest to youngest.",
+      "instructions": "Mai is older than Lan; Lan is older than Hoa.",
+      "expectedAnswer": [
+        "Mai",
+        "Lan",
+        "Hoa"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "Mai",
+          "Lan",
+          "Hoa"
+        ]
+      },
+      "explanation": "Oldest first: Mai, then Lan, then Hoa.",
+      "hint": "Chain the two comparisons.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "logic"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_medium_006",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the three people from tallest to shortest.",
+      "instructions": "P is taller than Q; R is taller than P.",
+      "expectedAnswer": [
+        "R",
+        "P",
+        "Q"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      "explanation": "R is taller than P, and P is taller than Q.",
+      "hint": "Who is taller than everyone in the clues?",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "logic"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_hard_002",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the runners by finish time, fastest first.",
+      "instructions": "A finished before B; B finished before D; C finished before A.",
+      "expectedAnswer": [
+        "C",
+        "A",
+        "B",
+        "D"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "C beat A, A beat B and B beat D.",
+      "hint": "Build one chain from the three comparisons.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "logic"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_hard_003",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the boxes from top to bottom.",
+      "instructions": "Blue is above Green; Red is above Blue; Yellow is below Green.",
+      "expectedAnswer": [
+        "Red",
+        "Blue",
+        "Green",
+        "Yellow"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "Red",
+          "Blue",
+          "Green",
+          "Yellow"
+        ]
+      },
+      "explanation": "Red sits highest, then Blue, then Green, with Yellow lowest.",
+      "hint": "Fix the position of Yellow relative to Green first.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "logic"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_hard_004",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Put the project steps in order.",
+      "instructions": "Nothing can be reviewed before it exists.",
+      "expectedAnswer": [
+        "Draft the report",
+        "Review the report",
+        "Revise the report",
+        "Publish the report"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "Draft the report",
+          "Review the report",
+          "Revise the report",
+          "Publish the report"
+        ]
+      },
+      "explanation": "Draft, review, revise, then publish.",
+      "hint": "Publishing needs a revised version.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "steps"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_hard_005",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the powers from smallest to largest value.",
+      "instructions": "Work out the value of each term first.",
+      "expectedAnswer": [
+        "2^3",
+        "3^2",
+        "2^4",
+        "5^2"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "2^3",
+          "3^2",
+          "2^4",
+          "5^2"
+        ]
+      },
+      "explanation": "2^3 = 8, 3^2 = 9, 2^4 = 16, 5^2 = 25.",
+      "hint": "A larger exponent does not always mean a larger value.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "powers"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_order_hard_006",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Order the fractions from smallest to largest.",
+      "instructions": "Give every fraction the same denominator.",
+      "expectedAnswer": [
+        "1/4",
+        "1/2",
+        "2/3",
+        "3/4"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "2/3"
+        ]
+      },
+      "explanation": "As twelfths: 3/12, 6/12, 8/12, 9/12.",
+      "hint": "Compare 2/3 with 3/4 carefully.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "order",
+        "fractions"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_easy_002",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Memorise the three numbers, then enter all of them.",
+      "instructions": "Study the numbers, tap Ready, then type them in order.",
+      "expectedAnswer": [
+        5,
+        8,
+        2
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9
+      },
+      "explanation": "The sequence was 5, 8, 2.",
+      "hint": "Repeat the numbers once before they hide.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "sequence"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_easy_003",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Remember the three numbers, then enter the second one.",
+      "instructions": "Study the numbers, tap Ready, then type the number in the middle.",
+      "expectedAnswer": [
+        6
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          3,
+          6,
+          9
+        ]
+      },
+      "explanation": "The sequence was 3, 6, 9, so the second number is 6.",
+      "hint": "Say each number with its position.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_easy_004",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Memorise the four numbers, then enter all of them.",
+      "instructions": "Two pairs are easier to hold than four single digits.",
+      "expectedAnswer": [
+        7,
+        2,
+        4,
+        1
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9
+      },
+      "explanation": "The sequence was 7, 2, 4, 1.",
+      "hint": "Group the numbers as two pairs.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "sequence"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_easy_005",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Remember the three numbers, then enter the first one.",
+      "instructions": "Study the numbers, tap Ready, then type the number that came first.",
+      "expectedAnswer": [
+        9
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          9,
+          0,
+          3
+        ]
+      },
+      "explanation": "The sequence was 9, 0, 3, so the first number is 9.",
+      "hint": "Focus on the very first tile.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_easy_006",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "easy",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Remember the four numbers, then enter the last one.",
+      "instructions": "Study the numbers, tap Ready, then type the final number.",
+      "expectedAnswer": [
+        3
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          1,
+          5,
+          7,
+          3
+        ]
+      },
+      "explanation": "The sequence was 1, 5, 7, 3, so the last number is 3.",
+      "hint": "Notice the last tile before the numbers hide.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_medium_002",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the four numbers, then enter them in reverse order.",
+      "instructions": "Tap Ready when you are done memorising.",
+      "expectedAnswer": [
+        3,
+        5,
+        8,
+        2
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          2,
+          8,
+          5,
+          3
+        ]
+      },
+      "explanation": "The sequence was 2, 8, 5, 3; reversed it is 3, 5, 8, 2.",
+      "hint": "Read the sequence backwards before you hide it.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "reverse"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_medium_003",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the four numbers, then enter the numbers in positions 1 and 3.",
+      "instructions": "Attach each number to its position number.",
+      "expectedAnswer": [
+        4,
+        9
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          4,
+          1,
+          9,
+          6
+        ]
+      },
+      "explanation": "The sequence was 4, 1, 9, 6, so positions 1 and 3 are 4 and 9.",
+      "hint": "Ignore the even positions completely.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_medium_004",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Memorise the five numbers, then enter all of them.",
+      "instructions": "Five digits need a rhythm, not repetition.",
+      "expectedAnswer": [
+        6,
+        3,
+        8,
+        0,
+        2
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9
+      },
+      "explanation": "The sequence was 6, 3, 8, 0, 2.",
+      "hint": "Say the digits as one short phrase.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "sequence"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_medium_005",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the four numbers, then enter the numbers in positions 2 and 4.",
+      "instructions": "Number the positions from the left.",
+      "expectedAnswer": [
+        7,
+        9
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          2,
+          7,
+          5,
+          9
+        ]
+      },
+      "explanation": "The sequence was 2, 7, 5, 9, so positions 2 and 4 are 7 and 9.",
+      "hint": "Skip the first number on purpose.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_medium_006",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "medium",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the five numbers, then enter them in reverse order.",
+      "instructions": "Hold the whole sequence, then read it backwards.",
+      "expectedAnswer": [
+        3,
+        1,
+        6,
+        4,
+        8
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          8,
+          4,
+          6,
+          1,
+          3
+        ]
+      },
+      "explanation": "The sequence was 8, 4, 6, 1, 3; reversed it is 3, 1, 6, 4, 8.",
+      "hint": "Chunk it as 84, 61, 3 before reversing.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "reverse"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_hard_002",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the five numbers, then enter the numbers in positions 2 and 4.",
+      "instructions": "Track positions while the sequence is still visible.",
+      "expectedAnswer": [
+        9,
+        6
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          5,
+          9,
+          2,
+          6,
+          4
+        ]
+      },
+      "explanation": "The sequence was 5, 9, 2, 6, 4, so positions 2 and 4 are 9 and 6.",
+      "hint": "Count aloud from one to five.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_hard_003",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the six numbers, then enter them in reverse order.",
+      "instructions": "Six digits is the hardest reverse in the bank.",
+      "expectedAnswer": [
+        2,
+        7,
+        3,
+        8,
+        4,
+        1
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          1,
+          4,
+          8,
+          3,
+          7,
+          2
+        ]
+      },
+      "explanation": "The sequence was 1, 4, 8, 3, 7, 2; reversed it is 2, 7, 3, 8, 4, 1.",
+      "hint": "Practise the reversed order before tapping Ready.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "reverse"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_hard_004",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the five numbers, then enter the numbers in odd positions.",
+      "instructions": "Positions 1, 3 and 5 hold the answer.",
+      "expectedAnswer": [
+        7,
+        9,
+        5
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          7,
+          3,
+          9,
+          1,
+          5
+        ]
+      },
+      "explanation": "The sequence was 7, 3, 9, 1, 5, so the odd positions are 7, 9, 5.",
+      "hint": "Skip every second number as you read.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_hard_005",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the six numbers, then enter the numbers in positions 1, 3 and 5.",
+      "instructions": "Number the positions before the sequence hides.",
+      "expectedAnswer": [
+        4,
+        2,
+        1
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          4,
+          6,
+          2,
+          8,
+          1,
+          9
+        ]
+      },
+      "explanation": "The sequence was 4, 6, 2, 8, 1, 9, so positions 1, 3 and 5 are 4, 2, 1.",
+      "hint": "Group each odd position with its even neighbour.",
+      "estimatedSeconds": 50,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "puz_memory_hard_006",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
+      "difficulty": "hard",
+      "locale": "en",
+      "status": "draft",
+      "prompt": "Study the five numbers, then enter the middle three.",
+      "instructions": "Drop the first and the last number.",
+      "expectedAnswer": [
+        8,
+        1,
+        4
+      ],
+      "interactionConfig": {
+        "minValue": 0,
+        "maxValue": 9,
+        "revealSequence": [
+          3,
+          8,
+          1,
+          4,
+          7
+        ]
+      },
+      "explanation": "The sequence was 3, 8, 1, 4, 7, so the middle three are 8, 1, 4.",
+      "hint": "Find the edges, then keep what is inside.",
+      "estimatedSeconds": 45,
+      "pointsWeight": 1,
+      "tags": [
+        "memory",
+        "position"
+      ],
+      "contentVersion": 1
     }
   ]
 }

@@ -220,12 +220,11 @@ class _SymbolTile extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Icon(
-                icon ?? Icons.help_outline,
-                color: AppColors.textPrimary,
-                size: 32,
-              ),
-              const SizedBox(height: AppSpacing.xs),
+              // Numeric answer options carry no symbol, so show the text alone.
+              if (icon != null) ...<Widget>[
+                Icon(icon, color: AppColors.textPrimary, size: 32),
+                const SizedBox(height: AppSpacing.xs),
+              ],
               Text(
                 option.text,
                 textAlign: TextAlign.center,

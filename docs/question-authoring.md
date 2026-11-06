@@ -30,7 +30,7 @@ assets/content/
     "en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json",
     "vi/iq_questions.json", "vi/puzzle_questions.json", "vi/eq_scenarios.json"
   ],
-  "expectedItemCounts": { "iq": 12, "puzzle": 10, "eq": 10 }
+  "expectedItemCounts": { "iq": 12, "puzzle": 90, "eq": 10 }
 }
 ```
 

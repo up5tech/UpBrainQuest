@@ -13,5 +13,12 @@ IconData? puzzleSymbolIcon(String key) => switch (key) {
   'star' || 'symbol_star' => Icons.star_border,
   'moon' || 'symbol_moon' => Icons.dark_mode_outlined,
   'leaf' || 'symbol_leaf' => Icons.eco_outlined,
+  'sun' || 'symbol_sun' => Icons.wb_sunny_outlined,
+  'cloud' || 'symbol_cloud' => Icons.cloud_outlined,
+  'drop' || 'symbol_drop' => Icons.water_drop_outlined,
+  'heart' || 'symbol_heart' => Icons.favorite_border,
+  'diamond' || 'symbol_diamond' => Icons.diamond_outlined,
+  'hexagon' || 'symbol_hexagon' => Icons.hexagon_outlined,
+  'bolt' || 'symbol_bolt' => Icons.bolt_outlined,
   _ => null,
 };
