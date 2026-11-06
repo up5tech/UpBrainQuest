@@ -223,7 +223,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'There are not enough questions available for this mode yet.';
 
   @override
-  String get sessionMemoryReady => 'I memorised it';
+  String get sessionMemoryReady => 'Ready';
 
   @override
   String get sessionMemoryRecall => 'Reproduce the sequence';

@@ -17,15 +17,15 @@
       "options": [
         {
           "id": "a",
-          "text": "“Cậu đừng lo lắng nữa.”"
+          "text": "“Bạn đừng lo lắng nữa.”"
         },
         {
           "id": "b",
-          "text": "“Dạo này cậu có vẻ im hơn mọi khi. Cậu muốn nói chuyện hay muốn ở một mình một lúc?”"
+          "text": "“Dạo này bạn có vẻ im hơn mọi khi. Bạn muốn nói chuyện hay muốn ở một mình một lúc?”"
         },
         {
           "id": "c",
-          "text": "“Mình sẽ kể cho mọi người để họ làm cậu vui lên.”"
+          "text": "“Mình sẽ kể cho mọi người để họ giúp bạn vui lên.”"
         }
       ],
       "rubricByOption": {
@@ -37,7 +37,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Câu này gạt đi cảm xúc mà bạn của bạn có thể đang mang. Nhận ra trước, sửa sau."
+          "feedback": "Câu này gạt đi cảm xúc mà người bạn ấy có thể đang mang. Nhận ra trước, sửa sau."
         },
         "b": {
           "scores": {
@@ -47,7 +47,7 @@
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Bạn nói điều mình nhận thấy và để bạn mình chọn, tôn trọng việc họ có thể không muốn nói."
+          "feedback": "Bạn nêu điều mình nhận thấy và để người bạn ấy tự chọn, tôn trọng việc họ có thể không muốn nói."
         },
         "c": {
           "scores": {
@@ -85,11 +85,11 @@
       "options": [
         {
           "id": "a",
-          "text": "“Cảm ơn cậu đã nhận lỗi. Mình xem lại phần cần sửa và cách tránh lặp lại nhé.”"
+          "text": "“Cảm ơn bạn đã nhận lỗi. Mình xem lại phần cần sửa và cách tránh lặp lại nhé.”"
         },
         {
           "id": "b",
-          "text": "“Cậu lúc nào cũng làm hỏng việc.”"
+          "text": "“Bạn lúc nào cũng làm hỏng việc.”"
         },
         {
           "id": "c",
@@ -125,7 +125,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Giữ hòa khí có thể an toàn hơn, nhưng phần chưa giải quyết thường quay lại. Một cuộc nói chuyện ngắn, cụ thể tử tế với cả hai bên."
+          "feedback": "Giữ hòa khí có thể an toàn hơn, nhưng phần chưa giải quyết thường quay lại. Một cuộc nói chuyện ngắn, cụ thể sẽ tử tế hơn với cả hai bên."
         }
       },
       "skillDimensions": [
@@ -193,7 +193,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Lùi lại có thể đúng khi cuộc trò chuyện không an toàn hoặc thiếu tôn trọng, nhưng ở đây không ai biết vì sao bạn rời đi. Hãy nói điều bạn cần trước."
+          "feedback": "Lùi lại có thể đúng khi cuộc trò chuyện không an toàn hoặc thiếu tôn trọng, nhưng ở đây không ai biết vì sao bạn rời đi. Hãy nói rõ điều bạn cần trước khi rời đi."
         }
       },
       "skillDimensions": [
@@ -493,7 +493,7 @@
       "options": [
         {
           "id": "a",
-          "text": "“Mình muốn nói tiếp, nhưng cần 20 phút để lắng lại và suy nghĩ. 3 giờ mình sẽ quay lại.”"
+          "text": "“Mình muốn nói tiếp, nhưng cần 20 phút để lắng lại và suy nghĩ. Mình sẽ quay lại lúc 3 giờ.”"
         },
         {
           "id": "b",
@@ -696,7 +696,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Lần nào quan trọng là bạn cũng im lặng."
+          "text": "Cứ đến lúc quan trọng là bạn lại im lặng."
         },
         {
           "id": "b",
@@ -759,7 +759,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn huỷ hẹn hai lần liên tiếp và trả lời rất ít chữ.",
+      "scenarioContext": "Một người bạn hủy hẹn hai lần liên tiếp và trả lời rất ít chữ.",
       "prompt": "Bạn có thể nói hoặc làm gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -769,7 +769,7 @@
         },
         {
           "id": "b",
-          "text": "Tôi để ý bạn huỷ hai lần — tuần này bận hay có chuyện khác vậy?"
+          "text": "Tôi để ý bạn hủy hai lần — tuần này bận hay có chuyện khác vậy?"
         },
         {
           "id": "c",
@@ -1475,7 +1475,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Đổ lỗi bảo vệ hình ảnh bạn bằng quan hệ."
+          "feedback": "Đổ lỗi bảo vệ hình ảnh của bạn nhưng làm tổn hại mối quan hệ."
         },
         "b": {
           "scores": {
@@ -1808,7 +1808,7 @@
         },
         {
           "id": "c",
-          "text": "Huỷ mà không nói gì."
+          "text": "Hủy mà không nói gì."
         }
       ],
       "rubricByOption": {
@@ -1932,7 +1932,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn thân huỷ hẹn với bạn lần thứ ba và bạn thấy tổn thương.",
+      "scenarioContext": "Một người bạn thân hủy hẹn với bạn lần thứ ba và bạn thấy tổn thương.",
       "prompt": "Bước tiếp theo hữu ích nhất là gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -2346,7 +2346,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn huỷ hẹn với bạn rồi đăng ảnh đi chơi với người khác.",
+      "scenarioContext": "Một người bạn hủy hẹn với bạn rồi đăng ảnh đi chơi với người khác.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -2360,7 +2360,7 @@
         },
         {
           "id": "c",
-          "text": "Lần sau mình sẽ huỷ với họ xem họ thấy thế nào."
+          "text": "Lần sau mình sẽ hủy với họ xem họ thấy thế nào."
         }
       ],
       "rubricByOption": {
@@ -3141,7 +3141,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Danh sách tích lại đến như một phán quyết và khó dùng."
+          "feedback": "Dồn hết vào kỳ đánh giá, danh sách ấy nghe như một phán quyết và rất khó dùng."
         },
         "c": {
           "scores": {
@@ -3220,7 +3220,7 @@
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Bạn nói thật sự thay đổi, giữ thiện ý, và đề nghị một thay đổi cụ thể."
+          "feedback": "Bạn nêu sự thay đổi một cách thành thật, giữ thiện ý và đề nghị một thay đổi cụ thể."
         }
       },
       "skillDimensions": [
@@ -3348,7 +3348,7 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 2
           },
-          "feedback": "Một câu \"chắc\" mơ hồ giữ lời nhờ sống và giữ sự khó chịu ở bạn."
+          "feedback": "Một câu “chắc” mơ hồ vẫn để lời nhờ vay còn ngỏ, và sự khó chịu ở lại với bạn."
         },
         "c": {
           "scores": {
@@ -3602,7 +3602,7 @@
         },
         {
           "id": "c",
-          "text": "Đồng ý rồi phút cuối huỷ."
+          "text": "Đồng ý rồi phút cuối hủy."
         }
       ],
       "rubricByOption": {
@@ -3634,7 +3634,7 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 2
           },
-          "feedback": "Huỷ phút cuối tốn của họ hơn một giới hạn thật thà."
+          "feedback": "Hủy phút cuối tốn của họ hơn một giới hạn thật thà."
         }
       },
       "skillDimensions": [
@@ -3874,7 +3874,7 @@
         },
         {
           "id": "b",
-          "text": "Đổi ổ khoá."
+          "text": "Đổi ổ khóa."
         },
         {
           "id": "c",
@@ -3900,7 +3900,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Đổi ổ khoá kết thúc tình bạn vì một vấn đề giải được."
+          "feedback": "Đổi ổ khóa kết thúc tình bạn vì một vấn đề giải được."
         },
         "c": {
           "scores": {
@@ -4002,7 +4002,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn trả lời rất ngắn sau khi bạn huỷ hẹn với họ hai lần.",
+      "scenarioContext": "Một người bạn trả lời rất ngắn sau khi bạn hủy hẹn với họ hai lần.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -4016,7 +4016,7 @@
         },
         {
           "id": "c",
-          "text": "Việc mình huỷ có thể đã thành một quy luật với họ; mình sẽ hỏi họ thấy thế nào."
+          "text": "Việc mình hủy có thể đã thành một quy luật với họ; mình sẽ hỏi họ thấy thế nào."
         }
       ],
       "rubricByOption": {
@@ -4048,13 +4048,13 @@
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Bạn xem phần của mình trước khi giải thích phản ứng của họ đi."
+          "feedback": "Bạn xem lại phần của mình trước khi vội giải thích phản ứng của họ."
         }
       },
       "skillDimensions": [
         "perspective_taking"
       ],
-      "followUpReflection": "Hai lần bạn huỷ hẹn trông thế nào từ phía họ?",
+      "followUpReflection": "Hai lần bạn hủy hẹn trông thế nào từ phía họ?",
       "estimatedSeconds": 45,
       "pointsWeight": 1,
       "tags": [
@@ -4209,13 +4209,13 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn thường nói nhiều trả lời điện thoại bằng giọng đều đều.",
+      "scenarioContext": "Một người bạn vốn hay nói nhiều nay trả lời điện thoại bằng giọng đều đều.",
       "prompt": "Bạn có thể nói hoặc làm gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
         {
           "id": "a",
-          "text": "Giọng bạn nhạt hơn mọi khi — hôm nay dài quá à?"
+          "text": "Giọng bạn nghe khác mọi khi — hôm nay mệt lắm phải không?"
         },
         {
           "id": "b",
@@ -4495,7 +4495,7 @@
         },
         {
           "id": "b",
-          "text": "Mình chán lắm à?"
+          "text": "Mình nói chán lắm à?"
         },
         {
           "id": "c",
@@ -4744,7 +4744,7 @@
       "skillDimensions": [
         "self_regulation"
       ],
-      "followUpReflection": "Ở đây điều gì quan trọng hơn: đúng, hay chính xác?",
+      "followUpReflection": "Ở đây điều gì quan trọng hơn: tỏ ra đúng, hay thông tin chính xác?",
       "estimatedSeconds": 45,
       "pointsWeight": 1,
       "tags": [
@@ -5313,7 +5313,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Ai đó huỷ cuộc họp bạn đã chuẩn bị, một giờ trước khi bắt đầu.",
+      "scenarioContext": "Ai đó hủy cuộc họp bạn đã chuẩn bị, một giờ trước khi bắt đầu.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -5349,7 +5349,7 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
-          "feedback": "Thiếu tôn trọng là kết luận mà riêng việc huỷ không chống đỡ được."
+          "feedback": "Thiếu tôn trọng là kết luận mà riêng việc hủy không chống đỡ được."
         },
         "c": {
           "scores": {
@@ -5530,7 +5530,7 @@
         },
         {
           "id": "b",
-          "text": "Mình tin bạn quyết. Mình nói điều mình lo được không, rồi để bạn tự chọn?"
+          "text": "Mình tin vào quyết định của bạn. Mình nói điều mình lo được không, rồi để bạn tự chọn?"
         },
         {
           "id": "c",
@@ -5658,7 +5658,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Bạn cần kết thúc một thoả thuận lâu năm không còn phù hợp.",
+      "scenarioContext": "Bạn cần kết thúc một thỏa thuận lâu năm không còn phù hợp.",
       "prompt": "Bạn có thể nói gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -5684,7 +5684,7 @@
             "constructive_communication": 2,
             "boundaries_and_agency": 1
           },
-          "feedback": "Một lý do do dự để thoả thuận vẫn còn sống."
+          "feedback": "Viện một cái cớ khiến thỏa thuận vẫn còn hiệu lực."
         },
         "b": {
           "scores": {
@@ -5737,7 +5737,7 @@
         },
         {
           "id": "b",
-          "text": "Từ giờ mình sẽ cc quản lý vào mọi thứ."
+          "text": "Từ giờ mình sẽ CC quản lý vào mọi email."
         },
         {
           "id": "c",
@@ -6151,11 +6151,11 @@
         },
         {
           "id": "b",
-          "text": "Mình lại huỷ kế hoạch vậy."
+          "text": "Mình lại hủy kế hoạch vậy."
         },
         {
           "id": "c",
-          "text": "Mình lại huỷ kế hoạch, nhưng mình không vui."
+          "text": "Mình lại hủy kế hoạch, nhưng mình không vui."
         }
       ],
       "rubricByOption": {
@@ -6177,7 +6177,7 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 2
           },
-          "feedback": "Huỷ kế hoạch của mình nhiều lần dạy người khác rằng giới hạn này mềm."
+          "feedback": "Hủy kế hoạch của mình nhiều lần dạy người khác rằng giới hạn này mềm."
         },
         "c": {
           "scores": {
@@ -6374,7 +6374,7 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
-          "feedback": "Bỏ qua dạy cả phòng rằng mối lo này là tuỳ chọn."
+          "feedback": "Bỏ qua dạy cả phòng rằng mối lo này là tùy chọn."
         },
         "b": {
           "scores": {
@@ -6512,7 +6512,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Buộc tội công khai xoá đi khả năng có một lời giải thích bình thường."
+          "feedback": "Buộc tội công khai xóa đi khả năng có một lời giải thích bình thường."
         },
         "b": {
           "scores": {
@@ -6555,7 +6555,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn huỷ hẹn, rồi xin lỗi liên tục và đề nghị trả hết mọi thứ.",
+      "scenarioContext": "Một người bạn hủy hẹn, rồi xin lỗi liên tục và đề nghị trả hết mọi thứ.",
       "prompt": "Bạn có thể nói hoặc làm gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -7015,7 +7015,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Chặn họ làm xung đột thành vĩnh viễn và xoá mọi đường quay lại."
+          "feedback": "Chặn họ làm xung đột thành vĩnh viễn và xóa mọi đường quay lại."
         }
       },
       "skillDimensions": [
@@ -7190,7 +7190,7 @@
         },
         {
           "id": "c",
-          "text": "Mình sẽ từ chối và cc quản lý của họ."
+          "text": "Mình sẽ từ chối và CC quản lý của họ."
         }
       ],
       "rubricByOption": {
@@ -7360,7 +7360,7 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
-          "feedback": "Một nhãn công khai xoá đi khả năng có cuộc nói chuyện thật thà."
+          "feedback": "Một nhãn công khai xóa đi khả năng có cuộc nói chuyện thật thà."
         }
       },
       "skillDimensions": [
@@ -7527,7 +7527,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Bận, và mình muốn kể bạn nghe tử tế — tối nay nói được không?"
+          "text": "Mình đang bận, và muốn kể cho bạn đàng hoàng — tối nay nói được không?"
         },
         {
           "id": "b",
@@ -7833,7 +7833,7 @@
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Nêu cách làm trước khiến chủ đề khó trở nên an toàn hơn để bàn."
+          "feedback": "Nêu trước cách trao đổi giúp chủ đề khó dễ bàn hơn."
         },
         "c": {
           "scores": {
@@ -7941,7 +7941,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Nhận lời rồi hôm đó huỷ."
+          "text": "Nhận lời rồi hôm đó hủy."
         },
         {
           "id": "b",
@@ -7961,7 +7961,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Huỷ đúng ngày tốn của họ hơn một lời từ chối sớm."
+          "feedback": "Hủy đúng ngày tốn của họ hơn một lời từ chối sớm."
         },
         "b": {
           "scores": {
@@ -7981,7 +7981,7 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 2
           },
-          "feedback": "Một câu \"chắc\" mơ hồ để cả hai cùng chờ."
+          "feedback": "Một câu “chắc” mơ hồ khiến cả hai cùng phải chờ."
         }
       },
       "skillDimensions": [
@@ -8014,7 +8014,7 @@
         },
         {
           "id": "b",
-          "text": "Gửi đến văn phòng nhé; đó là địa chỉ mình dùng cho việc công việc."
+          "text": "Gửi đến văn phòng nhé; đó là địa chỉ mình dùng cho công việc."
         },
         {
           "id": "c",

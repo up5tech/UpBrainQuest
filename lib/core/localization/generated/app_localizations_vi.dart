@@ -25,7 +25,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get navSettings => 'Cài đặt';
 
   @override
-  String get homeGreeting => 'Rèn luyện trí óc, mỗi ngày một thử thách';
+  String get homeGreeting => 'Rèn luyện trí óc, từng thử thách một';
 
   @override
   String get homeStartQuickQuest => 'Bắt đầu Thử thách nhanh';
@@ -149,7 +149,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get modeDailyChallengeDesc =>
-      'Thử thách 5 câu chọn theo ngày hôm nay, chạy trên máy.';
+      'Thử thách 5 câu được chọn theo ngày hôm nay, tạo trên thiết bị này.';
 
   @override
   String get sessionUntimedNote =>
@@ -221,13 +221,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get sessionNoContent => 'Chế độ này chưa có đủ câu hỏi.';
 
   @override
-  String get sessionMemoryReady => 'Tôi đã nhớ';
+  String get sessionMemoryReady => 'Sẵn sàng';
 
   @override
   String get sessionMemoryRecall => 'Nhập lại dãy';
 
   @override
-  String get sessionMemoryClear => 'Xóa';
+  String get sessionMemoryClear => 'Xóa hết';
 
   @override
   String get sessionReorderHint => 'Kéo các ô vào đúng thứ tự.';
@@ -242,13 +242,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get sessionEqReflection => 'Phản tư';
 
   @override
-  String get sessionEqFollowUp => 'Suy ngẫm thêm';
+  String get sessionEqFollowUp => 'Phản tư thêm';
 
   @override
   String get sessionYourResponse => 'Câu trả lời của bạn';
 
   @override
-  String get sessionEqScoreLabel => 'Điểm Luyện EQ';
+  String get sessionEqScoreLabel => 'Điểm luyện tập EQ';
 
   @override
   String get sessionEqScoreDisclaimer =>
@@ -313,7 +313,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get progressBestIq => 'Điểm Thử thách IQ cao nhất';
 
   @override
-  String get progressBestEq => 'Điểm Luyện EQ cao nhất';
+  String get progressBestEq => 'Điểm luyện tập EQ cao nhất';
 
   @override
   String get progressRecentTitle => 'Kết quả gần đây';
@@ -400,7 +400,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get retry => 'Thử lại';
 
   @override
-  String get sessionMemoryDelete => 'Xóa';
+  String get sessionMemoryDelete => 'Xóa một số';
 
   @override
   String get sessionCorrectSequence => 'Dãy đúng';
@@ -446,7 +446,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String sessionPairsFlipsLeft(int count) {
-    return 'Lượt lật còn lại: $count';
+    return 'Số lượt lật còn lại: $count';
   }
 
   @override

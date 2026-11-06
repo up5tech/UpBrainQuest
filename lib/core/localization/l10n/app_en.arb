@@ -69,7 +69,7 @@
   "sessionAbandonCancel": "Keep playing",
   "sessionNotAvailable": "This mode is not available yet.",
   "sessionNoContent": "There are not enough questions available for this mode yet.",
-  "sessionMemoryReady": "I memorised it",
+  "sessionMemoryReady": "Ready",
   "sessionMemoryRecall": "Reproduce the sequence",
   "sessionMemoryClear": "Clear",
   "sessionReorderHint": "Drag the tiles into the correct order.",

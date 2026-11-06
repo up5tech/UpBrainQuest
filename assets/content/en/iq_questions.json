@@ -52,7 +52,7 @@
       "difficulty": "easy",
       "locale": "en",
       "prompt": "Which number is different: 3, 5, 7, 10, 11?",
-      "instructions": "Three of the numbers share a property.",
+      "instructions": "Four of the numbers share a property.",
       "options": [
         {
           "id": "a",
@@ -364,7 +364,7 @@
       "difficulty": "hard",
       "locale": "en",
       "prompt": "Which letter comes next: C, F, J, O, ?",
-      "instructions": "Convert each letter to its position in the alphabet.",
+      "instructions": "Use the 26-letter English alphabet: A=1, B=2, and so on.",
       "options": [
         {
           "id": "a",
@@ -3009,7 +3009,7 @@
       "difficulty": "easy",
       "locale": "en",
       "status": "draft",
-      "prompt": "Hand is to glove as foot is to ___?",
+      "prompt": "A glove is a close-fitting cover for a hand. What is the close-fitting cover for a foot?",
       "instructions": "Find the relationship in the first pair and apply it to the second.",
       "options": [
         {
@@ -3031,7 +3031,7 @@
       ],
       "correctOptionId": "a",
       "explanation": "A glove covers a hand the way a sock covers a foot.",
-      "hint": "A shoe goes over the sock, not directly on the foot.",
+      "hint": "Think of the layer worn directly against the skin.",
       "estimatedSeconds": 15,
       "pointsWeight": 1,
       "tags": [

@@ -314,7 +314,7 @@
       "skill": "sequence_reorder",
       "difficulty": "hard",
       "locale": "vi",
-      "prompt": "Sắp xếp bốn người từ nhẹ nhất đến nặng nhất.",
+      "prompt": "Sắp xếp bốn người từ nặng nhất đến nhẹ nhất.",
       "instructions": "C nặng hơn A; A nặng hơn B; B nặng hơn D.",
       "explanation": "Nặng nhất trước: C, rồi A, rồi B, rồi D.",
       "hint": "Tìm người nặng nhất trước khi sắp những người còn lại.",
@@ -1017,7 +1017,7 @@
           "text": "4096"
         }
       ],
-      "explanation": "Mỗi số là vị trí lũy thừa chính nó: 1, 2², 3³, 4⁴, rồi 5⁵ = 3125.",
+      "explanation": "Mỗi số bằng vị trí của nó lũy thừa lên chính vị trí đó: 1¹, 2², 3³, 4⁴, rồi 5⁵ = 3125.",
       "hint": "Số thứ hai là 2 × 2, số thứ ba là 3 × 3 × 3.",
       "estimatedSeconds": 55,
       "pointsWeight": 1,
@@ -1148,7 +1148,7 @@
           "text": "Ngôi sao"
         }
       ],
-      "explanation": "Hình vuông có bốn cạnh thẳng bằng nhau; các hình còn lại có không, ba hoặc mười cạnh.",
+      "explanation": "Hình vuông có bốn cạnh thẳng bằng nhau; các hình còn lại lần lượt có 0, 3 và 10 cạnh.",
       "hint": "Tìm các góc vuông.",
       "estimatedSeconds": 30,
       "pointsWeight": 1,
@@ -1402,7 +1402,7 @@
       "locale": "vi",
       "status": "draft",
       "prompt": "Số nào không phải số chính phương?",
-      "instructions": "Hỏi số nào bằng một số nguyên nhân chính nó.",
+      "instructions": "Hỏi số nào là tích của một số nguyên với chính nó.",
       "expectedAnswer": [
         "d"
       ],
@@ -1557,7 +1557,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Số nào không phải lập phương đúng?",
+      "prompt": "Số nào không phải lập phương của một số nguyên?",
       "instructions": "Nhân một số nguyên với chính nó ba lần.",
       "expectedAnswer": [
         "d"
@@ -2706,19 +2706,19 @@
       "instructions": "Mỗi bước tạo lý do cho bước tiếp theo.",
       "expectedAnswer": [
         "Đặt vé",
-        "Đóng đồ",
+        "Chuẩn bị hành lý",
         "Ra sân bay",
         "Lên máy bay"
       ],
       "interactionConfig": {
         "tiles": [
           "Đặt vé",
-          "Đóng đồ",
+          "Chuẩn bị hành lý",
           "Ra sân bay",
           "Lên máy bay"
         ]
       },
-      "explanation": "Đặt vé trước, đóng đồ, ra sân bay, rồi lên máy bay.",
+      "explanation": "Đặt vé trước, chuẩn bị hành lý, ra sân bay, rồi lên máy bay.",
       "hint": "Bước nào cần vé đã đặt?",
       "estimatedSeconds": 35,
       "pointsWeight": 1,
@@ -2986,7 +2986,7 @@
           "2/3"
         ]
       },
-      "explanation": "Theo mẫu 12: 3/12, 6/12, 8/12, 9/12.",
+      "explanation": "Quy về mẫu số 12: 3/12, 6/12, 8/12, 9/12.",
       "hint": "So sánh 2/3 với 3/4 thật kỹ.",
       "estimatedSeconds": 50,
       "pointsWeight": 1,

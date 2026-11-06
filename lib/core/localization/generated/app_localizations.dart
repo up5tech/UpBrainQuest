@@ -497,7 +497,7 @@ abstract class AppLocalizations {
   /// No description provided for @sessionMemoryReady.
   ///
   /// In en, this message translates to:
-  /// **'I memorised it'**
+  /// **'Ready'**
   String get sessionMemoryReady;
 
   /// No description provided for @sessionMemoryRecall.

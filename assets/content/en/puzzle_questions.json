@@ -314,7 +314,7 @@
       "skill": "sequence_reorder",
       "difficulty": "hard",
       "locale": "en",
-      "prompt": "Arrange four people from lightest to heaviest.",
+      "prompt": "Arrange four people from heaviest to lightest.",
       "instructions": "C is heavier than A; A is heavier than B; B is heavier than D.",
       "explanation": "Heaviest first: C, then A, then B, then D.",
       "hint": "Find the heaviest person before ordering the rest.",

@@ -52,7 +52,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "prompt": "Số nào khác biệt: 3, 5, 7, 10, 11?",
-      "instructions": "Ba trong bốn số có cùng một tính chất.",
+      "instructions": "Bốn trong năm số có cùng một tính chất.",
       "options": [
         {
           "id": "a",
@@ -364,7 +364,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "prompt": "Chữ nào tiếp theo: C, F, J, O, ?",
-      "instructions": "Đổi mỗi chữ thành vị trí của nó trong bảng chữ cái.",
+      "instructions": "Theo bảng chữ cái tiếng Anh 26 chữ (A=1, B=2, …), đổi mỗi chữ thành vị trí của nó.",
       "options": [
         {
           "id": "a",
@@ -2112,7 +2112,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Mọi bút chì đều là dụng cụ. Mọi dụng cụ đều là vật thể. Câu nào bắt buộc đúng?",
+      "prompt": "Mọi bút chì đều là dụng cụ. Mọi dụng cụ đều là vật thể. Câu nào chắc chắn đúng?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2250,7 +2250,7 @@
         }
       ],
       "correctOptionId": "b",
-      "explanation": "Điều kiện đã thoả nên kết quả phải xảy ra: mặt đất ướt.",
+      "explanation": "Điều kiện đã được thỏa mãn nên kết quả phải xảy ra: mặt đất ướt.",
       "hint": "Kiểm tra xem phần \"nếu\" đã xảy ra chưa.",
       "estimatedSeconds": 20,
       "pointsWeight": 1,
@@ -2385,7 +2385,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Mọi zip đều là wap. Không wap nào là tum. Câu nào bắt buộc đúng?",
+      "prompt": "Mọi zip đều là wap. Không wap nào là tum. Câu nào chắc chắn đúng?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2463,7 +2463,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Nếu đèn sáng thì cửa đã khoá. Cửa chưa khoá. Suy ra điều gì?",
+      "prompt": "Nếu đèn sáng thì cửa đã khóa. Cửa chưa khóa. Suy ra điều gì?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2484,7 +2484,7 @@
         }
       ],
       "correctOptionId": "b",
-      "explanation": "Đèn sáng đòi hỏi cửa đã khoá; cửa chưa khoá nên đèn đang tắt.",
+      "explanation": "Đèn sáng đòi hỏi cửa đã khóa; cửa chưa khóa nên đèn đang tắt.",
       "hint": "Làm ngược từ kết quả không xảy ra.",
       "estimatedSeconds": 35,
       "pointsWeight": 1,
@@ -2736,7 +2736,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Nếu máy chủ bật thì quạt chạy. Nếu quạt chạy thì đèn nhấp nháy. Đèn không nhấp nháy. Điều gì bắt buộc đúng?",
+      "prompt": "Nếu máy chủ bật thì quạt chạy. Nếu quạt chạy thì đèn nhấp nháy. Đèn không nhấp nháy. Điều gì chắc chắn đúng?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -3009,7 +3009,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Găng tay dành cho bàn tay, ___ dành cho bàn chân?",
+      "prompt": "Găng tay là lớp phủ ôm sát bàn tay. Vật nào là lớp phủ ôm sát bàn chân?",
       "instructions": "Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.",
       "options": [
         {
@@ -3031,7 +3031,7 @@
       ],
       "correctOptionId": "a",
       "explanation": "Găng tay che bàn tay giống như tất che bàn chân.",
-      "hint": "Giày đi bên ngoài tất, không trực tiếp lên chân.",
+      "hint": "Nghĩ đến lớp mặc sát da, không phải lớp đi bên ngoài.",
       "estimatedSeconds": 15,
       "pointsWeight": 1,
       "tags": [
@@ -3365,7 +3365,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Toà nhà"
+          "text": "Tòa nhà"
         },
         {
           "id": "b",
@@ -3381,7 +3381,7 @@
         }
       ],
       "correctOptionId": "a",
-      "explanation": "Công thức là kế hoạch cho món ăn; bản thiết kế là kế hoạch cho toà nhà.",
+      "explanation": "Công thức là kế hoạch cho món ăn; bản thiết kế là kế hoạch cho tòa nhà.",
       "hint": "Cả hai từ đầu đều là kế hoạch, không phải kết quả.",
       "estimatedSeconds": 30,
       "pointsWeight": 1,
@@ -3447,7 +3447,7 @@
         },
         {
           "id": "b",
-          "text": "Toà nhà"
+          "text": "Tòa nhà"
         },
         {
           "id": "c",
@@ -3564,7 +3564,7 @@
         },
         {
           "id": "b",
-          "text": "Xoá bỏ"
+          "text": "Xóa bỏ"
         },
         {
           "id": "c",
@@ -3576,7 +3576,7 @@
         }
       ],
       "correctOptionId": "a",
-      "explanation": "Kiểm duyệt nhằm chặn nội dung; biên tập nhằm trau chuốt nội dung. Quan hệ là mục đích, không phải xoá bỏ.",
+      "explanation": "Kiểm duyệt nhằm chặn nội dung; biên tập nhằm trau chuốt nội dung. Quan hệ là mục đích, không phải xóa bỏ.",
       "hint": "Cặp từ chia sẻ mục đích, không phải sự vắng mặt.",
       "estimatedSeconds": 35,
       "pointsWeight": 1,
@@ -3867,7 +3867,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Chữ in hoa nào có trục đối xứng dọc?",
+      "prompt": "Chữ cái Latin viết hoa nào có trục đối xứng dọc?",
       "instructions": "Hình dung hình trong đầu và biến đổi từng bước một.",
       "options": [
         {
