@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:up_brain_quest/app/providers.dart';
+import 'package:up_brain_quest/core/localization/app_strings.dart';
 import 'package:up_brain_quest/core/theme/app_theme.dart';
 
 /// Root widget of the UpBrainQuest application.
@@ -21,18 +22,21 @@ class UpBrainQuestApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final bool appReducedMotion =
         ref.watch(appSettingsProvider).value?.reducedMotion ?? false;
+    final String languageCode = ref.watch(languageProvider);
 
     return MaterialApp.router(
       title: 'UpBrainQuest',
+      locale: Locale(languageCode),
       debugShowCheckedModeBanner: false,
       theme: AppTheme.dark(),
       routerConfig: router,
       localizationsDelegates: const [
+        AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: const <Locale>[Locale('en')],
+      supportedLocales: AppLocalizations.supportedLocales,
       builder: (BuildContext context, Widget? child) {
         final MediaQueryData media = MediaQuery.of(context);
         final bool reduced = media.disableAnimations || appReducedMotion;

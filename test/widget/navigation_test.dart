@@ -6,6 +6,9 @@ import 'package:up_brain_quest/core/localization/app_strings.dart';
 
 import '../support/test_app.dart';
 
+/// English strings used by assertions (the app default locale).
+final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
 /// Reads the currently selected bottom-navigation index.
 int _selectedIndex(WidgetTester tester) {
   final NavigationBar bar = tester.widget<NavigationBar>(
@@ -27,12 +30,12 @@ void main() {
 
     // The navigation shell is present and Home is the initial destination.
     expect(find.byType(NavigationBar), findsOneWidget);
-    expect(find.text(AppStrings.navHome), findsOneWidget);
-    expect(find.text(AppStrings.navExplore), findsOneWidget);
-    expect(find.text(AppStrings.navProgress), findsOneWidget);
-    expect(find.text(AppStrings.navSettings), findsOneWidget);
+    expect(find.text(enStrings.navHome), findsOneWidget);
+    expect(find.text(enStrings.navExplore), findsOneWidget);
+    expect(find.text(enStrings.navProgress), findsOneWidget);
+    expect(find.text(enStrings.navSettings), findsOneWidget);
     expect(_selectedIndex(tester), 0);
-    expect(find.text(AppStrings.homeProgressSummary), findsWidgets);
+    expect(find.text(enStrings.homeProgressSummary), findsWidgets);
 
     // Explore.
     await tester.tap(find.byType(NavigationDestination).at(1));
@@ -64,6 +67,6 @@ void main() {
     await tester.tap(find.byType(NavigationDestination).at(3));
     await tester.pumpAndSettle();
 
-    expect(find.text(AppStrings.settingsPreferences), findsWidgets);
+    expect(find.text(enStrings.settingsPreferences), findsWidgets);
   });
 }

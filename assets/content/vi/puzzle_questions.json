@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "contentPackVersion": "0.3.0-draft",
+  "items": [
+    {
+      "id": "puzzle_mem_001",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory",
+      "difficulty": "easy",
+      "locale": "vi",
+      "status": "draft",
+      "prompt": "Ghi nhớ dãy số, sau đó nhập lại theo đúng thứ tự.",
+      "instructions": "Xem các ô số, rồi chạm theo đúng thứ tự đó.",
+      "expectedAnswer": [3, 7, 1, 9],
+      "interactionConfig": {
+        "length": 4,
+        "minValue": 1,
+        "maxValue": 9
+      },
+      "explanation": "Thứ tự cần nhớ là 3, 7, 1, 9.",
+      "hint": "Gộp hai số đầu, rồi hai số cuối.",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": ["memory", "sequence"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_reorder_001",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "pattern_recognition",
+      "difficulty": "medium",
+      "locale": "vi",
+      "status": "draft",
+      "prompt": "Sắp xếp các ô theo đúng thứ tự.",
+      "instructions": "Kéo các ô để tạo thành dãy đúng.",
+      "expectedAnswer": ["a", "b", "c", "d"],
+      "interactionConfig": {
+        "tiles": ["a", "b", "c", "d"]
+      },
+      "explanation": "Thứ tự đúng là a, b, c, d.",
+      "hint": "Tìm bước đầu tiên, rồi xây dựng tiếp từ đó.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": ["reorder", "ordering"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_mem_002",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory",
+      "difficulty": "medium",
+      "locale": "vi",
+      "status": "draft",
+      "prompt": "Ghi nhớ dãy số, sau đó nhập lại theo đúng thứ tự.",
+      "instructions": "Xem các ô số, rồi chạm theo đúng thứ tự đó.",
+      "expectedAnswer": [4, 8, 2, 6, 5],
+      "interactionConfig": {
+        "length": 5,
+        "minValue": 1,
+        "maxValue": 9
+      },
+      "explanation": "Thứ tự cần nhớ là 4, 8, 2, 6, 5.",
+      "hint": "Gộp thành 48, 26, 5.",
+      "estimatedSeconds": 35,
+      "pointsWeight": 1,
+      "tags": ["memory", "sequence"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_mem_003",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory",
+      "difficulty": "hard",
+      "locale": "vi",
+      "status": "draft",
+      "prompt": "Ghi nhớ dãy dài hơn, sau đó nhập lại.",
+      "instructions": "Xem các ô số, rồi chạm theo đúng thứ tự đó.",
+      "expectedAnswer": [9, 1, 6, 3, 7, 2],
+      "interactionConfig": {
+        "length": 6,
+        "minValue": 1,
+        "maxValue": 9
+      },
+      "explanation": "Thứ tự cần nhớ là 9, 1, 6, 3, 7, 2.",
+      "hint": "Chia thành ba cặp: 91, 63, 72.",
+      "estimatedSeconds": 40,
+      "pointsWeight": 1,
+      "tags": ["memory", "sequence"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_reorder_002",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "pattern_recognition",
+      "difficulty": "easy",
+      "locale": "vi",
+      "status": "draft",
+      "prompt": "Sắp xếp thói quen buổi sáng theo thứ tự hợp lý.",
+      "instructions": "Kéo các ô để tạo thành dãy.",
+      "expectedAnswer": ["Thức dậy", "Ăn sáng", "Đi làm", "Bắt đầu làm việc"],
+      "interactionConfig": {
+        "tiles": ["Thức dậy", "Ăn sáng", "Đi làm", "Bắt đầu làm việc"]
+      },
+      "explanation": "Một thứ tự thường gặp: thức dậy, ăn sáng, đi làm, bắt đầu làm việc.",
+      "hint": "Buổi sáng việc gì xảy ra trước?",
+      "estimatedSeconds": 30,
+      "pointsWeight": 1,
+      "tags": ["reorder", "ordering"],
+      "contentVersion": 1
+    },
+    {
+      "id": "puzzle_reorder_003",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "pattern_recognition",
+      "difficulty": "medium",
+      "locale": "vi",
+      "status": "draft",
+      "prompt": "Sắp xếp các số từ nhỏ đến lớn.",
+      "instructions": "Kéo các ô để tạo thành dãy.",
+      "expectedAnswer": ["2", "5", "9", "14"],
+      "interactionConfig": {
+        "tiles": ["2", "5", "9", "14"]
+      },
+      "explanation": "Từ nhỏ đến lớn: 2, 5, 9, 14.",
+      "hint": "So sánh các số có một chữ số trước.",
+      "estimatedSeconds": 25,
+      "pointsWeight": 1,
+      "tags": ["reorder", "numbers"],
+      "contentVersion": 1
+    }
+  ]
+}

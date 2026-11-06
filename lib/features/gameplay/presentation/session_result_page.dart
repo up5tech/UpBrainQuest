@@ -91,10 +91,10 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
     final SessionResult? result = widget.result;
     if (result == null) {
       return Scaffold(
-        appBar: AppBar(title: const Text(AppStrings.sessionResultTitle)),
+        appBar: AppBar(title: Text(context.l10n.sessionResultTitle)),
         body: AppEmptyState(
-          message: AppStrings.sessionNotAvailable,
-          actionLabel: AppStrings.sessionBackHome,
+          message: context.l10n.sessionNotAvailable,
+          actionLabel: context.l10n.sessionBackHome,
           onAction: () => context.go('/'),
         ),
       );
@@ -105,9 +105,9 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
     // questions cannot be reviewed honestly, so fail closed (PLAN §5.2).
     if (!_isConsistent(data)) {
       return Scaffold(
-        appBar: AppBar(title: const Text(AppStrings.sessionResultTitle)),
+        appBar: AppBar(title: Text(context.l10n.sessionResultTitle)),
         body: AppErrorState(
-          message: AppStrings.sessionResultError,
+          message: context.l10n.sessionResultError,
           onRetry: () => context.go('/'),
         ),
       );
@@ -130,7 +130,7 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
           _AccuracyCard(data: data),
           const SizedBox(height: AppSpacing.lg),
         ],
-        Text(AppStrings.sessionReview, style: theme.textTheme.titleLarge),
+        Text(context.l10n.sessionReview, style: theme.textTheme.titleLarge),
         const SizedBox(height: AppSpacing.sm),
         for (int i = 0; i < data.questions.length; i++)
           Padding(
@@ -147,7 +147,7 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
           children: <Widget>[
             Expanded(
               child: AppButton(
-                label: AppStrings.sessionPlayAgain,
+                label: context.l10n.sessionPlayAgain,
                 variant: AppButtonVariant.outline,
                 onPressed: () {
                   ref.read(sessionControllerProvider.notifier).reset();
@@ -158,7 +158,7 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
             const SizedBox(width: AppSpacing.sm),
             Expanded(
               child: AppButton(
-                label: AppStrings.sessionBackHome,
+                label: context.l10n.sessionBackHome,
                 onPressed: () {
                   ref.read(sessionControllerProvider.notifier).reset();
                   context.go('/');
@@ -171,7 +171,7 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
     );
 
     return Scaffold(
-      appBar: AppBar(title: const Text(AppStrings.sessionResultTitle)),
+      appBar: AppBar(title: Text(context.l10n.sessionResultTitle)),
       // Restrained entrance animation. Values are final from the first frame;
       // only opacity animates, and reduced-motion users skip it entirely
       // (PLAN §8.4, Phase 5 task 7).
@@ -197,11 +197,11 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
       cards
         ..add(
           _ScoreCard(
-            label: AppStrings.sessionIqScoreLabel,
+            label: context.l10n.sessionIqScoreLabel,
             value: data.iqScore.valid && data.iqScore.score != null
                 ? data.iqScore.score!.toString()
                 : '—',
-            disclaimer: AppStrings.sessionScoreDisclaimer,
+            disclaimer: context.l10n.sessionScoreDisclaimer,
           ),
         )
         ..add(const SizedBox(height: AppSpacing.lg));
@@ -210,11 +210,11 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
       cards
         ..add(
           _ScoreCard(
-            label: AppStrings.sessionEqScoreLabel,
+            label: context.l10n.sessionEqScoreLabel,
             value: data.eqScore.valid && data.eqScore.score != null
                 ? data.eqScore.score!.toString()
                 : '—',
-            disclaimer: AppStrings.sessionEqScoreDisclaimer,
+            disclaimer: context.l10n.sessionEqScoreDisclaimer,
           ),
         )
         ..add(const SizedBox(height: AppSpacing.lg))
@@ -224,10 +224,10 @@ class _SessionResultPageState extends ConsumerState<SessionResultPage> {
     if (!hasObjective && !hasEq) {
       cards
         ..add(
-          const _ScoreCard(
-            label: AppStrings.sessionIqScoreLabel,
+          _ScoreCard(
+            label: context.l10n.sessionIqScoreLabel,
             value: '—',
-            disclaimer: AppStrings.sessionScoreDisclaimer,
+            disclaimer: context.l10n.sessionScoreDisclaimer,
           ),
         )
         ..add(const SizedBox(height: AppSpacing.lg));
@@ -245,9 +245,13 @@ String _optionText(List<QuestionOption> options, String optionId) {
 }
 
 /// The player's exact recorded response, formatted for review.
-String _playerResponse(QuestionItem item, PlayerAnswer? answer) {
+String _playerResponse(
+  AppLocalizations l10n,
+  QuestionItem item,
+  PlayerAnswer? answer,
+) {
   if (answer == null || answer is UnansweredAnswer) {
-    return AppStrings.sessionNotAnswered;
+    return l10n.sessionNotAnswered;
   }
   if (answer is SelectedOptionAnswer) {
     if (item is MultipleChoiceItem) {
@@ -284,7 +288,7 @@ String? _correctResponse(QuestionItem item) {
 }
 
 /// Per-dimension rubric summary for an EQ answer (earned / possible).
-String? _rubricSummary(AnswerEvaluation? evaluation) {
+String? _rubricSummary(AppLocalizations l10n, AnswerEvaluation? evaluation) {
   final Map<EqDimension, int>? earned = evaluation?.rubricScores;
   if (earned == null || earned.isEmpty) return null;
   final Map<EqDimension, int>? possible = evaluation?.dimensionPossible;
@@ -293,7 +297,7 @@ String? _rubricSummary(AnswerEvaluation? evaluation) {
     final int? value = earned[dimension];
     if (value == null) continue;
     final int max = possible?[dimension] ?? 0;
-    parts.add('${AppStrings.eqDimensionLabel(dimension)} $value/$max');
+    parts.add('${l10n.eqDimensionLabel(dimension)} $value/$max');
   }
   return parts.isEmpty ? null : parts.join(' · ');
 }
@@ -359,18 +363,18 @@ class _ProgressSummary extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            AppStrings.sessionQuestionsCompleted,
+            context.l10n.sessionQuestionsCompleted,
             style: theme.textTheme.titleLarge,
           ),
           const SizedBox(height: AppSpacing.xs),
           Text(
-            AppStrings.fractionOf(data.answeredCount, data.questionCount),
+            context.l10n.fractionOf(data.answeredCount, data.questionCount),
             style: theme.textTheme.bodyLarge,
           ),
           if (!data.isComplete) ...<Widget>[
             const SizedBox(height: AppSpacing.xs),
-            const Text(
-              AppStrings.sessionIncompleteNote,
+            Text(
+              context.l10n.sessionIncompleteNote,
               style: AppTypography.bodySecondary,
             ),
           ],
@@ -393,10 +397,10 @@ class _AccuracyCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(AppStrings.sessionAccuracy, style: theme.textTheme.titleLarge),
+          Text(context.l10n.sessionAccuracy, style: theme.textTheme.titleLarge),
           const SizedBox(height: AppSpacing.xs),
           Text(
-            AppStrings.correctOutOf(data.correctCount, data.objectiveCount),
+            context.l10n.correctOutOf(data.correctCount, data.objectiveCount),
             style: theme.textTheme.bodyLarge,
           ),
         ],
@@ -430,29 +434,29 @@ class _ReviewCard extends StatelessWidget {
         style: theme.textTheme.bodyLarge,
       ),
       _ReviewRow(
-        label: AppStrings.sessionYourAnswer,
-        value: _playerResponse(question, answer),
+        label: context.l10n.sessionYourAnswer,
+        value: _playerResponse(context.l10n, question, answer),
       ),
     ];
 
     if (question is EqScenarioItem) {
-      final String? rubric = _rubricSummary(evaluation);
+      final String? rubric = _rubricSummary(context.l10n, evaluation);
       if (rubric != null) {
         children.add(
-          _ReviewRow(label: AppStrings.sessionRubricSummary, value: rubric),
+          _ReviewRow(label: context.l10n.sessionRubricSummary, value: rubric),
         );
       }
       final String? feedback = evaluation?.feedback;
       if (feedback != null && feedback.isNotEmpty) {
         children.add(
-          _ReviewRow(label: AppStrings.sessionEqReflection, value: feedback),
+          _ReviewRow(label: context.l10n.sessionEqReflection, value: feedback),
         );
       }
       if (question.followUpReflection != null &&
           question.followUpReflection!.isNotEmpty) {
         children.add(
           _ReviewRow(
-            label: AppStrings.sessionEqFollowUp,
+            label: context.l10n.sessionEqFollowUp,
             value: question.followUpReflection!,
           ),
         );
@@ -461,24 +465,27 @@ class _ReviewCard extends StatelessWidget {
       final String? correct = _correctResponse(question);
       if (correct != null) {
         children.add(
-          _ReviewRow(label: AppStrings.sessionCorrectAnswer, value: correct),
+          _ReviewRow(label: context.l10n.sessionCorrectAnswer, value: correct),
         );
       }
       final String status;
       if (evaluation == null) {
         status = '—';
       } else if (evaluation!.isCorrect == true) {
-        status = AppStrings.sessionCorrect;
+        status = context.l10n.sessionCorrect;
       } else {
-        status = AppStrings.sessionIncorrect;
+        status = context.l10n.sessionIncorrect;
       }
       children.add(
-        _ReviewRow(label: AppStrings.sessionResultStatus, value: status),
+        _ReviewRow(label: context.l10n.sessionResultStatus, value: status),
       );
       final String? explanation = question.explanation;
       if (explanation != null && explanation.isNotEmpty) {
         children.add(
-          _ReviewRow(label: AppStrings.sessionExplanation, value: explanation),
+          _ReviewRow(
+            label: context.l10n.sessionExplanation,
+            value: explanation,
+          ),
         );
       }
     }
@@ -536,7 +543,7 @@ class _DimensionBreakdown extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            AppStrings.sessionEqDimensionsTitle,
+            context.l10n.sessionEqDimensionsTitle,
             style: theme.textTheme.titleLarge,
           ),
           const SizedBox(height: AppSpacing.sm),
@@ -545,7 +552,7 @@ class _DimensionBreakdown extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: AppSpacing.sm),
               child: AppProgressBar(
                 value: score.dimensionScore(dimension) / 100,
-                label: AppStrings.eqDimensionLabel(dimension),
+                label: context.l10n.eqDimensionLabel(dimension),
               ),
             ),
         ],
@@ -566,17 +573,17 @@ class _SaveBanner extends StatelessWidget {
     final (IconData icon, String text, Color color) = switch (state) {
       _SaveState.saving => (
         Icons.sync,
-        AppStrings.sessionSaving,
+        context.l10n.sessionSaving,
         AppColors.textSecondary,
       ),
       _SaveState.saved => (
         Icons.check_circle_outline,
-        AppStrings.sessionSaved,
+        context.l10n.sessionSaved,
         AppColors.positive,
       ),
       _SaveState.failed => (
         Icons.error_outline,
-        AppStrings.sessionSaveFailed,
+        context.l10n.sessionSaveFailed,
         AppColors.error,
       ),
     };
@@ -594,7 +601,7 @@ class _SaveBanner extends StatelessWidget {
           if (state == _SaveState.failed) ...<Widget>[
             const SizedBox(height: AppSpacing.xs),
             AppButton(
-              label: AppStrings.sessionSaveRetry,
+              label: context.l10n.sessionSaveRetry,
               variant: AppButtonVariant.outline,
               onPressed: onRetry,
             ),

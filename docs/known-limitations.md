@@ -29,8 +29,9 @@ These are current gaps, not defects. They are tracked so a release decision is e
 
 - **Dark theme only.** A light theme is deliberately absent; PLAN §8.2 forbids shipping
   an incomplete theme toggle.
-- **One locale (English).** The code and content are localization-ready, but no language
-  selector is shown while only `en` exists.
+- **Two locales (English, Vietnamese).** UI copy and questions are complete for both,
+  so the Settings language selector is shown. The Vietnamese text is a first-pass
+  translation and still needs native review.
 - **No audio assets.** Sound feedback uses the platform click; haptics use the platform
   API. Both respect the Settings toggles.
 - **No charts or trend lines.** Progress is shown as aggregates plus a recent-session

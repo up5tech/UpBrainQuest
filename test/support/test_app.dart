@@ -1,10 +1,12 @@
 import 'package:drift/native.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:up_brain_quest/app/app.dart';
 import 'package:up_brain_quest/app/providers.dart';
 import 'package:up_brain_quest/app/router.dart';
+import 'package:up_brain_quest/core/localization/app_strings.dart';
 import 'package:up_brain_quest/data/database/app_database.dart';
 import 'package:up_brain_quest/data/preferences/app_settings.dart';
 import 'package:up_brain_quest/data/preferences/settings_repository.dart';
@@ -16,6 +18,22 @@ class _DefaultSettingsRepository extends SettingsRepository {
     reducedMotion: false,
     soundEnabled: false,
     hapticsEnabled: false,
+  );
+}
+
+/// Wraps [home] in a [MaterialApp] that provides the app's localizations, so
+/// widgets reading `context.l10n` can be pumped on their own.
+Widget localizedTestApp(Widget home, {Locale locale = const Locale('en')}) {
+  return MaterialApp(
+    locale: locale,
+    localizationsDelegates: const [
+      AppLocalizations.delegate,
+      GlobalMaterialLocalizations.delegate,
+      GlobalWidgetsLocalizations.delegate,
+      GlobalCupertinoLocalizations.delegate,
+    ],
+    supportedLocales: AppLocalizations.supportedLocales,
+    home: home,
   );
 }
 

@@ -68,15 +68,22 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
+  # Generates AppLocalizations from the ARB files under
+  # lib/core/localization/l10n (see l10n.yaml).
+  generate: true
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
-  # Bundled, offline question content (PLAN §5.1). The trailing slash includes
-  # every file under assets/content/ recursively.
+  # Bundled, offline question content (PLAN §5.1). A directory entry bundles
+  # only the files directly inside it, so the locale folder must be listed too
+  # — without it the app ships the manifest but none of the questions.
   assets:
     - assets/content/
+    - assets/content/en/
+    - assets/content/vi/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

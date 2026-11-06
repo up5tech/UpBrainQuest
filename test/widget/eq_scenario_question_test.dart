@@ -8,6 +8,11 @@ import 'package:up_brain_quest/domain/session/answer_evaluation.dart';
 import 'package:up_brain_quest/domain/session/player_answer.dart';
 import 'package:up_brain_quest/features/gameplay/widgets/eq_scenario_question.dart';
 
+import '../support/test_app.dart';
+
+/// English strings used by assertions (the app default locale).
+final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
 EqScenarioItem _item() => const EqScenarioItem(
   id: 'eq1',
   domain: ContentDomain.eq,
@@ -47,8 +52,8 @@ void main() {
     ) async {
       PlayerAnswer? captured;
       await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
+        localizedTestApp(
+          Scaffold(
             body: EqScenarioQuestionWidget(
               item: _item(),
               onChanged: (PlayerAnswer? a) => captured = a,
@@ -74,8 +79,8 @@ void main() {
       bool tapped = false;
       final EqScenarioItem item = _item();
       await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
+        localizedTestApp(
+          Scaffold(
             body: EqScenarioQuestionWidget(
               item: item,
               submission: const SelectedOptionAnswer('a'),
@@ -100,9 +105,9 @@ void main() {
       );
 
       // EQ is non-binary: it marks "your response", never correct/incorrect.
-      expect(find.text(AppStrings.sessionYourResponse), findsOneWidget);
-      expect(find.text(AppStrings.sessionCorrect), findsNothing);
-      expect(find.text(AppStrings.sessionIncorrect), findsNothing);
+      expect(find.text(enStrings.sessionYourResponse), findsOneWidget);
+      expect(find.text(enStrings.sessionCorrect), findsNothing);
+      expect(find.text(enStrings.sessionIncorrect), findsNothing);
 
       // Tapping the locked option must not fire onChanged.
       await tester.tap(find.text('Option A'));

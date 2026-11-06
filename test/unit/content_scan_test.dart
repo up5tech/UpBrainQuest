@@ -3,77 +3,206 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:up_brain_quest/data/preferences/app_settings.dart';
 import 'package:up_brain_quest/domain/content/content_enums.dart';
 import 'package:up_brain_quest/domain/content/content_issue.dart';
+import 'package:up_brain_quest/domain/content/content_manifest.dart';
 import 'package:up_brain_quest/domain/content/content_parser.dart';
 import 'package:up_brain_quest/domain/content/question_models.dart';
 
 String _read(String path) => File(path).readAsStringSync();
 
+/// Parses the bundled pack for [locale] straight from the files on disk.
+ContentLoadSuccess _loadLocale(ContentManifest manifest, String locale) {
+  final List<String> files = manifest.filesForLocale(locale);
+  final Map<String, String> fileJsons = <String, String>{
+    for (final String file in files) file: _read('assets/content/$file'),
+  };
+  final ContentLoadResult result = ContentParser.parsePack(
+    manifestJson: _read('assets/content/manifest.json'),
+    fileJsons: fileJsons,
+    expectedLocale: locale,
+  );
+  expect(
+    result,
+    isA<ContentLoadSuccess>(),
+    reason: 'locale $locale must load into a usable bank',
+  );
+  return result as ContentLoadSuccess;
+}
+
 void main() {
-  test('every bundled content file loads without error', () {
-    final String manifestJson = _read('assets/content/manifest.json');
+  final String manifestJson = _read('assets/content/manifest.json');
+  final Map<String, dynamic> manifest =
+      jsonDecode(manifestJson) as Map<String, dynamic>;
+  final List<String> supportedLocales =
+      (manifest['supportedLocales'] as List<dynamic>)
+          .whereType<String>()
+          .toList();
 
-    // Enumerate the declared files straight from the manifest so the test stays
-    // in sync as the content pack grows.
-    final Map<String, dynamic> manifest =
-        jsonDecode(manifestJson) as Map<String, dynamic>;
-    final List<String> files = (manifest['files'] as List<dynamic>)
-        .whereType<String>()
-        .toList();
+  test('the manifest ships exactly the languages the app offers', () {
+    expect(supportedLocales, AppLanguages.supported);
+  });
 
-    final Map<String, String> fileJsons = <String, String>{};
-    for (final String file in files) {
-      fileJsons[file] = _read('assets/content/$file');
+  test('every bundled locale loads without error', () {
+    for (final String locale in supportedLocales) {
+      final ContentManifest parsed = ContentParser.parseManifest(manifestJson);
+      final List<String> files = parsed.filesForLocale(locale);
+      expect(files, isNotEmpty, reason: 'locale $locale declares no files');
+
+      final Map<String, String> fileJsons = <String, String>{
+        for (final String file in files) file: _read('assets/content/$file'),
+      };
+      final ContentLoadResult result = ContentParser.parsePack(
+        manifestJson: manifestJson,
+        fileJsons: fileJsons,
+        expectedLocale: locale,
+      );
+
+      expect(result, isA<ContentLoadSuccess>(), reason: 'locale $locale');
+      final ContentLoadSuccess success = result as ContentLoadSuccess;
+
+      expect(
+        success.errors,
+        isEmpty,
+        reason:
+            'Bundled content must not contain error-severity issues '
+            '(PLAN §5.2, Phase 2 acceptance).',
+      );
+      expect(
+        success.bank.items.length,
+        greaterThanOrEqualTo(8),
+        reason: 'The pack should contain the authored items.',
+      );
+
+      // Per-domain coverage must match the manifest's declared counts.
+      final Map<String, dynamic> expected =
+          (manifest['expectedItemCounts'] as Map<String, dynamic>?) ??
+          <String, dynamic>{};
+      for (final MapEntry<String, dynamic> entry in expected.entries) {
+        final ContentDomain? domain = ContentDomainX.tryParse(entry.key);
+        expect(domain, isNotNull, reason: 'unknown domain ${entry.key}');
+        final int actual = success.bank.items
+            .where((QuestionItem item) => item.domain == domain)
+            .length;
+        expect(
+          actual,
+          entry.value,
+          reason: 'expectedItemCounts.${entry.key} for $locale',
+        );
+      }
+
+      // No duplicate IDs within a locale.
+      final Set<String> ids = success.bank.items
+          .map((QuestionItem item) => item.id)
+          .toSet();
+      expect(ids.length, success.bank.items.length, reason: 'duplicate IDs');
+
+      // Every item is intentionally marked draft, so each one should carry a
+      // draftContent warning.
+      expect(
+        success.warnings
+            .where((ContentIssue w) => w.code == IssueCode.draftContent)
+            .length,
+        success.bank.items.length,
+      );
+
+      // Nothing may slip in from another language.
+      expect(
+        success.bank.items.every((QuestionItem item) => item.locale == locale),
+        isTrue,
+        reason: 'locale $locale must not mix in other languages',
+      );
     }
+  });
 
-    final ContentLoadResult result = ContentParser.parsePack(
-      manifestJson: manifestJson,
-      fileJsons: fileJsons,
-    );
+  test('locales stay in sync on IDs, options, answers, and rubrics', () {
+    final ContentManifest parsed = ContentParser.parseManifest(manifestJson);
+    final Map<String, ContentLoadSuccess> banks = <String, ContentLoadSuccess>{
+      for (final String locale in supportedLocales)
+        locale: _loadLocale(parsed, locale),
+    };
 
-    expect(result, isA<ContentLoadSuccess>());
-    final ContentLoadSuccess success = result as ContentLoadSuccess;
+    final Map<String, QuestionItem> reference = <String, QuestionItem>{
+      for (final QuestionItem item in banks['en']!.bank.items) item.id: item,
+    };
+    expect(reference, isNotEmpty);
 
-    expect(
-      success.errors,
-      isEmpty,
-      reason:
-          'Bundled content must not contain error-severity issues '
-          '(PLAN §5.2, Phase 2 acceptance).',
-    );
-    expect(
-      success.bank.items.length,
-      greaterThanOrEqualTo(8),
-      reason: 'The starter pack should contain the drafted items.',
-    );
+    for (final String locale in supportedLocales.where(
+      (String l) => l != 'en',
+    )) {
+      final Map<String, QuestionItem> translated = <String, QuestionItem>{
+        for (final QuestionItem item in banks[locale]!.bank.items)
+          item.id: item,
+      };
+      expect(
+        translated.keys.toSet(),
+        reference.keys.toSet(),
+        reason: '$locale must define exactly the same item IDs as en',
+      );
 
-    // Per-domain coverage must match the manifest's declared counts.
-    final Map<String, dynamic> expected =
-        (manifest['expectedItemCounts'] as Map<String, dynamic>?) ??
-        <String, dynamic>{};
-    for (final MapEntry<String, dynamic> entry in expected.entries) {
-      final ContentDomain? domain = ContentDomainX.tryParse(entry.key);
-      expect(domain, isNotNull, reason: 'unknown domain ${entry.key}');
-      final int actual = success.bank.items
-          .where((QuestionItem item) => item.domain == domain)
-          .length;
-      expect(actual, entry.value, reason: 'expectedItemCounts.${entry.key}');
+      for (final MapEntry<String, QuestionItem> entry in reference.entries) {
+        final QuestionItem source = entry.value;
+        final QuestionItem target = translated[entry.key]!;
+        expect(target.contentType, source.contentType, reason: entry.key);
+        expect(target.domain, source.domain, reason: entry.key);
+        expect(target.difficulty, source.difficulty, reason: entry.key);
+        expect(target.pointsWeight, source.pointsWeight, reason: entry.key);
+
+        if (source is MultipleChoiceItem && target is MultipleChoiceItem) {
+          expect(
+            target.correctOptionId,
+            source.correctOptionId,
+            reason: entry.key,
+          );
+          expect(
+            target.options.map((QuestionOption o) => o.id).toList(),
+            source.options.map((QuestionOption o) => o.id).toList(),
+            reason: entry.key,
+          );
+        }
+        if (source is PuzzleItem && target is PuzzleItem) {
+          if (source.contentType == ContentType.memorySequence) {
+            // Digits are language-independent and must match exactly.
+            expect(
+              target.expectedAnswer,
+              source.expectedAnswer,
+              reason: entry.key,
+            );
+          } else {
+            // Reorder tiles are translated, so only the shape has to match.
+            expect(
+              target.expectedAnswer.length,
+              source.expectedAnswer.length,
+              reason: entry.key,
+            );
+            expect(
+              (target.interactionConfig?['tiles'] as List<dynamic>?)?.length,
+              (source.interactionConfig?['tiles'] as List<dynamic>?)?.length,
+              reason: entry.key,
+            );
+          }
+        }
+        if (source is EqScenarioItem && target is EqScenarioItem) {
+          expect(
+            target.rubricByOption.keys.toSet(),
+            source.rubricByOption.keys.toSet(),
+            reason: entry.key,
+          );
+          for (final String optionId in source.rubricByOption.keys) {
+            expect(
+              target.rubricByOption[optionId]!.scores,
+              source.rubricByOption[optionId]!.scores,
+              reason: '${entry.key} rubric $optionId',
+            );
+          }
+          expect(
+            target.skillDimensions,
+            source.skillDimensions,
+            reason: entry.key,
+          );
+        }
+      }
     }
-
-    // No duplicate IDs.
-    final Set<String> ids = success.bank.items
-        .map((QuestionItem item) => item.id)
-        .toSet();
-    expect(ids.length, success.bank.items.length, reason: 'duplicate IDs');
-
-    // All starter content is intentionally marked draft, so every item should
-    // carry a draftContent warning — confirming labels are surfaced.
-    expect(
-      success.warnings
-          .where((ContentIssue w) => w.code == IssueCode.draftContent)
-          .length,
-      success.bank.items.length,
-    );
   });
 }

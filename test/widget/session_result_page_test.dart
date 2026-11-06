@@ -22,6 +22,11 @@ import 'package:up_brain_quest/domain/session/player_answer.dart';
 import 'package:up_brain_quest/domain/session/session_result.dart';
 import 'package:up_brain_quest/features/gameplay/presentation/session_result_page.dart';
 
+import '../support/test_app.dart';
+
+/// English strings used by assertions (the app default locale).
+final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
 /// Returns reduced-motion settings so the result page skips its entrance
 /// animation and renders deterministically in tests.
 class _FakeSettingsRepository extends SettingsRepository {
@@ -208,7 +213,7 @@ Future<void> _pump(
           (Ref ref) async => progress ?? _FakeProgressRepository(),
         ),
       ],
-      child: MaterialApp(home: page),
+      child: localizedTestApp(page),
     ),
   );
   await tester.pumpAndSettle();
@@ -226,33 +231,27 @@ void main() {
         history: history,
       );
 
-      expect(find.text(AppStrings.sessionIqScoreLabel), findsOneWidget);
-      expect(find.text(AppStrings.sessionEqScoreLabel), findsOneWidget);
-      expect(find.text(AppStrings.sessionSaved), findsOneWidget);
+      expect(find.text(enStrings.sessionIqScoreLabel), findsOneWidget);
+      expect(find.text(enStrings.sessionEqScoreLabel), findsOneWidget);
+      expect(find.text(enStrings.sessionSaved), findsOneWidget);
       expect(history.saves, 1);
 
       // Review reflects the player's exact recorded responses.
       expect(find.textContaining('Alpha'), findsWidgets);
+      expect(find.textContaining(enStrings.sessionCorrectAnswer), findsWidgets);
       expect(
-        find.textContaining(AppStrings.sessionCorrectAnswer),
-        findsWidgets,
-      );
-      expect(
-        find.textContaining(AppStrings.sessionRubricSummary),
+        find.textContaining(enStrings.sessionRubricSummary),
         findsOneWidget,
       );
       expect(
-        find.textContaining(AppStrings.eqDimEmotionAwareness),
+        find.textContaining(enStrings.eqDimEmotionAwareness),
         findsWidgets,
       );
       expect(find.textContaining('Listening helps.'), findsOneWidget);
 
       // The skipped question is reported honestly, with an incomplete note.
-      expect(
-        find.textContaining(AppStrings.sessionNotAnswered),
-        findsOneWidget,
-      );
-      expect(find.text(AppStrings.sessionIncompleteNote), findsOneWidget);
+      expect(find.textContaining(enStrings.sessionNotAnswered), findsOneWidget);
+      expect(find.text(enStrings.sessionIncompleteNote), findsOneWidget);
     });
 
     testWidgets('shows a retryable warning when saving fails', (
@@ -265,8 +264,8 @@ void main() {
         history: history,
       );
 
-      expect(find.text(AppStrings.sessionSaveFailed), findsOneWidget);
-      expect(find.text(AppStrings.sessionSaveRetry), findsOneWidget);
+      expect(find.text(enStrings.sessionSaveFailed), findsOneWidget);
+      expect(find.text(enStrings.sessionSaveRetry), findsOneWidget);
     });
 
     testWidgets('renders at 2x text scale without overflow', (
@@ -286,7 +285,7 @@ void main() {
       WidgetTester tester,
     ) async {
       await _pump(tester, const SessionResultPage());
-      expect(find.text(AppStrings.sessionNotAvailable), findsOneWidget);
+      expect(find.text(enStrings.sessionNotAvailable), findsOneWidget);
     });
 
     testWidgets('fails closed when the result is inconsistent', (
@@ -305,7 +304,7 @@ void main() {
       );
 
       await _pump(tester, SessionResultPage(result: bad));
-      expect(find.text(AppStrings.sessionResultError), findsOneWidget);
+      expect(find.text(enStrings.sessionResultError), findsOneWidget);
     });
   });
 }

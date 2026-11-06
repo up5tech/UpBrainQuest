@@ -31,7 +31,7 @@ class AppErrorState extends StatelessWidget {
     if (onRetry != null) {
       children
         ..add(const SizedBox(height: AppSpacing.lg))
-        ..add(AppButton(label: AppStrings.retry, onPressed: onRetry));
+        ..add(AppButton(label: context.l10n.retry, onPressed: onRetry));
     }
 
     return Center(

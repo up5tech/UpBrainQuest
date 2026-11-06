@@ -13,20 +13,25 @@ assets/content/
     iq_questions.json        # objective reasoning items (multiple_choice)
     puzzle_questions.json     # interactive puzzles (memory_sequence, reorder_sequence)
     eq_scenarios.json         # EQ scenario items (scenario_choice)
+  vi/                        # same three files, same ids, Vietnamese text
 ```
 
-Add a second language by adding `assets/content/<locale>/...` and a locale entry
-in `manifest.json` — never mix languages inside one item.
+Every locale ships its own complete copy of the item IDs: never mix languages
+inside one item, and never leave an item untranslated. `ContentLoader` only
+reads the `<locale>/` files for the active language.
 
 ## manifest.json
 
 ```json
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.2.0-draft",
-  "supportedLocales": ["en"],
-  "files": ["en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json"],
-  "expectedItemCounts": { "iq": 4, "puzzle": 2, "eq": 4 }
+  "contentPackVersion": "0.3.0-draft",
+  "supportedLocales": ["en", "vi"],
+  "files": [
+    "en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json",
+    "vi/iq_questions.json", "vi/puzzle_questions.json", "vi/eq_scenarios.json"
+  ],
+  "expectedItemCounts": { "iq": 16, "puzzle": 6, "eq": 16 }
 }
 ```
 

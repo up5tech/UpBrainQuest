@@ -28,20 +28,20 @@ class ProgressPage extends ConsumerWidget {
       progressSummaryProvider,
     );
     return Scaffold(
-      appBar: AppBar(title: const Text(AppStrings.progressTitle)),
+      appBar: AppBar(title: Text(context.l10n.progressTitle)),
       body: summary.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (Object error, StackTrace? stack) => AppErrorState(
-          message: AppStrings.progressLoadError,
+          message: context.l10n.progressLoadError,
           onRetry: () => ref.invalidate(progressSummaryProvider),
         ),
         data: (ProgressSummary data) {
           if (!data.hasHistory) {
-            return const Padding(
-              padding: EdgeInsets.all(AppSpacing.md),
+            return Padding(
+              padding: const EdgeInsets.all(AppSpacing.md),
               child: AppEmptyState(
                 icon: Icons.bar_chart_outlined,
-                message: AppStrings.progressEmpty,
+                message: context.l10n.progressEmpty,
               ),
             );
           }
@@ -73,12 +73,15 @@ class _ProgressBody extends ConsumerWidget {
           streak: ref.watch(streakProvider),
         ),
         const SizedBox(height: AppSpacing.lg),
-        Text(AppStrings.progressRecentTitle, style: theme.textTheme.titleLarge),
+        Text(
+          context.l10n.progressRecentTitle,
+          style: theme.textTheme.titleLarge,
+        ),
         const SizedBox(height: AppSpacing.sm),
         history.when(
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (Object error, StackTrace? stack) => AppErrorState(
-            message: AppStrings.progressLoadError,
+            message: context.l10n.progressLoadError,
             onRetry: () => ref.invalidate(sessionHistoryProvider),
           ),
           data: (List<SessionSummary> sessions) => Column(
@@ -109,7 +112,7 @@ class _SummaryCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            AppStrings.progressSessionsCompleted,
+            context.l10n.progressSessionsCompleted,
             style: theme.textTheme.titleLarge,
           ),
           const SizedBox(height: AppSpacing.xs),
@@ -123,14 +126,14 @@ class _SummaryCard extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 child: _ScoreStat(
-                  label: AppStrings.progressBestIq,
+                  label: context.l10n.progressBestIq,
                   value: summary.iqBest,
                 ),
               ),
               const SizedBox(width: AppSpacing.md),
               Expanded(
                 child: _ScoreStat(
-                  label: AppStrings.progressBestEq,
+                  label: context.l10n.progressBestEq,
                   value: summary.eqBest,
                 ),
               ),
@@ -178,24 +181,21 @@ class _AchievementsSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(AppStrings.achievementsTitle, style: theme.textTheme.titleLarge),
+        Text(context.l10n.achievementsTitle, style: theme.textTheme.titleLarge),
         const SizedBox(height: AppSpacing.xxs),
         Text(
           streakDays > 0
-              ? '$streakDays ${AppStrings.streakDaySuffix}'
-              : AppStrings.streakNone,
+              ? '$streakDays ${context.l10n.streakDaySuffix}'
+              : context.l10n.streakNone,
           style: AppTypography.bodySecondary,
         ),
         const SizedBox(height: AppSpacing.xxs),
-        const Text(
-          AppStrings.streakLocalNote,
-          style: AppTypography.bodySecondary,
-        ),
+        Text(context.l10n.streakLocalNote, style: AppTypography.bodySecondary),
         const SizedBox(height: AppSpacing.sm),
         achievements.when(
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (Object error, StackTrace? stack) => const Text(
-            AppStrings.achievementsLoadError,
+          error: (Object error, StackTrace? stack) => Text(
+            context.l10n.achievementsLoadError,
             style: AppTypography.bodySecondary,
           ),
           data: (List<AchievementRecord> records) => Column(
@@ -238,21 +238,21 @@ class _AchievementTile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    AppStrings.achievementTitle(record.id),
+                    context.l10n.achievementTitle(record.id),
                     style: theme.textTheme.titleLarge,
                   ),
                   Text(
-                    AppStrings.achievementDescription(record.id),
+                    context.l10n.achievementDescription(record.id),
                     style: AppTypography.bodySecondary,
                   ),
                   const SizedBox(height: AppSpacing.xs),
                   Text(
-                    AppStrings.fractionOf(record.current, record.target),
+                    context.l10n.fractionOf(record.current, record.target),
                     style: AppTypography.bodySecondary,
                   ),
                   if (record.unlocked)
-                    const Text(
-                      AppStrings.achievementUnlocked,
+                    Text(
+                      context.l10n.achievementUnlocked,
                       style: AppTypography.bodySecondary,
                     ),
                 ],
@@ -278,11 +278,11 @@ class _HistoryTile extends StatelessWidget {
     );
     final List<String> scores = <String>[
       if (session.iqScore != null)
-        '${AppStrings.sessionIqScoreLabel}: ${session.iqScore}',
+        '${context.l10n.sessionIqScoreLabel}: ${session.iqScore}',
       if (session.eqScore != null)
-        '${AppStrings.sessionEqScoreLabel}: ${session.eqScore}',
+        '${context.l10n.sessionEqScoreLabel}: ${session.eqScore}',
     ];
-    final String progress = AppStrings.fractionOf(
+    final String progress = context.l10n.fractionOf(
       session.answeredCount,
       session.questionCount,
     );
@@ -293,7 +293,7 @@ class _HistoryTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              AppStrings.gameModeLabel(session.mode),
+              context.l10n.gameModeLabel(session.mode),
               style: theme.textTheme.titleLarge,
             ),
             Text(when, style: AppTypography.bodySecondary),

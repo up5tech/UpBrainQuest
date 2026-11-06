@@ -72,8 +72,8 @@ class _SessionSetupPageState extends ConsumerState<SessionSetupPage> {
       if (mounted) {
         setState(() {
           _error = mode == GameMode.quickQuest
-              ? AppStrings.sessionQuickQuestMixUnavailable
-              : AppStrings.sessionNoContent;
+              ? context.l10n.sessionQuickQuestMixUnavailable
+              : context.l10n.sessionNoContent;
         });
       }
     } finally {
@@ -105,25 +105,25 @@ class _SessionSetupPageState extends ConsumerState<SessionSetupPage> {
         mode == GameMode.dailyChallenge;
     if (!supported) {
       return Scaffold(
-        appBar: AppBar(title: const Text(AppStrings.exploreTitle)),
+        appBar: AppBar(title: Text(context.l10n.exploreTitle)),
         body: AppErrorState(
-          message: AppStrings.sessionNotAvailable,
+          message: context.l10n.sessionNotAvailable,
           onRetry: () => context.go('/'),
         ),
       );
     }
 
     final String title = switch (mode) {
-      GameMode.quickQuest => AppStrings.modeQuickQuest,
-      GameMode.eqChallenge => AppStrings.modeEqChallenge,
-      GameMode.dailyChallenge => AppStrings.modeDailyChallenge,
-      _ => AppStrings.modeIqChallenge,
+      GameMode.quickQuest => context.l10n.modeQuickQuest,
+      GameMode.eqChallenge => context.l10n.modeEqChallenge,
+      GameMode.dailyChallenge => context.l10n.modeDailyChallenge,
+      _ => context.l10n.modeIqChallenge,
     };
     final String description = switch (mode) {
-      GameMode.quickQuest => AppStrings.modeQuickQuestDesc,
-      GameMode.eqChallenge => AppStrings.modeEqChallengeDesc,
-      GameMode.dailyChallenge => AppStrings.modeDailyChallengeDesc,
-      _ => AppStrings.modeIqChallengeDesc,
+      GameMode.quickQuest => context.l10n.modeQuickQuestDesc,
+      GameMode.eqChallenge => context.l10n.modeEqChallengeDesc,
+      GameMode.dailyChallenge => context.l10n.modeDailyChallengeDesc,
+      _ => context.l10n.modeIqChallengeDesc,
     };
 
     final AsyncValue<ContentLoadResult> content = ref.watch(contentProvider);
@@ -132,12 +132,12 @@ class _SessionSetupPageState extends ConsumerState<SessionSetupPage> {
       body: content.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (Object e, StackTrace? st) => AppErrorState(
-          message: AppStrings.sessionNoContent,
+          message: context.l10n.sessionNoContent,
           onRetry: () => ref.refresh(contentProvider),
         ),
         data: (ContentLoadResult result) {
           if (result is! ContentLoadSuccess) {
-            return const AppErrorState(message: AppStrings.sessionNoContent);
+            return AppErrorState(message: context.l10n.sessionNoContent);
           }
           final ContentBank bank = result.bank;
           final int available = const SessionBuilder().candidateCount(
@@ -145,7 +145,7 @@ class _SessionSetupPageState extends ConsumerState<SessionSetupPage> {
             bank,
           );
           if (available == 0) {
-            return const AppErrorState(message: AppStrings.sessionNoContent);
+            return AppErrorState(message: context.l10n.sessionNoContent);
           }
           final int count = switch (mode) {
             GameMode.quickQuest => 10,
@@ -191,16 +191,13 @@ class _SessionSetupPageState extends ConsumerState<SessionSetupPage> {
         const SizedBox(height: AppSpacing.lg),
         Text('$count questions', style: theme.textTheme.titleLarge),
         const SizedBox(height: AppSpacing.xs),
-        const Text(
-          AppStrings.sessionUntimedNote,
+        Text(
+          context.l10n.sessionUntimedNote,
           style: AppTypography.bodySecondary,
         ),
         if (mode == GameMode.dailyChallenge) ...<Widget>[
           const SizedBox(height: AppSpacing.sm),
-          const Text(
-            AppStrings.dailyLocalNote,
-            style: AppTypography.bodySecondary,
-          ),
+          Text(context.l10n.dailyLocalNote, style: AppTypography.bodySecondary),
         ],
         const SizedBox(height: AppSpacing.lg),
         if (_error != null) ...<Widget>[
@@ -213,7 +210,7 @@ class _SessionSetupPageState extends ConsumerState<SessionSetupPage> {
           const SizedBox(height: AppSpacing.md),
         ],
         AppButton(
-          label: _starting ? 'Starting…' : AppStrings.sessionStart,
+          label: _starting ? 'Starting…' : context.l10n.sessionStart,
           onPressed: _starting
               ? null
               : () => _start(mode, bank, count, packVersion),

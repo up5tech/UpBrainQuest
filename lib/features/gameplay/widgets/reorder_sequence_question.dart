@@ -82,8 +82,8 @@ class _ReorderSequenceQuestionWidgetState
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        const Text(
-          AppStrings.sessionReorderHint,
+        Text(
+          context.l10n.sessionReorderHint,
           style: AppTypography.bodySecondary,
         ),
         const SizedBox(height: AppSpacing.sm),
@@ -135,13 +135,15 @@ class _ReorderSequenceQuestionWidgetState
             borderRadius: BorderRadius.circular(AppRadii.card),
           ),
           child: Text(
-            correct ? AppStrings.sessionCorrect : AppStrings.sessionIncorrect,
+            correct
+                ? context.l10n.sessionCorrect
+                : context.l10n.sessionIncorrect,
             style: AppTypography.title.copyWith(color: AppColors.textOnAccent),
           ),
         ),
         const SizedBox(height: AppSpacing.md),
         Text(
-          '${AppStrings.sessionCorrectOrder}: ${_expected.join(', ')}',
+          '${context.l10n.sessionCorrectOrder}: ${_expected.join(', ')}',
           style: AppTypography.body,
         ),
       ],

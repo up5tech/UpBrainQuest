@@ -130,7 +130,7 @@ class _MemorySequenceQuestionWidgetState
         ),
         const SizedBox(height: AppSpacing.lg),
         AppButton(
-          label: AppStrings.sessionMemoryReady,
+          label: context.l10n.sessionMemoryReady,
           onPressed: _startRecall,
         ),
       ],
@@ -180,7 +180,7 @@ class _MemorySequenceQuestionWidgetState
           children: <Widget>[
             Expanded(
               child: AppButton(
-                label: AppStrings.sessionMemoryClear,
+                label: context.l10n.sessionMemoryClear,
                 variant: AppButtonVariant.outline,
                 onPressed: _clear,
               ),
@@ -188,7 +188,7 @@ class _MemorySequenceQuestionWidgetState
             const SizedBox(width: AppSpacing.sm),
             Expanded(
               child: AppButton(
-                label: AppStrings.sessionMemoryDelete,
+                label: context.l10n.sessionMemoryDelete,
                 variant: AppButtonVariant.outline,
                 onPressed: _backspace,
               ),
@@ -226,22 +226,22 @@ class _MemorySequenceQuestionWidgetState
           ),
           child: Text(
             correct
-                ? '${AppStrings.sessionCorrect} — '
-                      '${AppStrings.sessionMemoryRecall}'
-                : '${AppStrings.sessionIncorrect} — '
-                      '${AppStrings.sessionMemoryRecall}',
+                ? '${context.l10n.sessionCorrect} — '
+                      '${context.l10n.sessionMemoryRecall}'
+                : '${context.l10n.sessionIncorrect} — '
+                      '${context.l10n.sessionMemoryRecall}',
             style: AppTypography.title.copyWith(color: AppColors.textOnAccent),
           ),
         ),
         const SizedBox(height: AppSpacing.md),
         Text(
-          '${AppStrings.sessionCorrectSequence}: ${_expected.join(', ')}',
+          '${context.l10n.sessionCorrectSequence}: ${_expected.join(', ')}',
           style: AppTypography.body,
         ),
         if (playerInput.isNotEmpty) ...<Widget>[
           const SizedBox(height: AppSpacing.xs),
           Text(
-            '${AppStrings.sessionYourSequence}: ${playerInput.join(', ')}',
+            '${context.l10n.sessionYourSequence}: ${playerInput.join(', ')}',
             style: AppTypography.bodySecondary,
           ),
         ],

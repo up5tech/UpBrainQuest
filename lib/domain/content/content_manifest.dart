@@ -18,6 +18,14 @@ class ContentManifest {
   final List<String> files;
   final Map<String, int>? expectedItemCounts;
 
+  /// Whether this pack ships content for [locale].
+  bool supportsLocale(String locale) => supportedLocales.contains(locale);
+
+  /// Files that belong to [locale] (paths are locale-prefixed, e.g.
+  /// `vi/iq_questions.json`).
+  List<String> filesForLocale(String locale) =>
+      files.where((String file) => file.startsWith('$locale/')).toList();
+
   /// Parses the manifest envelope. Throws [ContentFieldException] when a
   /// required field is missing so the caller can convert it into a typed
   /// failure.

@@ -9,6 +9,7 @@ abstract final class SettingsKeys {
   static const String reducedMotion = 'settings.reducedMotion';
   static const String soundEnabled = 'settings.soundEnabled';
   static const String hapticsEnabled = 'settings.hapticsEnabled';
+  static const String languageCode = 'settings.languageCode';
 }
 
 /// Reads and writes lightweight UI preferences.
@@ -33,10 +34,16 @@ class SettingsRepository {
         await _preferences.getBool(SettingsKeys.soundEnabled) ?? true;
     final bool hapticsEnabled =
         await _preferences.getBool(SettingsKeys.hapticsEnabled) ?? true;
+    // A code saved by a build that shipped another language, or a corrupt
+    // value, falls back to English instead of showing an empty screen.
+    final String languageCode = AppLanguages.resolve(
+      await _preferences.getString(SettingsKeys.languageCode),
+    );
     return AppSettings(
       reducedMotion: reducedMotion,
       soundEnabled: soundEnabled,
       hapticsEnabled: hapticsEnabled,
+      languageCode: languageCode,
     );
   }
 
@@ -50,5 +57,11 @@ class SettingsRepository {
 
   Future<void> setHapticsEnabled(bool value) async {
     await _preferences.setBool(SettingsKeys.hapticsEnabled, value);
+  }
+
+  /// Stores [languageCode]; unsupported codes are ignored.
+  Future<void> setLanguageCode(String languageCode) async {
+    if (!AppLanguages.isSupported(languageCode)) return;
+    await _preferences.setString(SettingsKeys.languageCode, languageCode);
   }
 }

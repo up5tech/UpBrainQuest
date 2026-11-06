@@ -81,18 +81,18 @@ class _MultipleChoiceQuestionWidgetState
             borderColor = AppColors.positive;
             trailingIcon = Icons.check_circle;
             iconColor = AppColors.positive;
-            statusLabel = AppStrings.sessionCorrect;
+            statusLabel = context.l10n.sessionCorrect;
           } else {
             borderColor = AppColors.error;
             trailingIcon = Icons.cancel;
             iconColor = AppColors.error;
-            statusLabel = AppStrings.sessionIncorrect;
+            statusLabel = context.l10n.sessionIncorrect;
           }
         } else if (option.id == correctId) {
           borderColor = AppColors.positive;
           trailingIcon = Icons.check_circle_outline;
           iconColor = AppColors.positive;
-          statusLabel = AppStrings.sessionCorrect;
+          statusLabel = context.l10n.sessionCorrect;
         }
       } else if (option.id == _selectedId) {
         borderColor = AppColors.primary;

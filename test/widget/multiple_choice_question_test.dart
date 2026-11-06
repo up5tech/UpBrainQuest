@@ -8,6 +8,11 @@ import 'package:up_brain_quest/domain/session/answer_evaluation.dart';
 import 'package:up_brain_quest/domain/session/player_answer.dart';
 import 'package:up_brain_quest/features/gameplay/widgets/multiple_choice_question.dart';
 
+import '../support/test_app.dart';
+
+/// English strings used by assertions (the app default locale).
+final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
 MultipleChoiceItem _item() => const MultipleChoiceItem(
   id: 'q1',
   domain: ContentDomain.iq,
@@ -34,8 +39,8 @@ void main() {
     ) async {
       PlayerAnswer? captured;
       await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
+        localizedTestApp(
+          Scaffold(
             body: MultipleChoiceQuestionWidget(
               item: _item(),
               onChanged: (PlayerAnswer? a) => captured = a,
@@ -61,8 +66,8 @@ void main() {
       bool tapped = false;
       final MultipleChoiceItem item = _item();
       await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
+        localizedTestApp(
+          Scaffold(
             body: MultipleChoiceQuestionWidget(
               item: item,
               submission: const SelectedOptionAnswer('b'),
@@ -81,7 +86,7 @@ void main() {
       );
 
       // The correct option is marked with the positive label.
-      expect(find.text(AppStrings.sessionCorrect), findsWidgets);
+      expect(find.text(enStrings.sessionCorrect), findsWidgets);
       // Tapping the locked option must not fire onChanged.
       await tester.tap(find.text('Option B'));
       await tester.pumpAndSettle();

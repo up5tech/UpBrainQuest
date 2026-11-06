@@ -53,16 +53,16 @@ class _GameplayPageState extends ConsumerState<GameplayPage> {
       showDialog<bool>(
         context: context,
         builder: (BuildContext ctx) => AlertDialog(
-          title: const Text(AppStrings.sessionAbandonTitle),
-          content: const Text(AppStrings.sessionAbandonBody),
+          title: Text(context.l10n.sessionAbandonTitle),
+          content: Text(context.l10n.sessionAbandonBody),
           actions: <Widget>[
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(false),
-              child: const Text(AppStrings.sessionAbandonCancel),
+              child: Text(context.l10n.sessionAbandonCancel),
             ),
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(true),
-              child: const Text(AppStrings.sessionAbandonConfirm),
+              child: Text(context.l10n.sessionAbandonConfirm),
             ),
           ],
         ),
@@ -103,19 +103,19 @@ class _GameplayPageState extends ConsumerState<GameplayPage> {
       loading: () =>
           const Scaffold(body: Center(child: CircularProgressIndicator())),
       error: (Object e, StackTrace? st) => Scaffold(
-        appBar: AppBar(title: const Text(AppStrings.modeIqChallenge)),
+        appBar: AppBar(title: Text(context.l10n.modeIqChallenge)),
         body: AppErrorState(
-          message: AppStrings.sessionNotAvailable,
+          message: context.l10n.sessionNotAvailable,
           onRetry: () => ref.read(sessionControllerProvider.notifier).reset(),
         ),
       ),
       data: (SessionControllerState controllerState) {
         if (controllerState is! ActiveSession) {
           return Scaffold(
-            appBar: AppBar(title: const Text(AppStrings.modeIqChallenge)),
+            appBar: AppBar(title: Text(context.l10n.modeIqChallenge)),
             body: AppEmptyState(
-              message: AppStrings.sessionNotAvailable,
-              actionLabel: AppStrings.sessionBackHome,
+              message: context.l10n.sessionNotAvailable,
+              actionLabel: context.l10n.sessionBackHome,
               onAction: () => context.go('/'),
             ),
           );
@@ -147,11 +147,13 @@ class _GameplayPageState extends ConsumerState<GameplayPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('${AppStrings.sessionQuestionOf} ${index + 1} / $total'),
+          title: Text(
+            '${context.l10n.sessionQuestionOf} ${index + 1} / $total',
+          ),
           leading: IconButton(
             icon: const Icon(Icons.close),
             onPressed: _confirmAbandon,
-            tooltip: AppStrings.sessionAbandonTitle,
+            tooltip: context.l10n.sessionAbandonTitle,
           ),
         ),
         body: Column(
@@ -165,7 +167,7 @@ class _GameplayPageState extends ConsumerState<GameplayPage> {
               ),
               child: AppProgressBar(
                 value: index / total,
-                label: '${AppStrings.sessionAccuracy} · ${index + 1}/$total',
+                label: '${context.l10n.sessionAccuracy} · ${index + 1}/$total',
               ),
             ),
             Expanded(
@@ -274,8 +276,8 @@ class _PromptCard extends StatelessWidget {
         : null;
     final List<Widget> columnChildren = <Widget>[
       if (eqItem != null && eqItem.scenarioContext.isNotEmpty) ...<Widget>[
-        const Text(
-          AppStrings.sessionEqScenarioContext,
+        Text(
+          context.l10n.sessionEqScenarioContext,
           style: AppTypography.bodySecondary,
         ),
         const SizedBox(height: AppSpacing.xs),
@@ -310,10 +312,7 @@ class _HintTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ExpansionTile(
-      title: const Text(
-        AppStrings.sessionHint,
-        style: AppTypography.bodySecondary,
-      ),
+      title: Text(context.l10n.sessionHint, style: AppTypography.bodySecondary),
       children: <Widget>[
         Padding(
           padding: const EdgeInsets.all(AppSpacing.sm),
@@ -333,11 +332,11 @@ class _FeedbackCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    String heading = AppStrings.sessionExplanation;
+    String heading = context.l10n.sessionExplanation;
     String body = item.explanation ?? evaluation.feedback ?? '';
 
     if (item is EqScenarioItem) {
-      heading = AppStrings.sessionEqReflection;
+      heading = context.l10n.sessionEqReflection;
       final EqScenarioItem eq = item as EqScenarioItem;
       final StringBuffer buffer = StringBuffer();
       if (evaluation.feedback != null && evaluation.feedback!.isNotEmpty) {
@@ -346,7 +345,7 @@ class _FeedbackCard extends StatelessWidget {
       if (eq.followUpReflection != null && eq.followUpReflection!.isNotEmpty) {
         if (buffer.isNotEmpty) buffer.write('\n\n');
         buffer.write(
-          '${AppStrings.sessionEqFollowUp}\n${eq.followUpReflection}',
+          '${context.l10n.sessionEqFollowUp}\n${eq.followUpReflection}',
         );
       }
       body = buffer.toString();
@@ -389,12 +388,12 @@ class _ActionBar extends StatelessWidget {
       ),
       child: answered
           ? AppButton(
-              label: AppStrings.sessionContinue,
+              label: context.l10n.sessionContinue,
               onPressed: onContinue,
               fullWidth: true,
             )
           : AppButton(
-              label: AppStrings.sessionSubmit,
+              label: context.l10n.sessionSubmit,
               onPressed: canSubmit ? onSubmit : null,
               fullWidth: true,
             ),

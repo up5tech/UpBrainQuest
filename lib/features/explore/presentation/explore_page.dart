@@ -14,56 +14,55 @@ import 'package:up_brain_quest/core/widgets/mode_card.dart';
 class ExplorePage extends StatelessWidget {
   const ExplorePage({super.key});
 
-  static const List<_ExploreMode> _modes = <_ExploreMode>[
-    _ExploreMode(
-      AppStrings.modeQuickQuest,
-      AppStrings.modeQuickQuestDesc,
-      Icons.flash_on_outlined,
-      '/session/setup/quick',
-    ),
-    _ExploreMode(
-      AppStrings.modeIqChallenge,
-      AppStrings.modeIqChallengeDesc,
-      Icons.psychology_outlined,
-      '/session/setup/iq',
-    ),
-    _ExploreMode(
-      AppStrings.modePuzzleSprint,
-      AppStrings.modePuzzleSprintDesc,
-      Icons.grid_view_outlined,
-      null,
-    ),
-    _ExploreMode(
-      AppStrings.modeEqChallenge,
-      AppStrings.modeEqChallengeDesc,
-      Icons.favorite_outline,
-      '/session/setup/eq',
-    ),
-  ];
-
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
+    final List<_ExploreMode> modes = <_ExploreMode>[
+      _ExploreMode(
+        context.l10n.modeQuickQuest,
+        context.l10n.modeQuickQuestDesc,
+        Icons.flash_on_outlined,
+        '/session/setup/quick',
+      ),
+      _ExploreMode(
+        context.l10n.modeIqChallenge,
+        context.l10n.modeIqChallengeDesc,
+        Icons.psychology_outlined,
+        '/session/setup/iq',
+      ),
+      _ExploreMode(
+        context.l10n.modePuzzleSprint,
+        context.l10n.modePuzzleSprintDesc,
+        Icons.grid_view_outlined,
+        null,
+      ),
+      _ExploreMode(
+        context.l10n.modeEqChallenge,
+        context.l10n.modeEqChallengeDesc,
+        Icons.favorite_outline,
+        '/session/setup/eq',
+      ),
+    ];
     return Scaffold(
-      appBar: AppBar(title: const Text(AppStrings.exploreTitle)),
+      appBar: AppBar(title: Text(context.l10n.exploreTitle)),
       body: ListView(
         padding: const EdgeInsets.all(AppSpacing.md),
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(bottom: AppSpacing.md),
             child: Text(
-              AppStrings.exploreSubtitle,
+              context.l10n.exploreSubtitle,
               style: theme.textTheme.bodyMedium,
             ),
           ),
-          for (final _ExploreMode mode in _modes)
+          for (final _ExploreMode mode in modes)
             Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.md),
               child: ModeCard(
                 title: mode.title,
                 description: mode.description,
                 icon: mode.icon,
-                badge: mode.route == null ? AppStrings.comingSoon : null,
+                badge: mode.route == null ? context.l10n.comingSoon : null,
                 onTap: mode.route == null
                     ? () => _notify(context)
                     : () => context.go(mode.route!),
@@ -75,9 +74,8 @@ class ExplorePage extends StatelessWidget {
   }
 
   void _notify(BuildContext context) {
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text(AppStrings.notAvailableYet)));
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(context.l10n.notAvailableYet)));
   }
 }
 

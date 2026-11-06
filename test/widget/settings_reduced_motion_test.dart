@@ -7,6 +7,9 @@ import 'package:up_brain_quest/data/preferences/settings_repository.dart';
 
 import '../support/test_app.dart';
 
+/// English strings used by assertions (the app default locale).
+final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
 /// In-memory [SettingsRepository] used to verify the UI toggles are persisted
 /// without depending on the platform shared-preferences backend in tests.
 ///
@@ -48,7 +51,7 @@ void main() {
     await tester.pumpAndSettle();
 
     final Finder reducedMotionTile = find.ancestor(
-      of: find.text(AppStrings.settingReducedMotion),
+      of: find.text(enStrings.settingReducedMotion),
       matching: find.byType(SwitchListTile),
     );
     expect(reducedMotionTile, findsOneWidget);

@@ -1,11 +1,17 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.2.0-draft",
-  "supportedLocales": ["en"],
+  "contentPackVersion": "0.3.0-draft",
+  "supportedLocales": [
+    "en",
+    "vi"
+  ],
   "files": [
     "en/iq_questions.json",
     "en/puzzle_questions.json",
-    "en/eq_scenarios.json"
+    "en/eq_scenarios.json",
+    "vi/iq_questions.json",
+    "vi/puzzle_questions.json",
+    "vi/eq_scenarios.json"
   ],
   "expectedItemCounts": {
     "iq": 16,

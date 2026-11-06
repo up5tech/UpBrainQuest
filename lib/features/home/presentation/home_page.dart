@@ -25,47 +25,46 @@ import 'package:up_brain_quest/domain/history/progress_summary.dart';
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});
 
-  static const List<_ModeEntry> _modes = <_ModeEntry>[
-    _ModeEntry(
-      AppStrings.modeQuickQuest,
-      AppStrings.modeQuickQuestDesc,
-      Icons.flash_on_outlined,
-      '/session/setup/quick',
-    ),
-    _ModeEntry(
-      AppStrings.modeIqChallenge,
-      AppStrings.modeIqChallengeDesc,
-      Icons.psychology_outlined,
-      '/session/setup/iq',
-    ),
-    _ModeEntry(
-      AppStrings.modePuzzleSprint,
-      AppStrings.modePuzzleSprintDesc,
-      Icons.grid_view_outlined,
-      null,
-    ),
-    _ModeEntry(
-      AppStrings.modeEqChallenge,
-      AppStrings.modeEqChallengeDesc,
-      Icons.favorite_outline,
-      '/session/setup/eq',
-    ),
-  ];
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final ThemeData theme = Theme.of(context);
+    final List<_ModeEntry> modes = <_ModeEntry>[
+      _ModeEntry(
+        context.l10n.modeQuickQuest,
+        context.l10n.modeQuickQuestDesc,
+        Icons.flash_on_outlined,
+        '/session/setup/quick',
+      ),
+      _ModeEntry(
+        context.l10n.modeIqChallenge,
+        context.l10n.modeIqChallengeDesc,
+        Icons.psychology_outlined,
+        '/session/setup/iq',
+      ),
+      _ModeEntry(
+        context.l10n.modePuzzleSprint,
+        context.l10n.modePuzzleSprintDesc,
+        Icons.grid_view_outlined,
+        null,
+      ),
+      _ModeEntry(
+        context.l10n.modeEqChallenge,
+        context.l10n.modeEqChallengeDesc,
+        Icons.favorite_outline,
+        '/session/setup/eq',
+      ),
+    ];
     final AsyncValue<DailyStatus> daily = ref.watch(dailyStatusProvider);
     final bool dailyDone = daily.value?.completedDailyChallenge ?? false;
     return Scaffold(
-      appBar: AppBar(title: const Text(AppStrings.appName)),
+      appBar: AppBar(title: Text(context.l10n.appName)),
       body: ListView(
         padding: const EdgeInsets.all(AppSpacing.md),
         children: <Widget>[
           _HeroCard(onStart: () => context.go('/session/setup/quick')),
           const SizedBox(height: AppSpacing.lg),
           Text(
-            AppStrings.homeProgressSummary,
+            context.l10n.homeProgressSummary,
             style: theme.textTheme.titleLarge,
           ),
           const SizedBox(height: AppSpacing.sm),
@@ -76,14 +75,14 @@ class HomePage extends ConsumerWidget {
             streak: ref.watch(streakProvider),
           ),
           const SizedBox(height: AppSpacing.lg),
-          ..._modes.map(
+          ...modes.map(
             (entry) => Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.md),
               child: ModeCard(
                 title: entry.title,
                 description: entry.description,
                 icon: entry.icon,
-                badge: entry.route == null ? AppStrings.comingSoon : null,
+                badge: entry.route == null ? context.l10n.comingSoon : null,
                 onTap: entry.route == null
                     ? () => _showNotReady(context)
                     : () => context.go(entry.route!),
@@ -93,10 +92,10 @@ class HomePage extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: AppSpacing.md),
             child: ModeCard(
-              title: AppStrings.modeDailyChallenge,
-              description: AppStrings.modeDailyChallengeDesc,
+              title: context.l10n.modeDailyChallenge,
+              description: context.l10n.modeDailyChallengeDesc,
               icon: Icons.calendar_today_outlined,
-              badge: dailyDone ? AppStrings.dailyDoneToday : null,
+              badge: dailyDone ? context.l10n.dailyDoneToday : null,
               onTap: () => context.go('/session/setup/daily'),
             ),
           ),
@@ -106,9 +105,8 @@ class HomePage extends ConsumerWidget {
   }
 
   void _showNotReady(BuildContext context) {
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text(AppStrings.notAvailableYet)));
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(context.l10n.notAvailableYet)));
   }
 }
 
@@ -127,16 +125,16 @@ class _HomeProgress extends StatelessWidget {
         child: Center(child: CircularProgressIndicator()),
       ),
       error: (Object error, StackTrace? stack) =>
-          const AppEmptyState(message: AppStrings.homeProgressError),
+          AppEmptyState(message: context.l10n.homeProgressError),
       data: (ProgressSummary data) {
         if (!data.hasHistory) {
-          return const AppEmptyState(message: AppStrings.homeNoProgress);
+          return AppEmptyState(message: context.l10n.homeNoProgress);
         }
         final List<String> bests = <String>[
           if (data.iqBest != null)
-            '${AppStrings.progressBestIq}: ${data.iqBest}',
+            '${context.l10n.progressBestIq}: ${data.iqBest}',
           if (data.eqBest != null)
-            '${AppStrings.progressBestEq}: ${data.eqBest}',
+            '${context.l10n.progressBestEq}: ${data.eqBest}',
         ];
         return AppCard(
           child: Column(
@@ -146,8 +144,8 @@ class _HomeProgress extends StatelessWidget {
                 data.completedCount.toString(),
                 style: theme.textTheme.headlineMedium,
               ),
-              const Text(
-                AppStrings.progressSessionsCompleted,
+              Text(
+                context.l10n.progressSessionsCompleted,
                 style: AppTypography.bodySecondary,
               ),
               if (bests.isNotEmpty) ...<Widget>[
@@ -196,7 +194,7 @@ class _HomeAchievements extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 child: Text(
-                  AppStrings.achievementsTitle,
+                  context.l10n.achievementsTitle,
                   style: theme.textTheme.titleLarge,
                 ),
               ),
@@ -206,18 +204,18 @@ class _HomeAchievements extends StatelessWidget {
           const SizedBox(height: AppSpacing.xs),
           if (next != null)
             Text(
-              '${AppStrings.achievementTitle(next.id)} · '
+              '${context.l10n.achievementTitle(next.id)} · '
               '${next.current}/${next.target}',
               style: AppTypography.bodySecondary,
             ),
           Text(
             streakDays > 0
-                ? '$streakDays ${AppStrings.streakDaySuffix}'
-                : AppStrings.streakNone,
+                ? '$streakDays ${context.l10n.streakDaySuffix}'
+                : context.l10n.streakNone,
             style: AppTypography.bodySecondary,
           ),
-          const Text(
-            AppStrings.streakLocalNote,
+          Text(
+            context.l10n.streakLocalNote,
             style: AppTypography.bodySecondary,
           ),
         ],
@@ -252,14 +250,14 @@ class _HeroCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(AppStrings.appName, style: theme.textTheme.displaySmall),
+          Text(context.l10n.appName, style: theme.textTheme.displaySmall),
           const SizedBox(height: AppSpacing.sm),
-          Text(AppStrings.homeGreeting, style: theme.textTheme.bodyMedium),
+          Text(context.l10n.homeGreeting, style: theme.textTheme.bodyMedium),
           const SizedBox(height: AppSpacing.lg),
           SizedBox(
             width: double.infinity,
             child: AppButton(
-              label: AppStrings.homeStartQuickQuest,
+              label: context.l10n.homeStartQuickQuest,
               onPressed: onStart,
             ),
           ),

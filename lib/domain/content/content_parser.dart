@@ -30,6 +30,7 @@ class ContentParser {
   static ContentLoadResult parsePack({
     required String manifestJson,
     required Map<String, String> fileJsons,
+    String? expectedLocale,
   }) {
     final List<ContentIssue> issues = <ContentIssue>[];
 
@@ -59,6 +60,11 @@ class ContentParser {
     }
 
     for (final String file in manifest.files) {
+      // Files for other languages are not part of this load, so their absence
+      // from [fileJsons] is expected rather than an error.
+      if (expectedLocale != null && !file.startsWith('$expectedLocale/')) {
+        continue;
+      }
       if (!fileJsons.containsKey(file)) {
         issues.add(
           ContentIssue(
@@ -122,6 +128,22 @@ class ContentParser {
         );
         if (outcome.item != null) {
           final String id = outcome.item!.id;
+          if (expectedLocale != null &&
+              outcome.item!.locale != expectedLocale) {
+            issues
+              ..add(
+                ContentIssue(
+                  severity: IssueSeverity.error,
+                  code: IssueCode.unsupportedLocale,
+                  message:
+                      'Item $id declares locale "${outcome.item!.locale}" but '
+                      'the pack was loaded for "$expectedLocale".',
+                  itemId: id,
+                ),
+              )
+              ..addAll(outcome.issues);
+            continue;
+          }
           if (seenIds.contains(id)) {
             issues.add(
               ContentIssue(

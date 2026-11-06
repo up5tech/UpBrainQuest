@@ -75,24 +75,34 @@ achievement tiles, and history tiles were reflowed from tight `Row`s into column
 
 Current state:
 
-- **All UI copy lives in `lib/core/localization/app_strings.dart`.** Phase 8 moved
-  the last hardcoded gameplay strings ("Delete", "Correct sequence", "Your
-  sequence", "Correct order", "Retry") and added count-format helpers.
-- The app declares `supportedLocales: [Locale('en')]` and shows **no language
-  selector**, so there is no nonfunctional control.
-- Content is locale-scoped: `assets/content/en/…`, with `supportedLocales` and
-  `files` declared in `assets/content/manifest.json`.
+- **UI copy lives in ARB files:** `lib/core/localization/l10n/app_en.arb` and
+  `app_vi.arb`, compiled by `flutter gen-l10n` into
+  `lib/core/localization/generated/`. Widgets read copy through
+  `context.l10n`; `lib/core/localization/app_strings.dart` is the barrel that
+  re-exports the generated API.
+- `AppStrings` no longer exists as a hand-maintained class. Never hardcode a
+  user-visible string in widget code.
+- The app ships **English and Vietnamese**, with a working language selector in
+  Settings (`AppLanguages.supported`). The selector is only present because UI
+  copy and question content are complete for both.
+- Content is locale-scoped: `assets/content/<locale>/…`, with `supportedLocales`
+  and `files` declared in `assets/content/manifest.json`. `ContentLoader` reads
+  only the active language's files, and `ContentParser` rejects an item whose
+  `locale` does not match the pack being loaded.
 - Dates use `intl`'s `DateFormat`, which is locale-aware once locale data is loaded.
 
-To add a second locale (only when translations are complete):
+To add another locale (only when translations are complete):
 
-1. Add `assets/content/<locale>/…` with matching item IDs and translations, and list
-   the locale in the manifest.
-2. Translate `AppStrings` (or migrate to ARB + `gen_l10n`) and add the locale to
-   `MaterialApp.supportedLocales` / `localizationsDelegates`.
-3. Add a locale setting only after both UI and content are complete; keep the
-   selector hidden otherwise.
-4. Re-run `content_scan_test` so the new pack is validated.
+1. Add `assets/content/<locale>/…` with the same item IDs and translated text, and
+   list the locale plus its files in the manifest. Register the folder in
+   `pubspec.yaml` (`assets/content/<locale>/`) — declaring only `assets/content/`
+   does not bundle subdirectories.
+2. Add `lib/core/localization/l10n/app_<locale>.arb` with every key from
+   `app_en.arb`, then run `flutter gen-l10n`.
+3. Add the code to `AppLanguages.supported`; `supportedLocales` follows the ARB
+   set, and `manifest.supportedLocales` must match it (a test enforces this).
+4. Run `content_scan_test` (per-item parity with `en`) and the language-switch
+   widget test.
 
 ## 6. Known limitations
 
@@ -100,5 +110,7 @@ To add a second locale (only when translations are complete):
 - Puzzle coverage is 6 items (sufficient for Quick Quest's 2-item target, thin for a
   future Puzzle Sprint mode).
 - No audio assets; sound feedback uses the platform click.
-- One locale (English); no illustrations beyond Material icons, so no third-party
-  asset licensing is involved.
+- Two locales (English, Vietnamese), both complete for UI copy and content. The
+  Vietnamese translation is machine-authored and still needs native review.
+- No illustrations beyond Material icons, so no third-party asset licensing is
+  involved.

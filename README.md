@@ -228,7 +228,7 @@ Regenerate with `dart run build_runner build`. Never hand-edit `*.g.dart`.
 
 - Content is still `status: draft`; a human copy-edit and EQ review is recommended.
 - Puzzle coverage is 6 items; Puzzle Sprint is not playable yet.
-- Dark theme only; one locale (English); no audio assets.
+- Dark theme only; UI and content ship in English and Vietnamese; no audio assets.
 - Release signing is not configured (debug key on Android, unsigned iOS).
 - The Android toolchain on this machine has no emulator; the iOS simulator is the
   verified runtime target.

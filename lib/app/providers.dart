@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:up_brain_quest/data/content/content_loader.dart';
 import 'package:up_brain_quest/data/content/content_repository.dart';
 import 'package:up_brain_quest/data/database/app_database.dart';
 import 'package:up_brain_quest/data/database/app_database_opener.dart';
@@ -65,7 +66,26 @@ class AppSettingsNotifier extends AsyncNotifier<AppSettings> {
     await ref.read(settingsRepositoryProvider).setHapticsEnabled(value);
     state = AsyncData<AppSettings>(current.copyWith(hapticsEnabled: value));
   }
+
+  /// Switches the UI and question language. Unsupported codes are ignored so a
+  /// bad value can never leave the app without copy (PLAN §8.3).
+  Future<void> setLanguageCode(String value) async {
+    final AppSettings? current = state.value;
+    if (current == null || !AppLanguages.isSupported(value)) return;
+    await ref.read(settingsRepositoryProvider).setLanguageCode(value);
+    state = AsyncData<AppSettings>(current.copyWith(languageCode: value));
+  }
 }
+
+/// Active language code for UI copy and bundled questions.
+///
+/// Falls back to English while settings load, so the first frame always has
+/// copy rather than an empty screen.
+final Provider<String> languageProvider = Provider<String>((Ref ref) {
+  return AppLanguages.resolve(
+    ref.watch(appSettingsProvider).value?.languageCode,
+  );
+});
 
 /// Provider exposing the local [AppDatabase].
 ///
@@ -88,7 +108,11 @@ final FutureProvider<AppDatabase> appDatabaseProvider =
 /// The repository reads the bundled JSON question pack — the single source of
 /// truth for questions (PLAN §5.1, §7.4). It performs no network access.
 final Provider<ContentRepository> contentRepositoryProvider =
-    Provider<ContentRepository>((Ref ref) => const ContentRepository());
+    Provider<ContentRepository>((Ref ref) {
+      return ContentRepository(
+        ContentLoader(locale: ref.watch(languageProvider)),
+      );
+    });
 
 /// Loads and validates the bundled content pack.
 ///

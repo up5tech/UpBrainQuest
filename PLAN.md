@@ -79,7 +79,7 @@ A balanced mixed session combining reasoning, memory/pattern puzzles, and EQ sce
 
 - Default length: 10 questions.
 - Target duration: 5–8 minutes.
-- Recommended initial mix: 5 IQ/reasoning items, 2 memory or pattern items, and 3 EQ scenarios. Adjust the mix when the installed content bank is too small, but never silently substitute questions from the wrong domain.
+- Recommended initial mix: 4 IQ/reasoning items, 3 interactive puzzle items, and 3 EQ scenarios. Adjust the mix when the installed content bank is too small, but never silently substitute questions from the wrong domain.
 - Show a pre-session summary of the mode, question count, and optional timer rules.
 - Save the completed result locally.
 
@@ -263,11 +263,14 @@ When explaining an answer, use language such as “This response may help becaus
 
 For Quick Quest, show separate IQ/reasoning and EQ practice summaries. A single overall number may be shown only as a secondary **Quest Completion Score** (0–100) that combines authored in-game points according to a fixed documented formula. It must not be branded as a real IQ/EQ composite.
 
+Puzzle mode must also have its own **Puzzle Challenge Score** (0–100), calculated from objective puzzle completion using the same weighted-earned-points / possible-points pattern as the IQ Challenge Score. Keep this as a separate game-performance score; do not fold it into or rename it as an IQ score. For memory and matching mechanics, define exactly what constitutes a completed/correct interaction and test partial or incomplete submissions.
+
 Prefer showing:
 
 - Questions completed.
 - Correct answers in objectively scored reasoning items.
 - IQ Challenge Score where applicable.
+- Puzzle Challenge Score where applicable.
 - EQ Practice Score where applicable.
 - Skill-dimension feedback.
 - Elapsed time, shown separately.
@@ -324,18 +327,65 @@ If a second language is added, use language-specific content files and explicit 
 
 The app must reject malformed question data gracefully and log developer-readable diagnostics in debug/test builds. Never crash the Home screen because one content record is invalid.
 
-### 5.3 Minimum MVP content target
+### 5.3 Required question-bank size and release gates
 
-Before the initial MVP is considered content-complete, author at least:
+A question bank must contain real, reviewed content. A handful of examples, generated placeholders, repeated items with different IDs, or a schema-only sample does not satisfy this requirement.
 
-- **50 IQ/reasoning questions** across at least four reasoning categories.
-- **15 puzzle interaction items** supporting at least three actual mechanics; items may also be included in the reasoning count only if the content taxonomy clearly distinguishes the mechanic from the skill domain.
-- **40 EQ scenarios** across the five initial skill dimensions.
-- At least three authored difficulty levels, with adequate representation at each level.
-- Correct answers and explanations for every objectively scored question.
-- Contextual feedback and a rubric for every EQ option.
+Use two explicit content gates:
 
-These are product targets, not psychometric validation requirements. Content should be original or appropriately licensed. Do not copy copyrighted question banks from standardized IQ tests.
+| Gate | IQ / reasoning | Interactive puzzles | EQ scenarios | Total |
+|---|---:|---:|---:|---:|
+| Internal playable milestone | 60 | 45 | 60 | 165 |
+| Version 1 public-release target | **120** | **90** | **120** | **330** |
+
+The 330-item target is the required content-complete target for Version 1. The smaller milestone is only for early internal gameplay and QA; it is not permission to ship a content-light public release.
+
+#### Version 1 difficulty distribution
+
+| Domain | Easy | Medium | Hard | Total |
+|---|---:|---:|---:|---:|
+| IQ / reasoning | 40 | 40 | 40 | 120 |
+| Interactive puzzles | 30 | 30 | 30 | 90 |
+| EQ scenarios | 40 | 40 | 40 | 120 |
+| **Total** | **110** | **110** | **110** | **330** |
+
+Keep difficulty evenly represented. Do not make Hard simply mean “more time pressure” or “more obscure wording.” Difficulty must come from reasoning depth, number of relevant constraints, memory load, or scenario nuance.
+
+#### IQ / reasoning category allocation — 120 items
+
+Author 24 questions in each category, with 8 Easy, 8 Medium, and 8 Hard per category:
+
+1. `number_patterns` — arithmetic and numeric sequences, missing values, relationships.
+2. `logical_deduction` — statements, ordering, constraints, and conclusions.
+3. `verbal_analogies` — relationships between words and concepts; avoid culture-specific trivia.
+4. `spatial_reasoning` — rotations, shapes, grids, symmetry, and visual transformations.
+5. `working_memory` — remembering and manipulating short sequences or symbols.
+
+#### Interactive puzzle allocation — 90 items
+
+Author 18 puzzle levels/items in each mechanic, with 6 Easy, 6 Medium, and 6 Hard per mechanic:
+
+1. `sequence_reorder` — arrange numbers, symbols, or steps in a defined order.
+2. `visual_pattern` — identify or complete a visual pattern using bundled/vector-drawn assets.
+3. `memory_sequence` — reproduce a briefly displayed sequence; store the reveal and response rules explicitly.
+4. `odd_one_out` — identify the item that does not share the stated or discoverable property.
+5. `matching_pairs` — find matching symbols, shapes, or simple semantic pairs with increasing board size.
+
+These 90 items are puzzle-mode content. They may share a skill tag with IQ questions, but must have their own stable IDs and explicit interaction type.
+
+#### EQ scenario allocation — 120 items
+
+Author 24 scenarios in each primary skill dimension, with 8 Easy, 8 Medium, and 8 Hard per dimension:
+
+1. `emotion_awareness`
+2. `self_regulation`
+3. `perspective_taking`
+4. `constructive_communication`
+5. `boundaries_and_agency`
+
+A scenario can include secondary dimensions, but count it toward only one primary category for coverage reporting. EQ items must use contextual option rubrics and feedback rather than simplistic universal right/wrong labels.
+
+All question text, options, correct answers, interaction configurations, explanations, and EQ rubrics must be bundled locally. Every item must be original or appropriately licensed. Do not copy protected questions from standardized IQ tests or commercial test banks.
 
 ### 5.4 Recommended question model
 
@@ -391,20 +441,20 @@ Additional fields for EQ scenarios:
       "id": "iq_sequence_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
+      "skill": "number_patterns",
       "difficulty": "easy",
       "locale": "en",
-      "prompt": "Which number comes next in the sequence?",
-      "instructions": "Look for the rule that connects each number.",
+      "prompt": "Which number comes next: 5, 8, 11, 14, ?",
+      "instructions": "Find the constant change between consecutive numbers.",
       "options": [
-        { "id": "a", "text": "11" },
-        { "id": "b", "text": "13" },
-        { "id": "c", "text": "15" },
-        { "id": "d", "text": "17" }
+        { "id": "a", "text": "15" },
+        { "id": "b", "text": "16" },
+        { "id": "c", "text": "17" },
+        { "id": "d", "text": "18" }
       ],
-      "correctOptionId": "b",
-      "explanation": "Explain the intended sequence rule here, including why the other options do not fit.",
-      "hint": "Compare the difference between consecutive numbers.",
+      "correctOptionId": "c",
+      "explanation": "The sequence increases by 3 each time: 5, 8, 11, 14, so the next number is 17.",
+      "hint": "Compare the difference between each pair of neighboring numbers.",
       "estimatedSeconds": 25,
       "pointsWeight": 1,
       "tags": ["sequence", "numbers"],
@@ -505,6 +555,116 @@ Create tests or a developer tool that checks:
 - Unexpected remote URLs in content data.
 
 The content validator should fail CI/tests for invalid bundled content. At runtime, malformed records must be excluded safely and reported in debug mode.
+
+### 5.9 Difficulty authoring rules and progression
+
+Use the following content-authoring contract consistently across all modes:
+
+| Level | IQ / reasoning standard | Puzzle standard | EQ scenario standard |
+|---|---|---|---|
+| Easy | One clear rule or one direct inference; usually one reasoning step. | Small board/short sequence; one visible mechanic; forgiving instructions. | Familiar, low-stakes situation with a clear emotional cue and straightforward response choices. |
+| Medium | Two linked steps, a small set of constraints, or a less obvious pattern. | Longer sequence, more items, or two operations using the same known mechanic. | Competing needs or incomplete information; the player must balance at least two reasonable considerations. |
+| Hard | Several linked deductions, multiple constraints, or an abstract rule that is still fully inferable. | Longer/multi-stage interaction, distractors that follow plausible partial rules, or memory manipulation. | Nuanced context with uncertainty, boundaries, competing responsibilities, and more than one potentially constructive response. |
+
+Additional rules:
+
+- Easy must still require an answer; do not use trivial filler solely to inflate counts.
+- Hard questions must be solvable from the information shown. Do not depend on specialist knowledge, obscure trivia, hidden cultural assumptions, or guessing the author's intent.
+- All objective questions must have exactly one defensible correct answer unless the item explicitly declares a multi-select format.
+- Distractors must be plausible but demonstrably incorrect under the stated rule. Explanations must show the complete reasoning path.
+- Avoid accidental clues such as the correct option consistently being longer, more detailed, or in the same position.
+- Do not use speed as a proxy for difficulty. Provide adequate reading and response time; timed play is a separate mode setting.
+- Difficulty labels are editorial progression labels. They must not be described as statistically calibrated or psychometrically equivalent.
+- Provide a visible difficulty label before a session. Do not silently mix difficulties when the player has selected one level.
+
+#### Progression recommendation
+
+- Start all three difficulty levels as selectable in practice mode so that the app is usable without artificial gating.
+- Recommend Easy first for new players, then suggest Medium and Hard based on completed sessions; never diagnose or rank the player.
+- Optional content progression may unlock themed packs, but do not lock core content behind a score threshold.
+- Use a short, non-judgmental introduction to explain each new mechanic before its first question.
+- Offer a retry or practice mode after an incorrect answer, and show the explanation before allowing the next attempt.
+
+### 5.10 Starter question set — ready-to-implement examples
+
+The following examples are authored starter content, not merely schema placeholders. Implement them as real bundled records with stable IDs, full option data, explanations, and rubrics. Preserve the intended answers and rules. Add more questions to reach the full 330-item target; do not treat this sample set as satisfying the release quota.
+
+#### A. IQ / reasoning starter questions
+
+| ID | Difficulty / skill | Prompt and options | Answer | Explanation |
+|---|---|---|---|---|
+| `iq_num_easy_001` | Easy · number_patterns | Which number comes next: 2, 4, 6, 8, ? Options: A) 9 B) 10 C) 11 D) 12 | B — 10 | Add 2 at every step. |
+| `iq_num_easy_002` | Easy · number_patterns | Which number is different: 3, 5, 7, 10, 11? Options: A) 3 B) 5 C) 10 D) 11 | C — 10 | All the other numbers are prime; 10 is composite. |
+| `iq_analogy_easy_001` | Easy · verbal_analogies | Bird is to nest as bee is to: A) Web B) Hive C) Burrow D) Den | B — Hive | A nest is a bird's home; a hive is a bee colony's home. |
+| `iq_logic_easy_001` | Easy · logical_deduction | All roses are flowers. Which statement must be true? A) All flowers are roses B) Some roses are not flowers C) Every rose is a flower D) No flowers are roses | C | This restates the given premise without reversing it. |
+| `iq_num_medium_001` | Medium · number_patterns | Which number comes next: 2, 5, 11, 23, 47, ? Options: A) 89 B) 93 C) 95 D) 97 | C — 95 | Each term is the previous term multiplied by 2, then 1 is added. |
+| `iq_num_medium_002` | Medium · number_patterns | Which number comes next: 1, 4, 9, 16, 25, ? Options: A) 30 B) 32 C) 35 D) 36 | D — 36 | These are square numbers: 1², 2², 3², 4², 5², then 6². |
+| `iq_logic_medium_001` | Medium · logical_deduction | All glips are norks. All norks are vens. What must be true? A) All vens are glips B) All glips are vens C) No glips are vens D) Some norks are not vens | B | The first group is contained in the second, which is contained in the third. Therefore every glip is a ven. |
+| `iq_logic_medium_002` | Medium · logical_deduction | Ana is older than Bao. Bao is older than Chi. Who is youngest? A) Ana B) Bao C) Chi D) Cannot be determined | C — Chi | The ordering is Ana, then Bao, then Chi from oldest to youngest. |
+| `iq_num_hard_001` | Hard · number_patterns | Which number comes next: 3, 8, 18, 38, 78, ? Options: A) 148 B) 156 C) 158 D) 160 | C — 158 | Multiply by 2 and add 2 at each step. |
+| `iq_letter_hard_001` | Hard · number_patterns | Which letter comes next: C, F, J, O, ? Options: A) T B) U C) V D) W | B — U | Letter positions are 3, 6, 10, 15; the increments are +3, +4, +5, then +6 = 21 (U). |
+| `iq_logic_hard_001` | Hard · logical_deduction | Three boxes are labelled Red, Blue, and Green. Exactly one contains a key. The Red label says “The key is not in Blue”; the Blue label says “The key is in Red”; the Green label says “The key is not in Red”. Exactly one label is true. Where is the key? Options: A) Red B) Blue C) Green | B — Blue | If the key is in Blue, only the Green label is true. If it is in Red or Green, two labels are true. |
+| `iq_order_hard_001` | Hard · logical_deduction | Five people D, A, B, E, and C stand in a line. D is left of A; A is left of B; C is right of B; E is between B and C. Who must be at the far right? Options: A) A B) B C) C D) E | C — C | The constraints force D before A before B, with E between B and C, so C is last. |
+
+#### B. Interactive puzzle starter questions
+
+For each item below, the UI must implement the named interaction. Do not reduce every puzzle to a plain text multiple-choice card.
+
+| ID | Difficulty / mechanic | Player task | Expected result / validation |
+|---|---|---|---|
+| `puz_pattern_easy_001` | Easy · visual_pattern | Show: circle, square, circle, square, __. Ask the player to tap the next shape. | Circle. Alternating two-shape pattern. |
+| `puz_order_easy_001` | Easy · sequence_reorder | Drag the values 6, 1, 4 into ascending order. | 1, 4, 6. Validate the entire final sequence. |
+| `puz_memory_easy_001` | Easy · memory_sequence | Briefly show the sequence 4, 1, 7; hide it; ask for the third item. | 7. Reveal duration and response input must be deterministic in tests. |
+| `puz_odd_easy_001` | Easy · odd_one_out | Show triangle, square, circle, pentagon. Ask which shape has no straight sides. | Circle. The prompt states the property being tested. |
+| `puz_order_medium_001` | Medium · sequence_reorder | Drag the values 9, 2, 7, 4 into ascending order. | 2, 4, 7, 9. Validate the complete order, not only the first item. |
+| `puz_memory_medium_001` | Medium · memory_sequence | Show 6, 2, 9, 4; hide it; ask the player to reproduce the sequence in reverse. | 4, 9, 2, 6. |
+| `puz_pattern_medium_001` | Medium · visual_pattern | Show 1, 1, 2, 3, 5, 8, __; ask for the next number. | 13. Each term after the first two is the sum of the previous two. |
+| `puz_memory_hard_001` | Hard · memory_sequence | Show 2, 7, 4, 9, 1; hide it; ask for the items in positions 1, 3, and 5 in their original order. | 2, 4, 1. |
+| `puz_order_hard_001` | Hard · sequence_reorder | Arrange four people from lightest to heaviest using these clues: C is heavier than A; A is heavier than B; B is heavier than D. | C, A, B, D. Validate the full ordering. |
+| `puz_match_hard_001` | Hard · matching_pairs | Present six cards: two stars, two moons, and two leaves. Hide the symbols after the preview and ask the player to find all matching pairs. Use bundled/vector-drawn IDs `symbol_star`, `symbol_moon`, and `symbol_leaf`; shuffle positions using an injected seeded random source. | Match star-to-star, moon-to-moon, and leaf-to-leaf. Generate the board deterministically in tests and validate every pair ID exactly twice.
+
+#### C. EQ scenario starter questions
+
+EQ examples must show contextual feedback for every response. “Best direction” below describes an authoring preference for the scenario, not a universal judgment about the player.
+
+| ID | Difficulty / primary skill | Scenario and response options | Rubric guidance / feedback principle |
+|---|---|---|---|
+| `eq_awareness_easy_001` | Easy · emotion_awareness | A friend is unusually quiet after receiving disappointing news. What could you say? A) “You should stop worrying.” B) “You seem quieter than usual. Would you like to talk, or would you prefer some space?” C) “I will tell everyone so they can cheer you up.” | B strongly supports noticing emotion and offering choice. A dismisses the feeling; C ignores privacy and agency. Explain that the friend may choose not to talk. |
+| `eq_awareness_easy_002` | Easy · emotion_awareness | A teammate makes a mistake and apologizes. You feel frustrated because the mistake caused extra work. What is a constructive response? A) “Thanks for acknowledging it. Let's review what needs fixing and how to prevent it next time.” B) “You always ruin everything.” C) “It is fine,” while refusing to discuss the impact. | A acknowledges the apology while addressing the practical impact. Feedback should allow the player to express frustration respectfully instead of pretending not to feel it. |
+| `eq_communication_easy_001` | Easy · constructive_communication | Someone interrupts while you are explaining an idea. What is a useful response? A) “I would like to finish my thought, then I want to hear yours.” B) “You never listen.” C) Stop contributing without explanation. | A models a clear, respectful request. Feedback should also acknowledge that stepping away can be appropriate in some contexts. |
+| `eq_boundaries_easy_001` | Easy · boundaries_and_agency | A friend asks to borrow something you need today. What can you do? A) Say yes even though you cannot spare it. B) Say, “I need it today, so I cannot lend it now.” C) Hide the item and pretend you lost it. | B communicates a boundary honestly. The player is not required to say yes to prove kindness. |
+| `eq_regulation_medium_001` | Medium · self_regulation | You receive critical feedback in a meeting and feel defensive. What is a constructive next step? A) Ask for a specific example and listen before responding. B) Criticize the colleague personally. C) Agree with everything immediately, even if you do not understand. | A supports pausing, clarification, and communication. B risks escalation; C may abandon the player's own perspective. |
+| `eq_perspective_medium_001` | Medium · perspective_taking | A teammate misses a deadline. You do not know why. What is a constructive first response? A) Ask privately what blocked the work and discuss a realistic next step. B) Assume they do not care. C) Publicly shame them so others learn. | A seeks context without excusing impact. Feedback should balance curiosity with accountability and planning. |
+| `eq_communication_medium_001` | Medium · constructive_communication | A friend has cancelled plans twice. You feel disappointed. What could you do? A) Explain how the cancellations affect you and ask whether the plan still works for them. B) Pretend it does not matter, then resent them. C) Send an insulting message. | A expresses impact and invites clarification. The scenario should allow the friend to explain while preserving the player's right to make other plans. |
+| `eq_regulation_hard_001` | Hard · self_regulation | During a heated conversation, the other person demands an immediate answer. You feel overwhelmed and need time. What is a constructive response? A) “I want to discuss this, but I need 20 minutes to settle and think. I will come back at 3:00.” B) Match their anger. C) Leave indefinitely without communicating, even though it is safe to give an update. | A combines self-regulation with a clear return commitment. Feedback must note that in an unsafe situation, leaving immediately and seeking help may be the right priority. |
+| `eq_boundaries_hard_001` | Hard · boundaries_and_agency | A colleague asks you to keep a secret, but the information suggests someone may be at risk of harm. What should you consider? A) Promise absolute secrecy. B) Clarify the concern, avoid spreading the information, and seek appropriate help through a safe channel if someone may be at risk. C) Post the details in a group chat. | B respects privacy while recognizing that safety can override a promise of secrecy. Do not turn the scenario into legal or clinical advice; keep it general and safety-oriented. |
+| `eq_perspective_hard_001` | Hard · perspective_taking | A message in a group chat sounds rude, but tone is unclear and you lack context. What is a thoughtful next step? A) Publicly accuse the sender of being hostile. B) Ask a neutral clarifying question or check privately before assuming intent. C) Forward the message to others as proof. | B acknowledges uncertainty and seeks context. Feedback should not require the player to tolerate repeated disrespect; if a pattern exists, direct boundaries may be appropriate. |
+
+EQ rubric implementation requirements for these seed items:
+
+- Give each option a score for its declared primary skill and any explicitly declared secondary skills using the agreed 0–3 rubric.
+- Provide option-specific feedback. Do not use a hidden single correct-answer key for EQ.
+- At least two options may receive meaningful partial credit when context warrants it.
+- Ensure the feedback for every option is respectful, specific, and consistent with the scenario.
+- Store the reflection prompt separately from the score so skipping reflection does not reduce the score.
+
+### 5.11 Question writing, review, and expansion workflow
+
+Use this repeatable pipeline to grow the bank from the starter set to 330 reviewed items:
+
+1. **Draft:** write the prompt, mechanic, options, answer/rubric, explanation, difficulty, skill, and estimated duration in the content source format.
+2. **Solve independently:** a reviewer who did not author the item must solve every objective question using only the information shown.
+3. **Check ambiguity:** confirm there is one defensible answer for single-answer IQ items; for EQ, confirm the scenario allows the stated range of constructive responses.
+4. **Check distractors:** explain why every objective distractor is wrong. Reject options that are accidentally correct under a reasonable interpretation.
+5. **Review language:** use short, plain English, age-neutral everyday contexts, and avoid stereotypes or culturally narrow trivia.
+6. **Review difficulty:** assign Easy/Medium/Hard based on the rules in Section 5.9, not on subjective labels alone.
+7. **Validate data:** run the content validator and verify every referenced asset exists in the bundle.
+8. **Playtest:** test the question on a real device and confirm the interaction is understandable and the feedback appears at the right time.
+9. **Approve:** mark the record as reviewed in authoring metadata or a separate review manifest. Draft items must not enter release builds.
+
+Required authoring metadata (not necessarily exposed to players): `authoringStatus` (`draft`, `reviewed`, `approved`), `reviewNotes`, and `lastReviewedVersion`. The release validator must reject any item not marked `approved`.
+
+Do not create 330 near-duplicates by changing only the numbers, names, or option order. Reused templates are acceptable only when the underlying reasoning, content, and explanation are meaningfully different. Keep a duplicate-similarity review as part of content QA.
 
 ---
 
@@ -1118,7 +1278,7 @@ Build the offline content system before gameplay depends on it.
 3. Implement the asset loader for the bundled question files.
 4. Implement parsing and validation, including duplicate ID detection and reference checking.
 5. Implement typed error results for content-load failures.
-6. Add a starter content bank sufficient for development, labelled as draft where needed.
+6. Add a starter content bank of at least 10 valid items per domain (30 total) for early development; mark unreviewed content as draft and exclude it from release builds.
 7. Add fixtures for valid content, malformed content, missing fields, duplicate IDs, and incorrect references.
 8. Ensure the loader can be tested without launching a widget tree.
 9. Add a developer-facing validation command or automated test that scans every bundled content file.
@@ -1137,6 +1297,7 @@ Build the offline content system before gameplay depends on it.
 - Invalid records do not crash Home or silently turn into incorrect questions.
 - IDs/options/rubrics validate as expected.
 - The content bank can be extended by adding a correctly structured JSON item without changing gameplay code.
+- At least 10 valid starter items per domain (30 total) load and validate. The larger internal gameplay gate is enforced by Phases 3–4; the public-release gate remains 330 approved items.
 
 ---
 
@@ -1157,7 +1318,7 @@ Deliver a complete reasoning gameplay loop with correct deterministic scoring an
 7. Implement pre-session instructions and the standard untimed mode.
 8. Add a timed variant only after lifecycle and pause/resume behavior are tested.
 9. Prevent double submissions and ensure each answer is counted exactly once.
-10. Create the initial bank of at least 50 IQ/reasoning questions across four or more categories by the content-complete milestone.
+10. Create at least 60 IQ/reasoning items and 45 interactive puzzle items for the internal playable gate, balanced across all three difficulty levels. Expand these banks to 120 IQ and 90 puzzles by the Version 1 content-complete milestone in Phase 8.
 11. Add unit/widget tests for every mechanic and objective scoring edge case.
 
 ### Deliverables
@@ -1177,6 +1338,8 @@ Deliver a complete reasoning gameplay loop with correct deterministic scoring an
 - No question repeats inside one session.
 - The UI calls the score an in-game challenge score and never converts it into a purported standardized IQ.
 - All scoring boundary tests pass.
+- The internal playable bank contains at least 60 IQ items (20 per difficulty level) and 45 puzzle items (15 per difficulty level), with coverage across the five IQ categories and five puzzle mechanics.
+- The content manifest reports the actual number of loaded items; it does not report planned or placeholder counts as available content.
 
 ---
 
@@ -1194,7 +1357,7 @@ Deliver EQ practice as an explanatory, context-sensitive experience rather than 
 4. Design a dedicated scenario layout with context, response options, and post-answer feedback.
 5. Show a balanced explanation of benefits and trade-offs; support more than one constructive option where appropriate.
 6. Add dimension breakdowns for emotion awareness, self-regulation, perspective-taking, constructive communication, and boundaries/agency.
-7. Create at least 40 EQ scenarios before the content-complete milestone.
+7. Create at least 60 EQ scenarios for the internal playable gate, balanced across the five primary skill dimensions and all three difficulty levels. Expand the bank to 120 approved scenarios by the Version 1 content-complete milestone in Phase 8.
 8. Review scenario text for ambiguity, stereotypes, unsafe advice, and overly judgmental language.
 9. Add tests that verify rubric calculations and UI copy do not label the player as good/bad or diagnose the player.
 
@@ -1212,6 +1375,7 @@ Deliver EQ practice as an explanatory, context-sensitive experience rather than 
 - More than one option can receive meaningful credit where the content supports it.
 - Feedback avoids shaming language and clearly acknowledges context and trade-offs.
 - Results are labelled “EQ Practice Score” or equivalent, with a visible explanation that the score is not a validated assessment.
+- The internal playable EQ bank contains at least 60 scenarios (20 per difficulty level) across all five primary skill dimensions.
 
 ---
 
@@ -1334,7 +1498,7 @@ Bring the app to a coherent, shippable quality level.
 3. Finish reduced-motion behavior and haptics/sound preferences if those features exist.
 4. Check semantics, text scaling, contrast, touch targets, and screen-reader navigation.
 5. Complete content copy-editing and EQ scenario safety/context review.
-6. Verify every mode has adequate question coverage and that no duplicate IDs or unsupported question types remain.
+6. Verify the full Version 1 target of 330 approved questions (120 IQ, 90 puzzles, 120 EQ), balanced across Easy/Medium/Hard, and confirm no duplicate IDs, near-duplicate spam, or unsupported question types remain.
 7. Add a second app locale only if complete UI translations and matching localized content are available. Otherwise keep the code localization-ready but do not show a nonfunctional language selector.
 8. Ensure illustrations/fonts/audio are licensed and bundled.
 9. Test error/empty/loading states and responsive layouts.
@@ -1353,7 +1517,7 @@ Bring the app to a coherent, shippable quality level.
 - All key controls expose meaningful semantics.
 - Reduced-motion preference is respected.
 - Correct/incorrect feedback is not conveyed by color alone.
-- All bundled content passes validation and EQ content review.
+- All 330 Version 1 items are approved, playable, pass content validation, and pass EQ content review; no release placeholder or draft item remains.
 - No placeholder score or fake history appears in a release build.
 
 ---
@@ -1450,7 +1614,7 @@ These instructions are intended for Claude Code, Codex, or another coding agent 
 - [ ] Every answered item receives appropriate feedback.
 - [ ] Session state prevents double submission and accidental corruption.
 - [ ] Results and answer review match the player's submitted answers.
-- [ ] At least 50 IQ/reasoning questions, 15 puzzle interaction items, and 40 EQ scenarios pass validation and content review.
+- [ ] The Version 1 bank contains at least 120 IQ/reasoning questions, 90 interactive puzzle items, and 120 EQ scenarios (330 total), with 40/30/40 items respectively at each difficulty level and all records approved.
 - [ ] IQ/EQ score disclaimer is accessible and understandable.
 
 ### Scoring and content
@@ -1496,7 +1660,7 @@ These instructions are intended for Claude Code, Codex, or another coding agent 
 |---|---|---|
 | Scores are misunderstood as clinical or standardized tests | Misleading user expectations and reputational risk | Use clear score names, disclaimers, no IQ conversion, and honest result copy. |
 | EQ options feel moralizing or culturally narrow | Reduced trust and poor learning experience | Use contextual rubrics, acknowledge trade-offs, review content, and avoid “good/bad person” labels. |
-| Content bank is too small and questions repeat | Poor replayability | Set minimum content targets, distribute by skill, track recent IDs, and surface a recoverable message if content is insufficient. |
+| Content bank is too small and questions repeat | Poor replayability | Enforce the 330-item Version 1 target, distribute by skill and difficulty, track recent IDs, and surface a recoverable message if content is insufficient. |
 | Too many architecture abstractions slow delivery | High complexity and difficult maintenance | Use feature-first MVVM-style separation, add use cases only for non-trivial/reused logic, and avoid empty abstraction layers. |
 | Database migration breaks history | User progress loss | Version the schema, add migration tests, and never reset the DB to apply an update. |
 | Animations hurt performance or accessibility | Poor device compatibility | Prefer built-in animations, keep durations short, respect reduced motion, and test on representative devices. |

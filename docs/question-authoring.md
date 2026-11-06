@@ -9,7 +9,11 @@ becoming a wrong question (PLAN §5.2).
 ```text
 assets/content/
 ├── manifest.json
-└── en/
+├── en/
+│   ├── iq_questions.json
+│   ├── puzzle_questions.json
+│   └── eq_scenarios.json
+└── vi/                     # same files and ids, Vietnamese text
     ├── iq_questions.json
     ├── puzzle_questions.json
     └── eq_scenarios.json
@@ -20,9 +24,12 @@ assets/content/
 ```json
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.2.0-draft",
-  "supportedLocales": ["en"],
-  "files": ["en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json"],
+  "contentPackVersion": "0.3.0-draft",
+  "supportedLocales": ["en", "vi"],
+  "files": [
+    "en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json",
+    "vi/iq_questions.json", "vi/puzzle_questions.json", "vi/eq_scenarios.json"
+  ],
   "expectedItemCounts": { "iq": 16, "puzzle": 6, "eq": 16 }
 }
 ```
@@ -41,7 +48,7 @@ Every item needs:
 | `contentType` | `multiple_choice`, `memory_sequence`, `reorder_sequence`, `scenario_choice` |
 | `skill` | Free-form skill key (e.g. `pattern_recognition`, `memory`) |
 | `difficulty` | `easy`, `medium`, `hard` |
-| `locale` | `en` |
+| `locale` | `en` or `vi`; must match the folder and be in `manifest.supportedLocales` |
 | `status` | `draft` or `final`; draft items surface a warning |
 | `prompt` | The question text |
 | `explanation` | Shown in review; required for objective items |
@@ -205,8 +212,14 @@ Common issue codes: `duplicateId`, `missingField`, `unknownDomain`, `unknownType
 
 ## Adding a locale
 
-1. Add `assets/content/<locale>/…` with the same item IDs and translated text.
+1. Add `assets/content/<locale>/…` with the same item IDs and translated text, and
+   register the folder in `pubspec.yaml` (`assets/content/<locale>/`).
 2. Add the locale to `manifest.json` (`supportedLocales`) and list its files.
-3. Translate `AppStrings` (or migrate to ARB + `gen_l10n`) and add the locale to
-   `MaterialApp.supportedLocales` / `localizationsDelegates`.
-4. Only then expose a language selector; keep it hidden while only one locale exists.
+3. Add and translate `lib/core/localization/l10n/app_<locale>.arb`, run
+   `flutter gen-l10n`, then add the code to `AppLanguages.supported`.
+4. `flutter test test/unit/content_scan_test.dart` — it validates each locale and
+   asserts the translated pack keeps the same IDs, option IDs, answers, and rubric
+   scores as `en`.
+
+Only then expose the language in the selector; keep it hidden while a locale is
+incomplete.

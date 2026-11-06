@@ -11,6 +11,11 @@ import 'package:up_brain_quest/domain/history/session_summary.dart';
 import 'package:up_brain_quest/domain/session/game_mode.dart';
 import 'package:up_brain_quest/features/progress/presentation/progress_page.dart';
 
+import '../support/test_app.dart';
+
+/// English strings used by assertions (the app default locale).
+final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
 Future<void> _pump(
   WidgetTester tester, {
   required Future<ProgressSummary> Function() summary,
@@ -35,7 +40,7 @@ Future<void> _pump(
           (Ref ref) async => const StreakSummary.empty(),
         ),
       ],
-      child: const MaterialApp(home: ProgressPage()),
+      child: localizedTestApp(const ProgressPage()),
     ),
   );
   await tester.pumpAndSettle();
@@ -47,7 +52,7 @@ void main() {
       WidgetTester tester,
     ) async {
       await _pump(tester, summary: () async => const ProgressSummary.empty());
-      expect(find.text(AppStrings.progressEmpty), findsOneWidget);
+      expect(find.text(enStrings.progressEmpty), findsOneWidget);
     });
 
     testWidgets('renders aggregates and recent history from local records', (
@@ -77,13 +82,13 @@ void main() {
         history: () async => sessions,
       );
 
-      expect(find.text(AppStrings.progressSessionsCompleted), findsOneWidget);
-      expect(find.text(AppStrings.progressBestIq), findsOneWidget);
-      expect(find.text(AppStrings.progressBestEq), findsOneWidget);
-      expect(find.text(AppStrings.achievementsTitle), findsOneWidget);
-      expect(find.text(AppStrings.streakNone), findsOneWidget);
-      expect(find.text(AppStrings.progressRecentTitle), findsOneWidget);
-      expect(find.text(AppStrings.modeQuickQuest), findsOneWidget);
+      expect(find.text(enStrings.progressSessionsCompleted), findsOneWidget);
+      expect(find.text(enStrings.progressBestIq), findsOneWidget);
+      expect(find.text(enStrings.progressBestEq), findsOneWidget);
+      expect(find.text(enStrings.achievementsTitle), findsOneWidget);
+      expect(find.text(enStrings.streakNone), findsOneWidget);
+      expect(find.text(enStrings.progressRecentTitle), findsOneWidget);
+      expect(find.text(enStrings.modeQuickQuest), findsOneWidget);
       expect(find.textContaining('80'), findsWidgets);
     });
 
@@ -91,7 +96,7 @@ void main() {
       WidgetTester tester,
     ) async {
       await _pump(tester, summary: () async => throw Exception('boom'));
-      expect(find.text(AppStrings.progressLoadError), findsOneWidget);
+      expect(find.text(enStrings.progressLoadError), findsOneWidget);
     });
   });
 }

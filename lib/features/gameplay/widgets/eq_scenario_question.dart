@@ -78,7 +78,7 @@ class _EqScenarioQuestionWidgetState extends State<EqScenarioQuestionWidget> {
         borderColor = AppColors.primary;
         trailingIcon = Icons.check_circle;
         iconColor = AppColors.primary;
-        statusLabel = AppStrings.sessionYourResponse;
+        statusLabel = context.l10n.sessionYourResponse;
       } else if (!_locked && option.id == _selectedId) {
         borderColor = AppColors.primary;
       }
