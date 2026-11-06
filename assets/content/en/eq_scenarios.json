@@ -4186,7 +4186,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "A label rarely invites honesty."
+          "feedback": "A label rarely invites honesty; it usually ends the conversation instead."
         }
       },
       "skillDimensions": [
@@ -4496,6 +4496,10 @@
         {
           "id": "b",
           "text": "Am I that boring?"
+        },
+        {
+          "id": "c",
+          "text": "Why did you even come tonight?"
         }
       ],
       "rubricByOption": {
@@ -4518,6 +4522,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "The question asks them to reassure you instead of answering honestly."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "This puts them on the spot and turns the evening into a test of your worth."
         }
       },
       "skillDimensions": [
@@ -5241,6 +5255,10 @@
         {
           "id": "b",
           "text": "They are punishing me on purpose."
+        },
+        {
+          "id": "c",
+          "text": "They never really respected me."
         }
       ],
       "rubricByOption": {
@@ -5263,6 +5281,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "Punishment is one explanation; confusion or hurt are just as likely."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "A verdict about the whole relationship is more than one silence can carry."
         }
       },
       "skillDimensions": [
@@ -5917,6 +5945,10 @@
         {
           "id": "b",
           "text": "Sure, tell me everything."
+        },
+        {
+          "id": "c",
+          "text": "I do not want to hear any of it."
         }
       ],
       "rubricByOption": {
@@ -5939,6 +5971,16 @@
             "boundaries_and_agency": 2
           },
           "feedback": "Agreeing without limits makes you part of the problem."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Shutting the conversation down leaves them alone with a risk you now know about."
         }
       },
       "skillDimensions": [
@@ -5972,6 +6014,10 @@
         {
           "id": "b",
           "text": "I can review one thing a day, before four. Anything more needs to go through the lead."
+        },
+        {
+          "id": "c",
+          "text": "Send everything, I will manage somehow."
         }
       ],
       "rubricByOption": {
@@ -5994,6 +6040,16 @@
             "boundaries_and_agency": 3
           },
           "feedback": "A bounded offer keeps the help sustainable and names the escalation path."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "An unlimited yes sets a pattern that will collide with your own deadlines."
         }
       },
       "skillDimensions": [
@@ -6027,6 +6083,10 @@
         {
           "id": "b",
           "text": "I gave my honest view because you asked. It is your decision, and I am not going to argue for it."
+        },
+        {
+          "id": "c",
+          "text": "I will not give an opinion again."
         }
       ],
       "rubricByOption": {
@@ -6049,6 +6109,16 @@
             "boundaries_and_agency": 3
           },
           "feedback": "You hold your honesty and their agency at the same time."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Withdrawing your honesty teaches them that anger works."
         }
       },
       "skillDimensions": [
@@ -6082,6 +6152,10 @@
         {
           "id": "b",
           "text": "I will cancel my plans again."
+        },
+        {
+          "id": "c",
+          "text": "I will cancel my plans, but I am not happy about it."
         }
       ],
       "rubricByOption": {
@@ -6104,6 +6178,16 @@
             "boundaries_and_agency": 2
           },
           "feedback": "Repeatedly cancelling your own plans teaches others the boundary is flexible."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Agreeing while announcing resentment leaves both the plan and the boundary broken."
         }
       },
       "skillDimensions": [
@@ -6221,7 +6305,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Withdrawing makes the silence permanent."
+          "feedback": "Withdrawing makes the silence permanent and leaves the real question unasked."
         },
         "b": {
           "scores": {
@@ -6482,6 +6566,10 @@
         {
           "id": "b",
           "text": "Fine, then you are paying for dinner."
+        },
+        {
+          "id": "c",
+          "text": "You always do this, then try to buy your way out."
         }
       ],
       "rubricByOption": {
@@ -6504,6 +6592,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "Taking the payment ends the conversation and leaves the pattern."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "This ties an apology to a character flaw and turns repair into a transaction."
         }
       },
       "skillDimensions": [
@@ -6552,7 +6650,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Tailgating turns anger into danger."
+          "feedback": "Tailgating turns anger into danger and gives the other driver a reason to react."
         },
         "b": {
           "scores": {
@@ -6828,7 +6926,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Silence makes the record permanent."
+          "feedback": "Silence leaves the wrong record standing, and the room will remember it."
         },
         "b": {
           "scores": {
@@ -6917,7 +7015,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Blocking makes the conflict permanent."
+          "feedback": "Blocking makes the conflict permanent and removes any way back."
         }
       },
       "skillDimensions": [
@@ -7296,6 +7394,10 @@
         {
           "id": "b",
           "text": "They want something, as always."
+        },
+        {
+          "id": "c",
+          "text": "They are manipulating me again."
         }
       ],
       "rubricByOption": {
@@ -7318,6 +7420,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "Assuming the worst makes the conversation about your suspicion."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Naming manipulation before hearing the request ends the conversation early."
         }
       },
       "skillDimensions": [
@@ -7455,7 +7567,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Silence reads as disinterest."
+          "feedback": "Silence reads as disinterest and closes a conversation they chose to open."
         }
       },
       "skillDimensions": [
@@ -7903,6 +8015,10 @@
         {
           "id": "b",
           "text": "Send it to the office; that is the address I use for work things."
+        },
+        {
+          "id": "c",
+          "text": "Why do you need my address?"
         }
       ],
       "rubricByOption": {
@@ -7925,6 +8041,16 @@
             "boundaries_and_agency": 3
           },
           "feedback": "You offer a workable alternative without sharing more than you want."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "A suspicious question makes an ordinary request feel like an accusation."
         }
       },
       "skillDimensions": [
@@ -7958,6 +8084,10 @@
         {
           "id": "b",
           "text": "Pass the messages and hope it settles."
+        },
+        {
+          "id": "c",
+          "text": "I am not getting involved at all."
         }
       ],
       "rubricByOption": {
@@ -7980,6 +8110,16 @@
             "boundaries_and_agency": 2
           },
           "feedback": "Carrying messages makes you responsible for an outcome you cannot control."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Stepping out entirely withdraws care from both friendships."
         }
       },
       "skillDimensions": [

@@ -33,11 +33,31 @@ and symbol IDs across languages.
 
 ## 3. EQ content review (PLAN §4.6)
 
-Themes covered by the 10 scenarios: a quiet friend after bad news, frustration
-after a teammate's mistake, being interrupted mid-explanation, lending something you
-need today, defensive reactions to critical feedback, a missed deadline with unknown
-context, repeated cancellations, needing time in a heated conversation, a secret
-that suggests someone may be at risk, and an unclear tone in a group chat.
+The bank holds 120 scenarios: 24 per dimension, split 8 easy / 8 medium / 8 hard.
+Themes span work, family, friendship, neighbours, online disagreements and
+service encounters, with difficulty coming from the number of competing needs and
+from the responder's own state, never from obscure wording.
+
+Run the automated audit after any EQ edit:
+
+```sh
+python3 tool/eq_audit.py
+```
+
+It fails on a missing dimension score, an item whose rubric cannot separate a good
+answer from a poor one, duplicate option wording, feedback too short to teach
+anything, near-duplicate scenarios, an uneven difficulty split, and any
+clinical/diagnostic/personality-labelling language in either locale.
+
+Audit of the 120-scenario expansion (all findings fixed):
+
+- Ten scenarios shipped with only two options, so no option represented the weakest
+  response and the rubric could not span the full 0-3 range. Each gained a third,
+  clearly weak option with its own feedback in both locales.
+- Six feedback strings were too terse to explain the trade-off; each was rewritten
+  to say what the response achieves or costs.
+- No clinical, diagnostic or personality-labelling wording was found in either
+  locale, and no pair of scenarios was a near-duplicate.
 
 Review findings:
 

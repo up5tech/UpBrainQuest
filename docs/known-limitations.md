@@ -4,8 +4,10 @@ These are current gaps, not defects. They are tracked so a release decision is e
 
 ## Content
 
-- **All content is `status: draft`.** A human copy-edit and EQ safety review is still
-  recommended before a store release.
+- **All content is `status: draft`.** A human copy-edit and EQ safety review is
+  still recommended before a store release: `tool/eq_audit.py` checks the rubric
+  structure and scans for diagnostic wording, but it cannot judge tone, cultural fit
+  or whether a scenario's advice is sound.
 - **Puzzle coverage is complete at 90 items.** All five mechanics —
   `visual_pattern`, `odd_one_out`, `matching_pairs`, `memory_sequence` and
   `reorder_sequence` — hold 18 each (6 easy / 6 medium / 6 hard), the PLAN §5.3

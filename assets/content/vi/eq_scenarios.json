@@ -4186,7 +4186,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Một nhãn dán hiếm khi mời được sự thật."
+          "feedback": "Một nhãn dán hiếm khi mời được sự thật; nó thường kết thúc cuộc nói chuyện."
         }
       },
       "skillDimensions": [
@@ -4496,6 +4496,10 @@
         {
           "id": "b",
           "text": "Mình chán lắm à?"
+        },
+        {
+          "id": "c",
+          "text": "Vậy bạn đến buổi này làm gì?"
         }
       ],
       "rubricByOption": {
@@ -4518,6 +4522,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "Câu hỏi bắt họ trấn an bạn thay vì trả lời thật."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Câu này đặt họ vào thế khó và biến buổi tối thành phép thử giá trị của bạn."
         }
       },
       "skillDimensions": [
@@ -5241,6 +5255,10 @@
         {
           "id": "b",
           "text": "Họ đang trừng phạt mình có chủ ý."
+        },
+        {
+          "id": "c",
+          "text": "Họ chưa từng thật sự tôn trọng mình."
         }
       ],
       "rubricByOption": {
@@ -5263,6 +5281,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "Trừng phạt là một cách giải thích; bối rối hay tổn thương cũng có thể như vậy."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Một phán quyết về cả mối quan hệ vượt quá điều một lần im lặng có thể nói."
         }
       },
       "skillDimensions": [
@@ -5917,6 +5945,10 @@
         {
           "id": "b",
           "text": "Được, bạn kể hết đi."
+        },
+        {
+          "id": "c",
+          "text": "Mình không muốn nghe gì cả."
         }
       ],
       "rubricByOption": {
@@ -5939,6 +5971,16 @@
             "boundaries_and_agency": 2
           },
           "feedback": "Đồng ý không giới hạn biến bạn thành một phần của vấn đề."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Đóng lại cuộc nói chuyện để họ một mình với rủi ro mà bạn đã biết."
         }
       },
       "skillDimensions": [
@@ -5972,6 +6014,10 @@
         {
           "id": "b",
           "text": "Mỗi ngày mình xem được một việc, trước bốn giờ. Nhiều hơn thì cần qua trưởng nhóm."
+        },
+        {
+          "id": "c",
+          "text": "Cứ gửi hết đi, mình xoay được."
         }
       ],
       "rubricByOption": {
@@ -5994,6 +6040,16 @@
             "boundaries_and_agency": 3
           },
           "feedback": "Một lời đề nghị có giới hạn giữ việc giúp bền và chỉ ra đường leo thang."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Một cái gật đầu không giới hạn tạo quy luật sẽ đụng với hạn chót của chính bạn."
         }
       },
       "skillDimensions": [
@@ -6027,6 +6083,10 @@
         {
           "id": "b",
           "text": "Mình nói thật vì bạn hỏi. Quyết định là của bạn, và mình sẽ không tranh cãi thay bạn."
+        },
+        {
+          "id": "c",
+          "text": "Từ giờ mình không nêu ý kiến nữa."
         }
       ],
       "rubricByOption": {
@@ -6049,6 +6109,16 @@
             "boundaries_and_agency": 3
           },
           "feedback": "Bạn giữ cả sự thật thà và quyền tự quyết của họ cùng lúc."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Rút lại sự thật thà dạy họ rằng nổi giận là hiệu quả."
         }
       },
       "skillDimensions": [
@@ -6082,6 +6152,10 @@
         {
           "id": "b",
           "text": "Mình lại huỷ kế hoạch vậy."
+        },
+        {
+          "id": "c",
+          "text": "Mình lại huỷ kế hoạch, nhưng mình không vui."
         }
       ],
       "rubricByOption": {
@@ -6104,6 +6178,16 @@
             "boundaries_and_agency": 2
           },
           "feedback": "Huỷ kế hoạch của mình nhiều lần dạy người khác rằng giới hạn này mềm."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Đồng ý mà tuyên bố ấm ức làm hỏng cả kế hoạch lẫn giới hạn."
         }
       },
       "skillDimensions": [
@@ -6221,7 +6305,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Rút lui làm sự im lặng thành vĩnh viễn."
+          "feedback": "Rút lui làm sự im lặng thành vĩnh viễn và để câu hỏi thật không được hỏi."
         },
         "b": {
           "scores": {
@@ -6482,6 +6566,10 @@
         {
           "id": "b",
           "text": "Được, vậy bạn trả tiền bữa tối."
+        },
+        {
+          "id": "c",
+          "text": "Lần nào bạn cũng vậy rồi mua chuộc cho xong."
         }
       ],
       "rubricByOption": {
@@ -6504,6 +6592,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "Nhận tiền kết thúc cuộc nói chuyện và để quy luật nguyên chỗ."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Câu này gắn lời xin lỗi với một khuyết điểm và biến việc sửa sai thành giao dịch."
         }
       },
       "skillDimensions": [
@@ -6552,7 +6650,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Bám đuôi biến cơn giận thành nguy hiểm."
+          "feedback": "Bám đuôi biến cơn giận thành nguy hiểm và cho tài xế kia lý do để phản ứng."
         },
         "b": {
           "scores": {
@@ -6828,7 +6926,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Im lặng khiến cách hiểu sai thành cố định."
+          "feedback": "Im lặng để cách hiểu sai đứng nguyên, và cả phòng sẽ nhớ nó."
         },
         "b": {
           "scores": {
@@ -6917,7 +7015,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Chặn họ làm xung đột thành vĩnh viễn."
+          "feedback": "Chặn họ làm xung đột thành vĩnh viễn và xoá mọi đường quay lại."
         }
       },
       "skillDimensions": [
@@ -7296,6 +7394,10 @@
         {
           "id": "b",
           "text": "Lần nào họ cũng muốn gì đó."
+        },
+        {
+          "id": "c",
+          "text": "Họ lại đang giở trò thao túng."
         }
       ],
       "rubricByOption": {
@@ -7318,6 +7420,16 @@
             "boundaries_and_agency": 1
           },
           "feedback": "Giả định điều xấu nhất biến cuộc nói chuyện thành chuyện nghi ngờ của bạn."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Gọi đó là thao túng trước khi nghe lời nhờ kết thúc cuộc nói chuyện quá sớm."
         }
       },
       "skillDimensions": [
@@ -7455,7 +7567,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Im lặng bị hiểu là không quan tâm."
+          "feedback": "Im lặng bị hiểu là không quan tâm và đóng lại cuộc nói chuyện họ đã chọn mở."
         }
       },
       "skillDimensions": [
@@ -7903,6 +8015,10 @@
         {
           "id": "b",
           "text": "Gửi đến văn phòng nhé; đó là địa chỉ mình dùng cho việc công việc."
+        },
+        {
+          "id": "c",
+          "text": "Bạn cần địa chỉ nhà mình làm gì?"
         }
       ],
       "rubricByOption": {
@@ -7925,6 +8041,16 @@
             "boundaries_and_agency": 3
           },
           "feedback": "Bạn đưa một lựa chọn khả thi mà không chia sẻ nhiều hơn mình muốn."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Một câu hỏi nghi ngờ biến lời nhờ bình thường thành lời buộc tội."
         }
       },
       "skillDimensions": [
@@ -7958,6 +8084,10 @@
         {
           "id": "b",
           "text": "Chuyển lời rồi hy vọng mọi chuyện êm."
+        },
+        {
+          "id": "c",
+          "text": "Mình không dính vào đâu."
         }
       ],
       "rubricByOption": {
@@ -7980,6 +8110,16 @@
             "boundaries_and_agency": 2
           },
           "feedback": "Chuyển lời khiến bạn chịu trách nhiệm cho kết quả mình không kiểm soát được."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Rút hẳn ra lấy đi sự quan tâm khỏi cả hai tình bạn."
         }
       },
       "skillDimensions": [
