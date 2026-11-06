@@ -33,3 +33,12 @@ class ReorderAnswer extends PlayerAnswer {
 
   final List<String> order;
 }
+
+/// The matching pairs found in a matching-pairs puzzle, plus how many card
+/// reveals were spent to find them.
+class PairMatchAnswer extends PlayerAnswer {
+  const PairMatchAnswer({required this.pairIds, required this.flips});
+
+  final List<String> pairIds;
+  final int flips;
+}

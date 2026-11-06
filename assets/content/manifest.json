@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "supportedLocales": [
     "en",
     "vi"
@@ -14,8 +14,8 @@
     "vi/eq_scenarios.json"
   ],
   "expectedItemCounts": {
-    "iq": 16,
-    "puzzle": 6,
-    "eq": 16
+    "iq": 12,
+    "puzzle": 10,
+    "eq": 10
   }
 }

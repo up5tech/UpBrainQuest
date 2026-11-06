@@ -1,138 +1,384 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "items": [
     {
-      "id": "puzzle_mem_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_pattern_easy_001",
       "domain": "puzzle",
-      "contentType": "memory_sequence",
-      "skill": "memory",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
       "difficulty": "easy",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Memorize the sequence, then reproduce it in order.",
-      "instructions": "Watch the tiles, then tap them in the same order.",
-      "expectedAnswer": [3, 7, 1, 9],
-      "interactionConfig": {
-        "length": 4,
-        "minValue": 1,
-        "maxValue": 9
-      },
-      "explanation": "The target order was 3, 7, 1, 9.",
-      "hint": "Group the first two numbers, then the last two.",
+      "prompt": "Which shape comes next?",
+      "instructions": "Study the pattern, then tap the shape that continues it.",
+      "explanation": "The pattern alternates circle, square, circle, square, so the next shape is a circle.",
+      "hint": "Read the pattern aloud: circle, square, circle, square.",
       "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["memory", "sequence"],
-      "contentVersion": 1
+      "tags": [
+        "pattern",
+        "shapes"
+      ],
+      "expectedAnswer": [
+        "circle"
+      ],
+      "interactionConfig": {
+        "previewSymbols": [
+          "circle",
+          "square",
+          "circle",
+          "square",
+          "blank"
+        ]
+      },
+      "options": [
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        }
+      ]
     },
     {
-      "id": "puzzle_reorder_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_order_easy_001",
       "domain": "puzzle",
       "contentType": "reorder_sequence",
-      "skill": "pattern_recognition",
-      "difficulty": "medium",
+      "skill": "sequence_reorder",
+      "difficulty": "easy",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Arrange the tiles into the correct order.",
-      "instructions": "Drag the tiles to form the right sequence.",
-      "expectedAnswer": ["a", "b", "c", "d"],
+      "prompt": "Put the numbers in ascending order.",
+      "instructions": "Drag the tiles until the smallest number comes first.",
+      "explanation": "Ascending order is 1, 4, 6.",
+      "hint": "Find the smallest number before you move anything.",
+      "estimatedSeconds": 25,
+      "tags": [
+        "order",
+        "numbers"
+      ],
+      "expectedAnswer": [
+        "1",
+        "4",
+        "6"
+      ],
       "interactionConfig": {
-        "tiles": ["a", "b", "c", "d"]
-      },
-      "explanation": "The intended order is a, b, c, d.",
-      "hint": "Look for the first step, then build from there.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 1,
-      "tags": ["reorder", "ordering"],
-      "contentVersion": 1
+        "tiles": [
+          "6",
+          "1",
+          "4"
+        ]
+      }
     },
     {
-      "id": "puzzle_mem_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_memory_easy_001",
       "domain": "puzzle",
       "contentType": "memory_sequence",
-      "skill": "memory",
-      "difficulty": "medium",
+      "skill": "memory_sequence",
+      "difficulty": "easy",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Memorize the sequence, then reproduce it in order.",
-      "instructions": "Watch the tiles, then tap them in the same order.",
-      "expectedAnswer": [4, 8, 2, 6, 5],
+      "prompt": "Remember the three numbers, then enter the third one.",
+      "instructions": "Study the numbers, tap Ready, then enter the number that was third.",
+      "explanation": "The sequence was 4, 1, 7, so the third number is 7.",
+      "hint": "Repeat the three numbers silently before they hide.",
+      "estimatedSeconds": 30,
+      "tags": [
+        "memory",
+        "sequence"
+      ],
+      "expectedAnswer": [
+        7
+      ],
       "interactionConfig": {
-        "length": 5,
-        "minValue": 1,
+        "revealSequence": [
+          4,
+          1,
+          7
+        ],
+        "minValue": 0,
         "maxValue": 9
-      },
-      "explanation": "The target order was 4, 8, 2, 6, 5.",
-      "hint": "Chunk it as 48, 26, 5.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 1,
-      "tags": ["memory", "sequence"],
-      "contentVersion": 1
+      }
     },
     {
-      "id": "puzzle_mem_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_odd_easy_001",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "easy",
+      "locale": "en",
+      "prompt": "Which shape has no straight sides?",
+      "instructions": "Tap the shape that does not match the stated property.",
+      "explanation": "A circle has no straight sides; the other three shapes are built from straight edges.",
+      "hint": "Run your eye along the edge of each shape.",
+      "estimatedSeconds": 30,
+      "tags": [
+        "shapes",
+        "property"
+      ],
+      "expectedAnswer": [
+        "circle"
+      ],
+      "options": [
+        {
+          "id": "circle",
+          "text": "Circle"
+        },
+        {
+          "id": "square",
+          "text": "Square"
+        },
+        {
+          "id": "triangle",
+          "text": "Triangle"
+        },
+        {
+          "id": "pentagon",
+          "text": "Pentagon"
+        }
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_order_medium_001",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "medium",
+      "locale": "en",
+      "prompt": "Put the four numbers in ascending order.",
+      "instructions": "Validate the whole order, not only the first tile.",
+      "explanation": "Ascending order is 2, 4, 7, 9.",
+      "hint": "Compare the two middle numbers carefully.",
+      "estimatedSeconds": 30,
+      "tags": [
+        "order",
+        "numbers"
+      ],
+      "expectedAnswer": [
+        "2",
+        "4",
+        "7",
+        "9"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "9",
+          "2",
+          "7",
+          "4"
+        ]
+      }
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_memory_medium_001",
       "domain": "puzzle",
       "contentType": "memory_sequence",
-      "skill": "memory",
+      "skill": "memory_sequence",
+      "difficulty": "medium",
+      "locale": "en",
+      "prompt": "Study the four numbers, then enter them in reverse order.",
+      "instructions": "Tap Ready when you are done memorising, then type the reversed sequence.",
+      "explanation": "The sequence was 6, 2, 9, 4; reversed it is 4, 9, 2, 6.",
+      "hint": "Hold the sequence in mind, then read it backwards.",
+      "estimatedSeconds": 35,
+      "tags": [
+        "memory",
+        "sequence"
+      ],
+      "expectedAnswer": [
+        4,
+        9,
+        2,
+        6
+      ],
+      "interactionConfig": {
+        "revealSequence": [
+          6,
+          2,
+          9,
+          4
+        ],
+        "minValue": 0,
+        "maxValue": 9
+      }
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_pattern_medium_001",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "medium",
+      "locale": "en",
+      "prompt": "What number comes next: 1, 1, 2, 3, 5, 8, ?",
+      "instructions": "Compare each term with the two before it.",
+      "explanation": "Each term after the first two is the sum of the previous two: 5 + 8 = 13.",
+      "hint": "Add the last two numbers you see.",
+      "estimatedSeconds": 40,
+      "tags": [
+        "pattern",
+        "numbers"
+      ],
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_memory_hard_001",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
       "difficulty": "hard",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Memorize the longer sequence, then reproduce it.",
-      "instructions": "Watch the tiles, then tap them in the same order.",
-      "expectedAnswer": [9, 1, 6, 3, 7, 2],
+      "prompt": "Study the five numbers, then enter the numbers in positions 1, 3, and 5 in their original order.",
+      "instructions": "Number the positions as you memorise.",
+      "explanation": "The sequence was 2, 7, 4, 9, 1, so positions 1, 3 and 5 are 2, 4, 1.",
+      "hint": "Attach each number to its position number.",
+      "estimatedSeconds": 45,
+      "tags": [
+        "memory",
+        "positions"
+      ],
+      "expectedAnswer": [
+        2,
+        4,
+        1
+      ],
       "interactionConfig": {
-        "length": 6,
-        "minValue": 1,
+        "revealSequence": [
+          2,
+          7,
+          4,
+          9,
+          1
+        ],
+        "minValue": 0,
         "maxValue": 9
-      },
-      "explanation": "The target order was 9, 1, 6, 3, 7, 2.",
-      "hint": "Split it into three pairs: 91, 63, 72.",
-      "estimatedSeconds": 40,
-      "pointsWeight": 1,
-      "tags": ["memory", "sequence"],
-      "contentVersion": 1
+      }
     },
     {
-      "id": "puzzle_reorder_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_order_hard_001",
       "domain": "puzzle",
       "contentType": "reorder_sequence",
-      "skill": "pattern_recognition",
-      "difficulty": "easy",
+      "skill": "sequence_reorder",
+      "difficulty": "hard",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Arrange the morning routine into a sensible order.",
-      "instructions": "Drag the tiles to form the sequence.",
-      "expectedAnswer": ["Wake up", "Breakfast", "Commute", "Start work"],
+      "prompt": "Arrange four people from lightest to heaviest.",
+      "instructions": "C is heavier than A; A is heavier than B; B is heavier than D.",
+      "explanation": "Heaviest first: C, then A, then B, then D.",
+      "hint": "Find the heaviest person before ordering the rest.",
+      "estimatedSeconds": 50,
+      "tags": [
+        "order",
+        "logic"
+      ],
+      "expectedAnswer": [
+        "C",
+        "A",
+        "B",
+        "D"
+      ],
       "interactionConfig": {
-        "tiles": ["Wake up", "Breakfast", "Commute", "Start work"]
-      },
-      "explanation": "A common order is: wake up, breakfast, commute, start work.",
-      "hint": "What happens first in the morning?",
-      "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["reorder", "ordering"],
-      "contentVersion": 1
+        "tiles": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
     },
     {
-      "id": "puzzle_reorder_003",
-      "domain": "puzzle",
-      "contentType": "reorder_sequence",
-      "skill": "pattern_recognition",
-      "difficulty": "medium",
-      "locale": "en",
       "status": "draft",
-      "prompt": "Order the numbers from smallest to largest.",
-      "instructions": "Drag the tiles to form the sequence.",
-      "expectedAnswer": ["2", "5", "9", "14"],
-      "interactionConfig": {
-        "tiles": ["2", "5", "9", "14"]
-      },
-      "explanation": "From smallest to largest: 2, 5, 9, 14.",
-      "hint": "Compare the single-digit numbers first.",
-      "estimatedSeconds": 25,
       "pointsWeight": 1,
-      "tags": ["reorder", "numbers"],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "id": "puz_match_hard_001",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "hard",
+      "locale": "en",
+      "prompt": "Find all three matching pairs.",
+      "instructions": "Tap two cards to turn them over. A matching pair stays open.",
+      "explanation": "The board holds a star pair, a moon pair, and a leaf pair.",
+      "hint": "Remember where each card sat, not only what it showed.",
+      "estimatedSeconds": 60,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "expectedAnswer": [
+        "symbol_star",
+        "symbol_moon",
+        "symbol_leaf"
+      ],
+      "interactionConfig": {
+        "maxFlips": 14
+      },
+      "options": [
+        {
+          "id": "symbol_star",
+          "text": "Star"
+        },
+        {
+          "id": "symbol_moon",
+          "text": "Moon"
+        },
+        {
+          "id": "symbol_leaf",
+          "text": "Leaf"
+        }
+      ]
     }
   ]
 }

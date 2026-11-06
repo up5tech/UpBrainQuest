@@ -21,9 +21,11 @@ import 'package:up_brain_quest/domain/session/player_answer.dart';
 import 'package:up_brain_quest/domain/session/session_result.dart';
 import 'package:up_brain_quest/features/gameplay/application/session_controller.dart';
 import 'package:up_brain_quest/features/gameplay/widgets/eq_scenario_question.dart';
+import 'package:up_brain_quest/features/gameplay/widgets/matching_pairs_question.dart';
 import 'package:up_brain_quest/features/gameplay/widgets/memory_sequence_question.dart';
 import 'package:up_brain_quest/features/gameplay/widgets/multiple_choice_question.dart';
 import 'package:up_brain_quest/features/gameplay/widgets/reorder_sequence_question.dart';
+import 'package:up_brain_quest/features/gameplay/widgets/symbol_choice_question.dart';
 
 /// Active gameplay screen for a reasoning session (PLAN §3.1, §8.3).
 ///
@@ -250,6 +252,25 @@ class _GameplayPageState extends ConsumerState<GameplayPage> {
       }
       if (item.contentType == ContentType.reorderSequence) {
         return ReorderSequenceQuestionWidget(
+          key: ValueKey<String>(item.id),
+          item: item,
+          submission: submission,
+          evaluation: evaluation,
+          onChanged: _onAnswerChanged,
+        );
+      }
+      if (item.contentType == ContentType.visualPattern ||
+          item.contentType == ContentType.oddOneOut) {
+        return SymbolChoiceQuestionWidget(
+          key: ValueKey<String>(item.id),
+          item: item,
+          submission: submission,
+          evaluation: evaluation,
+          onChanged: _onAnswerChanged,
+        );
+      }
+      if (item.contentType == ContentType.matchingPairs) {
+        return MatchingPairsQuestionWidget(
           key: ValueKey<String>(item.id),
           item: item,
           submission: submission,

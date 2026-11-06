@@ -436,4 +436,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String fractionOf(int value, int total) {
     return '$value / $total';
   }
+
+  @override
+  String get sessionPairsHint => 'Tap two cards to find a matching pair.';
+
+  @override
+  String sessionPairsFound(int found, int total) {
+    return '$found / $total pairs found';
+  }
+
+  @override
+  String sessionPairsFlipsLeft(int count) {
+    return 'Flips left: $count';
+  }
+
+  @override
+  String get sessionPairsBudgetSpent =>
+      'No flips left. Submit to see the result.';
+
+  @override
+  String get sessionPairsAnswer => 'Pairs';
+
+  @override
+  String get sessionPairsHiddenCard => 'Hidden card';
 }

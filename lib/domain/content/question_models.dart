@@ -106,12 +106,20 @@ class PuzzleItem extends QuestionItem {
     super.attribution,
     required super.status,
     required this.expectedAnswer,
+    this.options = const <QuestionOption>[],
     this.interactionConfig,
   });
 
   /// Correct answer: integers for `memory_sequence`, tile-id strings for
-  /// `reorder_sequence`. Validator enforces element types per mechanic.
+  /// `reorder_sequence`, symbol ids for `visual_pattern` and `odd_one_out`,
+  /// pair ids for `matching_pairs`. Validator enforces element types per
+  /// mechanic.
   final List<dynamic> expectedAnswer;
+
+  /// Selectable symbols for the symbol-based mechanics. Always empty for
+  /// `memory_sequence` and `reorder_sequence`.
+  final List<QuestionOption> options;
+
   final Map<String, dynamic>? interactionConfig;
 }
 

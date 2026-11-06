@@ -247,6 +247,9 @@ class ContentParser {
         item = _parseEqScenario(json, id, common, issues);
       case ContentType.memorySequence:
       case ContentType.reorderSequence:
+      case ContentType.visualPattern:
+      case ContentType.oddOneOut:
+      case ContentType.matchingPairs:
         item = _parsePuzzle(json, id, common, issues, contentType);
     }
 
@@ -498,6 +501,7 @@ class ContentParser {
       return null;
     }
     final List<dynamic> expectedAnswer = rawAnswer;
+    List<QuestionOption> options = const <QuestionOption>[];
 
     if (contentType == ContentType.memorySequence) {
       for (final dynamic e in expectedAnswer) {
@@ -508,6 +512,26 @@ class ContentParser {
               code: IssueCode.invalidInteractionConfig,
               message:
                   'Item $id memory_sequence expectedAnswer must be '
+                  'integers.',
+              itemId: id,
+            ),
+          );
+          return null;
+        }
+      }
+      final dynamic reveal = _configValue(json, 'revealSequence');
+      if (reveal != null) {
+        final bool validReveal =
+            reveal is List<dynamic> &&
+            reveal.isNotEmpty &&
+            reveal.every((dynamic e) => e is int);
+        if (!validReveal) {
+          issues.add(
+            ContentIssue(
+              severity: IssueSeverity.error,
+              code: IssueCode.invalidInteractionConfig,
+              message:
+                  'Item $id revealSequence must be a non-empty list of '
                   'integers.',
               itemId: id,
             ),
@@ -563,6 +587,78 @@ class ContentParser {
           return null;
         }
       }
+    } else {
+      // Symbol-based mechanics: visual_pattern, odd_one_out, matching_pairs.
+      final List<QuestionOption>? parsed = _parseSymbolOptions(
+        json,
+        id,
+        issues,
+      );
+      if (parsed == null) return null;
+      options = parsed;
+      final Set<String> symbolIds = options
+          .map((QuestionOption o) => o.id)
+          .toSet();
+      for (final dynamic e in expectedAnswer) {
+        if (e is! String || !symbolIds.contains(e)) {
+          issues.add(
+            ContentIssue(
+              severity: IssueSeverity.error,
+              code: IssueCode.invalidInteractionConfig,
+              message:
+                  'Item $id expectedAnswer references unknown symbol "$e".',
+              itemId: id,
+            ),
+          );
+          return null;
+        }
+      }
+      if (contentType == ContentType.matchingPairs) {
+        if (expectedAnswer.length < 2) {
+          issues.add(
+            ContentIssue(
+              severity: IssueSeverity.error,
+              code: IssueCode.invalidInteractionConfig,
+              message: 'Item $id needs at least two matching pairs.',
+              itemId: id,
+            ),
+          );
+          return null;
+        }
+        if (expectedAnswer.toSet().length != expectedAnswer.length) {
+          issues.add(
+            ContentIssue(
+              severity: IssueSeverity.error,
+              code: IssueCode.invalidInteractionConfig,
+              message: 'Item $id repeats a matching pair id.',
+              itemId: id,
+            ),
+          );
+          return null;
+        }
+        final dynamic rawBudget = _configValue(json, 'maxFlips');
+        if (rawBudget != null && (rawBudget is! int || rawBudget <= 0)) {
+          issues.add(
+            ContentIssue(
+              severity: IssueSeverity.error,
+              code: IssueCode.invalidInteractionConfig,
+              message: 'Item $id maxFlips must be a positive integer.',
+              itemId: id,
+            ),
+          );
+          return null;
+        }
+      } else if (expectedAnswer.length != 1) {
+        issues.add(
+          ContentIssue(
+            severity: IssueSeverity.error,
+            code: IssueCode.invalidInteractionConfig,
+            message: 'Item $id must reference exactly one symbol.',
+            itemId: id,
+          ),
+        );
+        return null;
+      }
     }
 
     final Map<String, dynamic>? interactionConfig =
@@ -588,8 +684,82 @@ class ContentParser {
       attribution: common.attribution,
       status: common.status,
       expectedAnswer: expectedAnswer,
+      options: options,
       interactionConfig: interactionConfig,
     );
+  }
+
+  /// Reads the optional `options` array used by symbol-based puzzle mechanics.
+  ///
+  /// Returns `null` and records an issue when the array is unusable, so the
+  /// caller can drop the item instead of shipping a question nobody can solve.
+  static List<QuestionOption>? _parseSymbolOptions(
+    Map<String, dynamic> json,
+    String id,
+    List<ContentIssue> issues,
+  ) {
+    final dynamic rawOptions = json['options'];
+    if (rawOptions is! List<dynamic> || rawOptions.length < 2) {
+      issues.add(
+        ContentIssue(
+          severity: IssueSeverity.error,
+          code: IssueCode.missingOptions,
+          message: 'Item $id needs at least two symbol options.',
+          itemId: id,
+        ),
+      );
+      return null;
+    }
+    final List<QuestionOption> options = <QuestionOption>[];
+    final Set<String> optionIds = <String>{};
+    for (final dynamic raw in rawOptions) {
+      if (raw is! Map<String, dynamic>) {
+        issues.add(
+          ContentIssue(
+            severity: IssueSeverity.error,
+            code: IssueCode.optionMissingId,
+            message: 'Item $id has a malformed symbol option.',
+            itemId: id,
+          ),
+        );
+        return null;
+      }
+      final String? optionId = readString(raw['id']);
+      final String? text = readString(raw['text']);
+      if (optionId == null ||
+          optionId.isEmpty ||
+          text == null ||
+          text.isEmpty) {
+        issues.add(
+          ContentIssue(
+            severity: IssueSeverity.error,
+            code: IssueCode.optionMissingText,
+            message: 'Item $id has a symbol option without id or text.',
+            itemId: id,
+          ),
+        );
+        return null;
+      }
+      if (!optionIds.add(optionId)) {
+        issues.add(
+          ContentIssue(
+            severity: IssueSeverity.error,
+            code: IssueCode.optionMissingId,
+            message: 'Item $id has duplicate symbol id "$optionId".',
+            itemId: id,
+          ),
+        );
+        return null;
+      }
+      options.add(QuestionOption(id: optionId, text: text));
+    }
+    return options;
+  }
+
+  static dynamic _configValue(Map<String, dynamic> json, String key) {
+    final dynamic config = json['interactionConfig'];
+    if (config is! Map<String, dynamic>) return null;
+    return config[key];
   }
 
   static QuestionItem? _parseEqScenario(

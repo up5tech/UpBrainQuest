@@ -8,13 +8,15 @@ notes)._
 
 | Domain | Items | Types | Notes |
 | --- | --- | --- | --- |
-| IQ / reasoning | 16 | `multiple_choice` | Sequences, logic, arithmetic reasoning |
-| Puzzle | 6 | `memory_sequence` (3), `reorder_sequence` (3) | Expanded in Phase 8 from 2 → 6 |
-| EQ | 16 | `scenario_choice` | All 5 rubric dimensions represented |
-| **Total** | **38** | | All items are `status: draft` |
+| IQ / reasoning | 12 | `multiple_choice` | PLAN §5.10.A starter set: number patterns, logical deduction, verbal analogies |
+| Puzzle | 10 | `memory_sequence` (3), `reorder_sequence` (3), `visual_pattern` (2), `odd_one_out` (1), `matching_pairs` (1) | PLAN §5.10.B starter set |
+| EQ | 10 | `scenario_choice` | PLAN §5.10.C starter set; all 5 rubric dimensions represented |
+| **Total** | **32** | | All items are `status: draft` |
 
-The manifest declares `expectedItemCounts` (`iq: 16`, `puzzle: 6`, `eq: 16`) and the
-validation test asserts the parsed bank matches those counts exactly.
+The manifest declares `expectedItemCounts` (`iq: 12`, `puzzle: 10`, `eq: 10`) and the
+validation test asserts the parsed bank matches those counts exactly. Every locale
+must ship the same IDs; the parity test compares answers, option IDs, rubric scores
+and symbol IDs across languages.
 
 ## 2. Validation results
 
@@ -31,12 +33,11 @@ validation test asserts the parsed bank matches those counts exactly.
 
 ## 3. EQ content review (PLAN §4.6)
 
-Themes covered by the 16 scenarios: receiving critical feedback, anger while late,
-a distant colleague, boundary-setting with shift requests, noticing body signals,
-verbal/non-verbal mismatch, mixed emotions, giving peer feedback, a heated group
-chat, repairing after snapping, a blunt client message, irritation under a deadline,
-a friend cancelling, a sharp customer, a premature request for a home address, and
-family pressure over a career choice.
+Themes covered by the 10 scenarios: a quiet friend after bad news, frustration
+after a teammate's mistake, being interrupted mid-explanation, lending something you
+need today, defensive reactions to critical feedback, a missed deadline with unknown
+context, repeated cancellations, needing time in a heated conversation, a secret
+that suggests someone may be at risk, and an unclear tone in a group chat.
 
 Review findings:
 
@@ -107,8 +108,8 @@ To add another locale (only when translations are complete):
 ## 6. Known limitations
 
 - Content is draft; a human copy-edit and EQ safety review is still recommended.
-- Puzzle coverage is 6 items (sufficient for Quick Quest's 2-item target, thin for a
-  future Puzzle Sprint mode).
+- Puzzle coverage is 10 items across five mechanics (sufficient for Quick Quest's
+  2-item target, thin for a future Puzzle Sprint mode).
 - No audio assets; sound feedback uses the platform click.
 - Two locales (English, Vietnamese), both complete for UI copy and content. The
   Vietnamese translation is machine-authored and still needs native review.

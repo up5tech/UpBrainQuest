@@ -16,6 +16,9 @@ enum ContentType {
   memorySequence,
   reorderSequence,
   scenarioChoice,
+  visualPattern,
+  oddOneOut,
+  matchingPairs,
 }
 
 extension ContentTypeX on ContentType {
@@ -24,6 +27,9 @@ extension ContentTypeX on ContentType {
     'memory_sequence' => ContentType.memorySequence,
     'reorder_sequence' => ContentType.reorderSequence,
     'scenario_choice' => ContentType.scenarioChoice,
+    'visual_pattern' => ContentType.visualPattern,
+    'odd_one_out' => ContentType.oddOneOut,
+    'matching_pairs' => ContentType.matchingPairs,
     _ => null,
   };
 }

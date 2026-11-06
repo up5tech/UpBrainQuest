@@ -11,7 +11,7 @@ assets/content/
   manifest.json              # pack metadata + file list + expected counts
   en/
     iq_questions.json        # objective reasoning items (multiple_choice)
-    puzzle_questions.json     # interactive puzzles (memory_sequence, reorder_sequence)
+    puzzle_questions.json     # interactive puzzles (5 mechanics)
     eq_scenarios.json         # EQ scenario items (scenario_choice)
   vi/                        # same three files, same ids, Vietnamese text
 ```
@@ -25,13 +25,13 @@ reads the `<locale>/` files for the active language.
 ```json
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "supportedLocales": ["en", "vi"],
   "files": [
     "en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json",
     "vi/iq_questions.json", "vi/puzzle_questions.json", "vi/eq_scenarios.json"
   ],
-  "expectedItemCounts": { "iq": 16, "puzzle": 6, "eq": 16 }
+  "expectedItemCounts": { "iq": 12, "puzzle": 10, "eq": 10 }
 }
 ```
 
@@ -40,12 +40,12 @@ crash.
 
 ## Item rules (enforced by the validator)
 
-- `id` — stable unique string, e.g. `iq_seq_001`. Never reuse or randomize it;
-  progress depends on IDs staying stable. Duplicates are rejected.
+- `id` — stable unique string, e.g. `iq_num_easy_001`. Never reuse or randomize
+  it; progress depends on IDs staying stable. Duplicates are rejected.
 - `domain` — one of `iq`, `puzzle`, `eq`. Unknown values are rejected.
 - `contentType` — `multiple_choice`, `memory_sequence`, `reorder_sequence`,
-  `scenario_choice`.
-- `skill` — stable taxonomy key (not display text), e.g. `pattern_recognition`.
+  `scenario_choice`, `visual_pattern`, `odd_one_out`, `matching_pairs`.
+- `skill` — stable taxonomy key (not display text), e.g. `number_patterns`.
 - `difficulty` — `easy`, `medium`, `hard`.
 - `locale` — must be listed in `manifest.supportedLocales` (else a warning).
 - `prompt` — required. `instructions`, `explanation`, `hint` recommended.
@@ -59,12 +59,28 @@ crash.
 - `explanation`: required; explain the rule, not just the answer.
 - `pointsWeight`: positive integer.
 
-### puzzle (memory_sequence / reorder_sequence)
+### puzzle
 
-- `expectedAnswer`: non-empty list. `memory_sequence` → list of integers;
-  `reorder_sequence` → list of tile-id strings.
-- `reorder_sequence` also needs `interactionConfig.tiles` (list of ids); every
-  `expectedAnswer` entry must be one of those tiles.
+Five mechanics share the `puzzle` domain and each has its own interaction:
+
+- `memory_sequence` — `expectedAnswer`: integers the player types. Optional
+  `interactionConfig.revealSequence` (integers) shows a different sequence than
+  the answer, which is how "recall only the third item", "reverse it", and
+  "positions 1, 3, 5" items are authored. `minValue`/`maxValue` bound the keypad.
+- `reorder_sequence` — `expectedAnswer`: tile-id strings, plus
+  `interactionConfig.tiles` (list of the same ids); every answer entry must be
+  one of those tiles.
+- `visual_pattern` — `options` of symbol ids (`circle`, `square`, `triangle`,
+  `pentagon`, `star`, `moon`, `leaf`), `expectedAnswer` exactly one option id,
+  and optional `interactionConfig.previewSymbols` (use `blank` for the missing
+  slot).
+- `odd_one_out` — same shape as `visual_pattern`; the prompt must state the
+  property being tested.
+- `matching_pairs` — `expectedAnswer`: at least two unique pair ids, each placed
+  twice on the board, with `options` supplying the localised labels and optional
+  `interactionConfig.maxFlips` (card reveals allowed before the attempt fails).
+
+Symbol ids are language-independent; only the option `text` changes per locale.
 
 ### scenario_choice (eq)
 

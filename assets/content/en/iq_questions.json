@@ -1,388 +1,470 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "items": [
     {
-      "id": "iq_seq_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_easy_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
+      "skill": "number_patterns",
       "difficulty": "easy",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Which number comes next in the sequence?",
+      "prompt": "Which number comes next: 2, 4, 6, 8, ?",
       "instructions": "Look for the rule that connects each number.",
       "options": [
-        { "id": "a", "text": "24" },
-        { "id": "b", "text": "30" },
-        { "id": "c", "text": "32" },
-        { "id": "d", "text": "64" }
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
       ],
-      "correctOptionId": "c",
-      "explanation": "Each number is doubled: 2, 4, 8, 16, so the next is 32.",
+      "correctOptionId": "b",
+      "explanation": "Add 2 at every step: 2, 4, 6, 8, so the next number is 10.",
       "hint": "Compare each number with the one before it.",
-      "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["sequence", "numbers"],
-      "contentVersion": 1
+      "estimatedSeconds": 20,
+      "tags": [
+        "sequence",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_seq_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_easy_002",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
+      "skill": "number_patterns",
       "difficulty": "easy",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Which number is the odd one out?",
+      "prompt": "Which number is different: 3, 5, 7, 10, 11?",
+      "instructions": "Three of the numbers share a property.",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "5" },
-        { "id": "d", "text": "11" }
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "11"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "The others are odd primes; 2 is the only even prime.",
-      "hint": "Check whether each number is even or odd.",
-      "estimatedSeconds": 20,
-      "pointsWeight": 1,
-      "tags": ["odd_one_out", "primes"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_logic_001",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
-      "difficulty": "medium",
-      "locale": "en",
-      "status": "draft",
-      "prompt": "All Bloops are Razzies. All Razzies are Lazzies. Are all Bloops definitely Lazzies?",
-      "instructions": "Follow the chain of categories.",
-      "options": [
-        { "id": "a", "text": "Yes" },
-        { "id": "b", "text": "No" },
-        { "id": "c", "text": "Only some" },
-        { "id": "d", "text": "Cannot tell" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "If every Bloop is a Razzie and every Razzie is a Lazzie, then every Bloop is a Lazzie by transitivity.",
-      "hint": "Draw the sets as nested circles.",
-      "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["syllogism", "logic"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_logic_002",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
-      "difficulty": "medium",
-      "locale": "en",
-      "status": "draft",
-      "prompt": "Which letter comes next: A, C, E, G, ?",
-      "options": [
-        { "id": "a", "text": "I" },
-        { "id": "b", "text": "K" },
-        { "id": "c", "text": "M" },
-        { "id": "d", "text": "O" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "The letters step by two positions: A(1), C(3), E(5), G(7), so the next is I(9).",
-      "hint": "Convert each letter to its position in the alphabet.",
+      "correctOptionId": "c",
+      "explanation": "All the other numbers are prime; 10 is composite.",
+      "hint": "Ask which numbers can only be divided by 1 and themselves.",
       "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["sequence", "letters"],
-      "contentVersion": 1
+      "tags": [
+        "odd-one-out",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_seq_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_analogy_easy_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
+      "skill": "verbal_analogies",
+      "difficulty": "easy",
+      "locale": "en",
+      "prompt": "Bird is to nest as bee is to ___?",
+      "instructions": "Find the relationship in the first pair.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Web"
+        },
+        {
+          "id": "b",
+          "text": "Hive"
+        },
+        {
+          "id": "c",
+          "text": "Burrow"
+        },
+        {
+          "id": "d",
+          "text": "Den"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A nest is a bird's home; a hive is home to a bee colony.",
+      "hint": "The first pair names a home.",
+      "estimatedSeconds": 20,
+      "tags": [
+        "analogy",
+        "words"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_logic_easy_001",
+      "domain": "iq",
+      "contentType": "multiple_choice",
+      "skill": "logical_deduction",
+      "difficulty": "easy",
+      "locale": "en",
+      "prompt": "All roses are flowers. Which statement must be true?",
+      "instructions": "Do not reverse the given statement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "All flowers are roses"
+        },
+        {
+          "id": "b",
+          "text": "Some roses are not flowers"
+        },
+        {
+          "id": "c",
+          "text": "Every rose is a flower"
+        },
+        {
+          "id": "d",
+          "text": "No flowers are roses"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "This restates the premise instead of reversing it.",
+      "hint": "Only one option keeps the direction of the premise.",
+      "estimatedSeconds": 25,
+      "tags": [
+        "logic",
+        "statements"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_medium_001",
+      "domain": "iq",
+      "contentType": "multiple_choice",
+      "skill": "number_patterns",
       "difficulty": "medium",
       "locale": "en",
-      "status": "draft",
-      "prompt": "What comes next in the sequence: 1, 1, 2, 3, 5, 8, ?",
-      "instructions": "Each number is the sum of the two before it.",
+      "prompt": "Which number comes next: 2, 5, 11, 23, 47, ?",
+      "instructions": "Try two operations on each number.",
       "options": [
-        { "id": "a", "text": "11" },
-        { "id": "b", "text": "13" },
-        { "id": "c", "text": "12" },
-        { "id": "d", "text": "10" }
+        {
+          "id": "a",
+          "text": "89"
+        },
+        {
+          "id": "b",
+          "text": "93"
+        },
+        {
+          "id": "c",
+          "text": "95"
+        },
+        {
+          "id": "d",
+          "text": "97"
+        }
       ],
-      "correctOptionId": "b",
-      "explanation": "This is the Fibonacci sequence: 1+1=2, 1+2=3, 2+3=5, 3+5=8, 5+8=13.",
-      "hint": "Add the two most recent numbers.",
-      "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["sequence", "fibonacci"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_seq_004",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
-      "difficulty": "hard",
-      "locale": "en",
-      "status": "draft",
-      "prompt": "What comes next: 2, 3, 5, 9, 17, ?",
-      "instructions": "Look at how much each step grows.",
-      "options": [
-        { "id": "a", "text": "25" },
-        { "id": "b", "text": "33" },
-        { "id": "c", "text": "29" },
-        { "id": "d", "text": "41" }
-      ],
-      "correctOptionId": "b",
-      "explanation": "Differences double each time: +1, +2, +4, +8, so the next difference is +16, giving 17+16=33.",
-      "hint": "Compare each number with the one before it.",
+      "correctOptionId": "c",
+      "explanation": "Each term is the previous term doubled, plus 1: 2, 5, 11, 23, 47, 95.",
+      "hint": "Compare each number with double the number before it.",
       "estimatedSeconds": 35,
-      "pointsWeight": 2,
-      "tags": ["sequence", "differences"],
-      "contentVersion": 1
+      "tags": [
+        "sequence",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_logic_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_medium_002",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
+      "skill": "number_patterns",
       "difficulty": "medium",
       "locale": "en",
-      "status": "draft",
-      "prompt": "If it rains, the ground is wet. The ground is wet. Does it follow that it rained?",
-      "instructions": "Decide whether the conclusion is guaranteed.",
+      "prompt": "Which number comes next: 1, 4, 9, 16, 25, ?",
+      "instructions": "Look at how far apart the numbers are.",
       "options": [
-        { "id": "a", "text": "Yes" },
-        { "id": "b", "text": "No" },
-        { "id": "c", "text": "Only if it was cloudy" },
-        { "id": "d", "text": "Cannot tell" }
+        {
+          "id": "a",
+          "text": "30"
+        },
+        {
+          "id": "b",
+          "text": "32"
+        },
+        {
+          "id": "c",
+          "text": "35"
+        },
+        {
+          "id": "d",
+          "text": "36"
+        }
       ],
-      "correctOptionId": "b",
-      "explanation": "A wet ground could have other causes (sprinkler, spilled water). Confirming the effect does not confirm the cause — this is the fallacy of affirming the consequent.",
-      "hint": "Think of another way the ground could get wet.",
+      "correctOptionId": "d",
+      "explanation": "These are square numbers: 1, 4, 9, 16, 25, then 36.",
+      "hint": "The gaps are 3, 5, 7, 9, so the next gap is 11.",
       "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["logic", "fallacy"],
-      "contentVersion": 1
+      "tags": [
+        "sequence",
+        "squares"
+      ]
     },
     {
-      "id": "iq_logic_004",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_logic_medium_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
-      "difficulty": "hard",
+      "skill": "logical_deduction",
+      "difficulty": "medium",
       "locale": "en",
-      "status": "draft",
-      "prompt": "A says 'B is a knave.' B says 'We are both knaves.' Knights always tell the truth; knaves always lie. What are A and B?",
-      "instructions": "Use the rules of truth-tellers and liars.",
+      "prompt": "All glips are norks. All norks are vens. What must be true?",
+      "instructions": "Draw the groups as nested circles.",
       "options": [
-        { "id": "a", "text": "A is a knight, B is a knave" },
-        { "id": "b", "text": "Both are knights" },
-        { "id": "c", "text": "Both are knaves" },
-        { "id": "d", "text": "A is a knave, B is a knight" }
+        {
+          "id": "a",
+          "text": "All vens are glips"
+        },
+        {
+          "id": "b",
+          "text": "All glips are vens"
+        },
+        {
+          "id": "c",
+          "text": "No glips are vens"
+        },
+        {
+          "id": "d",
+          "text": "Some norks are not vens"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "If B were telling the truth, B would be a knight, contradicting 'both knaves,' so B lies and is a knave. A's statement 'B is a knave' is then true, so A is a knight.",
-      "hint": "Test whether B's statement can be true.",
+      "correctOptionId": "b",
+      "explanation": "Each group is inside the next, so every glip is also a ven.",
+      "hint": "The smallest group sits inside both larger groups.",
       "estimatedSeconds": 40,
-      "pointsWeight": 2,
-      "tags": ["logic", "knights"],
-      "contentVersion": 1
+      "tags": [
+        "logic",
+        "sets"
+      ]
     },
     {
-      "id": "iq_num_001",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "numerical_reasoning",
-      "difficulty": "easy",
-      "locale": "en",
       "status": "draft",
-      "prompt": "What is 15% of 200?",
-      "instructions": "Convert the percentage to a fraction of the total.",
-      "options": [
-        { "id": "a", "text": "30" },
-        { "id": "b", "text": "25" },
-        { "id": "c", "text": "35" },
-        { "id": "d", "text": "40" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "15% of 200 = 0.15 x 200 = 30.",
-      "hint": "10% of 200 is 20; 5% is half of that.",
-      "estimatedSeconds": 20,
       "pointsWeight": 1,
-      "tags": ["percentage", "arithmetic"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_num_002",
+      "contentVersion": 1,
+      "id": "iq_logic_medium_002",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "numerical_reasoning",
+      "skill": "logical_deduction",
       "difficulty": "medium",
       "locale": "en",
-      "status": "draft",
-      "prompt": "A car travels 60 kilometers in 1.5 hours. What is its average speed in km/h?",
-      "instructions": "Speed is distance divided by time.",
+      "prompt": "Ana is older than Bao. Bao is older than Chi. Who is youngest?",
+      "instructions": "Put the three names in order first.",
       "options": [
-        { "id": "a", "text": "40" },
-        { "id": "b", "text": "45" },
-        { "id": "c", "text": "50" },
-        { "id": "d", "text": "35" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "60 km / 1.5 h = 40 km/h.",
-      "hint": "Divide the distance by the time.",
-      "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["speed", "arithmetic"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_num_003",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "numerical_reasoning",
-      "difficulty": "hard",
-      "locale": "en",
-      "status": "draft",
-      "prompt": "3 workers build a wall in 12 days. How many days will 4 workers take at the same rate?",
-      "instructions": "Total work stays the same; more workers means fewer days.",
-      "options": [
-        { "id": "a", "text": "8" },
-        { "id": "b", "text": "9" },
-        { "id": "c", "text": "10" },
-        { "id": "d", "text": "16" }
-      ],
-      "correctOptionId": "b",
-      "explanation": "Total work is 3 x 12 = 36 worker-days. With 4 workers, 36 / 4 = 9 days.",
-      "hint": "Multiply workers by days, then divide by the new number of workers.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 2,
-      "tags": ["work", "proportion"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_spatial_001",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "spatial_reasoning",
-      "difficulty": "easy",
-      "locale": "en",
-      "status": "draft",
-      "prompt": "Which shape has the most sides?",
-      "instructions": "Count the straight edges of each shape.",
-      "options": [
-        { "id": "a", "text": "Triangle" },
-        { "id": "b", "text": "Pentagon" },
-        { "id": "c", "text": "Square" },
-        { "id": "d", "text": "Hexagon" }
-      ],
-      "correctOptionId": "d",
-      "explanation": "A hexagon has 6 sides, more than a square (4), pentagon (5), or triangle (3).",
-      "hint": "Hexagons appear in honeycombs.",
-      "estimatedSeconds": 20,
-      "pointsWeight": 1,
-      "tags": ["shapes", "geometry"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_spatial_002",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "spatial_reasoning",
-      "difficulty": "medium",
-      "locale": "en",
-      "status": "draft",
-      "prompt": "How many edges does a cube have?",
-      "instructions": "Count the line segments where two faces meet.",
-      "options": [
-        { "id": "a", "text": "8" },
-        { "id": "b", "text": "10" },
-        { "id": "c", "text": "12" },
-        { "id": "d", "text": "6" }
+        {
+          "id": "a",
+          "text": "Ana"
+        },
+        {
+          "id": "b",
+          "text": "Bao"
+        },
+        {
+          "id": "c",
+          "text": "Chi"
+        },
+        {
+          "id": "d",
+          "text": "Cannot be determined"
+        }
       ],
       "correctOptionId": "c",
-      "explanation": "A cube has 12 edges: 4 on the top, 4 on the bottom, and 4 vertical ones.",
-      "hint": "Count the edges on the top, bottom, and sides separately.",
+      "explanation": "From oldest to youngest the order is Ana, Bao, Chi.",
+      "hint": "The last name in the chain is the youngest.",
       "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["geometry", "cube"],
-      "contentVersion": 1
+      "tags": [
+        "logic",
+        "ordering"
+      ]
     },
     {
-      "id": "iq_spatial_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_hard_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "spatial_reasoning",
+      "skill": "number_patterns",
       "difficulty": "hard",
       "locale": "en",
-      "status": "draft",
-      "prompt": "A 3x3x3 cube is painted on all faces, then taken apart. How many small cubes have no paint at all?",
-      "instructions": "Only the inner cubes escape the paint.",
+      "prompt": "Which number comes next: 3, 8, 18, 38, 78, ?",
+      "instructions": "Test one rule on every step, not just the first.",
       "options": [
-        { "id": "a", "text": "1" },
-        { "id": "b", "text": "6" },
-        { "id": "c", "text": "8" },
-        { "id": "d", "text": "0" }
+        {
+          "id": "a",
+          "text": "148"
+        },
+        {
+          "id": "b",
+          "text": "156"
+        },
+        {
+          "id": "c",
+          "text": "158"
+        },
+        {
+          "id": "d",
+          "text": "160"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "Only the single center cube is completely enclosed; (3-2)^3 = 1.",
-      "hint": "Remove the outer layer on every side.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 2,
-      "tags": ["geometry", "painted_cube"],
-      "contentVersion": 1
+      "correctOptionId": "c",
+      "explanation": "Double the previous term and add 2: 78 doubled is 156, plus 2 is 158.",
+      "hint": "Doubling alone gives 156, so check the remainder.",
+      "estimatedSeconds": 45,
+      "tags": [
+        "sequence",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_verbal_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_letter_hard_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "verbal_reasoning",
-      "difficulty": "easy",
+      "skill": "number_patterns",
+      "difficulty": "hard",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Which word is the odd one out?",
-      "instructions": "Consider what each word refers to.",
+      "prompt": "Which letter comes next: C, F, J, O, ?",
+      "instructions": "Convert each letter to its position in the alphabet.",
       "options": [
-        { "id": "a", "text": "Rose" },
-        { "id": "b", "text": "Tulip" },
-        { "id": "c", "text": "Daisy" },
-        { "id": "d", "text": "Oak" }
+        {
+          "id": "a",
+          "text": "T"
+        },
+        {
+          "id": "b",
+          "text": "U"
+        },
+        {
+          "id": "c",
+          "text": "V"
+        },
+        {
+          "id": "d",
+          "text": "W"
+        }
       ],
-      "correctOptionId": "d",
-      "explanation": "Rose, tulip, and daisy are flowers; oak is a tree.",
-      "hint": "Three are flowers, one is not.",
-      "estimatedSeconds": 20,
-      "pointsWeight": 1,
-      "tags": ["odd_one_out", "words"],
-      "contentVersion": 1
+      "correctOptionId": "b",
+      "explanation": "Positions are 3, 6, 10, 15; the jumps are +3, +4, +5, then +6 = 21, which is U.",
+      "hint": "The gaps grow by one letter each time.",
+      "estimatedSeconds": 40,
+      "tags": [
+        "sequence",
+        "letters"
+      ]
     },
     {
-      "id": "iq_analogy_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_logic_hard_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "analogical_reasoning",
-      "difficulty": "medium",
+      "skill": "logical_deduction",
+      "difficulty": "hard",
       "locale": "en",
-      "status": "draft",
-      "prompt": "Bird is to nest as dog is to ___?",
-      "instructions": "Find the word that completes the relationship.",
+      "prompt": "Three boxes are labelled Red, Blue, and Green. Exactly one contains a key. The Red label says “The key is not in Blue”; the Blue label says “The key is in Red”; the Green label says “The key is not in Red”. Exactly one label is true. Where is the key?",
+      "instructions": "Test each possible box and count the true labels.",
       "options": [
-        { "id": "a", "text": "Kennel" },
-        { "id": "b", "text": "Cage" },
-        { "id": "c", "text": "House" },
-        { "id": "d", "text": "Barn" }
+        {
+          "id": "a",
+          "text": "Red"
+        },
+        {
+          "id": "b",
+          "text": "Blue"
+        },
+        {
+          "id": "c",
+          "text": "Green"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "A bird lives in a nest; a dog lives in a kennel. The relationship is animal to its typical shelter.",
-      "hint": "What is a dog's usual shelter called?",
-      "estimatedSeconds": 25,
+      "correctOptionId": "b",
+      "explanation": "If the key is in Blue, only the Green label is true. If it were in Red or Green, two labels would be true.",
+      "hint": "Start by assuming the key is in Blue.",
+      "estimatedSeconds": 60,
+      "tags": [
+        "logic",
+        "deduction"
+      ]
+    },
+    {
+      "status": "draft",
       "pointsWeight": 1,
-      "tags": ["analogy", "relationships"],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "id": "iq_order_hard_001",
+      "domain": "iq",
+      "contentType": "multiple_choice",
+      "skill": "logical_deduction",
+      "difficulty": "hard",
+      "locale": "en",
+      "prompt": "Five people D, A, B, E, and C stand in a line. D is left of A; A is left of B; C is right of B; E is between B and C. Who must be at the far right?",
+      "instructions": "Chain the clues into one left-to-right order.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "E"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The clues force D before A before B, with E between B and C, so C is last.",
+      "hint": "Only one person is placed after B and E.",
+      "estimatedSeconds": 50,
+      "tags": [
+        "logic",
+        "ordering"
+      ]
     }
   ]
 }

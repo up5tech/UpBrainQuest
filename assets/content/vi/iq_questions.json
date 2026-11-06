@@ -1,388 +1,470 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "items": [
     {
-      "id": "iq_seq_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_easy_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
+      "skill": "number_patterns",
       "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Số nào tiếp theo trong dãy?",
+      "prompt": "Số nào tiếp theo: 2, 4, 6, 8, ?",
       "instructions": "Tìm quy luật liên kết các số.",
       "options": [
-        { "id": "a", "text": "24" },
-        { "id": "b", "text": "30" },
-        { "id": "c", "text": "32" },
-        { "id": "d", "text": "64" }
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
       ],
-      "correctOptionId": "c",
-      "explanation": "Mỗi số tăng gấp đôi: 2, 4, 8, 16, nên số tiếp theo là 32.",
+      "correctOptionId": "b",
+      "explanation": "Mỗi bước cộng thêm 2: 2, 4, 6, 8, nên số tiếp theo là 10.",
       "hint": "So sánh mỗi số với số đứng trước nó.",
-      "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["sequence", "numbers"],
-      "contentVersion": 1
+      "estimatedSeconds": 20,
+      "tags": [
+        "sequence",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_seq_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_easy_002",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
+      "skill": "number_patterns",
       "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Số nào khác loại?",
+      "prompt": "Số nào khác biệt: 3, 5, 7, 10, 11?",
+      "instructions": "Ba trong bốn số có cùng một tính chất.",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "5" },
-        { "id": "d", "text": "11" }
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "11"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "Các số còn lại là số nguyên tố lẻ; 2 là số nguyên tố chẵn duy nhất.",
-      "hint": "Kiểm tra xem mỗi số là chẵn hay lẻ.",
-      "estimatedSeconds": 20,
-      "pointsWeight": 1,
-      "tags": ["odd_one_out", "primes"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_logic_001",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
-      "difficulty": "medium",
-      "locale": "vi",
-      "status": "draft",
-      "prompt": "Mọi Bloop đều là Razzie. Mọi Razzie đều là Lazzie. Có phải mọi Bloop chắc chắn đều là Lazzie?",
-      "instructions": "Lần theo chuỗi phạm trù.",
-      "options": [
-        { "id": "a", "text": "Có" },
-        { "id": "b", "text": "Không" },
-        { "id": "c", "text": "Chỉ một số" },
-        { "id": "d", "text": "Không thể biết" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "Nếu mọi Bloop là Razzie và mọi Razzie là Lazzie thì mọi Bloop là Lazzie theo tính bắc cầu.",
-      "hint": "Vẽ các tập hợp dưới dạng vòng tròn lồng nhau.",
-      "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["syllogism", "logic"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_logic_002",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
-      "difficulty": "medium",
-      "locale": "vi",
-      "status": "draft",
-      "prompt": "Chữ nào tiếp theo: A, C, E, G, ?",
-      "options": [
-        { "id": "a", "text": "I" },
-        { "id": "b", "text": "K" },
-        { "id": "c", "text": "M" },
-        { "id": "d", "text": "O" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "Các chữ cách nhau hai vị trí: A(1), C(3), E(5), G(7), nên tiếp theo là I(9).",
-      "hint": "Đổi mỗi chữ thành vị trí của nó trong bảng chữ cái.",
+      "correctOptionId": "c",
+      "explanation": "Các số còn lại đều là số nguyên tố; 10 là hợp số.",
+      "hint": "Hỏi xem số nào chỉ chia hết cho 1 và chính nó.",
       "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["sequence", "letters"],
-      "contentVersion": 1
+      "tags": [
+        "odd-one-out",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_seq_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_analogy_easy_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
+      "skill": "verbal_analogies",
+      "difficulty": "easy",
+      "locale": "vi",
+      "prompt": "Chim với tổ như ong với ___?",
+      "instructions": "Tìm mối quan hệ trong cặp đầu tiên.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mạng nhện"
+        },
+        {
+          "id": "b",
+          "text": "Tổ ong"
+        },
+        {
+          "id": "c",
+          "text": "Hang"
+        },
+        {
+          "id": "d",
+          "text": "Hang cáo"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Tổ là nơi ở của chim; tổ ong là nơi đàn ong sống.",
+      "hint": "Cặp đầu tiên nói về nơi ở.",
+      "estimatedSeconds": 20,
+      "tags": [
+        "analogy",
+        "words"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_logic_easy_001",
+      "domain": "iq",
+      "contentType": "multiple_choice",
+      "skill": "logical_deduction",
+      "difficulty": "easy",
+      "locale": "vi",
+      "prompt": "Mọi hoa hồng đều là hoa. Câu nào chắc chắn đúng?",
+      "instructions": "Đừng đảo ngược câu đã cho.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi loài hoa đều là hoa hồng"
+        },
+        {
+          "id": "b",
+          "text": "Một số hoa hồng không phải là hoa"
+        },
+        {
+          "id": "c",
+          "text": "Mỗi bông hồng đều là một loài hoa"
+        },
+        {
+          "id": "d",
+          "text": "Không loài hoa nào là hoa hồng"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Câu này nhắc lại đúng tiền đề thay vì đảo ngược nó.",
+      "hint": "Chỉ một lựa chọn giữ đúng chiều của tiền đề.",
+      "estimatedSeconds": 25,
+      "tags": [
+        "logic",
+        "statements"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_medium_001",
+      "domain": "iq",
+      "contentType": "multiple_choice",
+      "skill": "number_patterns",
       "difficulty": "medium",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Điều gì tiếp theo trong dãy: 1, 1, 2, 3, 5, 8, ?",
-      "instructions": "Mỗi số là tổng của hai số đứng trước.",
+      "prompt": "Số nào tiếp theo: 2, 5, 11, 23, 47, ?",
+      "instructions": "Thử hai phép tính trên mỗi số.",
       "options": [
-        { "id": "a", "text": "11" },
-        { "id": "b", "text": "13" },
-        { "id": "c", "text": "12" },
-        { "id": "d", "text": "10" }
+        {
+          "id": "a",
+          "text": "89"
+        },
+        {
+          "id": "b",
+          "text": "93"
+        },
+        {
+          "id": "c",
+          "text": "95"
+        },
+        {
+          "id": "d",
+          "text": "97"
+        }
       ],
-      "correctOptionId": "b",
-      "explanation": "Đây là dãy Fibonacci: 1+1=2, 1+2=3, 2+3=5, 3+5=8, 5+8=13.",
-      "hint": "Cộng hai số gần nhất.",
-      "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["sequence", "fibonacci"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_seq_004",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "pattern_recognition",
-      "difficulty": "hard",
-      "locale": "vi",
-      "status": "draft",
-      "prompt": "Điều gì tiếp theo: 2, 3, 5, 9, 17, ?",
-      "instructions": "Xem mỗi bước tăng thêm bao nhiêu.",
-      "options": [
-        { "id": "a", "text": "25" },
-        { "id": "b", "text": "33" },
-        { "id": "c", "text": "29" },
-        { "id": "d", "text": "41" }
-      ],
-      "correctOptionId": "b",
-      "explanation": "Hiệu số tăng gấp đôi mỗi lần: +1, +2, +4, +8, nên hiệu tiếp theo là +16, cho 17+16=33.",
-      "hint": "So sánh mỗi số với số đứng trước nó.",
+      "correctOptionId": "c",
+      "explanation": "Mỗi số bằng số trước nhân đôi rồi cộng 1: 2, 5, 11, 23, 47, 95.",
+      "hint": "So sánh mỗi số với hai lần số đứng trước.",
       "estimatedSeconds": 35,
-      "pointsWeight": 2,
-      "tags": ["sequence", "differences"],
-      "contentVersion": 1
+      "tags": [
+        "sequence",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_logic_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_medium_002",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
+      "skill": "number_patterns",
       "difficulty": "medium",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Nếu trời mưa thì mặt đất ướt. Mặt đất đang ướt. Có suy ra được trời đã mưa không?",
-      "instructions": "Xác định xem kết luận có bắt buộc đúng hay không.",
+      "prompt": "Số nào tiếp theo: 1, 4, 9, 16, 25, ?",
+      "instructions": "Xem khoảng cách giữa các số.",
       "options": [
-        { "id": "a", "text": "Có" },
-        { "id": "b", "text": "Không" },
-        { "id": "c", "text": "Chỉ khi trời nhiều mây" },
-        { "id": "d", "text": "Không thể biết" }
+        {
+          "id": "a",
+          "text": "30"
+        },
+        {
+          "id": "b",
+          "text": "32"
+        },
+        {
+          "id": "c",
+          "text": "35"
+        },
+        {
+          "id": "d",
+          "text": "36"
+        }
       ],
-      "correctOptionId": "b",
-      "explanation": "Mặt đất ướt có thể do nguyên nhân khác (tưới nước, nước đổ). Xác nhận hệ quả không xác nhận nguyên nhân — đây là ngụy biện khẳng định hệ quả.",
-      "hint": "Nghĩ xem còn cách nào khác khiến mặt đất ướt.",
+      "correctOptionId": "d",
+      "explanation": "Đây là các số chính phương: 1, 4, 9, 16, 25, rồi 36.",
+      "hint": "Khoảng cách là 3, 5, 7, 9 nên khoảng cách tiếp theo là 11.",
       "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["logic", "fallacy"],
-      "contentVersion": 1
+      "tags": [
+        "sequence",
+        "squares"
+      ]
     },
     {
-      "id": "iq_logic_004",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_logic_medium_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "logical_reasoning",
-      "difficulty": "hard",
+      "skill": "logical_deduction",
+      "difficulty": "medium",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "A nói 'B là kẻ nói dối.' B nói 'Cả hai chúng ta đều là kẻ nói dối.' Hiệp sĩ luôn nói thật; kẻ nói dối luôn nói sai. A và B là gì?",
-      "instructions": "Dùng quy tắc của người nói thật và người nói dối.",
+      "prompt": "Mọi glip đều là nork. Mọi nork đều là ven. Câu nào chắc chắn đúng?",
+      "instructions": "Vẽ các nhóm thành những vòng tròn lồng nhau.",
       "options": [
-        { "id": "a", "text": "A là hiệp sĩ, B là kẻ nói dối" },
-        { "id": "b", "text": "Cả hai đều là hiệp sĩ" },
-        { "id": "c", "text": "Cả hai đều là kẻ nói dối" },
-        { "id": "d", "text": "A là kẻ nói dối, B là hiệp sĩ" }
+        {
+          "id": "a",
+          "text": "Mọi ven đều là glip"
+        },
+        {
+          "id": "b",
+          "text": "Mọi glip đều là ven"
+        },
+        {
+          "id": "c",
+          "text": "Không glip nào là ven"
+        },
+        {
+          "id": "d",
+          "text": "Một số nork không phải là ven"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "Nếu B nói thật thì B là hiệp sĩ, mâu thuẫn với câu 'cả hai đều là kẻ nói dối', nên B nói dối và là kẻ nói dối. Khi đó câu 'B là kẻ nói dối' của A là đúng, nên A là hiệp sĩ.",
-      "hint": "Thử xem câu của B có thể đúng hay không.",
+      "correctOptionId": "b",
+      "explanation": "Mỗi nhóm nằm trong nhóm kế tiếp, nên mọi glip cũng là ven.",
+      "hint": "Nhóm nhỏ nhất nằm trong cả hai nhóm lớn hơn.",
       "estimatedSeconds": 40,
-      "pointsWeight": 2,
-      "tags": ["logic", "knights"],
-      "contentVersion": 1
+      "tags": [
+        "logic",
+        "sets"
+      ]
     },
     {
-      "id": "iq_num_001",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "numerical_reasoning",
-      "difficulty": "easy",
-      "locale": "vi",
       "status": "draft",
-      "prompt": "15% của 200 là bao nhiêu?",
-      "instructions": "Đổi phần trăm thành một phần của tổng.",
-      "options": [
-        { "id": "a", "text": "30" },
-        { "id": "b", "text": "25" },
-        { "id": "c", "text": "35" },
-        { "id": "d", "text": "40" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "15% của 200 = 0,15 × 200 = 30.",
-      "hint": "10% của 200 là 20; 5% là một nửa của số đó.",
-      "estimatedSeconds": 20,
       "pointsWeight": 1,
-      "tags": ["percentage", "arithmetic"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_num_002",
+      "contentVersion": 1,
+      "id": "iq_logic_medium_002",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "numerical_reasoning",
+      "skill": "logical_deduction",
       "difficulty": "medium",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Một ô tô đi 60 km trong 1,5 giờ. Tốc độ trung bình tính bằng km/h là bao nhiêu?",
-      "instructions": "Tốc độ bằng quãng đường chia cho thời gian.",
+      "prompt": "Ana lớn tuổi hơn Bao. Bao lớn tuổi hơn Chi. Ai trẻ nhất?",
+      "instructions": "Sắp ba cái tên theo thứ tự trước.",
       "options": [
-        { "id": "a", "text": "40" },
-        { "id": "b", "text": "45" },
-        { "id": "c", "text": "50" },
-        { "id": "d", "text": "35" }
-      ],
-      "correctOptionId": "a",
-      "explanation": "60 km / 1,5 giờ = 40 km/h.",
-      "hint": "Chia quãng đường cho thời gian.",
-      "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["speed", "arithmetic"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_num_003",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "numerical_reasoning",
-      "difficulty": "hard",
-      "locale": "vi",
-      "status": "draft",
-      "prompt": "3 người thợ xây một bức tường trong 12 ngày. Với cùng năng suất, 4 người thợ sẽ mất bao nhiêu ngày?",
-      "instructions": "Tổng công việc không đổi; nhiều người hơn thì ít ngày hơn.",
-      "options": [
-        { "id": "a", "text": "8" },
-        { "id": "b", "text": "9" },
-        { "id": "c", "text": "10" },
-        { "id": "d", "text": "16" }
-      ],
-      "correctOptionId": "b",
-      "explanation": "Tổng công là 3 × 12 = 36 ngày-công. Với 4 người: 36 / 4 = 9 ngày.",
-      "hint": "Nhân số người với số ngày, rồi chia cho số người mới.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 2,
-      "tags": ["work", "proportion"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_spatial_001",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "spatial_reasoning",
-      "difficulty": "easy",
-      "locale": "vi",
-      "status": "draft",
-      "prompt": "Hình nào có nhiều cạnh nhất?",
-      "instructions": "Đếm các cạnh thẳng của mỗi hình.",
-      "options": [
-        { "id": "a", "text": "Tam giác" },
-        { "id": "b", "text": "Ngũ giác" },
-        { "id": "c", "text": "Hình vuông" },
-        { "id": "d", "text": "Lục giác" }
-      ],
-      "correctOptionId": "d",
-      "explanation": "Lục giác có 6 cạnh, nhiều hơn hình vuông (4), ngũ giác (5) hay tam giác (3).",
-      "hint": "Lục giác xuất hiện trong tổ ong.",
-      "estimatedSeconds": 20,
-      "pointsWeight": 1,
-      "tags": ["shapes", "geometry"],
-      "contentVersion": 1
-    },
-    {
-      "id": "iq_spatial_002",
-      "domain": "iq",
-      "contentType": "multiple_choice",
-      "skill": "spatial_reasoning",
-      "difficulty": "medium",
-      "locale": "vi",
-      "status": "draft",
-      "prompt": "Hình lập phương có bao nhiêu cạnh?",
-      "instructions": "Đếm các đoạn thẳng nơi hai mặt gặp nhau.",
-      "options": [
-        { "id": "a", "text": "8" },
-        { "id": "b", "text": "10" },
-        { "id": "c", "text": "12" },
-        { "id": "d", "text": "6" }
+        {
+          "id": "a",
+          "text": "Ana"
+        },
+        {
+          "id": "b",
+          "text": "Bao"
+        },
+        {
+          "id": "c",
+          "text": "Chi"
+        },
+        {
+          "id": "d",
+          "text": "Không thể xác định"
+        }
       ],
       "correctOptionId": "c",
-      "explanation": "Hình lập phương có 12 cạnh: 4 cạnh trên, 4 cạnh dưới và 4 cạnh đứng.",
-      "hint": "Đếm riêng cạnh trên, cạnh dưới và cạnh bên.",
+      "explanation": "Từ lớn đến nhỏ, thứ tự là Ana, Bao, Chi.",
+      "hint": "Tên cuối cùng trong chuỗi là người trẻ nhất.",
       "estimatedSeconds": 25,
-      "pointsWeight": 1,
-      "tags": ["geometry", "cube"],
-      "contentVersion": 1
+      "tags": [
+        "logic",
+        "ordering"
+      ]
     },
     {
-      "id": "iq_spatial_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_num_hard_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "spatial_reasoning",
+      "skill": "number_patterns",
       "difficulty": "hard",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Một khối lập phương 3×3×3 được sơn tất cả các mặt rồi tháo rời. Có bao nhiêu khối nhỏ hoàn toàn không có sơn?",
-      "instructions": "Chỉ những khối bên trong mới không dính sơn.",
+      "prompt": "Số nào tiếp theo: 3, 8, 18, 38, 78, ?",
+      "instructions": "Kiểm tra một quy luật trên mọi bước, không chỉ bước đầu.",
       "options": [
-        { "id": "a", "text": "1" },
-        { "id": "b", "text": "6" },
-        { "id": "c", "text": "8" },
-        { "id": "d", "text": "0" }
+        {
+          "id": "a",
+          "text": "148"
+        },
+        {
+          "id": "b",
+          "text": "156"
+        },
+        {
+          "id": "c",
+          "text": "158"
+        },
+        {
+          "id": "d",
+          "text": "160"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "Chỉ khối ở chính giữa là được bao kín hoàn toàn; (3-2)^3 = 1.",
-      "hint": "Bỏ lớp ngoài ở mọi phía.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 2,
-      "tags": ["geometry", "painted_cube"],
-      "contentVersion": 1
+      "correctOptionId": "c",
+      "explanation": "Nhân đôi số trước rồi cộng 2: 78 nhân đôi là 156, cộng 2 là 158.",
+      "hint": "Chỉ nhân đôi thì được 156, hãy kiểm tra phần dư.",
+      "estimatedSeconds": 45,
+      "tags": [
+        "sequence",
+        "numbers"
+      ]
     },
     {
-      "id": "iq_verbal_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_letter_hard_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "verbal_reasoning",
-      "difficulty": "easy",
+      "skill": "number_patterns",
+      "difficulty": "hard",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Từ nào khác loại?",
-      "instructions": "Xem mỗi từ chỉ điều gì.",
+      "prompt": "Chữ nào tiếp theo: C, F, J, O, ?",
+      "instructions": "Đổi mỗi chữ thành vị trí của nó trong bảng chữ cái.",
       "options": [
-        { "id": "a", "text": "Hoa hồng" },
-        { "id": "b", "text": "Hoa tulip" },
-        { "id": "c", "text": "Hoa cúc" },
-        { "id": "d", "text": "Cây sồi" }
+        {
+          "id": "a",
+          "text": "T"
+        },
+        {
+          "id": "b",
+          "text": "U"
+        },
+        {
+          "id": "c",
+          "text": "V"
+        },
+        {
+          "id": "d",
+          "text": "W"
+        }
       ],
-      "correctOptionId": "d",
-      "explanation": "Hoa hồng, hoa tulip và hoa cúc là hoa; cây sồi là cây.",
-      "hint": "Ba từ là hoa, một từ không phải.",
-      "estimatedSeconds": 20,
-      "pointsWeight": 1,
-      "tags": ["odd_one_out", "words"],
-      "contentVersion": 1
+      "correctOptionId": "b",
+      "explanation": "Vị trí là 3, 6, 10, 15; khoảng cách là +3, +4, +5, rồi +6 = 21, tức chữ U.",
+      "hint": "Khoảng cách tăng thêm một chữ mỗi lần.",
+      "estimatedSeconds": 40,
+      "tags": [
+        "sequence",
+        "letters"
+      ]
     },
     {
-      "id": "iq_analogy_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "iq_logic_hard_001",
       "domain": "iq",
       "contentType": "multiple_choice",
-      "skill": "analogical_reasoning",
-      "difficulty": "medium",
+      "skill": "logical_deduction",
+      "difficulty": "hard",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Chim với tổ như chó với ___?",
-      "instructions": "Tìm từ hoàn thành mối quan hệ.",
+      "prompt": "Ba hộp được dán nhãn Đỏ, Xanh dương và Xanh lá. Chỉ một hộp có chìa khóa. Nhãn Đỏ ghi “Chìa khóa không ở hộp Xanh dương”; nhãn Xanh dương ghi “Chìa khóa ở hộp Đỏ”; nhãn Xanh lá ghi “Chìa khóa không ở hộp Đỏ”. Chỉ một nhãn đúng. Chìa khóa ở đâu?",
+      "instructions": "Thử từng hộp và đếm số nhãn đúng.",
       "options": [
-        { "id": "a", "text": "Chuồng chó" },
-        { "id": "b", "text": "Lồng" },
-        { "id": "c", "text": "Ngôi nhà" },
-        { "id": "d", "text": "Chuồng trại" }
+        {
+          "id": "a",
+          "text": "Hộp Đỏ"
+        },
+        {
+          "id": "b",
+          "text": "Hộp Xanh dương"
+        },
+        {
+          "id": "c",
+          "text": "Hộp Xanh lá"
+        }
       ],
-      "correctOptionId": "a",
-      "explanation": "Chim sống trong tổ; chó sống trong chuồng chó. Quan hệ là con vật với nơi trú ẩn thường thấy.",
-      "hint": "Nơi ở thường thấy của chó gọi là gì?",
-      "estimatedSeconds": 25,
+      "correctOptionId": "b",
+      "explanation": "Nếu chìa khóa ở hộp Xanh dương, chỉ nhãn Xanh lá đúng. Nếu ở hộp Đỏ hoặc Xanh lá thì có hai nhãn đúng.",
+      "hint": "Bắt đầu bằng giả định chìa khóa ở hộp Xanh dương.",
+      "estimatedSeconds": 60,
+      "tags": [
+        "logic",
+        "deduction"
+      ]
+    },
+    {
+      "status": "draft",
       "pointsWeight": 1,
-      "tags": ["analogy", "relationships"],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "id": "iq_order_hard_001",
+      "domain": "iq",
+      "contentType": "multiple_choice",
+      "skill": "logical_deduction",
+      "difficulty": "hard",
+      "locale": "vi",
+      "prompt": "Năm người D, A, B, E và C đứng thành một hàng. D ở bên trái A; A ở bên trái B; C ở bên phải B; E ở giữa B và C. Ai chắc chắn đứng ngoài cùng bên phải?",
+      "instructions": "Nối các dữ kiện thành một thứ tự từ trái sang phải.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "E"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Các dữ kiện buộc D trước A trước B, với E ở giữa B và C, nên C đứng cuối.",
+      "hint": "Chỉ một người đứng sau B và E.",
+      "estimatedSeconds": 50,
+      "tags": [
+        "logic",
+        "ordering"
+      ]
     }
   ]
 }

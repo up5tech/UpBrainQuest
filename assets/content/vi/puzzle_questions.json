@@ -1,138 +1,384 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "items": [
     {
-      "id": "puzzle_mem_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_pattern_easy_001",
       "domain": "puzzle",
-      "contentType": "memory_sequence",
-      "skill": "memory",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
       "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Ghi nhớ dãy số, sau đó nhập lại theo đúng thứ tự.",
-      "instructions": "Xem các ô số, rồi chạm theo đúng thứ tự đó.",
-      "expectedAnswer": [3, 7, 1, 9],
-      "interactionConfig": {
-        "length": 4,
-        "minValue": 1,
-        "maxValue": 9
-      },
-      "explanation": "Thứ tự cần nhớ là 3, 7, 1, 9.",
-      "hint": "Gộp hai số đầu, rồi hai số cuối.",
+      "prompt": "Hình nào tiếp theo?",
+      "instructions": "Quan sát quy luật rồi chạm vào hình tiếp nối.",
+      "explanation": "Quy luật xen kẽ tròn, vuông, tròn, vuông, nên hình tiếp theo là hình tròn.",
+      "hint": "Đọc to quy luật: tròn, vuông, tròn, vuông.",
       "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["memory", "sequence"],
-      "contentVersion": 1
+      "tags": [
+        "pattern",
+        "shapes"
+      ],
+      "expectedAnswer": [
+        "circle"
+      ],
+      "interactionConfig": {
+        "previewSymbols": [
+          "circle",
+          "square",
+          "circle",
+          "square",
+          "blank"
+        ]
+      },
+      "options": [
+        {
+          "id": "circle",
+          "text": "Hình tròn"
+        },
+        {
+          "id": "square",
+          "text": "Hình vuông"
+        },
+        {
+          "id": "triangle",
+          "text": "Hình tam giác"
+        },
+        {
+          "id": "pentagon",
+          "text": "Hình ngũ giác"
+        }
+      ]
     },
     {
-      "id": "puzzle_reorder_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_order_easy_001",
       "domain": "puzzle",
       "contentType": "reorder_sequence",
-      "skill": "pattern_recognition",
-      "difficulty": "medium",
+      "skill": "sequence_reorder",
+      "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Sắp xếp các ô theo đúng thứ tự.",
-      "instructions": "Kéo các ô để tạo thành dãy đúng.",
-      "expectedAnswer": ["a", "b", "c", "d"],
+      "prompt": "Sắp xếp các số theo thứ tự tăng dần.",
+      "instructions": "Kéo các ô cho đến khi số nhỏ nhất đứng đầu.",
+      "explanation": "Thứ tự tăng dần là 1, 4, 6.",
+      "hint": "Tìm số nhỏ nhất trước khi di chuyển.",
+      "estimatedSeconds": 25,
+      "tags": [
+        "order",
+        "numbers"
+      ],
+      "expectedAnswer": [
+        "1",
+        "4",
+        "6"
+      ],
       "interactionConfig": {
-        "tiles": ["a", "b", "c", "d"]
-      },
-      "explanation": "Thứ tự đúng là a, b, c, d.",
-      "hint": "Tìm bước đầu tiên, rồi xây dựng tiếp từ đó.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 1,
-      "tags": ["reorder", "ordering"],
-      "contentVersion": 1
+        "tiles": [
+          "6",
+          "1",
+          "4"
+        ]
+      }
     },
     {
-      "id": "puzzle_mem_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_memory_easy_001",
       "domain": "puzzle",
       "contentType": "memory_sequence",
-      "skill": "memory",
-      "difficulty": "medium",
+      "skill": "memory_sequence",
+      "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Ghi nhớ dãy số, sau đó nhập lại theo đúng thứ tự.",
-      "instructions": "Xem các ô số, rồi chạm theo đúng thứ tự đó.",
-      "expectedAnswer": [4, 8, 2, 6, 5],
+      "prompt": "Ghi nhớ ba số, sau đó nhập số thứ ba.",
+      "instructions": "Quan sát các số, chạm Sẵn sàng, rồi nhập số đứng thứ ba.",
+      "explanation": "Dãy là 4, 1, 7 nên số thứ ba là 7.",
+      "hint": "Nhẩm lại ba số trước khi chúng ẩn đi.",
+      "estimatedSeconds": 30,
+      "tags": [
+        "memory",
+        "sequence"
+      ],
+      "expectedAnswer": [
+        7
+      ],
       "interactionConfig": {
-        "length": 5,
-        "minValue": 1,
+        "revealSequence": [
+          4,
+          1,
+          7
+        ],
+        "minValue": 0,
         "maxValue": 9
-      },
-      "explanation": "Thứ tự cần nhớ là 4, 8, 2, 6, 5.",
-      "hint": "Gộp thành 48, 26, 5.",
-      "estimatedSeconds": 35,
-      "pointsWeight": 1,
-      "tags": ["memory", "sequence"],
-      "contentVersion": 1
+      }
     },
     {
-      "id": "puzzle_mem_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_odd_easy_001",
+      "domain": "puzzle",
+      "contentType": "odd_one_out",
+      "skill": "odd_one_out",
+      "difficulty": "easy",
+      "locale": "vi",
+      "prompt": "Hình nào không có cạnh thẳng?",
+      "instructions": "Chạm vào hình không khớp với tính chất được nêu.",
+      "explanation": "Hình tròn không có cạnh thẳng; ba hình còn lại đều tạo bởi các cạnh thẳng.",
+      "hint": "Đưa mắt men theo cạnh của từng hình.",
+      "estimatedSeconds": 30,
+      "tags": [
+        "shapes",
+        "property"
+      ],
+      "expectedAnswer": [
+        "circle"
+      ],
+      "options": [
+        {
+          "id": "circle",
+          "text": "Hình tròn"
+        },
+        {
+          "id": "square",
+          "text": "Hình vuông"
+        },
+        {
+          "id": "triangle",
+          "text": "Hình tam giác"
+        },
+        {
+          "id": "pentagon",
+          "text": "Hình ngũ giác"
+        }
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_order_medium_001",
+      "domain": "puzzle",
+      "contentType": "reorder_sequence",
+      "skill": "sequence_reorder",
+      "difficulty": "medium",
+      "locale": "vi",
+      "prompt": "Sắp xếp bốn số theo thứ tự tăng dần.",
+      "instructions": "Kiểm tra cả dãy, không chỉ ô đầu tiên.",
+      "explanation": "Thứ tự tăng dần là 2, 4, 7, 9.",
+      "hint": "So sánh kỹ hai số ở giữa.",
+      "estimatedSeconds": 30,
+      "tags": [
+        "order",
+        "numbers"
+      ],
+      "expectedAnswer": [
+        "2",
+        "4",
+        "7",
+        "9"
+      ],
+      "interactionConfig": {
+        "tiles": [
+          "9",
+          "2",
+          "7",
+          "4"
+        ]
+      }
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_memory_medium_001",
       "domain": "puzzle",
       "contentType": "memory_sequence",
-      "skill": "memory",
+      "skill": "memory_sequence",
+      "difficulty": "medium",
+      "locale": "vi",
+      "prompt": "Quan sát bốn số, sau đó nhập lại theo thứ tự ngược.",
+      "instructions": "Chạm Sẵn sàng khi đã nhớ, rồi nhập dãy theo thứ tự ngược.",
+      "explanation": "Dãy là 6, 2, 9, 4; đảo ngược là 4, 9, 2, 6.",
+      "hint": "Ghi nhớ dãy rồi đọc ngược lại.",
+      "estimatedSeconds": 35,
+      "tags": [
+        "memory",
+        "sequence"
+      ],
+      "expectedAnswer": [
+        4,
+        9,
+        2,
+        6
+      ],
+      "interactionConfig": {
+        "revealSequence": [
+          6,
+          2,
+          9,
+          4
+        ],
+        "minValue": 0,
+        "maxValue": 9
+      }
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_pattern_medium_001",
+      "domain": "puzzle",
+      "contentType": "visual_pattern",
+      "skill": "visual_pattern",
+      "difficulty": "medium",
+      "locale": "vi",
+      "prompt": "Số nào tiếp theo: 1, 1, 2, 3, 5, 8, ?",
+      "instructions": "So sánh mỗi số với hai số đứng trước nó.",
+      "explanation": "Mỗi số sau hai số đầu bằng tổng hai số trước: 5 + 8 = 13.",
+      "hint": "Cộng hai số cuối cùng bạn thấy.",
+      "estimatedSeconds": 40,
+      "tags": [
+        "pattern",
+        "numbers"
+      ],
+      "expectedAnswer": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_memory_hard_001",
+      "domain": "puzzle",
+      "contentType": "memory_sequence",
+      "skill": "memory_sequence",
       "difficulty": "hard",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Ghi nhớ dãy dài hơn, sau đó nhập lại.",
-      "instructions": "Xem các ô số, rồi chạm theo đúng thứ tự đó.",
-      "expectedAnswer": [9, 1, 6, 3, 7, 2],
+      "prompt": "Quan sát năm số, sau đó nhập các số ở vị trí 1, 3 và 5 theo đúng thứ tự ban đầu.",
+      "instructions": "Đánh số vị trí trong khi ghi nhớ.",
+      "explanation": "Dãy là 2, 7, 4, 9, 1 nên vị trí 1, 3, 5 là 2, 4, 1.",
+      "hint": "Gắn mỗi số với số thứ tự của nó.",
+      "estimatedSeconds": 45,
+      "tags": [
+        "memory",
+        "positions"
+      ],
+      "expectedAnswer": [
+        2,
+        4,
+        1
+      ],
       "interactionConfig": {
-        "length": 6,
-        "minValue": 1,
+        "revealSequence": [
+          2,
+          7,
+          4,
+          9,
+          1
+        ],
+        "minValue": 0,
         "maxValue": 9
-      },
-      "explanation": "Thứ tự cần nhớ là 9, 1, 6, 3, 7, 2.",
-      "hint": "Chia thành ba cặp: 91, 63, 72.",
-      "estimatedSeconds": 40,
-      "pointsWeight": 1,
-      "tags": ["memory", "sequence"],
-      "contentVersion": 1
+      }
     },
     {
-      "id": "puzzle_reorder_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "puz_order_hard_001",
       "domain": "puzzle",
       "contentType": "reorder_sequence",
-      "skill": "pattern_recognition",
-      "difficulty": "easy",
+      "skill": "sequence_reorder",
+      "difficulty": "hard",
       "locale": "vi",
-      "status": "draft",
-      "prompt": "Sắp xếp thói quen buổi sáng theo thứ tự hợp lý.",
-      "instructions": "Kéo các ô để tạo thành dãy.",
-      "expectedAnswer": ["Thức dậy", "Ăn sáng", "Đi làm", "Bắt đầu làm việc"],
+      "prompt": "Sắp xếp bốn người từ nhẹ nhất đến nặng nhất.",
+      "instructions": "C nặng hơn A; A nặng hơn B; B nặng hơn D.",
+      "explanation": "Nặng nhất trước: C, rồi A, rồi B, rồi D.",
+      "hint": "Tìm người nặng nhất trước khi sắp những người còn lại.",
+      "estimatedSeconds": 50,
+      "tags": [
+        "order",
+        "logic"
+      ],
+      "expectedAnswer": [
+        "C",
+        "A",
+        "B",
+        "D"
+      ],
       "interactionConfig": {
-        "tiles": ["Thức dậy", "Ăn sáng", "Đi làm", "Bắt đầu làm việc"]
-      },
-      "explanation": "Một thứ tự thường gặp: thức dậy, ăn sáng, đi làm, bắt đầu làm việc.",
-      "hint": "Buổi sáng việc gì xảy ra trước?",
-      "estimatedSeconds": 30,
-      "pointsWeight": 1,
-      "tags": ["reorder", "ordering"],
-      "contentVersion": 1
+        "tiles": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
     },
     {
-      "id": "puzzle_reorder_003",
-      "domain": "puzzle",
-      "contentType": "reorder_sequence",
-      "skill": "pattern_recognition",
-      "difficulty": "medium",
-      "locale": "vi",
       "status": "draft",
-      "prompt": "Sắp xếp các số từ nhỏ đến lớn.",
-      "instructions": "Kéo các ô để tạo thành dãy.",
-      "expectedAnswer": ["2", "5", "9", "14"],
-      "interactionConfig": {
-        "tiles": ["2", "5", "9", "14"]
-      },
-      "explanation": "Từ nhỏ đến lớn: 2, 5, 9, 14.",
-      "hint": "So sánh các số có một chữ số trước.",
-      "estimatedSeconds": 25,
       "pointsWeight": 1,
-      "tags": ["reorder", "numbers"],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "id": "puz_match_hard_001",
+      "domain": "puzzle",
+      "contentType": "matching_pairs",
+      "skill": "matching_pairs",
+      "difficulty": "hard",
+      "locale": "vi",
+      "prompt": "Tìm đủ ba cặp giống nhau.",
+      "instructions": "Chạm hai thẻ để lật. Cặp khớp sẽ được giữ mở.",
+      "explanation": "Bàn có một cặp ngôi sao, một cặp mặt trăng và một cặp chiếc lá.",
+      "hint": "Nhớ vị trí của mỗi thẻ, không chỉ hình trên thẻ.",
+      "estimatedSeconds": 60,
+      "tags": [
+        "memory",
+        "pairs"
+      ],
+      "expectedAnswer": [
+        "symbol_star",
+        "symbol_moon",
+        "symbol_leaf"
+      ],
+      "interactionConfig": {
+        "maxFlips": 14
+      },
+      "options": [
+        {
+          "id": "symbol_star",
+          "text": "Ngôi sao"
+        },
+        {
+          "id": "symbol_moon",
+          "text": "Mặt trăng"
+        },
+        {
+          "id": "symbol_leaf",
+          "text": "Chiếc lá"
+        }
+      ]
     }
   ]
 }

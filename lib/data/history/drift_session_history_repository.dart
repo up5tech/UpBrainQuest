@@ -192,6 +192,13 @@ class DriftSessionHistoryRepository implements SessionHistoryRepository {
         'order': answer.order,
       });
     }
+    if (answer is PairMatchAnswer) {
+      return jsonEncode(<String, Object?>{
+        'type': 'pairs',
+        'pairIds': answer.pairIds,
+        'flips': answer.flips,
+      });
+    }
     return jsonEncode(<String, Object?>{'type': 'unknown'});
   }
 

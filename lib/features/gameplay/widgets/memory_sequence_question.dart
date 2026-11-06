@@ -43,6 +43,14 @@ class _MemorySequenceQuestionWidgetState
 
   List<int> get _expected => widget.item.expectedAnswer.cast<int>();
 
+  /// Numbers shown while memorising. Content may reveal a different set than
+  /// the answer: recall only one position, or the sequence in reverse.
+  List<int> get _reveal =>
+      (widget.item.interactionConfig?['revealSequence'] as List<dynamic>?)
+          ?.whereType<int>()
+          .toList() ??
+      _expected;
+
   bool get _locked => widget.evaluation != null;
 
   int get _minValue => widget.item.interactionConfig?['minValue'] as int? ?? 0;
@@ -109,7 +117,7 @@ class _MemorySequenceQuestionWidgetState
           child: Wrap(
             alignment: WrapAlignment.center,
             spacing: AppSpacing.md,
-            children: _expected
+            children: _reveal
                 .map(
                   (int n) => Container(
                     width: 56,

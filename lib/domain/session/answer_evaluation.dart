@@ -111,6 +111,18 @@ AnswerEvaluation _evaluateMultipleChoice(
   );
 }
 
+/// Default reveal budget for a matching-pairs board when the content does not
+/// declare one.
+const int defaultPairFlipBudget = 14;
+
+bool _setEquals<T>(Set<T> a, Set<T> b) {
+  if (a.length != b.length) return false;
+  for (final T value in a) {
+    if (!b.contains(value)) return false;
+  }
+  return true;
+}
+
 AnswerEvaluation _evaluatePuzzle(PuzzleItem item, PlayerAnswer answer) {
   final int weight = item.pointsWeight ?? 1;
   final List<dynamic> expected = item.expectedAnswer;
@@ -123,6 +135,19 @@ AnswerEvaluation _evaluatePuzzle(PuzzleItem item, PlayerAnswer answer) {
     correct =
         answer is ReorderAnswer &&
         _listEquals(expected.cast<String>(), answer.order);
+  } else if (item.contentType == ContentType.visualPattern ||
+      item.contentType == ContentType.oddOneOut) {
+    correct =
+        answer is SelectedOptionAnswer &&
+        expected.length == 1 &&
+        answer.optionId == expected.single;
+  } else if (item.contentType == ContentType.matchingPairs) {
+    final dynamic rawBudget = item.interactionConfig?['maxFlips'];
+    final int budget = rawBudget is int ? rawBudget : defaultPairFlipBudget;
+    correct =
+        answer is PairMatchAnswer &&
+        answer.flips <= budget &&
+        _setEquals(answer.pairIds.toSet(), expected.cast<String>().toSet());
   } else {
     correct = false;
   }

@@ -1,89 +1,315 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "items": [
     {
-      "id": "eq_comm_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_awareness_easy_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "emotion_awareness",
+      "difficulty": "easy",
+      "locale": "en",
+      "scenarioContext": "A friend is unusually quiet after receiving disappointing news.",
+      "prompt": "What could you say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "“You should stop worrying.”"
+        },
+        {
+          "id": "b",
+          "text": "“You seem quieter than usual. Would you like to talk, or would you prefer some space?”"
+        },
+        {
+          "id": "c",
+          "text": "“I will tell everyone so they can cheer you up.”"
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "This dismisses the feeling your friend may be sitting with. Noticing comes before fixing."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 3,
+            "self_regulation": 2,
+            "perspective_taking": 3,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 3
+          },
+          "feedback": "You name what you notice and leave the choice with your friend, which respects that they may not want to talk."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Sharing news they told you privately takes the decision away from them. Ask before involving other people."
+        }
+      },
+      "skillDimensions": [
+        "emotion_awareness"
+      ],
+      "followUpReflection": "Which clues tell you a friend wants space instead of a conversation?",
+      "estimatedSeconds": 40,
+      "tags": [
+        "eq",
+        "emotion_awareness"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_awareness_easy_002",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "emotion_awareness",
+      "difficulty": "easy",
+      "locale": "en",
+      "scenarioContext": "A teammate makes a mistake and apologizes. You feel frustrated because the mistake caused extra work.",
+      "prompt": "What is a constructive response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "“Thanks for acknowledging it. Let's review what needs fixing and how to prevent it next time.”"
+        },
+        {
+          "id": "b",
+          "text": "“You always ruin everything.”"
+        },
+        {
+          "id": "c",
+          "text": "“It is fine,” while refusing to discuss the impact."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 2,
+            "self_regulation": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 2
+          },
+          "feedback": "You acknowledge the apology, name the practical impact, and move to a concrete next step. Naming your frustration is allowed too."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "An accusation about the person rather than the work makes the problem harder to fix."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Keeping the peace can feel safer, but the unresolved impact usually returns. A short, specific conversation is kinder to both of you."
+        }
+      },
+      "skillDimensions": [
+        "emotion_awareness"
+      ],
+      "followUpReflection": "What is one sentence that names your frustration without blaming the person?",
+      "estimatedSeconds": 40,
+      "tags": [
+        "eq",
+        "emotion_awareness"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_communication_easy_001",
       "domain": "eq",
       "contentType": "scenario_choice",
       "skill": "constructive_communication",
+      "difficulty": "easy",
+      "locale": "en",
+      "scenarioContext": "Someone interrupts while you are explaining an idea.",
+      "prompt": "What is a useful response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "“I would like to finish my thought, then I want to hear yours.”"
+        },
+        {
+          "id": "b",
+          "text": "“You never listen.”"
+        },
+        {
+          "id": "c",
+          "text": "Stop contributing without explanation."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 2,
+            "self_regulation": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 3
+          },
+          "feedback": "A clear, respectful request keeps the conversation open and protects your turn to speak."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "A sweeping judgement about the person invites defence instead of change."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Stepping back can be right when a conversation is unsafe or disrespectful, but here nobody knows why you left. Say what you need first."
+        }
+      },
+      "skillDimensions": [
+        "constructive_communication"
+      ],
+      "followUpReflection": "What would you say if the same interruption happened again?",
+      "estimatedSeconds": 35,
+      "tags": [
+        "eq",
+        "constructive_communication"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_boundaries_easy_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "boundaries_and_agency",
+      "difficulty": "easy",
+      "locale": "en",
+      "scenarioContext": "A friend asks to borrow something you need today.",
+      "prompt": "What can you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say yes even though you cannot spare it."
+        },
+        {
+          "id": "b",
+          "text": "Say, “I need it today, so I cannot lend it now.”"
+        },
+        {
+          "id": "c",
+          "text": "Hide the item and pretend you lost it."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Agreeing while you need the item today usually creates a second problem later. Kindness does not require saying yes."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 2,
+            "self_regulation": 3,
+            "perspective_taking": 1,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 3
+          },
+          "feedback": "A short, honest boundary without over-explaining. You can still offer another time if you want to."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Hiding the truth costs trust and still does not set a boundary."
+        }
+      },
+      "skillDimensions": [
+        "boundaries_and_agency"
+      ],
+      "followUpReflection": "How would you offer a different day without weakening the boundary?",
+      "estimatedSeconds": 35,
+      "tags": [
+        "eq",
+        "boundaries_and_agency"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_regulation_medium_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "self_regulation",
       "difficulty": "medium",
       "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A teammate gives you critical feedback in a meeting. You feel defensive, but you want to understand the concern.",
+      "scenarioContext": "You receive critical feedback in a meeting and feel defensive.",
       "prompt": "What is a constructive next step?",
       "options": [
-        { "id": "a", "text": "Ask for a specific example and listen before responding." },
-        { "id": "b", "text": "Agree with every point immediately, even if you are unsure." },
-        { "id": "c", "text": "Respond with a personal criticism of your teammate." }
+        {
+          "id": "a",
+          "text": "Ask for a specific example and listen before responding."
+        },
+        {
+          "id": "b",
+          "text": "Criticize the colleague personally."
+        },
+        {
+          "id": "c",
+          "text": "Agree with everything immediately, even if you do not understand."
+        }
       ],
       "rubricByOption": {
         "a": {
           "scores": {
             "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
+            "self_regulation": 3,
+            "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 2
           },
-          "feedback": "Asking for an example clarifies the concern and gives you time to respond thoughtfully. You can still disagree after you understand the feedback."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Staying calm can help, but agreeing before you understand may hide important questions or your own boundaries."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "A personal attack is likely to escalate the disagreement and move attention away from the feedback itself."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "self_regulation",
-        "perspective_taking",
-        "constructive_communication",
-        "boundaries_and_agency"
-      ],
-      "followUpReflection": "What would help you feel ready to respond to difficult feedback?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_reg_001",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "self_regulation",
-      "difficulty": "easy",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "You are stuck in traffic and late for an important meeting. You feel your anger rising.",
-      "prompt": "What helps you regulate in this moment?",
-      "options": [
-        { "id": "a", "text": "Take a few slow breaths and call to say you will be late." },
-        { "id": "b", "text": "Honk repeatedly and vent angrily at other drivers." },
-        { "id": "c", "text": "Stew quietly and arrive without saying anything." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Naming the feeling and taking a breath gives you a moment to choose a calmer response, and a quick call manages expectations."
+          "feedback": "Asking for an example slows the moment down and gives you real information to respond to. Disagreeing later is still allowed."
         },
         "b": {
           "scores": {
@@ -93,61 +319,75 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Venting at others rarely changes the traffic and can intensify your own stress."
+          "feedback": "Turning feedback into a personal attack escalates the room and hides the actual concern."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
+            "perspective_taking": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 0
           },
-          "feedback": "Noticing the feeling is a start, but staying silent can leave the frustration unprocessed and others unaware."
+          "feedback": "Quick agreement may end the moment, but it abandons your own view and leaves the concern unresolved."
         }
       },
       "skillDimensions": [
-        "emotion_awareness",
         "self_regulation"
       ],
-      "followUpReflection": "What small habit helps you reset when plans go off track?",
-      "contentVersion": 1
+      "followUpReflection": "What would help you pause for a few seconds before replying?",
+      "estimatedSeconds": 45,
+      "tags": [
+        "eq",
+        "self_regulation"
+      ]
     },
     {
-      "id": "eq_persp_001",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_perspective_medium_001",
       "domain": "eq",
       "contentType": "scenario_choice",
       "skill": "perspective_taking",
       "difficulty": "medium",
       "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A colleague has been distant and short with you this week.",
-      "prompt": "How do you make sense of this?",
+      "scenarioContext": "A teammate misses a deadline. You do not know why.",
+      "prompt": "What is a constructive first response?",
       "options": [
-        { "id": "a", "text": "Assume they are upset with you and pull away." },
-        { "id": "b", "text": "Ask gently if everything is okay, without assuming." },
-        { "id": "c", "text": "Gossip with others about their mood." }
+        {
+          "id": "a",
+          "text": "Ask privately what blocked the work and discuss a realistic next step."
+        },
+        {
+          "id": "b",
+          "text": "Assume they do not care."
+        },
+        {
+          "id": "c",
+          "text": "Publicly shame them so others learn."
+        }
       ],
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Assuming the cause can harden a misunderstanding before you know what is going on."
-        },
-        "b": {
-          "scores": {
             "emotion_awareness": 2,
-            "self_regulation": 2,
+            "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 2
           },
-          "feedback": "Checking in without assuming leaves room for context you do not have, and keeps the relationship open."
+          "feedback": "You look for context without dropping accountability, and you keep the conversation private."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "The assumption fills in a reason you do not have and closes the conversation early."
         },
         "c": {
           "scores": {
@@ -157,138 +397,44 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Gossip tends to spread assumptions and rarely helps either of you."
+          "feedback": "Public shame damages trust and rarely improves the work."
         }
       },
       "skillDimensions": [
-        "perspective_taking",
-        "constructive_communication"
+        "perspective_taking"
       ],
-      "followUpReflection": "When have you misread a situation that later made sense?",
-      "contentVersion": 1
+      "followUpReflection": "Which question would get you useful information without sounding like an interrogation?",
+      "estimatedSeconds": 45,
+      "tags": [
+        "eq",
+        "perspective_taking"
+      ]
     },
     {
-      "id": "eq_bound_001",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "boundaries_and_agency",
-      "difficulty": "hard",
-      "locale": "en",
       "status": "draft",
-      "scenarioContext": "A friend repeatedly asks you to cover their shifts with little notice, and you are already overloaded.",
-      "prompt": "How do you respond this time?",
-      "options": [
-        { "id": "a", "text": "Always say yes to avoid conflict." },
-        { "id": "b", "text": "Politely say no and suggest an alternative or a future time." },
-        { "id": "c", "text": "Agree but do it resentfully." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Avoiding conflict by overcommitting can leave you burned out and quietly resentful."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
-          },
-          "feedback": "Stating your limit kindly and offering an alternative respects both the friendship and your capacity."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 0,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Helping while resentful can build quiet frustration; naming the limit would serve you both better."
-        }
-      },
-      "skillDimensions": [
-        "boundaries_and_agency",
-        "constructive_communication"
-      ],
-      "followUpReflection": "What helps you say no without guilt when you need to?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_aware_001",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_communication_medium_001",
       "domain": "eq",
       "contentType": "scenario_choice",
-      "skill": "emotion_awareness",
-      "difficulty": "easy",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "You notice your jaw tightening and your replies getting shorter during a meeting.",
-      "prompt": "What is a helpful first step?",
-      "options": [
-        { "id": "a", "text": "Pause and name to yourself what you are feeling before you speak." },
-        { "id": "b", "text": "Push the feeling down and keep going as if nothing is wrong." },
-        { "id": "c", "text": "Snap at the next person who speaks." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Naming the feeling to yourself creates a small gap between the emotion and your next action."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Pushing feelings down can make them harder to notice and manage later."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Acting on the tension without pausing tends to affect the people around you and the conversation."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "self_regulation"
-      ],
-      "followUpReflection": "What signals does your body give you before you feel upset?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_aware_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "emotion_awareness",
+      "skill": "constructive_communication",
       "difficulty": "medium",
       "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A friend says they are fine but keeps avoiding eye contact and answers briefly.",
-      "prompt": "How do you respond to the mismatch?",
+      "scenarioContext": "A friend has cancelled plans twice. You feel disappointed.",
+      "prompt": "What could you do?",
       "options": [
-        { "id": "a", "text": "Gently mention what you notice and ask if they want to talk." },
-        { "id": "b", "text": "Take the fine at face value and drop it." },
-        { "id": "c", "text": "Insist that they are clearly lying about being fine." }
+        {
+          "id": "a",
+          "text": "Explain how the cancellations affect you and ask whether the plan still works for them."
+        },
+        {
+          "id": "b",
+          "text": "Pretend it does not matter, then resent them."
+        },
+        {
+          "id": "c",
+          "text": "Send an insulting message."
+        }
       ],
       "rubricByOption": {
         "a": {
@@ -297,127 +443,19 @@
             "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 3
           },
-          "feedback": "Noticing the mismatch and offering space respects their choice while showing you care."
+          "feedback": "You name the impact without accusing, and you invite information. Making other plans for yourself stays an option."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
+            "emotion_awareness": 0,
+            "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Taking fine at face value can miss a signal, though some people do need space."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Calling someone a liar can feel unsafe and may close the conversation."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "perspective_taking"
-      ],
-      "followUpReflection": "How do you usually show someone you are ready to listen?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_aware_003",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "emotion_awareness",
-      "difficulty": "hard",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "You are excited and nervous about a big move. Some days you feel both at once.",
-      "prompt": "What is a helpful way to understand this?",
-      "options": [
-        { "id": "a", "text": "Name both feelings and note what each one is telling you." },
-        { "id": "b", "text": "Decide you must feel only one thing and push the other away." },
-        { "id": "c", "text": "Wait until the feelings sort themselves out before acting." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Mixed feelings often carry useful information; naming both can reduce their pull."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Forcing one feeling away can make the other harder to understand."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Waiting for feelings to settle can help sometimes, but it may delay choices you can make now."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "self_regulation"
-      ],
-      "followUpReflection": "When have two feelings pointed you toward a decision?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_comm_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "constructive_communication",
-      "difficulty": "easy",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A peer's report has a few gaps, and you need to raise them before a deadline.",
-      "prompt": "How do you share the feedback?",
-      "options": [
-        { "id": "a", "text": "Describe the specific gaps and ask how you can help close them." },
-        { "id": "b", "text": "Rewrite the whole report yourself without telling them." },
-        { "id": "c", "text": "Point out the gaps in front of the whole team." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Specific, private feedback with an offer to help is easier to act on."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Quietly redoing the work can create confusion and takes away their chance to improve."
+          "feedback": "The feeling does not disappear just because it is unspoken; it usually grows."
         },
         "c": {
           "scores": {
@@ -425,269 +463,135 @@
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Public criticism can feel humiliating and rarely improves the work."
-        }
-      },
-      "skillDimensions": [
-        "constructive_communication",
-        "perspective_taking"
-      ],
-      "followUpReflection": "What makes feedback easier for you to hear and use?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_comm_003",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "constructive_communication",
-      "difficulty": "hard",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "In a group chat, two friends start arguing and tag you to pick a side.",
-      "prompt": "What is a constructive move?",
-      "options": [
-        { "id": "a", "text": "Say you would rather not take sides here and suggest talking one-to-one." },
-        { "id": "b", "text": "Jump in and back the friend you agree with most." },
-        { "id": "c", "text": "Leave the chat without saying anything." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 3,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
-          },
-          "feedback": "Naming your boundary and offering a calmer channel keeps the relationship open without fuelling the argument."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Picking a side can deepen the split and pull you into a fight you did not choose."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Leaving avoids the clash but may leave the group without a calmer option."
-        }
-      },
-      "skillDimensions": [
-        "constructive_communication",
-        "boundaries_and_agency"
-      ],
-      "followUpReflection": "How do you stay connected when people disagree strongly?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_comm_004",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "constructive_communication",
-      "difficulty": "medium",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "You realise you snapped at a teammate earlier and the mood is tense.",
-      "prompt": "What is a constructive next step?",
-      "options": [
-        { "id": "a", "text": "Apologise for the tone, explain briefly, and ask how they are doing." },
-        { "id": "b", "text": "Pretend nothing happened and hope it blows over." },
-        { "id": "c", "text": "Blame your stress and say they should not be so sensitive." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "A specific apology that owns the tone and checks in repairs trust faster than silence."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Letting it blow over can leave the teammate unsure whether it will happen again."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Deflecting and calling them sensitive can make the other person feel dismissed."
-        }
-      },
-      "skillDimensions": [
-        "constructive_communication",
-        "self_regulation"
-      ],
-      "followUpReflection": "What does a repair look like after a tense moment for you?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_reg_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "self_regulation",
-      "difficulty": "medium",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "You receive a blunt message from a client that feels unfair. Your heart is racing.",
-      "prompt": "What do you do before replying?",
-      "options": [
-        { "id": "a", "text": "Wait, reread the message, and draft a calm reply." },
-        { "id": "b", "text": "Fire back an angry reply right away." },
-        { "id": "c", "text": "Ignore the message and hope they forget." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 3,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Pausing and drafting lets you respond to the issue rather than the sting."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "An immediate angry reply usually escalates a conflict."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Ignoring a work message can leave the problem to grow."
+          "feedback": "An insult may release tension briefly, but it makes a repair much harder."
         }
       },
       "skillDimensions": [
-        "self_regulation",
         "constructive_communication"
       ],
-      "followUpReflection": "What helps you cool down before you write back?",
-      "contentVersion": 1
+      "followUpReflection": "What would you do with your evening if they cancel a third time?",
+      "estimatedSeconds": 45,
+      "tags": [
+        "eq",
+        "constructive_communication"
+      ]
     },
     {
-      "id": "eq_reg_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_regulation_hard_001",
       "domain": "eq",
       "contentType": "scenario_choice",
       "skill": "self_regulation",
       "difficulty": "hard",
       "locale": "en",
-      "status": "draft",
-      "scenarioContext": "Under a tight deadline, a colleague asks you a long question. You feel irritation rising.",
-      "prompt": "How do you handle it?",
+      "scenarioContext": "During a heated conversation, the other person demands an immediate answer. You feel overwhelmed and need time.",
+      "prompt": "What is a constructive response?",
       "options": [
-        { "id": "a", "text": "Say you want to help and suggest a short time to talk after the deadline." },
-        { "id": "b", "text": "Snap that you do not have time for this right now." },
-        { "id": "c", "text": "Sigh loudly and answer with one word." }
+        {
+          "id": "a",
+          "text": "“I want to discuss this, but I need 20 minutes to settle and think. I will come back at 3:00.”"
+        },
+        {
+          "id": "b",
+          "text": "Match their anger."
+        },
+        {
+          "id": "c",
+          "text": "Leave indefinitely without communicating, even though it is safe to give an update."
+        }
       ],
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 3,
             "self_regulation": 3,
             "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Naming the time limit honestly and offering a later slot respects both your focus and their need."
+          "feedback": "You name the need, give a concrete time, and keep the commitment. If the situation is unsafe, leaving immediately and seeking help takes priority over any return time."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 0,
-            "perspective_taking": 1,
+            "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Snapping can damage trust even when the pressure is real."
+          "feedback": "Raising the temperature usually escalates instead of resolving."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "A sigh and a one-word answer sends frustration without solving the request."
-        }
-      },
-      "skillDimensions": [
-        "self_regulation",
-        "boundaries_and_agency"
-      ],
-      "followUpReflection": "How can you protect your focus without shutting people out?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_persp_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "perspective_taking",
-      "difficulty": "easy",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A close friend cancels plans at the last minute for the second time.",
-      "prompt": "How do you make sense of it?",
-      "options": [
-        { "id": "a", "text": "Tell them you feel let down and ask what is going on for them." },
-        { "id": "b", "text": "Assume they do not care about you and go quiet." },
-        { "id": "c", "text": "Post about being ditched online." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
             "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Sharing your feeling and asking about theirs checks an assumption before it hardens."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Assuming the worst can turn a busy week into a story about not being valued."
+          "feedback": "Space is legitimate, but silence leaves the other person guessing. One sentence is enough."
+        }
+      },
+      "skillDimensions": [
+        "self_regulation"
+      ],
+      "followUpReflection": "How much time do you usually need before you can think clearly again?",
+      "estimatedSeconds": 50,
+      "tags": [
+        "eq",
+        "self_regulation"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_boundaries_hard_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "boundaries_and_agency",
+      "difficulty": "hard",
+      "locale": "en",
+      "scenarioContext": "A colleague asks you to keep a secret, but the information suggests someone may be at risk of harm.",
+      "prompt": "What should you consider?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promise absolute secrecy."
+        },
+        {
+          "id": "b",
+          "text": "Clarify the concern, avoid spreading the information, and seek appropriate help through a safe channel if someone may be at risk."
+        },
+        {
+          "id": "c",
+          "text": "Post the details in a group chat."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "An absolute promise can leave someone without help. You can respect privacy without promising something you may not be able to keep."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 3,
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 3
+          },
+          "feedback": "You keep the circle small, check what is actually known, and involve a safe, appropriate channel when safety is at stake. This is not legal or clinical advice."
         },
         "c": {
           "scores": {
@@ -697,53 +601,47 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Posting publicly can embarrass your friend and rarely helps the friendship."
+          "feedback": "Broadcasting details breaks trust and can put the person at more risk."
         }
       },
       "skillDimensions": [
-        "perspective_taking",
-        "constructive_communication"
+        "boundaries_and_agency"
       ],
-      "followUpReflection": "What is a fair way to check a story you are telling yourself?",
-      "contentVersion": 1
+      "followUpReflection": "Who is a safe person you could consult without spreading the details?",
+      "estimatedSeconds": 55,
+      "tags": [
+        "eq",
+        "boundaries_and_agency"
+      ]
     },
     {
-      "id": "eq_persp_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_perspective_hard_001",
       "domain": "eq",
       "contentType": "scenario_choice",
       "skill": "perspective_taking",
       "difficulty": "hard",
       "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A customer speaks sharply to you over a delay that was not your fault.",
-      "prompt": "How do you respond?",
+      "scenarioContext": "A message in a group chat sounds rude, but tone is unclear and you lack context.",
+      "prompt": "What is a thoughtful next step?",
       "options": [
-        { "id": "a", "text": "Acknowledge their frustration and explain what you can do next." },
-        { "id": "b", "text": "Tell them it is not your fault and walk away." },
-        { "id": "c", "text": "Match their sharp tone to show you will not be pushed around." }
+        {
+          "id": "a",
+          "text": "Publicly accuse the sender of being hostile."
+        },
+        {
+          "id": "b",
+          "text": "Ask a neutral clarifying question or check privately before assuming intent."
+        },
+        {
+          "id": "c",
+          "text": "Forward the message to others as proof."
+        }
       ],
       "rubricByOption": {
         "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Acknowledging their frustration first usually lowers the heat and lets you move to solutions."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Being defensive is understandable, but it can leave the customer without a path forward."
-        },
-        "c": {
           "scores": {
             "emotion_awareness": 0,
             "self_regulation": 0,
@@ -751,123 +649,38 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Matching their tone tends to turn a service problem into a conflict."
-        }
-      },
-      "skillDimensions": [
-        "perspective_taking",
-        "self_regulation"
-      ],
-      "followUpReflection": "What helps you see the person behind a sharp tone?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_bound_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "boundaries_and_agency",
-      "difficulty": "easy",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A new acquaintance asks for your home address shortly after meeting you.",
-      "prompt": "How do you respond?",
-      "options": [
-        { "id": "a", "text": "Say you prefer not to share that yet and offer another way to stay in touch." },
-        { "id": "b", "text": "Give the address to avoid seeming rude." },
-        { "id": "c", "text": "Get angry and accuse them of prying." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
-          },
-          "feedback": "A calm limit plus an alternative keeps the connection without over-sharing."
+          "feedback": "A public accusation locks in an interpretation you cannot yet support."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Sharing personal details to avoid awkwardness can leave you less safe than you would like."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Anger signals a limit, but a calm explanation is easier for the other person to hear."
-        }
-      },
-      "skillDimensions": [
-        "boundaries_and_agency",
-        "constructive_communication"
-      ],
-      "followUpReflection": "How do you decide what personal information to share?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_bound_003",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "boundaries_and_agency",
-      "difficulty": "medium",
-      "locale": "en",
-      "status": "draft",
-      "scenarioContext": "A family member keeps pushing you toward a career choice you are unsure about.",
-      "prompt": "How do you handle the pressure?",
-      "options": [
-        { "id": "a", "text": "Thank them for caring and say you need time to decide for yourself." },
-        { "id": "b", "text": "Agree to keep the peace and then resent it." },
-        { "id": "c", "text": "Shut down the conversation every time it comes up." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
             "emotion_awareness": 2,
-            "self_regulation": 2,
+            "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
-          "feedback": "Acknowledging their care while claiming your own decision keeps the relationship and your agency."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Agreeing under pressure can build resentment and delay a choice that is yours."
+          "feedback": "You test your reading of the message before acting on it. If rudeness becomes a pattern, direct boundaries are still appropriate."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 0
           },
-          "feedback": "Shutting down protects you in the moment but may not reduce the pressure over time."
+          "feedback": "Spreading the message widens the conflict and adds people who were not part of it."
         }
       },
       "skillDimensions": [
-        "boundaries_and_agency",
         "perspective_taking"
       ],
-      "followUpReflection": "What helps you hold a limit with someone close to you?",
-      "contentVersion": 1
+      "followUpReflection": "What neutral question could you ask without sounding sarcastic?",
+      "estimatedSeconds": 50,
+      "tags": [
+        "eq",
+        "perspective_taking"
+      ]
     }
   ]
 }

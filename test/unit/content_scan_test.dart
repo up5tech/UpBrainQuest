@@ -162,26 +162,49 @@ void main() {
           );
         }
         if (source is PuzzleItem && target is PuzzleItem) {
-          if (source.contentType == ContentType.memorySequence) {
-            // Digits are language-independent and must match exactly.
-            expect(
-              target.expectedAnswer,
-              source.expectedAnswer,
-              reason: entry.key,
-            );
-          } else {
-            // Reorder tiles are translated, so only the shape has to match.
-            expect(
-              target.expectedAnswer.length,
-              source.expectedAnswer.length,
-              reason: entry.key,
-            );
-            expect(
-              (target.interactionConfig?['tiles'] as List<dynamic>?)?.length,
-              (source.interactionConfig?['tiles'] as List<dynamic>?)?.length,
-              reason: entry.key,
-            );
+          switch (source.contentType) {
+            case ContentType.memorySequence:
+              // Digits are language-independent and must match exactly.
+              expect(
+                target.expectedAnswer,
+                source.expectedAnswer,
+                reason: entry.key,
+              );
+              expect(
+                target.interactionConfig?['revealSequence'],
+                source.interactionConfig?['revealSequence'],
+                reason: entry.key,
+              );
+            case ContentType.visualPattern:
+            case ContentType.oddOneOut:
+            case ContentType.matchingPairs:
+              // Symbol ids are language-independent; only the labels differ.
+              expect(
+                target.expectedAnswer,
+                source.expectedAnswer,
+                reason: entry.key,
+              );
+            case ContentType.reorderSequence:
+              // Reorder tiles are translated, so only the shape has to match.
+              expect(
+                target.expectedAnswer.length,
+                source.expectedAnswer.length,
+                reason: entry.key,
+              );
+              expect(
+                (target.interactionConfig?['tiles'] as List<dynamic>?)?.length,
+                (source.interactionConfig?['tiles'] as List<dynamic>?)?.length,
+                reason: entry.key,
+              );
+            case ContentType.multipleChoice:
+            case ContentType.scenarioChoice:
+              break;
           }
+          expect(
+            target.options.map((QuestionOption o) => o.id).toList(),
+            source.options.map((QuestionOption o) => o.id).toList(),
+            reason: entry.key,
+          );
         }
         if (source is EqScenarioItem && target is EqScenarioItem) {
           expect(

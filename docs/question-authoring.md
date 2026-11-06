@@ -24,13 +24,13 @@ assets/content/
 ```json
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "supportedLocales": ["en", "vi"],
   "files": [
     "en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json",
     "vi/iq_questions.json", "vi/puzzle_questions.json", "vi/eq_scenarios.json"
   ],
-  "expectedItemCounts": { "iq": 16, "puzzle": 6, "eq": 16 }
+  "expectedItemCounts": { "iq": 12, "puzzle": 10, "eq": 10 }
 }
 ```
 
@@ -45,8 +45,8 @@ Every item needs:
 | --- | --- |
 | `id` | **Stable, authored, unique.** Never derive it from time or randomness; progress depends on it. |
 | `domain` | `iq`, `puzzle`, or `eq` |
-| `contentType` | `multiple_choice`, `memory_sequence`, `reorder_sequence`, `scenario_choice` |
-| `skill` | Free-form skill key (e.g. `pattern_recognition`, `memory`) |
+| `contentType` | `multiple_choice`, `memory_sequence`, `reorder_sequence`, `scenario_choice`, `visual_pattern`, `odd_one_out`, `matching_pairs` |
+| `skill` | Free-form skill key (e.g. `number_patterns`, `logical_deduction`, `matching_pairs`) |
 | `difficulty` | `easy`, `medium`, `hard` |
 | `locale` | `en` or `vi`; must match the folder and be in `manifest.supportedLocales` |
 | `status` | `draft` or `final`; draft items surface a warning |
@@ -142,6 +142,71 @@ Every item needs:
 ```
 
 `expectedAnswer` must reference strings that appear in `interactionConfig.tiles`.
+
+### Visual pattern and odd one out
+
+```json
+{
+  "id": "puz_pattern_easy_001",
+  "domain": "puzzle",
+  "contentType": "visual_pattern",
+  "skill": "visual_pattern",
+  "difficulty": "easy",
+  "locale": "en",
+  "status": "draft",
+  "prompt": "Which shape comes next?",
+  "expectedAnswer": ["circle"],
+  "options": [
+    { "id": "circle", "text": "Circle" },
+    { "id": "square", "text": "Square" }
+  ],
+  "interactionConfig": {
+    "previewSymbols": ["circle", "square", "circle", "square", "blank"]
+  },
+  "explanation": "The pattern alternates circle and square."
+}
+```
+
+`expectedAnswer` holds exactly one option id. `previewSymbols` is optional; use
+`blank` for the missing slot. `odd_one_out` uses the identical shape — only the
+prompt differs, and it must state the property being tested.
+
+Symbol ids the app can draw: `circle`, `square`, `triangle`, `pentagon`,
+`star`, `moon`, `leaf` (also accepted with a `symbol_` prefix). An unknown id
+falls back to the option text, so new symbols stay readable.
+
+### Matching pairs
+
+```json
+{
+  "id": "puz_match_hard_001",
+  "domain": "puzzle",
+  "contentType": "matching_pairs",
+  "skill": "matching_pairs",
+  "difficulty": "hard",
+  "locale": "en",
+  "status": "draft",
+  "prompt": "Find all three matching pairs.",
+  "expectedAnswer": ["symbol_star", "symbol_moon", "symbol_leaf"],
+  "options": [
+    { "id": "symbol_star", "text": "Star" },
+    { "id": "symbol_moon", "text": "Moon" },
+    { "id": "symbol_leaf", "text": "Leaf" }
+  ],
+  "interactionConfig": { "maxFlips": 14 },
+  "explanation": "The board holds a star pair, a moon pair, and a leaf pair."
+}
+```
+
+Each pair id is placed twice and shuffled with a seed derived from the item id,
+so the board is deterministic in tests. `maxFlips` caps the card reveals: the
+item scores only when every pair was found inside that budget.
+
+### Memory variants
+
+`interactionConfig.revealSequence` shows a sequence that differs from the
+scored answer, which is how the starter set authors "enter the third number",
+"enter the sequence in reverse", and "positions 1, 3, 5" items.
 
 ## EQ scenarios (`scenario_choice`)
 

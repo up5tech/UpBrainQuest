@@ -907,6 +907,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{value} / {total}'**
   String fractionOf(int value, int total);
+
+  /// No description provided for @sessionPairsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap two cards to find a matching pair.'**
+  String get sessionPairsHint;
+
+  /// No description provided for @sessionPairsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'{found} / {total} pairs found'**
+  String sessionPairsFound(int found, int total);
+
+  /// No description provided for @sessionPairsFlipsLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'Flips left: {count}'**
+  String sessionPairsFlipsLeft(int count);
+
+  /// No description provided for @sessionPairsBudgetSpent.
+  ///
+  /// In en, this message translates to:
+  /// **'No flips left. Submit to see the result.'**
+  String get sessionPairsBudgetSpent;
+
+  /// No description provided for @sessionPairsAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'Pairs'**
+  String get sessionPairsAnswer;
+
+  /// No description provided for @sessionPairsHiddenCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden card'**
+  String get sessionPairsHiddenCard;
 }
 
 class _AppLocalizationsDelegate

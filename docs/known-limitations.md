@@ -6,9 +6,11 @@ These are current gaps, not defects. They are tracked so a release decision is e
 
 - **All content is `status: draft`.** A human copy-edit and EQ safety review is still
   recommended before a store release.
-- **Puzzle coverage is 6 items** (3 memory sequences, 3 reorder sequences). That is
-  enough for Quick Quest's 2-item puzzle target but thin for a future Puzzle Sprint
-  mode.
+- **Puzzle coverage is 10 items** (3 memory sequences, 3 reorder sequences, 2 visual
+  patterns, 1 odd-one-out, 1 matching-pairs board). That is enough for Quick Quest's
+  2-item puzzle target but thin for a future Puzzle Sprint mode.
+- **Content is the PLAN §5.10 starter set (32 items), not the 330-item release
+  quota.** The bank must grow before a public release (PLAN §5.3).
 - **Puzzle Sprint is not playable.** Its card is shown as "Coming soon" rather than
   faking a session (PLAN §14.12).
 

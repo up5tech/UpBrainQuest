@@ -157,5 +157,28 @@
         "type": "int"
       }
     }
-  }
+  },
+  "sessionPairsHint": "Tap two cards to find a matching pair.",
+  "sessionPairsFound": "{found} / {total} pairs found",
+  "@sessionPairsFound": {
+    "placeholders": {
+      "found": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionPairsFlipsLeft": "Flips left: {count}",
+  "@sessionPairsFlipsLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionPairsBudgetSpent": "No flips left. Submit to see the result.",
+  "sessionPairsAnswer": "Pairs",
+  "sessionPairsHiddenCard": "Hidden card"
 }

@@ -435,4 +435,27 @@ class AppLocalizationsVi extends AppLocalizations {
   String fractionOf(int value, int total) {
     return '$value / $total';
   }
+
+  @override
+  String get sessionPairsHint => 'Chạm hai thẻ để tìm một cặp khớp nhau.';
+
+  @override
+  String sessionPairsFound(int found, int total) {
+    return 'Đã tìm được $found / $total cặp';
+  }
+
+  @override
+  String sessionPairsFlipsLeft(int count) {
+    return 'Lượt lật còn lại: $count';
+  }
+
+  @override
+  String get sessionPairsBudgetSpent =>
+      'Đã hết lượt lật. Hãy gửi để xem kết quả.';
+
+  @override
+  String get sessionPairsAnswer => 'Các cặp';
+
+  @override
+  String get sessionPairsHiddenCard => 'Thẻ đang úp';
 }

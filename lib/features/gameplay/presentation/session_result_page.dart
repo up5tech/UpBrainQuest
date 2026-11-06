@@ -260,6 +260,9 @@ String _playerResponse(
     if (item is EqScenarioItem) {
       return _optionText(item.options, answer.optionId);
     }
+    if (item is PuzzleItem) {
+      return _optionText(item.options, answer.optionId);
+    }
     return answer.optionId;
   }
   if (answer is SequenceAnswer) {
@@ -267,6 +270,15 @@ String _playerResponse(
   }
   if (answer is ReorderAnswer) {
     return answer.order.join(' → ');
+  }
+  if (answer is PairMatchAnswer) {
+    final List<String> labels = answer.pairIds
+        .map(
+          (String id) =>
+              item is PuzzleItem ? _optionText(item.options, id) : id,
+        )
+        .toList();
+    return labels.join(' · ');
   }
   return '—';
 }
@@ -282,6 +294,19 @@ String? _correctResponse(QuestionItem item) {
     }
     if (item.contentType == ContentType.reorderSequence) {
       return item.expectedAnswer.map((dynamic e) => '$e').join(' → ');
+    }
+    if (item.contentType == ContentType.visualPattern ||
+        item.contentType == ContentType.oddOneOut) {
+      final dynamic only = item.expectedAnswer.isEmpty
+          ? null
+          : item.expectedAnswer.single;
+      return only is String ? _optionText(item.options, only) : null;
+    }
+    if (item.contentType == ContentType.matchingPairs) {
+      return item.expectedAnswer
+          .whereType<String>()
+          .map((String id) => _optionText(item.options, id))
+          .join(' · ');
     }
   }
   return null;

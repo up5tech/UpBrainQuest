@@ -1,369 +1,53 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.3.0-draft",
+  "contentPackVersion": "0.4.0-draft",
   "items": [
     {
-      "id": "eq_comm_001",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "constructive_communication",
-      "difficulty": "medium",
-      "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một đồng đội góp ý phê bình bạn trong cuộc họp. Bạn thấy phòng thủ, nhưng muốn hiểu điều họ đang băn khoăn.",
-      "prompt": "Bước tiếp theo mang tính xây dựng là gì?",
-      "options": [
-        { "id": "a", "text": "Hỏi một ví dụ cụ thể và lắng nghe trước khi phản hồi." },
-        { "id": "b", "text": "Đồng ý ngay mọi điểm, kể cả khi bạn chưa chắc." },
-        { "id": "c", "text": "Đáp lại bằng một lời chỉ trích cá nhân nhắm vào đồng đội." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Hỏi ví dụ cụ thể giúp làm rõ điều họ băn khoăn và cho bạn thời gian phản hồi chu đáo. Bạn vẫn có thể không đồng ý sau khi đã hiểu."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Giữ bình tĩnh là tốt, nhưng đồng ý trước khi hiểu có thể che mất những câu hỏi quan trọng hoặc ranh giới của chính bạn."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Công kích cá nhân thường làm căng thẳng leo thang và khiến người ta xa rời nội dung góp ý."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "self_regulation",
-        "perspective_taking",
-        "constructive_communication",
-        "boundaries_and_agency"
-      ],
-      "followUpReflection": "Điều gì giúp bạn sẵn sàng phản hồi những góp ý khó nghe?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_reg_001",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "self_regulation",
-      "difficulty": "easy",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Bạn kẹt xe và đến muộn một cuộc họp quan trọng. Bạn thấy cơn giận đang dâng lên.",
-      "prompt": "Điều gì giúp bạn điều chỉnh cảm xúc lúc này?",
-      "options": [
-        { "id": "a", "text": "Hít vài hơi thật chậm và gọi điện báo mình sẽ đến muộn." },
-        { "id": "b", "text": "Bấm còi liên tục và xả giận với những người lái xe khác." },
-        { "id": "c", "text": "Im lặng bực bội và đến nơi mà không nói gì." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Gọi tên cảm xúc và hít một hơi giúp bạn có khoảng lặng để chọn phản ứng bình tĩnh hơn; một cuộc gọi nhanh cũng giúp người khác chủ động."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Xả giận với người khác hiếm khi làm giao thông khá hơn mà còn có thể khiến bạn căng thẳng hơn."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Nhận ra cảm xúc là bước đầu, nhưng im lặng có thể khiến sự bực bội không được giải tỏa và người khác không hay biết."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "self_regulation"
-      ],
-      "followUpReflection": "Thói quen nhỏ nào giúp bạn lấy lại cân bằng khi kế hoạch bị lệch?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_persp_001",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "perspective_taking",
-      "difficulty": "medium",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Tuần này một đồng nghiệp tỏ ra xa cách và trả lời bạn cộc lốc.",
-      "prompt": "Bạn hiểu tình huống này thế nào?",
-      "options": [
-        { "id": "a", "text": "Cho rằng họ đang giận bạn và rút lui." },
-        { "id": "b", "text": "Nhẹ nhàng hỏi xem mọi việc có ổn không, không suy đoán." },
-        { "id": "c", "text": "Bàn tán với người khác về tâm trạng của họ." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Suy đoán nguyên nhân có thể làm hiểu lầm khó gỡ hơn trước khi bạn biết chuyện gì đang xảy ra."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Hỏi thăm mà không suy đoán để mở chỗ cho những bối cảnh bạn chưa biết và giữ mối quan hệ cởi mở."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Bàn tán thường lan truyền phỏng đoán và hiếm khi giúp được ai."
-        }
-      },
-      "skillDimensions": [
-        "perspective_taking",
-        "constructive_communication"
-      ],
-      "followUpReflection": "Khi nào bạn từng hiểu sai một tình huống mà sau đó lại thấy hợp lý?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_bound_001",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "boundaries_and_agency",
-      "difficulty": "hard",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Một người bạn liên tục nhờ bạn làm thay ca với thông báo rất gấp, trong khi bạn đã quá tải.",
-      "prompt": "Lần này bạn phản hồi thế nào?",
-      "options": [
-        { "id": "a", "text": "Luôn đồng ý để tránh xung đột." },
-        { "id": "b", "text": "Từ chối một cách lịch sự và đề xuất phương án khác hoặc thời điểm khác." },
-        { "id": "c", "text": "Đồng ý nhưng làm với thái độ bực bội." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Tránh xung đột bằng cách nhận quá nhiều có thể khiến bạn kiệt sức và âm thầm oán trách."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
-          },
-          "feedback": "Nêu giới hạn của mình một cách tử tế và đưa ra lựa chọn khác vừa tôn trọng tình bạn vừa tôn trọng sức mình."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 0,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Giúp đỡ trong khi bực bội có thể tích tụ ấm ức; nói rõ giới hạn sẽ tốt cho cả hai."
-        }
-      },
-      "skillDimensions": [
-        "boundaries_and_agency",
-        "constructive_communication"
-      ],
-      "followUpReflection": "Điều gì giúp bạn nói không mà không thấy áy náy khi cần?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_aware_001",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_awareness_easy_001",
       "domain": "eq",
       "contentType": "scenario_choice",
       "skill": "emotion_awareness",
       "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Bạn nhận ra quai hàm mình đang siết lại và câu trả lời ngắn dần trong một cuộc họp.",
-      "prompt": "Bước đầu tiên hữu ích là gì?",
+      "scenarioContext": "Một người bạn bỗng im lặng khác thường sau khi nhận tin buồn.",
+      "prompt": "Bạn có thể nói gì?",
       "options": [
-        { "id": "a", "text": "Dừng lại và tự gọi tên cảm xúc trước khi lên tiếng." },
-        { "id": "b", "text": "Đè nén cảm xúc và tiếp tục như không có gì." },
-        { "id": "c", "text": "Gắt lên với người tiếp theo lên tiếng." }
+        {
+          "id": "a",
+          "text": "“Cậu đừng lo lắng nữa.”"
+        },
+        {
+          "id": "b",
+          "text": "“Dạo này cậu có vẻ im hơn mọi khi. Cậu muốn nói chuyện hay muốn ở một mình một lúc?”"
+        },
+        {
+          "id": "c",
+          "text": "“Mình sẽ kể cho mọi người để họ làm cậu vui lên.”"
+        }
       ],
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Tự gọi tên cảm xúc tạo một khoảng lặng nhỏ giữa cảm xúc và hành động tiếp theo."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Đè nén cảm xúc có thể khiến sau này khó nhận ra và xử lý chúng hơn."
+          "feedback": "Câu này gạt đi cảm xúc mà bạn của bạn có thể đang mang. Nhận ra trước, sửa sau."
         },
-        "c": {
-          "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Hành động theo căng thẳng mà không dừng lại thường ảnh hưởng đến người xung quanh và cuộc trò chuyện."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "self_regulation"
-      ],
-      "followUpReflection": "Cơ thể bạn phát tín hiệu gì trước khi bạn thấy khó chịu?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_aware_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "emotion_awareness",
-      "difficulty": "medium",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Một người bạn nói mình ổn nhưng liên tục né ánh mắt và trả lời rất ngắn.",
-      "prompt": "Bạn phản hồi thế nào trước sự lệch nhau này?",
-      "options": [
-        { "id": "a", "text": "Nhẹ nhàng nói điều bạn nhận thấy và hỏi xem họ có muốn tâm sự không." },
-        { "id": "b", "text": "Tin hẳn vào câu 'mình ổn' và bỏ qua." },
-        { "id": "c", "text": "Khẳng định chắc chắn rằng họ đang nói dối về việc mình ổn." }
-      ],
-      "rubricByOption": {
-        "a": {
+        "b": {
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 3
           },
-          "feedback": "Nhận ra sự lệch nhau và để họ tự chọn có nói hay không vừa tôn trọng họ vừa cho thấy bạn quan tâm."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Tin ngay câu 'mình ổn' có thể bỏ lỡ một tín hiệu, dù một số người thật sự cần khoảng riêng."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Gọi ai đó là kẻ nói dối có thể khiến họ thấy không an toàn và khép lại cuộc trò chuyện."
-        }
-      },
-      "skillDimensions": [
-        "emotion_awareness",
-        "perspective_taking"
-      ],
-      "followUpReflection": "Bạn thường cho người khác thấy mình sẵn sàng lắng nghe bằng cách nào?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_aware_003",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "emotion_awareness",
-      "difficulty": "hard",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Bạn vừa háo hức vừa hồi hộp về một lần chuyển nhà lớn. Có ngày bạn thấy cả hai cùng lúc.",
-      "prompt": "Cách hiểu nào hữu ích?",
-      "options": [
-        { "id": "a", "text": "Gọi tên cả hai cảm xúc và xem mỗi cảm xúc đang nói với bạn điều gì." },
-        { "id": "b", "text": "Quyết rằng mình chỉ được cảm thấy một điều và đẩy điều kia đi." },
-        { "id": "c", "text": "Chờ cho cảm xúc tự lắng xuống rồi mới hành động." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Cảm xúc trái chiều thường mang thông tin hữu ích; gọi tên cả hai có thể giảm sức chi phối của chúng."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Cố đẩy một cảm xúc đi có thể khiến cảm xúc còn lại khó hiểu hơn."
+          "feedback": "Bạn nói điều mình nhận thấy và để bạn mình chọn, tôn trọng việc họ có thể không muốn nói."
         },
         "c": {
           "scores": {
@@ -373,84 +57,112 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Chờ cảm xúc lắng xuống đôi khi hữu ích, nhưng có thể trì hoãn những lựa chọn bạn có thể làm ngay."
+          "feedback": "Kể lại chuyện riêng của họ là lấy mất quyền quyết định của họ. Hãy hỏi trước khi kéo người khác vào."
         }
       },
       "skillDimensions": [
-        "emotion_awareness",
-        "self_regulation"
+        "emotion_awareness"
       ],
-      "followUpReflection": "Khi nào hai cảm xúc cùng chỉ bạn tới một quyết định?",
-      "contentVersion": 1
+      "followUpReflection": "Dấu hiệu nào cho bạn biết một người bạn cần khoảng riêng thay vì một cuộc trò chuyện?",
+      "estimatedSeconds": 40,
+      "tags": [
+        "eq",
+        "emotion_awareness"
+      ]
     },
     {
-      "id": "eq_comm_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_awareness_easy_002",
       "domain": "eq",
       "contentType": "scenario_choice",
-      "skill": "constructive_communication",
+      "skill": "emotion_awareness",
       "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Báo cáo của một đồng nghiệp còn vài chỗ thiếu, và bạn cần nêu ra trước hạn chót.",
-      "prompt": "Bạn chia sẻ góp ý thế nào?",
+      "scenarioContext": "Một đồng đội mắc lỗi và đã xin lỗi. Bạn thấy bực vì lỗi đó làm phát sinh thêm việc.",
+      "prompt": "Cách phản hồi nào mang tính xây dựng?",
       "options": [
-        { "id": "a", "text": "Nêu cụ thể những chỗ thiếu và hỏi bạn ấy muốn được hỗ trợ thế nào để bổ sung." },
-        { "id": "b", "text": "Tự viết lại toàn bộ báo cáo mà không nói với họ." },
-        { "id": "c", "text": "Chỉ ra các chỗ thiếu trước mặt cả nhóm." }
+        {
+          "id": "a",
+          "text": "“Cảm ơn cậu đã nhận lỗi. Mình xem lại phần cần sửa và cách tránh lặp lại nhé.”"
+        },
+        {
+          "id": "b",
+          "text": "“Cậu lúc nào cũng làm hỏng việc.”"
+        },
+        {
+          "id": "c",
+          "text": "“Không sao đâu,” rồi từ chối bàn về ảnh hưởng thực tế."
+        }
       ],
       "rubricByOption": {
         "a": {
           "scores": {
             "emotion_awareness": 2,
-            "self_regulation": 2,
+            "self_regulation": 3,
             "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 2
           },
-          "feedback": "Góp ý cụ thể, riêng tư và kèm lời đề nghị hỗ trợ thường dễ tiếp thu và hành động hơn."
+          "feedback": "Bạn ghi nhận lời xin lỗi, nói rõ ảnh hưởng thực tế và hướng tới bước tiếp theo. Bạn cũng được phép nói mình đang bực."
         },
         "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Âm thầm làm lại có thể gây khó hiểu và lấy mất cơ hội cải thiện của họ."
-        },
-        "c": {
           "scores": {
             "emotion_awareness": 0,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Nhận xét về con người thay vì công việc khiến vấn đề khó sửa hơn."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Phê bình trước đám đông có thể khiến người ta xấu hổ và hiếm khi giúp công việc tốt hơn."
+          "feedback": "Giữ hòa khí có thể an toàn hơn, nhưng phần chưa giải quyết thường quay lại. Một cuộc nói chuyện ngắn, cụ thể tử tế với cả hai bên."
         }
       },
       "skillDimensions": [
-        "constructive_communication",
-        "perspective_taking"
+        "emotion_awareness"
       ],
-      "followUpReflection": "Điều gì giúp bạn dễ nghe và dùng được một lời góp ý?",
-      "contentVersion": 1
+      "followUpReflection": "Một câu nào nói được sự bực của bạn mà không quy lỗi cho người kia?",
+      "estimatedSeconds": 40,
+      "tags": [
+        "eq",
+        "emotion_awareness"
+      ]
     },
     {
-      "id": "eq_comm_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_communication_easy_001",
       "domain": "eq",
       "contentType": "scenario_choice",
       "skill": "constructive_communication",
-      "difficulty": "hard",
+      "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Trong một nhóm chat, hai người bạn bắt đầu tranh cãi và gắn thẻ bạn để chọn phe.",
-      "prompt": "Hành động nào mang tính xây dựng?",
+      "scenarioContext": "Ai đó ngắt lời khi bạn đang trình bày một ý tưởng.",
+      "prompt": "Cách phản hồi nào hữu ích?",
       "options": [
-        { "id": "a", "text": "Nói rằng bạn không muốn chọn phe ở đây và đề nghị nói chuyện riêng." },
-        { "id": "b", "text": "Nhảy vào và ủng hộ người bạn mà bạn thấy đúng hơn." },
-        { "id": "c", "text": "Rời nhóm chat mà không nói gì." }
+        {
+          "id": "a",
+          "text": "“Mình muốn nói hết ý, sau đó mình rất muốn nghe ý của bạn.”"
+        },
+        {
+          "id": "b",
+          "text": "“Bạn chẳng bao giờ chịu nghe.”"
+        },
+        {
+          "id": "c",
+          "text": "Ngừng góp ý mà không nói lý do."
+        }
       ],
       "rubricByOption": {
         "a": {
@@ -461,289 +173,9 @@
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Nêu ranh giới và mở một kênh bình tĩnh hơn giúp giữ mối quan hệ mà không tiếp thêm lửa cho cuộc cãi vã."
+          "feedback": "Một đề nghị rõ ràng, tôn trọng giữ cuộc trò chuyện mở và bảo vệ lượt nói của bạn."
         },
         "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Chọn phe có thể làm rạn nứt sâu hơn và kéo bạn vào một cuộc xung đột bạn không chọn."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Rời đi tránh được va chạm nhưng có thể để nhóm không còn lựa chọn bình tĩnh nào."
-        }
-      },
-      "skillDimensions": [
-        "constructive_communication",
-        "boundaries_and_agency"
-      ],
-      "followUpReflection": "Bạn giữ kết nối thế nào khi người khác bất đồng mạnh mẽ?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_comm_004",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "constructive_communication",
-      "difficulty": "medium",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Bạn nhận ra mình vừa gắt với một đồng đội và không khí đang căng.",
-      "prompt": "Bước tiếp theo mang tính xây dựng là gì?",
-      "options": [
-        { "id": "a", "text": "Xin lỗi về giọng điệu, giải thích ngắn gọn và hỏi thăm họ." },
-        { "id": "b", "text": "Giả vờ không có chuyện gì và hy vọng mọi chuyện tự qua." },
-        { "id": "c", "text": "Đổ lỗi cho căng thẳng và nói họ không nên nhạy cảm thế." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Một lời xin lỗi cụ thể, nhận trách nhiệm về giọng điệu và hỏi thăm sẽ hàn gắn niềm tin nhanh hơn im lặng."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Để mọi chuyện tự qua có thể khiến đồng đội không chắc chuyện đó có lặp lại không."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Đánh trống lảng và nói họ nhạy cảm có thể khiến họ thấy bị xem nhẹ."
-        }
-      },
-      "skillDimensions": [
-        "constructive_communication",
-        "self_regulation"
-      ],
-      "followUpReflection": "Với bạn, việc hàn gắn sau một khoảnh khắc căng thẳng trông như thế nào?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_reg_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "self_regulation",
-      "difficulty": "medium",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Bạn nhận được tin nhắn cộc lốc từ khách hàng và thấy thật không công bằng. Tim bạn đang đập nhanh.",
-      "prompt": "Bạn làm gì trước khi trả lời?",
-      "options": [
-        { "id": "a", "text": "Chờ, đọc lại tin nhắn và soạn câu trả lời bình tĩnh." },
-        { "id": "b", "text": "Đáp lại ngay bằng một tin nhắn giận dữ." },
-        { "id": "c", "text": "Bỏ qua tin nhắn và hy vọng họ quên." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 3,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Dừng lại và soạn cẩn thận giúp bạn phản hồi vấn đề thay vì phản ứng với cảm giác bị chạm tự ái."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Trả lời giận dữ ngay lập tức thường làm xung đột leo thang."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Bỏ qua tin nhắn công việc có thể khiến vấn đề lớn dần."
-        }
-      },
-      "skillDimensions": [
-        "self_regulation",
-        "constructive_communication"
-      ],
-      "followUpReflection": "Điều gì giúp bạn nguội lại trước khi viết trả lời?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_reg_003",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "self_regulation",
-      "difficulty": "hard",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Đang gấp hạn chót, một đồng nghiệp hỏi bạn một câu dài. Bạn thấy bực đang dâng.",
-      "prompt": "Bạn xử lý thế nào?",
-      "options": [
-        { "id": "a", "text": "Nói rằng bạn muốn giúp và đề nghị một khoảng ngắn để trao đổi sau hạn chót." },
-        { "id": "b", "text": "Gắt rằng bạn không có thời gian cho việc này lúc này." },
-        { "id": "c", "text": "Thở dài thật to và trả lời một từ." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 3,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
-          },
-          "feedback": "Nói thật về giới hạn thời gian và hẹn lúc khác vừa tôn trọng sự tập trung của bạn vừa tôn trọng nhu cầu của họ."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 0,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Gắt gỏng có thể làm tổn hại niềm tin dù áp lực là thật."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Thở dài và trả lời một từ gửi đi sự bực bội mà không giải quyết yêu cầu."
-        }
-      },
-      "skillDimensions": [
-        "self_regulation",
-        "boundaries_and_agency"
-      ],
-      "followUpReflection": "Bạn có thể bảo vệ sự tập trung mà không đóng cửa với người khác thế nào?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_persp_002",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "perspective_taking",
-      "difficulty": "easy",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Một người bạn thân hủy kế hoạch vào phút chót lần thứ hai.",
-      "prompt": "Bạn hiểu tình huống này thế nào?",
-      "options": [
-        { "id": "a", "text": "Nói với họ rằng bạn thấy hụt hẫng và hỏi xem họ đang gặp chuyện gì." },
-        { "id": "b", "text": "Cho rằng họ không quan tâm đến bạn và im lặng." },
-        { "id": "c", "text": "Đăng lên mạng về việc bị bỏ rơi." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Chia sẻ cảm xúc của bạn và hỏi về cảm xúc của họ giúp kiểm tra một phỏng đoán trước khi nó cố định."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Nghĩ điều tệ nhất có thể biến một tuần bận rộn thành câu chuyện rằng bạn không được coi trọng."
-        },
-        "c": {
-          "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
-          },
-          "feedback": "Đăng công khai có thể khiến người bạn ấy xấu hổ và hiếm khi giúp tình bạn."
-        }
-      },
-      "skillDimensions": [
-        "perspective_taking",
-        "constructive_communication"
-      ],
-      "followUpReflection": "Cách công bằng nào để kiểm tra câu chuyện bạn đang tự kể?",
-      "contentVersion": 1
-    },
-    {
-      "id": "eq_persp_003",
-      "domain": "eq",
-      "contentType": "scenario_choice",
-      "skill": "perspective_taking",
-      "difficulty": "hard",
-      "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Một khách hàng nói gay gắt với bạn về một sự chậm trễ không phải lỗi của bạn.",
-      "prompt": "Bạn phản hồi thế nào?",
-      "options": [
-        { "id": "a", "text": "Ghi nhận sự bực bội của họ và giải thích bạn có thể làm gì tiếp theo." },
-        { "id": "b", "text": "Nói rằng không phải lỗi của bạn và bỏ đi." },
-        { "id": "c", "text": "Đáp lại bằng giọng gay gắt để cho thấy bạn không dễ bị bắt nạt." }
-      ],
-      "rubricByOption": {
-        "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Ghi nhận bực bội trước thường làm dịu tình hình và mở đường tới giải pháp."
-        },
-        "b": {
-          "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
-          },
-          "feedback": "Phòng thủ là dễ hiểu, nhưng có thể khiến khách hàng không có hướng giải quyết."
-        },
-        "c": {
           "scores": {
             "emotion_awareness": 0,
             "self_regulation": 0,
@@ -751,43 +183,57 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
-          "feedback": "Đáp trả cùng giọng điệu thường biến một vấn đề dịch vụ thành xung đột."
+          "feedback": "Một nhận xét bao quát về con người khiến người kia phòng vệ thay vì thay đổi."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Lùi lại có thể đúng khi cuộc trò chuyện không an toàn hoặc thiếu tôn trọng, nhưng ở đây không ai biết vì sao bạn rời đi. Hãy nói điều bạn cần trước."
         }
       },
       "skillDimensions": [
-        "perspective_taking",
-        "self_regulation"
+        "constructive_communication"
       ],
-      "followUpReflection": "Điều gì giúp bạn nhìn thấy con người đằng sau một giọng nói gay gắt?",
-      "contentVersion": 1
+      "followUpReflection": "Bạn sẽ nói gì nếu tình huống ngắt lời lặp lại?",
+      "estimatedSeconds": 35,
+      "tags": [
+        "eq",
+        "constructive_communication"
+      ]
     },
     {
-      "id": "eq_bound_002",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_boundaries_easy_001",
       "domain": "eq",
       "contentType": "scenario_choice",
       "skill": "boundaries_and_agency",
       "difficulty": "easy",
       "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Một người mới quen hỏi địa chỉ nhà bạn ngay sau khi gặp.",
-      "prompt": "Bạn phản hồi thế nào?",
+      "scenarioContext": "Một người bạn hỏi mượn món đồ mà hôm nay bạn cần dùng.",
+      "prompt": "Bạn có thể làm gì?",
       "options": [
-        { "id": "a", "text": "Nói rằng bạn chưa muốn chia sẻ điều đó và đề nghị cách khác để giữ liên lạc." },
-        { "id": "b", "text": "Đưa địa chỉ để khỏi bị coi là bất lịch sự." },
-        { "id": "c", "text": "Nổi giận và buộc tội họ tò mò quá mức." }
+        {
+          "id": "a",
+          "text": "Đồng ý dù bạn không thể cho mượn."
+        },
+        {
+          "id": "b",
+          "text": "Nói: “Hôm nay mình cần dùng nên chưa cho mượn được.”"
+        },
+        {
+          "id": "c",
+          "text": "Giấu món đồ và nói dối là đã mất."
+        }
       ],
       "rubricByOption": {
         "a": {
-          "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 2,
-            "perspective_taking": 2,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
-          },
-          "feedback": "Một giới hạn bình tĩnh kèm lựa chọn khác giữ được kết nối mà không chia sẻ quá nhiều."
-        },
-        "b": {
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
@@ -795,79 +241,446 @@
             "constructive_communication": 1,
             "boundaries_and_agency": 0
           },
-          "feedback": "Chia sẻ thông tin cá nhân để tránh ngượng có thể khiến bạn kém an toàn hơn mong muốn."
+          "feedback": "Đồng ý khi hôm nay bạn cần dùng thường tạo ra vấn đề thứ hai về sau. Tử tế không bắt buộc phải nói có."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 2,
+            "self_regulation": 3,
+            "perspective_taking": 1,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 3
+          },
+          "feedback": "Một ranh giới ngắn, thật thà, không cần giải thích quá nhiều. Bạn vẫn có thể hẹn một dịp khác nếu muốn."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 0,
-            "perspective_taking": 1,
+            "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 0
           },
-          "feedback": "Giận dữ cho thấy có giới hạn, nhưng một lời giải thích bình tĩnh dễ nghe hơn."
+          "feedback": "Giấu sự thật làm mất niềm tin mà vẫn không đặt ra ranh giới."
         }
       },
       "skillDimensions": [
-        "boundaries_and_agency",
-        "constructive_communication"
+        "boundaries_and_agency"
       ],
-      "followUpReflection": "Bạn quyết định chia sẻ thông tin cá nhân nào thế nào?",
-      "contentVersion": 1
+      "followUpReflection": "Bạn sẽ đề nghị một ngày khác thế nào mà không làm yếu ranh giới?",
+      "estimatedSeconds": 35,
+      "tags": [
+        "eq",
+        "boundaries_and_agency"
+      ]
     },
     {
-      "id": "eq_bound_003",
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_regulation_medium_001",
       "domain": "eq",
       "contentType": "scenario_choice",
-      "skill": "boundaries_and_agency",
+      "skill": "self_regulation",
       "difficulty": "medium",
       "locale": "vi",
-      "status": "draft",
-      "scenarioContext": "Một người trong gia đình liên tục thúc bạn theo một lựa chọn nghề nghiệp mà bạn còn chưa chắc.",
-      "prompt": "Bạn xử lý áp lực này thế nào?",
+      "scenarioContext": "Bạn nhận góp ý phê bình trong một cuộc họp và thấy phòng vệ.",
+      "prompt": "Bước tiếp theo nào mang tính xây dựng?",
       "options": [
-        { "id": "a", "text": "Cảm ơn họ đã quan tâm và nói rằng bạn cần thời gian tự quyết định." },
-        { "id": "b", "text": "Đồng ý để giữ hòa khí rồi âm thầm bực bội." },
-        { "id": "c", "text": "Cắt ngang cuộc trò chuyện mỗi khi nó được nhắc tới." }
+        {
+          "id": "a",
+          "text": "Xin một ví dụ cụ thể và lắng nghe trước khi phản hồi."
+        },
+        {
+          "id": "b",
+          "text": "Chỉ trích cá nhân người đồng nghiệp."
+        },
+        {
+          "id": "c",
+          "text": "Đồng ý ngay mọi điều dù chưa hiểu."
+        }
       ],
       "rubricByOption": {
         "a": {
           "scores": {
             "emotion_awareness": 2,
+            "self_regulation": 3,
+            "perspective_taking": 3,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 2
+          },
+          "feedback": "Xin ví dụ làm chậm khoảnh khắc lại và cho bạn thông tin thật để phản hồi. Sau đó bạn vẫn có thể không đồng ý."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Biến góp ý thành công kích cá nhân làm căng căn phòng và che mất vấn đề thật."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 2,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Đồng ý nhanh có thể kết thúc khoảnh khắc, nhưng bỏ rơi quan điểm của bạn và để vấn đề chưa được giải quyết."
+        }
+      },
+      "skillDimensions": [
+        "self_regulation"
+      ],
+      "followUpReflection": "Điều gì giúp bạn dừng vài giây trước khi trả lời?",
+      "estimatedSeconds": 45,
+      "tags": [
+        "eq",
+        "self_regulation"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_perspective_medium_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "perspective_taking",
+      "difficulty": "medium",
+      "locale": "vi",
+      "scenarioContext": "Một đồng đội trễ hạn. Bạn không biết vì sao.",
+      "prompt": "Phản hồi đầu tiên nào mang tính xây dựng?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hỏi riêng điều gì đã cản trở công việc và bàn bước tiếp theo thực tế."
+        },
+        {
+          "id": "b",
+          "text": "Cho rằng họ không quan tâm."
+        },
+        {
+          "id": "c",
+          "text": "Phê bình công khai để người khác rút kinh nghiệm."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 2,
+            "self_regulation": 3,
+            "perspective_taking": 3,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 2
+          },
+          "feedback": "Bạn tìm hiểu bối cảnh mà không bỏ qua trách nhiệm, và giữ cuộc trao đổi riêng tư."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Giả định này tự điền một lý do bạn chưa có và đóng cuộc trò chuyện quá sớm."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Phê bình công khai làm mất niềm tin và hiếm khi cải thiện công việc."
+        }
+      },
+      "skillDimensions": [
+        "perspective_taking"
+      ],
+      "followUpReflection": "Câu hỏi nào giúp bạn có thông tin hữu ích mà không giống thẩm vấn?",
+      "estimatedSeconds": 45,
+      "tags": [
+        "eq",
+        "perspective_taking"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_communication_medium_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "constructive_communication",
+      "difficulty": "medium",
+      "locale": "vi",
+      "scenarioContext": "Một người bạn đã hủy hẹn hai lần. Bạn thấy thất vọng.",
+      "prompt": "Bạn có thể làm gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nói việc hủy hẹn ảnh hưởng đến bạn thế nào và hỏi xem kế hoạch còn phù hợp với họ không."
+        },
+        {
+          "id": "b",
+          "text": "Giả vờ không sao, rồi để trong lòng."
+        },
+        {
+          "id": "c",
+          "text": "Gửi một tin nhắn xúc phạm."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 3,
             "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Ghi nhận sự quan tâm của họ trong khi giữ quyền quyết định của mình giúp bảo toàn cả mối quan hệ lẫn tiếng nói của bạn."
+          "feedback": "Bạn nêu ảnh hưởng mà không buộc tội, và mời họ chia sẻ thông tin. Bạn vẫn có quyền lên kế hoạch khác cho mình."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
+            "perspective_taking": 1,
+            "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Đồng ý dưới áp lực có thể tích tụ oán trách và trì hoãn một lựa chọn thuộc về bạn."
+          "feedback": "Cảm xúc không biến mất chỉ vì không nói ra; nó thường lớn dần."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 0
           },
-          "feedback": "Cắt ngang bảo vệ bạn tức thời nhưng có thể không giảm áp lực về lâu dài."
+          "feedback": "Một lời xúc phạm có thể xả căng thẳng chốc lát, nhưng khiến việc hàn gắn khó hơn nhiều."
         }
       },
       "skillDimensions": [
-        "boundaries_and_agency",
+        "constructive_communication"
+      ],
+      "followUpReflection": "Bạn sẽ làm gì với buổi tối của mình nếu họ hủy lần thứ ba?",
+      "estimatedSeconds": 45,
+      "tags": [
+        "eq",
+        "constructive_communication"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_regulation_hard_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "self_regulation",
+      "difficulty": "hard",
+      "locale": "vi",
+      "scenarioContext": "Trong một cuộc trò chuyện căng thẳng, người kia đòi câu trả lời ngay. Bạn thấy quá tải và cần thời gian.",
+      "prompt": "Phản hồi nào mang tính xây dựng?",
+      "options": [
+        {
+          "id": "a",
+          "text": "“Mình muốn nói tiếp, nhưng cần 20 phút để lắng lại và suy nghĩ. 3 giờ mình sẽ quay lại.”"
+        },
+        {
+          "id": "b",
+          "text": "Đáp lại bằng cơn giận của họ."
+        },
+        {
+          "id": "c",
+          "text": "Rời đi không nói gì, dù hoàn toàn an toàn để nhắn một câu."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 3,
+            "self_regulation": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 3
+          },
+          "feedback": "Bạn nêu điều mình cần, hẹn thời điểm cụ thể và giữ cam kết. Nếu tình huống không an toàn, rời đi ngay và tìm trợ giúp quan trọng hơn mọi mốc quay lại."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Tăng nhiệt thường làm leo thang thay vì giải quyết."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 2,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Khoảng lặng là chính đáng, nhưng im lặng để người kia đoán mò. Một câu là đủ."
+        }
+      },
+      "skillDimensions": [
+        "self_regulation"
+      ],
+      "followUpReflection": "Bạn thường cần bao lâu để có thể nghĩ rõ ràng trở lại?",
+      "estimatedSeconds": 50,
+      "tags": [
+        "eq",
+        "self_regulation"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_boundaries_hard_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "boundaries_and_agency",
+      "difficulty": "hard",
+      "locale": "vi",
+      "scenarioContext": "Một đồng nghiệp nhờ bạn giữ bí mật, nhưng thông tin cho thấy ai đó có thể gặp nguy hiểm.",
+      "prompt": "Bạn nên cân nhắc điều gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hứa giữ bí mật tuyệt đối."
+        },
+        {
+          "id": "b",
+          "text": "Làm rõ lo ngại, tránh lan truyền thông tin và tìm trợ giúp phù hợp qua kênh an toàn nếu ai đó có thể gặp nguy hiểm."
+        },
+        {
+          "id": "c",
+          "text": "Đăng chi tiết lên nhóm chat."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Một lời hứa tuyệt đối có thể khiến ai đó không nhận được trợ giúp. Bạn có thể tôn trọng riêng tư mà không hứa điều mình có thể không giữ được."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 3,
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 3
+          },
+          "feedback": "Bạn giữ vòng tròn nhỏ, kiểm tra điều thực sự đã biết và nhờ kênh an toàn, phù hợp khi an toàn bị đe dọa. Đây không phải lời khuyên pháp lý hay y khoa."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Lan truyền chi tiết phá vỡ niềm tin và có thể khiến người đó gặp nhiều nguy hiểm hơn."
+        }
+      },
+      "skillDimensions": [
+        "boundaries_and_agency"
+      ],
+      "followUpReflection": "Ai là người an toàn để bạn hỏi ý mà không phải lan truyền chi tiết?",
+      "estimatedSeconds": 55,
+      "tags": [
+        "eq",
+        "boundaries_and_agency"
+      ]
+    },
+    {
+      "status": "draft",
+      "pointsWeight": 1,
+      "contentVersion": 1,
+      "id": "eq_perspective_hard_001",
+      "domain": "eq",
+      "contentType": "scenario_choice",
+      "skill": "perspective_taking",
+      "difficulty": "hard",
+      "locale": "vi",
+      "scenarioContext": "Một tin nhắn trong nhóm nghe có vẻ thô lỗ, nhưng giọng điệu không rõ và bạn thiếu bối cảnh.",
+      "prompt": "Bước tiếp theo nào là chu đáo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buộc tội công khai rằng người gửi đang thù địch."
+        },
+        {
+          "id": "b",
+          "text": "Hỏi một câu làm rõ trung tính hoặc hỏi riêng trước khi cho rằng có ác ý."
+        },
+        {
+          "id": "c",
+          "text": "Chuyển tiếp tin nhắn cho người khác làm bằng chứng."
+        }
+      ],
+      "rubricByOption": {
+        "a": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
+          "feedback": "Buộc tội công khai khóa chặt một cách hiểu mà bạn chưa đủ căn cứ."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 2,
+            "self_regulation": 3,
+            "perspective_taking": 3,
+            "constructive_communication": 3,
+            "boundaries_and_agency": 2
+          },
+          "feedback": "Bạn kiểm tra cách hiểu của mình trước khi hành động. Nếu sự thô lỗ lặp thành quy luật, đặt ranh giới trực tiếp vẫn là điều phù hợp."
+        },
+        "c": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
+          },
+          "feedback": "Lan truyền tin nhắn mở rộng xung đột và kéo thêm người không liên quan."
+        }
+      },
+      "skillDimensions": [
         "perspective_taking"
       ],
-      "followUpReflection": "Điều gì giúp bạn giữ ranh giới với người thân?",
-      "contentVersion": 1
+      "followUpReflection": "Câu hỏi trung tính nào bạn có thể hỏi mà không nghe như mỉa mai?",
+      "estimatedSeconds": 50,
+      "tags": [
+        "eq",
+        "perspective_taking"
+      ]
     }
   ]
 }
