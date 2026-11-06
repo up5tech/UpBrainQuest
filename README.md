@@ -14,9 +14,23 @@ ships inside the app.
 
 ---
 
+## Features
+
+- **Quick Quest** — mixed IQ + puzzle + EQ sessions with a results and review screen.
+- **IQ Challenge** — reasoning, memory, and pattern items scored 0–100.
+- **EQ Challenge** — interactive social scenarios scored across EQ dimensions.
+- **Puzzle Sprint** — shown as "Coming soon" (no fake session, per PLAN §14.12).
+- **Daily Challenge** — deterministic daily selection with streaks and achievements.
+- **Progress & history** — aggregates, recent sessions, achievements.
+- **Settings** — language (English / Vietnamese), haptics, sound, reduced motion.
+- **Localization** — full English and Vietnamese UI and content.
+
+---
+
 ## Table of contents
 
 - [Requirements](#requirements)
+- [Features](#features)
 - [Getting started](#getting-started)
 - [Baseline commands](#baseline-commands)
 - [Release builds](#release-builds)
@@ -77,7 +91,7 @@ flutter test
 ```sh
 dart format --output=none --set-exit-if-changed .   # formatting is enforced
 flutter analyze                                     # zero warnings required
-flutter test                                        # host suite (109 tests)
+flutter test                                        # host suite (110 tests)
 flutter build apk --debug                           # Android debug build
 flutter build ios --simulator --debug               # iOS debug build
 ```
@@ -109,7 +123,7 @@ uses the debug key for release; replace it with a real keystore before uploading
 
 ## Testing
 
-- **Host suite:** `flutter test` — 109 tests covering content parsing/validation, the
+- **Host suite:** `flutter test` — 110 tests covering content parsing/validation, the
   session builder, IQ/EQ scoring, achievements, streaks, the daily selector, database
   migrations, repositories, and widget behaviour (navigation, results, progress, text
   scaling, contrast, offline audit).
@@ -149,7 +163,7 @@ Full details: [`docs/architecture.md`](docs/architecture.md).
 up_brain_quest/
 ├── android/                     # Android host project
 ├── ios/                         # iOS host project
-├── assets/content/              # Bundled question JSON (en/)
+├── assets/content/              # Bundled question JSON (en/, vi/)
 ├── docs/                        # Architecture, authoring, scoring, audits, release
 ├── lib/
 │   ├── main.dart
