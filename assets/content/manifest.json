@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.6.0-draft",
+  "contentPackVersion": "0.8.0-draft",
   "supportedLocales": [
     "en",
     "vi"
@@ -16,6 +16,6 @@
   "expectedItemCounts": {
     "iq": 120,
     "puzzle": 90,
-    "eq": 10
+    "eq": 120
   }
 }

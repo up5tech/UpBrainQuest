@@ -10,10 +10,10 @@ notes)._
 | --- | --- | --- | --- |
 | IQ / reasoning | 120 | `multiple_choice` | Five skills at the PLAN §5.3 quota of 24 each: number patterns, logical deduction, verbal analogies, spatial reasoning, working memory |
 | Puzzle | 90 | `visual_pattern` (18), `odd_one_out` (18), `matching_pairs` (18), `memory_sequence` (18), `reorder_sequence` (18) | Every mechanic sits at its PLAN §5.3 quota of 18 (6 per difficulty) |
-| EQ | 10 | `scenario_choice` | PLAN §5.10.C starter set; all 5 rubric dimensions represented |
-| **Total** | **220** | | All items are `status: draft` |
+| EQ | 120 | `scenario_choice` | Five dimensions at the PLAN §5.3 quota of 24 each (8 easy / 8 medium / 8 hard); every option carries a full five-dimension rubric |
+| **Total** | **330** | | All items are `status: draft` |
 
-The manifest declares `expectedItemCounts` (`iq: 120`, `puzzle: 90`, `eq: 10`) and the
+The manifest declares `expectedItemCounts` (`iq: 120`, `puzzle: 90`, `eq: 120`) and the
 validation test asserts the parsed bank matches those counts exactly. Every locale
 must ship the same IDs; the parity test compares answers, option IDs, rubric scores
 and symbol IDs across languages.
@@ -108,9 +108,9 @@ To add another locale (only when translations are complete):
 ## 6. Known limitations
 
 - Content is draft; a human copy-edit and EQ safety review is still recommended.
-- The IQ (120) and puzzle (90) domains are complete: every skill and mechanic
-  holds its quota with an even 8/8/8 or 6/6/6 difficulty split. EQ (10 of 120) is
-  still a starter set.
+- All three domains reach the Version 1 quota: IQ 120, puzzle 90 and EQ 120,
+  every skill, mechanic and EQ dimension with an even 8/8/8 or 6/6/6 split. The
+  bank is content-complete for PLAN §5.3 but still all `status: draft`.
 - No audio assets; sound feedback uses the platform click.
 - Two locales (English, Vietnamese), both complete for UI copy and content. The
   Vietnamese translation is machine-authored and still needs native review.

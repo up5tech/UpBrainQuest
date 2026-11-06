@@ -241,8 +241,8 @@ Regenerate with `dart run build_runner build`. Never hand-edit `*.g.dart`.
 ## Known limitations
 
 - Content is still `status: draft`; a human copy-edit and EQ review is recommended.
-- IQ (120) and puzzle (90) content are complete; the EQ bank is still a 10-scenario
-  starter set. Puzzle Sprint is not playable yet.
+- The question bank reaches the PLAN §5.3 Version 1 quota (330 items: 120 IQ,
+  90 puzzle, 120 EQ), all still `status: draft`. Puzzle Sprint is not playable yet.
 - Dark theme only; UI and content ship in English and Vietnamese; no audio assets.
 - Release signing is not configured (debug key on Android, unsigned iOS).
 - The Android toolchain on this machine has no emulator; the iOS simulator is the

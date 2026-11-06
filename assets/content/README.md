@@ -25,13 +25,13 @@ reads the `<locale>/` files for the active language.
 ```json
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.6.0-draft",
+  "contentPackVersion": "0.8.0-draft",
   "supportedLocales": ["en", "vi"],
   "files": [
     "en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json",
     "vi/iq_questions.json", "vi/puzzle_questions.json", "vi/eq_scenarios.json"
   ],
-  "expectedItemCounts": { "iq": 120, "puzzle": 90, "eq": 10 }
+  "expectedItemCounts": { "iq": 120, "puzzle": 90, "eq": 120 }
 }
 ```
 
