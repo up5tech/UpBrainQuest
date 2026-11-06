@@ -10,8 +10,8 @@ These are current gaps, not defects. They are tracked so a release decision is e
   `visual_pattern`, `odd_one_out`, `matching_pairs`, `memory_sequence` and
   `reorder_sequence` — hold 18 each (6 easy / 6 medium / 6 hard), the PLAN §5.3
   quota.
-- **Content is 112 of the 330-item release quota** (PLAN §5.3). The IQ bank (12 of
-  120) and EQ bank (10 of 120) still need to grow before a public release.
+- **Content is 220 of the 330-item release quota** (PLAN §5.3). IQ (120) and
+  puzzle (90) are complete; the EQ bank still holds 10 of 120 scenarios.
 - **Puzzle Sprint is not playable.** Its card is shown as "Coming soon" rather than
   faking a session (PLAN §14.12).
 
