@@ -19,7 +19,11 @@ abstract final class AppColors {
   static const Color elevatedSurface = Color(0xFF202B45);
 
   /// Primary accent (violet).
-  static const Color primary = Color(0xFF7C5CFF);
+  ///
+  /// Lightened from `#7C5CFF` so primary text (dialog actions, ghost keypad
+  /// buttons) clears WCAG AA on the page and card surfaces; the darker shade
+  /// sat at 3.85-4.36:1 there. Dark on-accent text still clears 5.7:1.
+  static const Color primary = Color(0xFF8E72FF);
 
   /// Secondary accent (cyan).
   static const Color secondary = Color(0xFF29C7D8);

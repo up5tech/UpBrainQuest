@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import 'package:up_brain_quest/app/providers.dart';
 import 'package:up_brain_quest/core/localization/app_strings.dart';
+import 'package:up_brain_quest/core/theme/app_colors.dart';
 import 'package:up_brain_quest/core/theme/app_gradients.dart';
 import 'package:up_brain_quest/core/theme/app_radii.dart';
 import 'package:up_brain_quest/core/theme/app_spacing.dart';
@@ -250,9 +251,21 @@ class _HeroCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(context.l10n.appName, style: theme.textTheme.displaySmall),
+          // The hero sits on the violet gradient, so its copy uses the dark
+          // on-accent colour; the light page text only reaches 2-4:1 there.
+          Text(
+            context.l10n.appName,
+            style: theme.textTheme.displaySmall?.copyWith(
+              color: AppColors.textOnAccent,
+            ),
+          ),
           const SizedBox(height: AppSpacing.sm),
-          Text(context.l10n.homeGreeting, style: theme.textTheme.bodyMedium),
+          Text(
+            context.l10n.homeGreeting,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: AppColors.textOnAccent,
+            ),
+          ),
           const SizedBox(height: AppSpacing.lg),
           SizedBox(
             width: double.infinity,

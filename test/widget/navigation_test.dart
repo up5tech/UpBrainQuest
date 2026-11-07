@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:up_brain_quest/core/localization/app_strings.dart';
+import 'package:up_brain_quest/core/theme/app_colors.dart';
 
 import '../support/test_app.dart';
 
@@ -36,6 +37,23 @@ void main() {
     expect(find.text(enStrings.navSettings), findsOneWidget);
     expect(_selectedIndex(tester), 0);
     expect(find.text(enStrings.homeProgressSummary), findsWidgets);
+
+    // The hero sits on the violet gradient, so its copy must use the dark
+    // on-accent colour: the light page text only reaches 2-4:1 there.
+    final Finder hero = find.ancestor(
+      of: find.text(enStrings.appName),
+      matching: find.byWidgetPredicate((Widget widget) {
+        final Decoration? decoration = widget is Container
+            ? widget.decoration
+            : null;
+        return decoration is BoxDecoration && decoration.gradient != null;
+      }),
+    );
+    expect(hero, findsOneWidget);
+    final Text heroTitle = tester.widget<Text>(
+      find.descendant(of: hero, matching: find.text(enStrings.appName)),
+    );
+    expect(heroTitle.style?.color, AppColors.textOnAccent);
 
     // Explore.
     await tester.tap(find.byType(NavigationDestination).at(1));

@@ -4,6 +4,8 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:up_brain_quest/app/providers.dart';
 import 'package:up_brain_quest/core/localization/app_strings.dart';
+import 'package:up_brain_quest/core/theme/app_colors.dart';
+import 'package:up_brain_quest/core/widgets/app_card.dart';
 import 'package:up_brain_quest/core/widgets/app_error_state.dart';
 import 'package:up_brain_quest/data/content/content_loader.dart';
 import 'package:up_brain_quest/domain/content/content_issue.dart';
@@ -54,6 +56,18 @@ void main() {
       expect(find.text(enStrings.sessionNoContent), findsNothing);
       expect(find.byType(AppErrorState), findsNothing);
       expect(find.text(enStrings.sessionStart), findsOneWidget);
+
+      // The header card sits on the violet gradient, so every string in it
+      // needs the dark on-accent colour to clear WCAG AA.
+      final Finder header = find.byWidgetPredicate(
+        (Widget widget) => widget is AppCard && widget.gradient != null,
+      );
+      expect(header, findsOneWidget);
+      for (final Text text in tester.widgetList<Text>(
+        find.descendant(of: header, matching: find.byType(Text)),
+      )) {
+        expect(text.style?.color, AppColors.textOnAccent);
+      }
     });
   }
 }

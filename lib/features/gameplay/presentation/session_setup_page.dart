@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:up_brain_quest/app/providers.dart';
 import 'package:up_brain_quest/core/localization/app_strings.dart';
+import 'package:up_brain_quest/core/theme/app_colors.dart';
 import 'package:up_brain_quest/core/theme/app_gradients.dart';
 import 'package:up_brain_quest/core/theme/app_spacing.dart';
 import 'package:up_brain_quest/core/theme/app_typography.dart';
@@ -182,9 +183,20 @@ class _SessionSetupPageState extends ConsumerState<SessionSetupPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text(title, style: theme.textTheme.displaySmall),
+              // Dark on-accent copy keeps AA contrast on the violet gradient.
+              Text(
+                title,
+                style: theme.textTheme.displaySmall?.copyWith(
+                  color: AppColors.textOnAccent,
+                ),
+              ),
               const SizedBox(height: AppSpacing.sm),
-              Text(description, style: theme.textTheme.bodyMedium),
+              Text(
+                description,
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: AppColors.textOnAccent,
+                ),
+              ),
             ],
           ),
         ),
