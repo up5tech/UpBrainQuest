@@ -228,4 +228,89 @@ void main() {
       }
     }
   });
+
+  test('every EQ item can earn full marks on its practised dimension', () {
+    final ContentManifest parsed = ContentParser.parseManifest(manifestJson);
+
+    for (final String locale in supportedLocales) {
+      final ContentLoadSuccess success = _loadLocale(parsed, locale);
+      final List<EqScenarioItem> scenarios = success.bank.items
+          .whereType<EqScenarioItem>()
+          .toList();
+      expect(scenarios, isNotEmpty, reason: 'locale $locale has no EQ items');
+
+      for (final EqScenarioItem item in scenarios) {
+        final EqDimension? primary = EqDimensionX.tryParse(item.skill);
+        expect(
+          primary,
+          isNotNull,
+          reason: '${item.id}: unknown EQ skill "${item.skill}"',
+        );
+        final EqDimension dimension = primary!;
+
+        final List<int> totals = <int>[];
+        final List<int> primaryScores = <int>[];
+        for (final QuestionOption option in item.options) {
+          final RubricEntry entry = item.rubricByOption[option.id]!;
+          expect(
+            entry.scores.keys.toSet(),
+            EqDimension.values.toSet(),
+            reason: '${item.id}/${option.id} must score every dimension',
+          );
+          expect(
+            entry.scores.values.every((int score) => score >= 0 && score <= 3),
+            isTrue,
+            reason: '${item.id}/${option.id}: scores must stay in 0..3',
+          );
+          totals.add(
+            entry.scores.values.fold<int>(0, (int sum, int s) => sum + s),
+          );
+          primaryScores.add(entry.scores[dimension]!);
+        }
+
+        // Exactly one answer may be the single best reply, otherwise the
+        // result screen cannot tell the player which response was strongest.
+        final List<int> sortedTotals = List<int>.of(totals)..sort();
+        final int bestTotal = sortedTotals.last;
+        expect(
+          sortedTotals.where((int total) => total == bestTotal).length,
+          1,
+          reason: '${item.id} must have exactly one best answer by total',
+        );
+
+        final List<int> sortedPrimary = List<int>.of(primaryScores)..sort();
+        expect(
+          sortedPrimary.last,
+          3,
+          reason:
+              '${item.id}: the strongest option must reach 3 on '
+              '${item.skill}, so a perfect answer can score full marks',
+        );
+        expect(
+          sortedPrimary.where((int score) => score == 3).length,
+          1,
+          reason: '${item.id}: two options claim the best ${item.skill} score',
+        );
+        expect(
+          sortedPrimary.last - sortedPrimary.first,
+          greaterThanOrEqualTo(2),
+          reason:
+              '${item.id}: the rubric spread on ${item.skill} is too narrow '
+              'to separate a good answer from a weak one',
+        );
+        expect(
+          sortedPrimary.first,
+          lessThanOrEqualTo(1),
+          reason: '${item.id}: no option represents a weak ${item.skill} reply',
+        );
+        expect(
+          totals.indexOf(bestTotal),
+          primaryScores.indexOf(3),
+          reason:
+              '${item.id}: the answer that practises ${item.skill} must also '
+              'earn the most rubric points overall',
+        );
+      }
+    }
+  });
 }

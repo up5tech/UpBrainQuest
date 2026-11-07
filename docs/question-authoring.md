@@ -277,6 +277,11 @@ flutter test test/unit/content_scan_test.dart
 python3 tool/eq_audit.py          # EQ rubric spread, duplicates, wording
 ```
 
+The content scan test also fails when an EQ item has no single best answer by
+total points, when two options tie at 3 on the practised dimension, or when the
+spread on that dimension is under 2 — so the tests and the audit enforce the same
+rubric contract from both directions.
+
 The test parses every file through the real parser and asserts no error issues, unique
 IDs, per-domain counts matching the manifest, and that draft items surface warnings.
 
