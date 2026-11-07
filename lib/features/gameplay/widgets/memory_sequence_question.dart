@@ -117,6 +117,7 @@ class _MemorySequenceQuestionWidgetState
           child: Wrap(
             alignment: WrapAlignment.center,
             spacing: AppSpacing.md,
+            runSpacing: AppSpacing.md,
             children: _reveal
                 .map(
                   (int n) => Container(
