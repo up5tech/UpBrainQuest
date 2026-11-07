@@ -250,6 +250,23 @@ scored answer, which is how the starter set authors "enter the third number",
 }
 ```
 
+### Rubric scale
+
+All 120 scenarios use the same four-point scale, so a score means the same thing
+everywhere:
+
+| Score | The response… |
+| --- | --- |
+| 3 | does it explicitly and well: names the signal or feeling, offers a real choice, sets a limit with the relationship intact, or tests an alternative explanation before concluding. |
+| 2 | does it partly, or does it well at a cost: honest but blunt, clear but with no alternative, right conclusion from an unchecked assumption. |
+| 1 | touches it weakly or trades it away: a hint instead of a request, a kept peace that hides the impact, a limit without a reason. |
+| 0 | leaves it out, dismisses it, blames the person, or escalates. |
+
+On an item's practised dimension there must be exactly one 3, at least one option at
+0 or 1, and a gap of at least 2 points; the option holding the 3 must also earn the
+highest total. The scan test enforces all of that, so the rubric cannot drift back
+into a single template.
+
 Rules (PLAN §4.6):
 
 - **Every option must have a rubric entry**; the parser rejects an EQ item when an

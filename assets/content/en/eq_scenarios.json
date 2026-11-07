@@ -31,18 +31,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 0
           },
           "feedback": "This dismisses the feeling your friend may be sitting with. Noticing comes before fixing."
         },
         "b": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 2,
+            "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
@@ -121,7 +121,7 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 2,
-            "perspective_taking": 2,
+            "perspective_taking": 1,
             "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
@@ -325,7 +325,7 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 2,
+            "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 0
           },
@@ -385,7 +385,7 @@
             "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 0
           },
           "feedback": "The assumption fills in a reason you do not have and closes the conversation early."
         },
@@ -440,7 +440,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 2,
+            "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
@@ -647,7 +647,7 @@
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 0
           },
           "feedback": "A public accusation locks in an interpretation you cannot yet support."
         },
