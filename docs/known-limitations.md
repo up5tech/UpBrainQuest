@@ -11,7 +11,9 @@ These are current gaps, not defects. They are tracked so a release decision is e
 - **All content is `status: draft`.** A human copy-edit and EQ safety review is
   still recommended before a store release: `tool/eq_audit.py` checks the rubric
   structure and scans for diagnostic wording, but it cannot judge tone, cultural fit
-  or whether a scenario's advice is sound.
+  or whether a scenario's advice is sound. `tool/content_release_gate.py` exits
+  non-zero while any item is draft or the pack version ends in `-draft`, so the
+  blocker is enforced at release time rather than remembered.
 - **Puzzle coverage is complete at 90 items.** All five mechanics —
   `visual_pattern`, `odd_one_out`, `matching_pairs`, `memory_sequence` and
   `reorder_sequence` — hold 18 each (6 easy / 6 medium / 6 hard), the PLAN §5.3

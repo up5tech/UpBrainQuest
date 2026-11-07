@@ -24,15 +24,17 @@ Dev: `build_runner ^2.17.1`, `drift_dev ^2.35.2`, `json_serializable ^6.15.2`,
 
 ## 3. Build and test results
 
+_Re-verified on 2026-11-07 after the content QA pass._
+
 | Check | Command | Result |
 | --- | --- | --- |
 | Dependencies | `flutter pub get` | Success |
 | Code generation | `dart run build_runner build` | Success |
 | Formatting | `dart format lib test` | Clean |
 | Static analysis | `flutter analyze` | **No issues found** (exit 0) |
-| Host tests | `flutter test` | **109/109 passed** |
-| Android release | `flutter build apk --release` | **`app-release.apk` (61.1 MB)** |
-| iOS release (unsigned) | `flutter build ios --release --no-codesign` | **`Runner.app` (20.1 MB)** |
+| Host tests | `flutter test` | **132/132 passed** |
+| Android release | `flutter build apk --release` | **`app-release.apk` (61.7 MB)** |
+| iOS release (unsigned) | `flutter build ios --release --no-codesign` | **`Runner.app` (21.3 MB)** |
 
 All commands must be prefixed with the localhost proxy bypass on this machine:
 
@@ -82,6 +84,24 @@ dart run build_runner build
 dart format --output=none --set-exit-if-changed .
 flutter analyze
 flutter test
+python3 tool/content_release_gate.py   # must pass before a store build
 flutter build apk --release            # or --split-per-abi / appbundle
 flutter build ios --release --no-codesign
 ```
+
+## 9. Content sign-off (blocking for store upload)
+
+The content gate is separate from the build: PLAN §11 requires every Version 1
+item to be approved, so drafts may not ship. Run:
+
+```sh
+python3 tool/content_release_gate.py
+```
+
+It fails while any item is `status: draft` or while `contentPackVersion` carries
+a `-draft` suffix, and it re-checks the manifest counts, locale parity, answer
+keys and EQ rubric coverage. Current state on 2026-11-07: **the gate fails** —
+660 records across the 330 items are still `draft` at pack `0.8.1-draft`.
+Closing it needs the human copy-edit, the EQ safety review and the native
+Vietnamese read-through; after that, mark every item `final`, bump the pack
+version, and re-run the gate plus `tool/eq_audit.py`.

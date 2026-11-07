@@ -91,8 +91,15 @@ Review findings:
   explanation and hint across the 120 IQ and 90 puzzle items was read against the
   English source. Fixes were wording only; numbers, tiles, expected answers and
   correct options are identical across locales.
+- **Balanced answer positions.** The 120 IQ items place their correct answer 30
+  times in each option slot (`a`, `b`, `c`, `d`). Before this pass option `c`
+  held 53 answers and option `d` only six, which let a player beat the bank by
+  always tapping the third choice; the text was rotated between the fixed
+  option ids, so ids and the correct answer's wording are unchanged.
 - **Copy-edit note.** All content remains `status: draft`; a human copy-edit pass is
   still recommended before a release build (wording, tone, and locale review).
+  `tool/content_release_gate.py` enforces this: it fails while any item is draft,
+  so a store build cannot silently ship unreviewed content.
 
 ## 4. Accessibility checks
 
