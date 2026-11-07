@@ -1,0 +1,766 @@
+## iq_num_easy_001 [number_patterns/easy]
+  EN prompt: Which number comes next: 2, 4, 6, 8, ?
+  VI prompt: Số nào tiếp theo: 2, 4, 6, 8, ?
+  EN instr: Look for the rule that connects each number.
+  VI instr: Tìm quy luật liên kết các số.
+  a EN: 9  |  VI: 9
+  b EN: 10  |  VI: 10
+  c EN: 11  |  VI: 11
+  d EN: 12  |  VI: 12
+  EN expl: Add 2 at every step: 2, 4, 6, 8, so the next number is 10.
+  VI expl: Mỗi bước cộng thêm 2: 2, 4, 6, 8, nên số tiếp theo là 10.
+  EN hint: Compare each number with the one before it.
+  VI hint: So sánh mỗi số với số đứng trước nó.
+## iq_num_easy_002 [number_patterns/easy]
+  EN prompt: Which number is different: 3, 5, 7, 10, 11?
+  VI prompt: Số nào khác biệt: 3, 5, 7, 10, 11?
+  EN instr: Four of the numbers share a property.
+  VI instr: Bốn trong năm số có cùng một tính chất.
+  a EN: 3  |  VI: 3
+  b EN: 5  |  VI: 5
+  c EN: 10  |  VI: 10
+  d EN: 11  |  VI: 11
+  EN expl: All the other numbers are prime; 10 is composite.
+  VI expl: Các số còn lại đều là số nguyên tố; 10 là hợp số.
+  EN hint: Ask which numbers can only be divided by 1 and themselves.
+  VI hint: Hỏi xem số nào chỉ chia hết cho 1 và chính nó.
+## iq_analogy_easy_001 [verbal_analogies/easy]
+  EN prompt: Bird is to nest as bee is to ___?
+  VI prompt: Chim với tổ như ong với ___?
+  EN instr: Find the relationship in the first pair.
+  VI instr: Tìm mối quan hệ trong cặp đầu tiên.
+  a EN: Web  |  VI: Mạng nhện
+  b EN: Hive  |  VI: Tổ ong
+  c EN: Burrow  |  VI: Hang
+  d EN: Den  |  VI: Hang cáo
+  EN expl: A nest is a bird's home; a hive is home to a bee colony.
+  VI expl: Tổ là nơi ở của chim; tổ ong là nơi đàn ong sống.
+  EN hint: The first pair names a home.
+  VI hint: Cặp đầu tiên nói về nơi ở.
+## iq_logic_easy_001 [logical_deduction/easy]
+  EN prompt: All roses are flowers. Which statement must be true?
+  VI prompt: Mọi hoa hồng đều là hoa. Câu nào chắc chắn đúng?
+  EN instr: Do not reverse the given statement.
+  VI instr: Đừng đảo ngược câu đã cho.
+  a EN: All flowers are roses  |  VI: Mọi loài hoa đều là hoa hồng
+  b EN: Some roses are not flowers  |  VI: Một số hoa hồng không phải là hoa
+  c EN: Every rose is a flower  |  VI: Mỗi bông hồng đều là một loài hoa
+  d EN: No flowers are roses  |  VI: Không loài hoa nào là hoa hồng
+  EN expl: This restates the premise instead of reversing it.
+  VI expl: Câu này nhắc lại đúng tiền đề thay vì đảo ngược nó.
+  EN hint: Only one option keeps the direction of the premise.
+  VI hint: Chỉ một lựa chọn giữ đúng chiều của tiền đề.
+## iq_num_medium_001 [number_patterns/medium]
+  EN prompt: Which number comes next: 2, 5, 11, 23, 47, ?
+  VI prompt: Số nào tiếp theo: 2, 5, 11, 23, 47, ?
+  EN instr: Try two operations on each number.
+  VI instr: Thử hai phép tính trên mỗi số.
+  a EN: 89  |  VI: 89
+  b EN: 93  |  VI: 93
+  c EN: 95  |  VI: 95
+  d EN: 97  |  VI: 97
+  EN expl: Each term is the previous term doubled, plus 1: 2, 5, 11, 23, 47, 95.
+  VI expl: Mỗi số bằng số trước nhân đôi rồi cộng 1: 2, 5, 11, 23, 47, 95.
+  EN hint: Compare each number with double the number before it.
+  VI hint: So sánh mỗi số với hai lần số đứng trước.
+## iq_num_medium_002 [number_patterns/medium]
+  EN prompt: Which number comes next: 1, 4, 9, 16, 25, ?
+  VI prompt: Số nào tiếp theo: 1, 4, 9, 16, 25, ?
+  EN instr: Look at how far apart the numbers are.
+  VI instr: Xem khoảng cách giữa các số.
+  a EN: 30  |  VI: 30
+  b EN: 32  |  VI: 32
+  c EN: 35  |  VI: 35
+  d EN: 36  |  VI: 36
+  EN expl: These are square numbers: 1, 4, 9, 16, 25, then 36.
+  VI expl: Đây là các số chính phương: 1, 4, 9, 16, 25, rồi 36.
+  EN hint: The gaps are 3, 5, 7, 9, so the next gap is 11.
+  VI hint: Khoảng cách là 3, 5, 7, 9 nên khoảng cách tiếp theo là 11.
+## iq_logic_medium_001 [logical_deduction/medium]
+  EN prompt: All glips are norks. All norks are vens. What must be true?
+  VI prompt: Mọi glip đều là nork. Mọi nork đều là ven. Câu nào chắc chắn đúng?
+  EN instr: Draw the groups as nested circles.
+  VI instr: Vẽ các nhóm thành những vòng tròn lồng nhau.
+  a EN: All vens are glips  |  VI: Mọi ven đều là glip
+  b EN: All glips are vens  |  VI: Mọi glip đều là ven
+  c EN: No glips are vens  |  VI: Không glip nào là ven
+  d EN: Some norks are not vens  |  VI: Một số nork không phải là ven
+  EN expl: Each group is inside the next, so every glip is also a ven.
+  VI expl: Mỗi nhóm nằm trong nhóm kế tiếp, nên mọi glip cũng là ven.
+  EN hint: The smallest group sits inside both larger groups.
+  VI hint: Nhóm nhỏ nhất nằm trong cả hai nhóm lớn hơn.
+## iq_logic_medium_002 [logical_deduction/medium]
+  EN prompt: Ana is older than Bao. Bao is older than Chi. Who is youngest?
+  VI prompt: Ana lớn tuổi hơn Bao. Bao lớn tuổi hơn Chi. Ai trẻ nhất?
+  EN instr: Put the three names in order first.
+  VI instr: Sắp ba cái tên theo thứ tự trước.
+  a EN: Ana  |  VI: Ana
+  b EN: Bao  |  VI: Bao
+  c EN: Chi  |  VI: Chi
+  d EN: Cannot be determined  |  VI: Không thể xác định
+  EN expl: From oldest to youngest the order is Ana, Bao, Chi.
+  VI expl: Từ lớn đến nhỏ, thứ tự là Ana, Bao, Chi.
+  EN hint: The last name in the chain is the youngest.
+  VI hint: Tên cuối cùng trong chuỗi là người trẻ nhất.
+## iq_num_hard_001 [number_patterns/hard]
+  EN prompt: Which number comes next: 3, 8, 18, 38, 78, ?
+  VI prompt: Số nào tiếp theo: 3, 8, 18, 38, 78, ?
+  EN instr: Test one rule on every step, not just the first.
+  VI instr: Kiểm tra một quy luật trên mọi bước, không chỉ bước đầu.
+  a EN: 148  |  VI: 148
+  b EN: 156  |  VI: 156
+  c EN: 158  |  VI: 158
+  d EN: 160  |  VI: 160
+  EN expl: Double the previous term and add 2: 78 doubled is 156, plus 2 is 158.
+  VI expl: Nhân đôi số trước rồi cộng 2: 78 nhân đôi là 156, cộng 2 là 158.
+  EN hint: Doubling alone gives 156, so check the remainder.
+  VI hint: Chỉ nhân đôi thì được 156, hãy kiểm tra phần dư.
+## iq_letter_hard_001 [number_patterns/hard]
+  EN prompt: Which letter comes next: C, F, J, O, ?
+  VI prompt: Chữ nào tiếp theo: C, F, J, O, ?
+  EN instr: Use the 26-letter English alphabet: A=1, B=2, and so on.
+  VI instr: Theo bảng chữ cái tiếng Anh 26 chữ (A=1, B=2, …), đổi mỗi chữ thành vị trí của nó.
+  a EN: T  |  VI: T
+  b EN: U  |  VI: U
+  c EN: V  |  VI: V
+  d EN: W  |  VI: W
+  EN expl: Positions are 3, 6, 10, 15; the jumps are +3, +4, +5, then +6 = 21, which is U.
+  VI expl: Vị trí là 3, 6, 10, 15; khoảng cách là +3, +4, +5, rồi +6 = 21, tức chữ U.
+  EN hint: The gaps grow by one letter each time.
+  VI hint: Khoảng cách tăng thêm một chữ mỗi lần.
+## iq_logic_hard_001 [logical_deduction/hard]
+  EN prompt: Three boxes are labelled Red, Blue, and Green. Exactly one contains a key. The Red label says “The key is not in Blue”; the Blue label says “The key is in Red”; the Green label says “The key is not in Red”. Exactly one label is true. Where is the key?
+  VI prompt: Ba hộp được dán nhãn Đỏ, Xanh dương và Xanh lá. Chỉ một hộp có chìa khóa. Nhãn Đỏ ghi “Chìa khóa không ở hộp Xanh dương”; nhãn Xanh dương ghi “Chìa khóa ở hộp Đỏ”; nhãn Xanh lá ghi “Chìa khóa không ở hộp Đỏ”. Chỉ một nhãn đúng. Chìa khóa ở đâu?
+  EN instr: Test each possible box and count the true labels.
+  VI instr: Thử từng hộp và đếm số nhãn đúng.
+  a EN: Red  |  VI: Hộp Đỏ
+  b EN: Blue  |  VI: Hộp Xanh dương
+  c EN: Green  |  VI: Hộp Xanh lá
+  EN expl: If the key is in Blue, only the Green label is true. If it were in Red or Green, two labels would be true.
+  VI expl: Nếu chìa khóa ở hộp Xanh dương, chỉ nhãn Xanh lá đúng. Nếu ở hộp Đỏ hoặc Xanh lá thì có hai nhãn đúng.
+  EN hint: Start by assuming the key is in Blue.
+  VI hint: Bắt đầu bằng giả định chìa khóa ở hộp Xanh dương.
+## iq_order_hard_001 [logical_deduction/hard]
+  EN prompt: Five people D, A, B, E, and C stand in a line. D is left of A; A is left of B; C is right of B; E is between B and C. Who must be at the far right?
+  VI prompt: Năm người D, A, B, E và C đứng thành một hàng. D ở bên trái A; A ở bên trái B; C ở bên phải B; E ở giữa B và C. Ai chắc chắn đứng ngoài cùng bên phải?
+  EN instr: Chain the clues into one left-to-right order.
+  VI instr: Nối các dữ kiện thành một thứ tự từ trái sang phải.
+  a EN: A  |  VI: A
+  b EN: B  |  VI: B
+  c EN: C  |  VI: C
+  d EN: E  |  VI: E
+  EN expl: The clues force D before A before B, with E between B and C, so C is last.
+  VI expl: Các dữ kiện buộc D trước A trước B, với E ở giữa B và C, nên C đứng cuối.
+  EN hint: Only one person is placed after B and E.
+  VI hint: Chỉ một người đứng sau B và E.
+## iq_num_easy_003 [number_patterns/easy]
+  EN prompt: Which number comes next: 3, 6, 9, 12, ?
+  VI prompt: Số nào tiếp theo: 3, 6, 9, 12, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 14  |  VI: 14
+  b EN: 15  |  VI: 15
+  c EN: 16  |  VI: 16
+  d EN: 18  |  VI: 18
+  EN expl: Each step adds 3: 12 + 3 = 15.
+  VI expl: Mỗi bước cộng 3: 12 + 3 = 15.
+  EN hint: Subtract each number from the next one.
+  VI hint: Lấy số sau trừ số trước.
+## iq_num_easy_004 [number_patterns/easy]
+  EN prompt: Which number comes next: 20, 16, 12, 8, ?
+  VI prompt: Số nào tiếp theo: 20, 16, 12, 8, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 0  |  VI: 0
+  b EN: 2  |  VI: 2
+  c EN: 4  |  VI: 4
+  d EN: 6  |  VI: 6
+  EN expl: Each step subtracts 4: 8 - 4 = 4.
+  VI expl: Mỗi bước trừ 4: 8 - 4 = 4.
+  EN hint: The numbers get smaller by the same amount.
+  VI hint: Các số giảm đều một lượng như nhau.
+## iq_num_easy_005 [number_patterns/easy]
+  EN prompt: Which number comes next: 1, 2, 4, 8, ?
+  VI prompt: Số nào tiếp theo: 1, 2, 4, 8, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 12  |  VI: 12
+  b EN: 14  |  VI: 14
+  c EN: 16  |  VI: 16
+  d EN: 24  |  VI: 24
+  EN expl: Each number doubles: 8 x 2 = 16.
+  VI expl: Mỗi số gấp đôi số trước: 8 x 2 = 16.
+  EN hint: Compare each number with double the one before it.
+  VI hint: So sánh mỗi số với hai lần số trước nó.
+## iq_num_easy_006 [number_patterns/easy]
+  EN prompt: Which number comes next: 5, 7, 10, 12, 15, ?
+  VI prompt: Số nào tiếp theo: 5, 7, 10, 12, 15, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 16  |  VI: 16
+  b EN: 17  |  VI: 17
+  c EN: 18  |  VI: 18
+  d EN: 20  |  VI: 20
+  EN expl: The steps alternate +2, +3: 15 + 2 = 17.
+  VI expl: Các bước xen kẽ +2, +3: 15 + 2 = 17.
+  EN hint: The gap changes at every step.
+  VI hint: Khoảng cách thay đổi ở mỗi bước.
+## iq_num_easy_007 [number_patterns/easy]
+  EN prompt: Which number is missing: 7, ?, 15, 19?
+  VI prompt: Số nào còn thiếu: 7, ?, 15, 19?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 9  |  VI: 9
+  b EN: 10  |  VI: 10
+  c EN: 11  |  VI: 11
+  d EN: 13  |  VI: 13
+  EN expl: The numbers rise by 4, so 7 + 4 = 11.
+  VI expl: Các số tăng 4, nên 7 + 4 = 11.
+  EN hint: Use the step between 15 and 19.
+  VI hint: Dùng khoảng cách giữa 15 và 19.
+## iq_num_easy_008 [number_patterns/easy]
+  EN prompt: Which number comes next: 30, 25, 20, 15, ?
+  VI prompt: Số nào tiếp theo: 30, 25, 20, 15, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 5  |  VI: 5
+  b EN: 8  |  VI: 8
+  c EN: 10  |  VI: 10
+  d EN: 12  |  VI: 12
+  EN expl: Each step subtracts 5: 15 - 5 = 10.
+  VI expl: Mỗi bước trừ 5: 15 - 5 = 10.
+  EN hint: Count backwards in fives.
+  VI hint: Đếm lùi theo từng năm đơn vị.
+## iq_num_medium_003 [number_patterns/medium]
+  EN prompt: Which number comes next: 1, 3, 7, 15, ?
+  VI prompt: Số nào tiếp theo: 1, 3, 7, 15, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 27  |  VI: 27
+  b EN: 29  |  VI: 29
+  c EN: 31  |  VI: 31
+  d EN: 33  |  VI: 33
+  EN expl: Each step doubles the number and adds 1: 15 x 2 + 1 = 31.
+  VI expl: Mỗi bước gấp đôi rồi cộng 1: 15 x 2 + 1 = 31.
+  EN hint: Try doubling the number before comparing.
+  VI hint: Thử gấp đôi số trước rồi so sánh.
+## iq_num_medium_004 [number_patterns/medium]
+  EN prompt: Which number comes next: 2, 3, 5, 8, 13, ?
+  VI prompt: Số nào tiếp theo: 2, 3, 5, 8, 13, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 18  |  VI: 18
+  b EN: 20  |  VI: 20
+  c EN: 21  |  VI: 21
+  d EN: 24  |  VI: 24
+  EN expl: Each number is the sum of the two before it: 8 + 13 = 21.
+  VI expl: Mỗi số bằng tổng hai số trước: 8 + 13 = 21.
+  EN hint: Add the last two numbers and compare.
+  VI hint: Cộng hai số cuối rồi so sánh.
+## iq_num_medium_005 [number_patterns/medium]
+  EN prompt: Which number comes next: 4, 1, 6, 3, 8, 5, ?
+  VI prompt: Số nào tiếp theo: 4, 1, 6, 3, 8, 5, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 7  |  VI: 7
+  b EN: 9  |  VI: 9
+  c EN: 10  |  VI: 10
+  d EN: 11  |  VI: 11
+  EN expl: Odd positions rise by 2 (4, 6, 8, 10); even positions rise by 2 as well.
+  VI expl: Vị trí lẻ tăng 2 (4, 6, 8, 10); vị trí chẵn cũng tăng 2.
+  EN hint: Read every other number as its own sequence.
+  VI hint: Đọc cách một số như một dãy riêng.
+## iq_num_medium_006 [number_patterns/medium]
+  EN prompt: Which number comes next: 2, 3, 6, 11, ?
+  VI prompt: Số nào tiếp theo: 2, 3, 6, 11, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 16  |  VI: 16
+  b EN: 17  |  VI: 17
+  c EN: 18  |  VI: 18
+  d EN: 22  |  VI: 22
+  EN expl: The gaps grow by 2: +1, +3, +5, so +7 gives 18.
+  VI expl: Khoảng cách tăng 2: +1, +3, +5, nên +7 cho 18.
+  EN hint: List the gaps before guessing.
+  VI hint: Liệt kê các khoảng cách trước khi đoán.
+## iq_num_medium_007 [number_patterns/medium]
+  EN prompt: Which number comes next: 60, 54, 46, 36, ?
+  VI prompt: Số nào tiếp theo: 60, 54, 46, 36, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 22  |  VI: 22
+  b EN: 24  |  VI: 24
+  c EN: 26  |  VI: 26
+  d EN: 30  |  VI: 30
+  EN expl: The gaps grow by 2: -6, -8, -10, so -12 gives 24.
+  VI expl: Khoảng cách tăng 2: -6, -8, -10, nên -12 cho 24.
+  EN hint: The decreases get bigger each time.
+  VI hint: Mức giảm mỗi lúc một lớn hơn.
+## iq_num_medium_008 [number_patterns/medium]
+  EN prompt: Which number comes next: 2, 3, 5, 7, 11, ?
+  VI prompt: Số nào tiếp theo: 2, 3, 5, 7, 11, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 12  |  VI: 12
+  b EN: 13  |  VI: 13
+  c EN: 14  |  VI: 14
+  d EN: 17  |  VI: 17
+  EN expl: The series lists the prime numbers, so 13 follows 11.
+  VI expl: Dãy là các số nguyên tố, nên sau 11 là 13.
+  EN hint: Check which numbers cannot be split into factors.
+  VI hint: Xem số nào không phân tích được thành tích.
+## iq_num_hard_002 [number_patterns/hard]
+  EN prompt: Which number comes next: 2, 4, 10, 28, ?
+  VI prompt: Số nào tiếp theo: 2, 4, 10, 28, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 76  |  VI: 76
+  b EN: 80  |  VI: 80
+  c EN: 82  |  VI: 82
+  d EN: 84  |  VI: 84
+  EN expl: Each step multiplies by 3 and subtracts 2: 28 x 3 - 2 = 82.
+  VI expl: Mỗi bước nhân 3 rồi trừ 2: 28 x 3 - 2 = 82.
+  EN hint: The jump is close to three times the number.
+  VI hint: Bước nhảy gần gấp ba số trước.
+## iq_num_hard_003 [number_patterns/hard]
+  EN prompt: Which number comes next: 2, 5, 10, 17, 26, ?
+  VI prompt: Số nào tiếp theo: 2, 5, 10, 17, 26, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 35  |  VI: 35
+  b EN: 36  |  VI: 36
+  c EN: 37  |  VI: 37
+  d EN: 49  |  VI: 49
+  EN expl: The values are squares plus 1: 1+1, 4+1, 9+1, 16+1, 25+1, so 36+1 = 37.
+  VI expl: Giá trị là bình phương cộng 1: 1+1, 4+1, 9+1, 16+1, 25+1, nên 36+1 = 37.
+  EN hint: Compare each value with the nearest square.
+  VI hint: So sánh mỗi giá trị với số chính phương gần nhất.
+## iq_num_hard_004 [number_patterns/hard]
+  EN prompt: Which number comes next: 3, 6, 5, 10, 9, ?
+  VI prompt: Số nào tiếp theo: 3, 6, 5, 10, 9, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 14  |  VI: 14
+  b EN: 16  |  VI: 16
+  c EN: 18  |  VI: 18
+  d EN: 20  |  VI: 20
+  EN expl: The steps alternate x2 and -1: 9 x 2 = 18.
+  VI expl: Các bước xen kẽ x2 và -1: 9 x 2 = 18.
+  EN hint: Two rules take turns.
+  VI hint: Hai quy luật thay phiên nhau.
+## iq_num_hard_005 [number_patterns/hard]
+  EN prompt: Which number comes next: 1, 8, 27, 64, ?
+  VI prompt: Số nào tiếp theo: 1, 8, 27, 64, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 100  |  VI: 100
+  b EN: 121  |  VI: 121
+  c EN: 125  |  VI: 125
+  d EN: 216  |  VI: 216
+  EN expl: The values are cubes: 1^3, 2^3, 3^3, 4^3, so 5^3 = 125.
+  VI expl: Giá trị là lập phương: 1^3, 2^3, 3^3, 4^3, nên 5^3 = 125.
+  EN hint: Multiply a base by itself three times.
+  VI hint: Nhân một cơ số với chính nó ba lần.
+## iq_num_hard_006 [number_patterns/hard]
+  EN prompt: Which number comes next: 5, 6, 8, 12, 20, ?
+  VI prompt: Số nào tiếp theo: 5, 6, 8, 12, 20, ?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 28  |  VI: 28
+  b EN: 32  |  VI: 32
+  c EN: 36  |  VI: 36
+  d EN: 40  |  VI: 40
+  EN expl: The gaps double: +1, +2, +4, +8, so +16 gives 36.
+  VI expl: Khoảng cách gấp đôi: +1, +2, +4, +8, nên +16 cho 36.
+  EN hint: Write the gaps out and double them.
+  VI hint: Viết các khoảng cách ra và nhân đôi chúng.
+## iq_num_hard_007 [number_patterns/hard]
+  EN prompt: Which number is missing: 2, 6, 18, ?, 162?
+  VI prompt: Số nào còn thiếu: 2, 6, 18, ?, 162?
+  EN instr: Find the rule that links the numbers, then apply it once more.
+  VI instr: Tìm quy luật liên kết các số, rồi áp dụng thêm một lần.
+  a EN: 36  |  VI: 36
+  b EN: 48  |  VI: 48
+  c EN: 54  |  VI: 54
+  d EN: 72  |  VI: 72
+  EN expl: Each value triples: 18 x 3 = 54, and 54 x 3 = 162 confirms it.
+  VI expl: Mỗi giá trị gấp ba: 18 x 3 = 54, và 54 x 3 = 162 xác nhận điều đó.
+  EN hint: Use the jump after the gap to check your rule.
+  VI hint: Dùng bước nhảy sau chỗ trống để kiểm tra quy luật.
+## iq_mem_easy_001 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 4 7 2. Now reverse the digits, then add 2 to the first digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 4 7 2. Bây giờ đảo ngược các chữ số, sau đó cộng 2 vào chữ số thứ nhất. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 4 7 2  |  VI: 4 7 2
+  b EN: 2 7 4  |  VI: 2 7 4
+  c EN: 4 7 4  |  VI: 4 7 4
+  d EN: 5 7 4  |  VI: 5 7 4
+  EN expl: Applying the steps in order: 4 7 2 -> 2 7 4 -> 4 7 4.
+  VI expl: Thực hiện lần lượt các bước: 4 7 2 -> 2 7 4 -> 4 7 4.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_easy_002 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 6 1 9. Now swap the first and third digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 6 1 9. Bây giờ đổi chỗ chữ số thứ nhất và thứ ba. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 6 1 9  |  VI: 6 1 9
+  b EN: 8 1 6  |  VI: 8 1 6
+  c EN: 9 1 6  |  VI: 9 1 6
+  d EN: 9 1 7  |  VI: 9 1 7
+  EN expl: Applying the steps in order: 6 1 9 -> 9 1 6.
+  VI expl: Thực hiện lần lượt các bước: 6 1 9 -> 9 1 6.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_easy_003 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 5 8 3. Now drop the first digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 5 8 3. Bây giờ bỏ chữ số đầu. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 5 8 3  |  VI: 5 8 3
+  b EN: 9 3  |  VI: 9 3
+  c EN: 8 3  |  VI: 8 3
+  d EN: 7 3  |  VI: 7 3
+  EN expl: Applying the steps in order: 5 8 3 -> 8 3.
+  VI expl: Thực hiện lần lượt các bước: 5 8 3 -> 8 3.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_easy_004 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 2 9 4. Now sort the digits from largest to smallest. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 2 9 4. Bây giờ sắp các chữ số từ lớn đến nhỏ. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 2 9 4  |  VI: 2 9 4
+  b EN: 8 4 2  |  VI: 8 4 2
+  c EN: 9 4 2  |  VI: 9 4 2
+  d EN: 9 4 3  |  VI: 9 4 3
+  EN expl: Applying the steps in order: 2 9 4 -> 9 4 2.
+  VI expl: Thực hiện lần lượt các bước: 2 9 4 -> 9 4 2.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_easy_005 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 7 4 1. Now reverse the digits, then subtract 1 from the third digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 7 4 1. Bây giờ đảo ngược các chữ số, sau đó trừ 1 khỏi chữ số thứ ba. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 7 4 1  |  VI: 7 4 1
+  b EN: 1 4 7  |  VI: 1 4 7
+  c EN: 1 4 6  |  VI: 1 4 6
+  d EN: 2 4 6  |  VI: 2 4 6
+  EN expl: Applying the steps in order: 7 4 1 -> 1 4 7 -> 1 4 6.
+  VI expl: Thực hiện lần lượt các bước: 7 4 1 -> 1 4 7 -> 1 4 6.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_easy_006 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 3 6 2. Now add 3 to the second digit, then reverse the digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 3 6 2. Bây giờ cộng 3 vào chữ số thứ hai, sau đó đảo ngược các chữ số. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 3 6 2  |  VI: 3 6 2
+  b EN: 3 9 2  |  VI: 3 9 2
+  c EN: 2 9 3  |  VI: 2 9 3
+  d EN: 3 9 3  |  VI: 3 9 3
+  EN expl: Applying the steps in order: 3 6 2 -> 3 9 2 -> 2 9 3.
+  VI expl: Thực hiện lần lượt các bước: 3 6 2 -> 3 9 2 -> 2 9 3.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_easy_007 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 9 2 5. Now swap the second and first digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 9 2 5. Bây giờ đổi chỗ chữ số thứ hai và thứ nhất. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 9 2 5  |  VI: 9 2 5
+  b EN: 3 9 5  |  VI: 3 9 5
+  c EN: 2 9 5  |  VI: 2 9 5
+  d EN: 1 9 5  |  VI: 1 9 5
+  EN expl: Applying the steps in order: 9 2 5 -> 2 9 5.
+  VI expl: Thực hiện lần lượt các bước: 9 2 5 -> 2 9 5.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_easy_008 [working_memory/easy]
+  EN prompt: Read this sequence once without writing it down: 8 1 6. Now drop the last digit, then reverse the digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 8 1 6. Bây giờ bỏ chữ số cuối, sau đó đảo ngược các chữ số. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 8 1 6  |  VI: 8 1 6
+  b EN: 8 1  |  VI: 8 1
+  c EN: 1 8  |  VI: 1 8
+  d EN: 2 8  |  VI: 2 8
+  EN expl: Applying the steps in order: 8 1 6 -> 8 1 -> 1 8.
+  VI expl: Thực hiện lần lượt các bước: 8 1 6 -> 8 1 -> 1 8.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_001 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 3 8 1 6. Now reverse the digits, then swap the first and second digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 3 8 1 6. Bây giờ đảo ngược các chữ số, sau đó đổi chỗ chữ số thứ nhất và thứ hai. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 3 8 1 6  |  VI: 3 8 1 6
+  b EN: 6 1 8 3  |  VI: 6 1 8 3
+  c EN: 1 6 8 3  |  VI: 1 6 8 3
+  d EN: 2 6 8 3  |  VI: 2 6 8 3
+  EN expl: Applying the steps in order: 3 8 1 6 -> 6 1 8 3 -> 1 6 8 3.
+  VI expl: Thực hiện lần lượt các bước: 3 8 1 6 -> 6 1 8 3 -> 1 6 8 3.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_002 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 7 2 9 4. Now sort the digits from smallest to largest, then reverse the digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 7 2 9 4. Bây giờ sắp các chữ số từ nhỏ đến lớn, sau đó đảo ngược các chữ số. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 7 2 9 4  |  VI: 7 2 9 4
+  b EN: 2 4 7 9  |  VI: 2 4 7 9
+  c EN: 9 7 4 2  |  VI: 9 7 4 2
+  d EN: 8 7 4 2  |  VI: 8 7 4 2
+  EN expl: Applying the steps in order: 7 2 9 4 -> 2 4 7 9 -> 9 7 4 2.
+  VI expl: Thực hiện lần lượt các bước: 7 2 9 4 -> 2 4 7 9 -> 9 7 4 2.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_003 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 5 3 8 2. Now add 4 to the first digit, then drop the last digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 5 3 8 2. Bây giờ cộng 4 vào chữ số thứ nhất, sau đó bỏ chữ số cuối. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 5 3 8 2  |  VI: 5 3 8 2
+  b EN: 9 3 8 2  |  VI: 9 3 8 2
+  c EN: 9 3 8  |  VI: 9 3 8
+  d EN: 8 3 8  |  VI: 8 3 8
+  EN expl: Applying the steps in order: 5 3 8 2 -> 9 3 8 2 -> 9 3 8.
+  VI expl: Thực hiện lần lượt các bước: 5 3 8 2 -> 9 3 8 2 -> 9 3 8.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_004 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 6 4 1 9. Now swap the first and fourth digits, then reverse the digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 6 4 1 9. Bây giờ đổi chỗ chữ số thứ nhất và thứ tư, sau đó đảo ngược các chữ số. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 6 4 1 9  |  VI: 6 4 1 9
+  b EN: 9 4 1 6  |  VI: 9 4 1 6
+  c EN: 6 1 4 9  |  VI: 6 1 4 9
+  d EN: 7 1 4 9  |  VI: 7 1 4 9
+  EN expl: Applying the steps in order: 6 4 1 9 -> 9 4 1 6 -> 6 1 4 9.
+  VI expl: Thực hiện lần lượt các bước: 6 4 1 9 -> 9 4 1 6 -> 6 1 4 9.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_005 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 2 7 5 3. Now subtract 2 from the second digit, then swap the third and fourth digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 2 7 5 3. Bây giờ trừ 2 khỏi chữ số thứ hai, sau đó đổi chỗ chữ số thứ ba và thứ tư. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 2 7 5 3  |  VI: 2 7 5 3
+  b EN: 2 5 5 3  |  VI: 2 5 5 3
+  c EN: 2 5 3 5  |  VI: 2 5 3 5
+  d EN: 3 5 3 5  |  VI: 3 5 3 5
+  EN expl: Applying the steps in order: 2 7 5 3 -> 2 5 5 3 -> 2 5 3 5.
+  VI expl: Thực hiện lần lượt các bước: 2 7 5 3 -> 2 5 5 3 -> 2 5 3 5.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_006 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 9 1 4 7. Now reverse the digits, then add 1 to the first digit, then subtract 1 from the fourth digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 9 1 4 7. Bây giờ đảo ngược các chữ số, sau đó cộng 1 vào chữ số thứ nhất, sau đó trừ 1 khỏi chữ số thứ tư. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 9 1 4 7  |  VI: 9 1 4 7
+  b EN: 7 4 1 9  |  VI: 7 4 1 9
+  c EN: 8 4 1 8  |  VI: 8 4 1 8
+  d EN: 8 4 1 9  |  VI: 8 4 1 9
+  EN expl: Applying the steps in order: 9 1 4 7 -> 7 4 1 9 -> 8 4 1 9 -> 8 4 1 8.
+  VI expl: Thực hiện lần lượt các bước: 9 1 4 7 -> 7 4 1 9 -> 8 4 1 9 -> 8 4 1 8.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_007 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 4 6 8 2. Now drop the first digit, then sort the digits from largest to smallest. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 4 6 8 2. Bây giờ bỏ chữ số đầu, sau đó sắp các chữ số từ lớn đến nhỏ. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 4 6 8 2  |  VI: 4 6 8 2
+  b EN: 6 8 2  |  VI: 6 8 2
+  c EN: 8 6 2  |  VI: 8 6 2
+  d EN: 9 6 2  |  VI: 9 6 2
+  EN expl: Applying the steps in order: 4 6 8 2 -> 6 8 2 -> 8 6 2.
+  VI expl: Thực hiện lần lượt các bước: 4 6 8 2 -> 6 8 2 -> 8 6 2.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_medium_008 [working_memory/medium]
+  EN prompt: Read this sequence once without writing it down: 8 3 6 1. Now swap the second and fourth digits, then subtract 3 from the first digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 8 3 6 1. Bây giờ đổi chỗ chữ số thứ hai và thứ tư, sau đó trừ 3 khỏi chữ số thứ nhất. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 8 3 6 1  |  VI: 8 3 6 1
+  b EN: 8 1 6 3  |  VI: 8 1 6 3
+  c EN: 5 1 6 3  |  VI: 5 1 6 3
+  d EN: 6 1 6 3  |  VI: 6 1 6 3
+  EN expl: Applying the steps in order: 8 3 6 1 -> 8 1 6 3 -> 5 1 6 3.
+  VI expl: Thực hiện lần lượt các bước: 8 3 6 1 -> 8 1 6 3 -> 5 1 6 3.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_001 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 3 9 5 2 7. Now reverse the digits, then swap the second and third digits, then drop the last digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 3 9 5 2 7. Bây giờ đảo ngược các chữ số, sau đó đổi chỗ chữ số thứ hai và thứ ba, sau đó bỏ chữ số cuối. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 3 9 5 2 7  |  VI: 3 9 5 2 7
+  b EN: 7 2 5 9 3  |  VI: 7 2 5 9 3
+  c EN: 7 5 2 9  |  VI: 7 5 2 9
+  d EN: 7 5 2 9 3  |  VI: 7 5 2 9 3
+  EN expl: Applying the steps in order: 3 9 5 2 7 -> 7 2 5 9 3 -> 7 5 2 9 3 -> 7 5 2 9.
+  VI expl: Thực hiện lần lượt các bước: 3 9 5 2 7 -> 7 2 5 9 3 -> 7 5 2 9 3 -> 7 5 2 9.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_002 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 6 1 8 4 9. Now sort the digits from smallest to largest, then add 1 to the first digit, then reverse the digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 6 1 8 4 9. Bây giờ sắp các chữ số từ nhỏ đến lớn, sau đó cộng 1 vào chữ số thứ nhất, sau đó đảo ngược các chữ số. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 6 1 8 4 9  |  VI: 6 1 8 4 9
+  b EN: 1 4 6 8 9  |  VI: 1 4 6 8 9
+  c EN: 9 8 6 4 2  |  VI: 9 8 6 4 2
+  d EN: 2 4 6 8 9  |  VI: 2 4 6 8 9
+  EN expl: Applying the steps in order: 6 1 8 4 9 -> 1 4 6 8 9 -> 2 4 6 8 9 -> 9 8 6 4 2.
+  VI expl: Thực hiện lần lượt các bước: 6 1 8 4 9 -> 1 4 6 8 9 -> 2 4 6 8 9 -> 9 8 6 4 2.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_003 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 7 5 2 9 3. Now add 2 to the third digit, then reverse the digits, then drop the first digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 7 5 2 9 3. Bây giờ cộng 2 vào chữ số thứ ba, sau đó đảo ngược các chữ số, sau đó bỏ chữ số đầu. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 7 5 2 9 3  |  VI: 7 5 2 9 3
+  b EN: 7 5 4 9 3  |  VI: 7 5 4 9 3
+  c EN: 9 4 5 7  |  VI: 9 4 5 7
+  d EN: 3 9 4 5 7  |  VI: 3 9 4 5 7
+  EN expl: Applying the steps in order: 7 5 2 9 3 -> 7 5 4 9 3 -> 3 9 4 5 7 -> 9 4 5 7.
+  VI expl: Thực hiện lần lượt các bước: 7 5 2 9 3 -> 7 5 4 9 3 -> 3 9 4 5 7 -> 9 4 5 7.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_004 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 4 8 1 7 6. Now swap the first and fifth digits, then swap the second and fourth digits, then add 2 to the third digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 4 8 1 7 6. Bây giờ đổi chỗ chữ số thứ nhất và thứ năm, sau đó đổi chỗ chữ số thứ hai và thứ tư, sau đó cộng 2 vào chữ số thứ ba. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 4 8 1 7 6  |  VI: 4 8 1 7 6
+  b EN: 6 8 1 7 4  |  VI: 6 8 1 7 4
+  c EN: 6 7 3 8 4  |  VI: 6 7 3 8 4
+  d EN: 6 7 1 8 4  |  VI: 6 7 1 8 4
+  EN expl: Applying the steps in order: 4 8 1 7 6 -> 6 8 1 7 4 -> 6 7 1 8 4 -> 6 7 3 8 4.
+  VI expl: Thực hiện lần lượt các bước: 4 8 1 7 6 -> 6 8 1 7 4 -> 6 7 1 8 4 -> 6 7 3 8 4.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_005 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 9 2 6 3 8. Now reverse the digits, then add 2 to the second digit, then drop the last digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 9 2 6 3 8. Bây giờ đảo ngược các chữ số, sau đó cộng 2 vào chữ số thứ hai, sau đó bỏ chữ số cuối. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 9 2 6 3 8  |  VI: 9 2 6 3 8
+  b EN: 8 3 6 2 9  |  VI: 8 3 6 2 9
+  c EN: 8 5 6 2  |  VI: 8 5 6 2
+  d EN: 8 5 6 2 9  |  VI: 8 5 6 2 9
+  EN expl: Applying the steps in order: 9 2 6 3 8 -> 8 3 6 2 9 -> 8 5 6 2 9 -> 8 5 6 2.
+  VI expl: Thực hiện lần lượt các bước: 9 2 6 3 8 -> 8 3 6 2 9 -> 8 5 6 2 9 -> 8 5 6 2.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_006 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 1 6 4 9 5. Now sort the digits from largest to smallest, then drop the last digit, then reverse the digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 1 6 4 9 5. Bây giờ sắp các chữ số từ lớn đến nhỏ, sau đó bỏ chữ số cuối, sau đó đảo ngược các chữ số. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 1 6 4 9 5  |  VI: 1 6 4 9 5
+  b EN: 9 6 5 4 1  |  VI: 9 6 5 4 1
+  c EN: 4 5 6 9  |  VI: 4 5 6 9
+  d EN: 9 6 5 4  |  VI: 9 6 5 4
+  EN expl: Applying the steps in order: 1 6 4 9 5 -> 9 6 5 4 1 -> 9 6 5 4 -> 4 5 6 9.
+  VI expl: Thực hiện lần lượt các bước: 1 6 4 9 5 -> 9 6 5 4 1 -> 9 6 5 4 -> 4 5 6 9.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_007 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 5 7 3 8 2. Now swap the second and third digits, then reverse the digits. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 5 7 3 8 2. Bây giờ đổi chỗ chữ số thứ hai và thứ ba, sau đó đảo ngược các chữ số. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 5 7 3 8 2  |  VI: 5 7 3 8 2
+  b EN: 5 3 7 8 2  |  VI: 5 3 7 8 2
+  c EN: 2 8 7 3 5  |  VI: 2 8 7 3 5
+  d EN: 3 8 7 3 5  |  VI: 3 8 7 3 5
+  EN expl: Applying the steps in order: 5 7 3 8 2 -> 5 3 7 8 2 -> 2 8 7 3 5.
+  VI expl: Thực hiện lần lượt các bước: 5 7 3 8 2 -> 5 3 7 8 2 -> 2 8 7 3 5.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_mem_hard_008 [working_memory/hard]
+  EN prompt: Read this sequence once without writing it down: 8 4 9 1 6. Now reverse the digits, then subtract 2 from the first digit, then drop the last digit. Which sequence do you get?
+  VI prompt: Đọc một lần dãy sau mà không ghi ra: 8 4 9 1 6. Bây giờ đảo ngược các chữ số, sau đó trừ 2 khỏi chữ số thứ nhất, sau đó bỏ chữ số cuối. Bạn được dãy nào?
+  EN instr: Hold the digits in mind; the steps must be applied in order.
+  VI instr: Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.
+  a EN: 8 4 9 1 6  |  VI: 8 4 9 1 6
+  b EN: 6 1 9 4 8  |  VI: 6 1 9 4 8
+  c EN: 4 1 9 4  |  VI: 4 1 9 4
+  d EN: 4 1 9 4 8  |  VI: 4 1 9 4 8
+  EN expl: Applying the steps in order: 8 4 9 1 6 -> 6 1 9 4 8 -> 4 1 9 4 8 -> 4 1 9 4.
+  VI expl: Thực hiện lần lượt các bước: 8 4 9 1 6 -> 6 1 9 4 8 -> 4 1 9 4 8 -> 4 1 9 4.
+  EN hint: Redo the sequence one step at a time in your head.
+  VI hint: Làm lại dãy trong đầu theo từng bước một.
+## iq_logic_easy_002 [logical_deduction/easy]
+  EN prompt: All pencils are tools. All tools are objects. Which statement must be true?
+  VI prompt: Mọi bút chì đều là dụng cụ. Mọi dụng cụ đều là vật thể. Câu nào chắc chắn đúng?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: All objects are pencils  |  VI: Mọi vật thể đều là bút chì
+  b EN: All pencils are objects  |  VI: Mọi bút chì đều là vật thể
+  c EN: No pencils are objects  |  VI: Không bút chì nào là vật thể
+  d EN: Some tools are not pencils  |  VI: Một số dụng cụ không phải bút chì
+  EN expl: Pencils sit inside tools, and tools sit inside objects, so every pencil is an object.
+  VI expl: Bút chì nằm trong dụng cụ, dụng cụ nằm trong vật thể, nên mọi bút chì đều là vật thể.
+  EN hint: Follow the chain of sets from the smallest to the largest.
+  VI hint: Đi theo chuỗi tập hợp từ nhỏ nhất đến lớn nhất.
+## iq_logic_easy_003 [logical_deduction/easy]
+  EN prompt: Mia is taller than Jae. Jae is taller than Sol. Who is the shortest?
+  VI prompt: Mia cao hơn Jae. Jae cao hơn Sol. Ai thấp nhất?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: Mia  |  VI: Mia
+  b EN: Jae  |  VI: Jae
+  c EN: Sol  |  VI: Sol
+  d EN: Cannot be determined  |  VI: Không thể xác định
+  EN expl: Mia > Jae > Sol, so Sol is the shortest.
+  VI expl: Mia > Jae > Sol, nên Sol thấp nhất.
+  EN hint: Write the three names in one line.
+  VI hint: Viết ba cái tên thành một hàng.
+## iq_logic_easy_004 [logical_deduction/easy]
+  EN prompt: No cats are reptiles. Fluffy is a cat. What follows?
+  VI prompt: Không con mèo nào là bò sát. Fluffy là mèo. Suy ra điều gì?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: Fluffy is a reptile  |  VI: Fluffy là bò sát
+  b EN: Fluffy is not a reptile  |  VI: Fluffy không phải bò sát
+  c EN: Some cats are reptiles  |  VI: Một số mèo là bò sát
+  d EN: Fluffy may be a reptile  |  VI: Fluffy có thể là bò sát
+  EN expl: If no cat is a reptile and Fluffy is a cat, Fluffy cannot be a reptile.
+  VI expl: Nếu không mèo nào là bò sát và Fluffy là mèo thì Fluffy không thể là bò sát.
+  EN hint: Apply the rule to the named individual.
+  VI hint: Áp dụng quy tắc cho cá thể được nêu.
+## iq_logic_easy_005 [logical_deduction/easy]
+  EN prompt: If it rains, the ground gets wet. It is raining. What follows?
+  VI prompt: Nếu trời mưa thì mặt đất ướt. Trời đang mưa. Suy ra điều gì?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: The ground is dry  |  VI: Mặt đất khô
+  b EN: The ground is wet  |  VI: Mặt đất ướt
+  c EN: It will stop raining  |  VI: Trời sẽ tạnh mưa
+  d EN: The ground may stay dry  |  VI: Mặt đất có thể vẫn khô
+  EN expl: The condition is met, so the result must follow: the ground is wet.
+  VI expl: Điều kiện đã được thỏa mãn nên kết quả phải xảy ra: mặt đất ướt.
+  EN hint: Check whether the "if" part already happened.
+  VI hint: Kiểm tra xem phần "nếu" đã xảy ra chưa.
+## iq_logic_easy_006 [logical_deduction/easy]
+  EN prompt: Some birds cannot fly. Which statement is consistent with this?
+  VI prompt: Một số loài chim không bay được. Câu nào phù hợp với điều này?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: All birds can fly  |  VI: Mọi loài chim đều bay được
+  b EN: At least one bird cannot fly  |  VI: Ít nhất một loài chim không bay được
+  c EN: No bird can fly  |  VI: Không loài chim nào bay được
+  d EN: Birds never have wings  |  VI: Chim không bao giờ có cánh
+  EN expl: "Some" means at least one, so at least one bird cannot fly.
+  VI expl: "Một số" nghĩa là ít nhất một, nên có ít nhất một loài chim không bay được.
+  EN hint: What does "some" guarantee?
+  VI hint: "Một số" bảo đảm điều gì?

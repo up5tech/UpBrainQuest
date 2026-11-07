@@ -1,0 +1,554 @@
+
+## puz_odd_hard_005 [odd_one_out/hard]
+  EN prompt: Which number does not fit the doubling sequence 2, 4, 8, 16, 32, 64?
+  VI prompt: Số nào không thuộc dãy nhân đôi 2, 4, 8, 16, 32, 64?
+  EN instr: Write the sequence out and check each option against it.
+  VI instr: Viết dãy ra và đối chiếu từng lựa chọn.
+  a EN: 8  |  VI: 8
+  b EN: 16  |  VI: 16
+  c EN: 24  |  VI: 24
+  d EN: 32  |  VI: 32
+  EN expl: 8, 16 and 32 are in the sequence; 24 is not.
+  VI expl: 8, 16 và 32 có trong dãy; 24 thì không.
+  EN hint: The sequence doubles each time.
+  VI hint: Dãy nhân đôi sau mỗi bước.
+## puz_odd_hard_006 [odd_one_out/hard]
+  EN prompt: Which number is not a divisor of 48?
+  VI prompt: Số nào không phải ước của 48?
+  EN instr: Divide 48 by each option.
+  VI instr: Chia 48 cho từng lựa chọn.
+  a EN: 6  |  VI: 6
+  b EN: 8  |  VI: 8
+  c EN: 12  |  VI: 12
+  d EN: 18  |  VI: 18
+  EN expl: 48 ÷ 6 = 8, ÷ 8 = 6, ÷ 12 = 4, but 48 ÷ 18 is not a whole number.
+  VI expl: 48 ÷ 6 = 8, ÷ 8 = 6, ÷ 12 = 4, nhưng 48 ÷ 18 không phải số nguyên.
+  EN hint: Check the factor pairs of 48.
+  VI hint: Kiểm tra các cặp ước của 48.
+## puz_match_easy_001 [matching_pairs/easy]
+  EN prompt: Find both matching pairs.
+  VI prompt: Tìm cả hai cặp giống nhau.
+  EN instr: Tap two cards to turn them over. A matching pair stays open.
+  VI instr: Chạm hai thẻ để lật. Cặp khớp sẽ được giữ mở.
+  star EN: Star  |  VI: Ngôi sao
+  heart EN: Heart  |  VI: Trái tim
+  EN expl: The board holds one star pair and one heart pair.
+  VI expl: Bàn có một cặp ngôi sao và một cặp trái tim.
+  EN hint: Say the symbol you saw out loud so it is easier to place.
+  VI hint: Đọc to biểu tượng vừa thấy để dễ nhớ vị trí.
+## puz_match_easy_002 [matching_pairs/easy]
+  EN prompt: Find both matching pairs.
+  VI prompt: Tìm cả hai cặp giống nhau.
+  EN instr: Turn over two cards at a time.
+  VI instr: Mỗi lượt lật hai thẻ.
+  moon EN: Moon  |  VI: Mặt trăng
+  sun EN: Sun  |  VI: Mặt trời
+  EN expl: The board holds one moon pair and one sun pair.
+  VI expl: Bàn có một cặp mặt trăng và một cặp mặt trời.
+  EN hint: Remember the first card before you pick the second.
+  VI hint: Nhớ thẻ đầu tiên trước khi chọn thẻ thứ hai.
+## puz_match_easy_003 [matching_pairs/easy]
+  EN prompt: Find both matching pairs.
+  VI prompt: Tìm cả hai cặp giống nhau.
+  EN instr: A pair means two cards with the same symbol.
+  VI instr: Một cặp là hai thẻ có cùng biểu tượng.
+  circle EN: Circle  |  VI: Hình tròn
+  square EN: Square  |  VI: Hình vuông
+  EN expl: The board holds one circle pair and one square pair.
+  VI expl: Bàn có một cặp hình tròn và một cặp hình vuông.
+  EN hint: Look at the outline of each card.
+  VI hint: Quan sát đường viền của từng thẻ.
+## puz_match_easy_004 [matching_pairs/easy]
+  EN prompt: Find both matching pairs.
+  VI prompt: Tìm cả hai cặp giống nhau.
+  EN instr: Both pairs use a curved symbol, so look carefully.
+  VI instr: Cả hai cặp đều dùng biểu tượng cong nên cần nhìn kỹ.
+  leaf EN: Leaf  |  VI: Chiếc lá
+  drop EN: Drop  |  VI: Giọt nước
+  EN expl: The board holds one leaf pair and one drop pair.
+  VI expl: Bàn có một cặp chiếc lá và một cặp giọt nước.
+  EN hint: The leaf has a stem; the drop does not.
+  VI hint: Chiếc lá có cuống, giọt nước thì không.
+## puz_match_easy_005 [matching_pairs/easy]
+  EN prompt: Find both matching pairs.
+  VI prompt: Tìm cả hai cặp giống nhau.
+  EN instr: Count the sides if two shapes look similar.
+  VI instr: Đếm cạnh nếu hai hình trông giống nhau.
+  triangle EN: Triangle  |  VI: Hình tam giác
+  diamond EN: Diamond  |  VI: Hình thoi
+  EN expl: The board holds one triangle pair and one diamond pair.
+  VI expl: Bàn có một cặp tam giác và một cặp hình thoi.
+  EN hint: A triangle has three sides, a diamond four.
+  VI hint: Tam giác ba cạnh, hình thoi bốn cạnh.
+## puz_match_easy_006 [matching_pairs/easy]
+  EN prompt: Find both matching pairs.
+  VI prompt: Tìm cả hai cặp giống nhau.
+  EN instr: One symbol belongs to a storm.
+  VI instr: Một biểu tượng thuộc về cơn bão.
+  cloud EN: Cloud  |  VI: Đám mây
+  bolt EN: Bolt  |  VI: Tia chớp
+  EN expl: The board holds one cloud pair and one bolt pair.
+  VI expl: Bàn có một cặp đám mây và một cặp tia chớp.
+  EN hint: The bolt is the pointed symbol.
+  VI hint: Tia chớp là biểu tượng có mũi nhọn.
+## puz_match_medium_001 [matching_pairs/medium]
+  EN prompt: Find all three matching pairs.
+  VI prompt: Tìm đủ ba cặp giống nhau.
+  EN instr: Ten card reveals are enough if you track positions.
+  VI instr: Mười lượt lật là đủ nếu bạn nhớ vị trí.
+  star EN: Star  |  VI: Ngôi sao
+  moon EN: Moon  |  VI: Mặt trăng
+  sun EN: Sun  |  VI: Mặt trời
+  EN expl: The board holds a star pair, a moon pair and a sun pair.
+  VI expl: Bàn có một cặp ngôi sao, một cặp mặt trăng và một cặp mặt trời.
+  EN hint: Keep a mental map of where each symbol sits.
+  VI hint: Giữ trong đầu sơ đồ vị trí của từng biểu tượng.
+## puz_match_medium_002 [matching_pairs/medium]
+  EN prompt: Find all three matching pairs.
+  VI prompt: Tìm đủ ba cặp giống nhau.
+  EN instr: The three symbols differ by their number of sides.
+  VI instr: Ba biểu tượng khác nhau ở số cạnh.
+  circle EN: Circle  |  VI: Hình tròn
+  square EN: Square  |  VI: Hình vuông
+  triangle EN: Triangle  |  VI: Hình tam giác
+  EN expl: The board holds a circle, a square and a triangle pair.
+  VI expl: Bàn có một cặp hình tròn, một cặp hình vuông và một cặp tam giác.
+  EN hint: Check the corners to tell the shapes apart.
+  VI hint: Xem các góc để phân biệt các hình.
+## puz_match_medium_003 [matching_pairs/medium]
+  EN prompt: Find all three matching pairs.
+  VI prompt: Tìm đủ ba cặp giống nhau.
+  EN instr: All three symbols are rounded, so slow down.
+  VI instr: Cả ba biểu tượng đều tròn nên hãy chậm lại.
+  heart EN: Heart  |  VI: Trái tim
+  leaf EN: Leaf  |  VI: Chiếc lá
+  drop EN: Drop  |  VI: Giọt nước
+  EN expl: The board holds a heart pair, a leaf pair and a drop pair.
+  VI expl: Bàn có một cặp trái tim, một cặp chiếc lá và một cặp giọt nước.
+  EN hint: Compare the top of each symbol.
+  VI hint: So sánh phần trên của mỗi biểu tượng.
+## puz_match_medium_004 [matching_pairs/medium]
+  EN prompt: Find all three matching pairs.
+  VI prompt: Tìm đủ ba cặp giống nhau.
+  EN instr: Count sides: four, five, and six.
+  VI instr: Đếm cạnh: bốn, năm và sáu.
+  diamond EN: Diamond  |  VI: Hình thoi
+  hexagon EN: Hexagon  |  VI: Hình lục giác
+  pentagon EN: Pentagon  |  VI: Hình ngũ giác
+  EN expl: The board holds a diamond pair, a pentagon pair and a hexagon pair.
+  VI expl: Bàn có một cặp hình thoi, một cặp ngũ giác và một cặp lục giác.
+  EN hint: Sort the shapes by side count first.
+  VI hint: Phân loại các hình theo số cạnh trước.
+## puz_match_medium_005 [matching_pairs/medium]
+  EN prompt: Find all three matching pairs.
+  VI prompt: Tìm đủ ba cặp giống nhau.
+  EN instr: Two symbols are weather, one is the sky behind it.
+  VI instr: Hai biểu tượng là thời tiết, một là bầu trời phía sau.
+  cloud EN: Cloud  |  VI: Đám mây
+  bolt EN: Bolt  |  VI: Tia chớp
+  sun EN: Sun  |  VI: Mặt trời
+  EN expl: The board holds a cloud pair, a bolt pair and a sun pair.
+  VI expl: Bàn có một cặp đám mây, một cặp tia chớp và một cặp mặt trời.
+  EN hint: Notice which symbol has sharp edges.
+  VI hint: Để ý biểu tượng có cạnh sắc.
+## puz_match_medium_006 [matching_pairs/medium]
+  EN prompt: Find all three matching pairs.
+  VI prompt: Tìm đủ ba cặp giống nhau.
+  EN instr: One symbol is pointed, two are rounded.
+  VI instr: Một biểu tượng có mũi nhọn, hai biểu tượng tròn.
+  star EN: Star  |  VI: Ngôi sao
+  heart EN: Heart  |  VI: Trái tim
+  moon EN: Moon  |  VI: Mặt trăng
+  EN expl: The board holds a star pair, a heart pair and a moon pair.
+  VI expl: Bàn có một cặp ngôi sao, một cặp trái tim và một cặp mặt trăng.
+  EN hint: Reveal cards in a fixed order so you never re-check one.
+  VI hint: Lật thẻ theo thứ tự cố định để không kiểm tra lại.
+## puz_match_hard_002 [matching_pairs/hard]
+  EN prompt: Find all four matching pairs.
+  VI prompt: Tìm đủ bốn cặp giống nhau.
+  EN instr: Eight cards are on the board; plan the reveals.
+  VI instr: Bàn có tám thẻ; hãy tính trước các lượt lật.
+  circle EN: Circle  |  VI: Hình tròn
+  square EN: Square  |  VI: Hình vuông
+  triangle EN: Triangle  |  VI: Hình tam giác
+  star EN: Star  |  VI: Ngôi sao
+  EN expl: The board holds circle, square, triangle and star pairs.
+  VI expl: Bàn có các cặp hình tròn, hình vuông, tam giác và ngôi sao.
+  EN hint: Clear the easy outlines first.
+  VI hint: Xử lý các hình dễ nhận trước.
+## puz_match_hard_003 [matching_pairs/hard]
+  EN prompt: Find all four matching pairs.
+  VI prompt: Tìm đủ bốn cặp giống nhau.
+  EN instr: Two sky symbols and two night symbols share the board.
+  VI instr: Hai biểu tượng ban ngày và hai biểu tượng ban đêm cùng trên bàn.
+  sun EN: Sun  |  VI: Mặt trời
+  moon EN: Moon  |  VI: Mặt trăng
+  star EN: Star  |  VI: Ngôi sao
+  cloud EN: Cloud  |  VI: Đám mây
+  EN expl: The board holds sun, moon, star and cloud pairs.
+  VI expl: Bàn có các cặp mặt trời, mặt trăng, ngôi sao và đám mây.
+  EN hint: Group the symbols by daylight and night.
+  VI hint: Nhóm các biểu tượng theo ngày và đêm.
+## puz_match_hard_004 [matching_pairs/hard]
+  EN prompt: Find all four matching pairs.
+  VI prompt: Tìm đủ bốn cặp giống nhau.
+  EN instr: Three symbols are rounded and one is sharp.
+  VI instr: Ba biểu tượng tròn và một biểu tượng sắc.
+  heart EN: Heart  |  VI: Trái tim
+  leaf EN: Leaf  |  VI: Chiếc lá
+  drop EN: Drop  |  VI: Giọt nước
+  bolt EN: Bolt  |  VI: Tia chớp
+  EN expl: The board holds heart, leaf, drop and bolt pairs.
+  VI expl: Bàn có các cặp trái tim, chiếc lá, giọt nước và tia chớp.
+  EN hint: Find the bolt pair first; it is unmistakable.
+  VI hint: Tìm cặp tia chớp trước vì rất dễ nhận.
+## puz_match_hard_005 [matching_pairs/hard]
+  EN prompt: Find all four matching pairs.
+  VI prompt: Tìm đủ bốn cặp giống nhau.
+  EN instr: Three shapes are polygons, one is not.
+  VI instr: Ba hình là đa giác, một hình không phải.
+  diamond EN: Diamond  |  VI: Hình thoi
+  hexagon EN: Hexagon  |  VI: Hình lục giác
+  pentagon EN: Pentagon  |  VI: Hình ngũ giác
+  circle EN: Circle  |  VI: Hình tròn
+  EN expl: The board holds diamond, hexagon, pentagon and circle pairs.
+  VI expl: Bàn có các cặp hình thoi, lục giác, ngũ giác và hình tròn.
+  EN hint: Count sides to separate the polygons.
+  VI hint: Đếm cạnh để phân biệt các đa giác.
+## puz_match_hard_006 [matching_pairs/hard]
+  EN prompt: Find all four matching pairs.
+  VI prompt: Tìm đủ bốn cặp giống nhau.
+  EN instr: Two symbols are pointed and two are rounded.
+  VI instr: Hai biểu tượng có mũi nhọn và hai biểu tượng tròn.
+  star EN: Star  |  VI: Ngôi sao
+  heart EN: Heart  |  VI: Trái tim
+  moon EN: Moon  |  VI: Mặt trăng
+  leaf EN: Leaf  |  VI: Chiếc lá
+  EN expl: The board holds star, heart, moon and leaf pairs.
+  VI expl: Bàn có các cặp ngôi sao, trái tim, mặt trăng và chiếc lá.
+  EN hint: Track each symbol by position, not by colour.
+  VI hint: Theo dõi từng biểu tượng theo vị trí, không theo màu.
+## puz_order_easy_002 [sequence_reorder/easy]
+  EN prompt: Order the numbers from largest to smallest.
+  VI prompt: Sắp xếp các số từ lớn đến nhỏ.
+  EN instr: Drag the tiles until the biggest number comes first.
+  VI instr: Kéo các ô cho đến khi số lớn nhất đứng đầu.
+  EN expl: The descending order is 8, 4, 1.
+  VI expl: Thứ tự giảm dần là 8, 4, 1.
+  EN hint: Find the largest number before you move anything.
+  VI hint: Tìm số lớn nhất trước khi di chuyển.
+  EN tiles: ['4', '1', '8']
+  VI tiles: ['4', '1', '8']
+## puz_order_easy_003 [sequence_reorder/easy]
+  EN prompt: Put the steps of making tea in order.
+  VI prompt: Sắp xếp các bước pha trà theo đúng thứ tự.
+  EN instr: What must happen before the tea can be poured?
+  VI instr: Điều gì phải xảy ra trước khi rót trà?
+  EN expl: Water boils first, then the leaves go in, then you pour.
+  VI expl: Nước phải sôi trước, rồi cho trà, sau đó mới rót.
+  EN hint: Start with the step that needs nothing else.
+  VI hint: Bắt đầu bằng bước không cần gì trước đó.
+  EN tiles: ['Boil water', 'Add tea leaves', 'Pour and drink']
+  VI tiles: ['Đun nước sôi', 'Cho trà', 'Rót và uống']
+## puz_order_easy_004 [sequence_reorder/easy]
+  EN prompt: Order the numbers from smallest to largest.
+  VI prompt: Sắp xếp các số từ nhỏ đến lớn.
+  EN instr: Negative numbers sit below zero.
+  VI instr: Số âm nằm dưới số 0.
+  EN expl: The ascending order is -3, 0, 2, 5.
+  VI expl: Thứ tự tăng dần là -3, 0, 2, 5.
+  EN hint: Place -3 relative to 0 first.
+  VI hint: Đặt -3 so với 0 trước.
+  EN tiles: ['-3', '2', '0', '5']
+  VI tiles: ['-3', '2', '0', '5']
+## puz_order_easy_005 [sequence_reorder/easy]
+  EN prompt: Order the decimals from smallest to largest.
+  VI prompt: Sắp xếp các số thập phân từ nhỏ đến lớn.
+  EN instr: Compare the digits after the decimal point.
+  VI instr: So sánh các chữ số sau dấu phẩy.
+  EN expl: 0.05 < 0.25 < 0.5.
+  VI expl: 0,05 < 0,25 < 0,5.
+  EN hint: Two digits after the point can still be smaller.
+  VI hint: Hai chữ số sau dấu phẩy vẫn có thể nhỏ hơn.
+  EN tiles: ['0.5', '0.05', '0.25']
+  VI tiles: ['0,5', '0,05', '0,25']
+## puz_order_easy_006 [sequence_reorder/easy]
+  EN prompt: Order the days from the start of the week.
+  VI prompt: Sắp xếp các ngày theo thứ tự trong tuần.
+  EN instr: Monday is the first working day in this list.
+  VI instr: Thứ Hai là ngày làm việc đầu tiên trong danh sách.
+  EN expl: The week runs Monday, Wednesday, Friday.
+  VI expl: Thứ tự là Thứ Hai, Thứ Tư, Thứ Sáu.
+  EN hint: Count forward from Monday.
+  VI hint: Đếm tiến từ Thứ Hai.
+  EN tiles: ['Friday', 'Monday', 'Wednesday']
+  VI tiles: ['Thứ Sáu', 'Thứ Hai', 'Thứ Tư']
+## puz_order_medium_002 [sequence_reorder/medium]
+  EN prompt: Order the numbers from largest to smallest.
+  VI prompt: Sắp xếp các số từ lớn đến nhỏ.
+  EN instr: Check both the tens and the units digit.
+  VI instr: Kiểm tra cả hàng chục và hàng đơn vị.
+  EN expl: The descending order is 20, 12, 8, 5.
+  VI expl: Thứ tự giảm dần là 20, 12, 8, 5.
+  EN hint: The two-digit numbers come before the single digits.
+  VI hint: Các số có hai chữ số đứng trước số có một chữ số.
+  EN tiles: ['12', '5', '20', '8']
+  VI tiles: ['12', '5', '20', '8']
+## puz_order_medium_003 [sequence_reorder/medium]
+  EN prompt: Put the travel steps in order.
+  VI prompt: Sắp xếp các bước đi lại theo đúng thứ tự.
+  EN instr: One step creates the reason for the next.
+  VI instr: Mỗi bước tạo lý do cho bước tiếp theo.
+  EN expl: You book first, pack, travel, then board.
+  VI expl: Đặt vé trước, chuẩn bị hành lý, ra sân bay, rồi lên máy bay.
+  EN hint: Which step needs a booking already made?
+  VI hint: Bước nào cần vé đã đặt?
+  EN tiles: ['Book the ticket', 'Pack the bag', 'Travel to the airport', 'Board the plane']
+  VI tiles: ['Đặt vé', 'Chuẩn bị hành lý', 'Ra sân bay', 'Lên máy bay']
+## puz_order_medium_004 [sequence_reorder/medium]
+  EN prompt: Order the decimals from smallest to largest.
+  VI prompt: Sắp xếp các số thập phân từ nhỏ đến lớn.
+  EN instr: Compare the whole number part first.
+  VI instr: So sánh phần nguyên trước.
+  EN expl: 0.9 is below 1, then 1.05, 1.2 and 1.5.
+  VI expl: 0,9 nhỏ hơn 1, rồi 1,05, 1,2 và 1,5.
+  EN hint: Only one value is less than one.
+  VI hint: Chỉ một giá trị nhỏ hơn một.
+  EN tiles: ['1.2', '1.05', '1.5', '0.9']
+  VI tiles: ['1,2', '1,05', '1,5', '0,9']
+## puz_order_medium_005 [sequence_reorder/medium]
+  EN prompt: Order the people from oldest to youngest.
+  VI prompt: Sắp xếp mọi người từ lớn tuổi nhất đến nhỏ nhất.
+  EN instr: Mai is older than Lan; Lan is older than Hoa.
+  VI instr: Mai lớn hơn Lan; Lan lớn hơn Hoa.
+  EN expl: Oldest first: Mai, then Lan, then Hoa.
+  VI expl: Lớn nhất trước: Mai, rồi Lan, rồi Hoa.
+  EN hint: Chain the two comparisons.
+  VI hint: Nối hai so sánh lại với nhau.
+  EN tiles: ['Mai', 'Lan', 'Hoa']
+  VI tiles: ['Mai', 'Lan', 'Hoa']
+## puz_order_medium_006 [sequence_reorder/medium]
+  EN prompt: Order the three people from tallest to shortest.
+  VI prompt: Sắp xếp ba người từ cao nhất đến thấp nhất.
+  EN instr: P is taller than Q; R is taller than P.
+  VI instr: P cao hơn Q; R cao hơn P.
+  EN expl: R is taller than P, and P is taller than Q.
+  VI expl: R cao hơn P, và P cao hơn Q.
+  EN hint: Who is taller than everyone in the clues?
+  VI hint: Ai cao hơn tất cả trong các dữ kiện?
+  EN tiles: ['P', 'Q', 'R']
+  VI tiles: ['P', 'Q', 'R']
+## puz_order_hard_002 [sequence_reorder/hard]
+  EN prompt: Order the runners by finish time, fastest first.
+  VI prompt: Sắp xếp các vận động viên theo thời gian về đích, nhanh nhất trước.
+  EN instr: A finished before B; B finished before D; C finished before A.
+  VI instr: A về trước B; B về trước D; C về trước A.
+  EN expl: C beat A, A beat B and B beat D.
+  VI expl: C nhanh hơn A, A nhanh hơn B và B nhanh hơn D.
+  EN hint: Build one chain from the three comparisons.
+  VI hint: Nối ba so sánh thành một chuỗi.
+  EN tiles: ['A', 'B', 'C', 'D']
+  VI tiles: ['A', 'B', 'C', 'D']
+## puz_order_hard_003 [sequence_reorder/hard]
+  EN prompt: Order the boxes from top to bottom.
+  VI prompt: Sắp xếp các hộp từ trên xuống dưới.
+  EN instr: Blue is above Green; Red is above Blue; Yellow is below Green.
+  VI instr: Xanh dương ở trên Xanh lá; Đỏ ở trên Xanh dương; Vàng ở dưới Xanh lá.
+  EN expl: Red sits highest, then Blue, then Green, with Yellow lowest.
+  VI expl: Đỏ cao nhất, rồi Xanh dương, rồi Xanh lá, Vàng thấp nhất.
+  EN hint: Fix the position of Yellow relative to Green first.
+  VI hint: Xác định vị trí của Vàng so với Xanh lá trước.
+  EN tiles: ['Red', 'Blue', 'Green', 'Yellow']
+  VI tiles: ['Đỏ', 'Xanh dương', 'Xanh lá', 'Vàng']
+## puz_order_hard_004 [sequence_reorder/hard]
+  EN prompt: Put the project steps in order.
+  VI prompt: Sắp xếp các bước của dự án.
+  EN instr: Nothing can be reviewed before it exists.
+  VI instr: Không thể góp ý trước khi có bản thảo.
+  EN expl: Draft, review, revise, then publish.
+  VI expl: Soạn thảo, góp ý, chỉnh sửa, rồi công bố.
+  EN hint: Publishing needs a revised version.
+  VI hint: Công bố cần bản đã chỉnh sửa.
+  EN tiles: ['Draft the report', 'Review the report', 'Revise the report', 'Publish the report']
+  VI tiles: ['Soạn báo cáo', 'Góp ý báo cáo', 'Chỉnh sửa báo cáo', 'Công bố báo cáo']
+## puz_order_hard_005 [sequence_reorder/hard]
+  EN prompt: Order the powers from smallest to largest value.
+  VI prompt: Sắp xếp các lũy thừa từ giá trị nhỏ đến lớn.
+  EN instr: Work out the value of each term first.
+  VI instr: Tính giá trị của từng số trước.
+  EN expl: 2^3 = 8, 3^2 = 9, 2^4 = 16, 5^2 = 25.
+  VI expl: 2^3 = 8, 3^2 = 9, 2^4 = 16, 5^2 = 25.
+  EN hint: A larger exponent does not always mean a larger value.
+  VI hint: Số mũ lớn hơn không luôn cho giá trị lớn hơn.
+  EN tiles: ['2^3', '3^2', '2^4', '5^2']
+  VI tiles: ['2^3', '3^2', '2^4', '5^2']
+## puz_order_hard_006 [sequence_reorder/hard]
+  EN prompt: Order the fractions from smallest to largest.
+  VI prompt: Sắp xếp các phân số từ nhỏ đến lớn.
+  EN instr: Give every fraction the same denominator.
+  VI instr: Quy đồng mẫu số các phân số.
+  EN expl: As twelfths: 3/12, 6/12, 8/12, 9/12.
+  VI expl: Quy về mẫu số 12: 3/12, 6/12, 8/12, 9/12.
+  EN hint: Compare 2/3 with 3/4 carefully.
+  VI hint: So sánh 2/3 với 3/4 thật kỹ.
+  EN tiles: ['1/4', '1/2', '3/4', '2/3']
+  VI tiles: ['1/4', '1/2', '3/4', '2/3']
+## puz_memory_easy_002 [memory_sequence/easy]
+  EN prompt: Memorise the three numbers, then enter all of them.
+  VI prompt: Ghi nhớ ba số, sau đó nhập lại cả ba.
+  EN instr: Study the numbers, tap Ready, then type them in order.
+  VI instr: Quan sát các số, chạm Sẵn sàng, rồi nhập theo thứ tự.
+  EN expl: The sequence was 5, 8, 2.
+  VI expl: Dãy là 5, 8, 2.
+  EN hint: Repeat the numbers once before they hide.
+  VI hint: Nhẩm lại một lần trước khi các số ẩn đi.
+## puz_memory_easy_003 [memory_sequence/easy]
+  EN prompt: Remember the three numbers, then enter the second one.
+  VI prompt: Ghi nhớ ba số, sau đó nhập số thứ hai.
+  EN instr: Study the numbers, tap Ready, then type the number in the middle.
+  VI instr: Quan sát các số, chạm Sẵn sàng, rồi nhập số ở giữa.
+  EN expl: The sequence was 3, 6, 9, so the second number is 6.
+  VI expl: Dãy là 3, 6, 9 nên số thứ hai là 6.
+  EN hint: Say each number with its position.
+  VI hint: Đọc mỗi số kèm vị trí của nó.
+  EN revealSequence: [3, 6, 9]
+  VI revealSequence: [3, 6, 9]
+## puz_memory_easy_004 [memory_sequence/easy]
+  EN prompt: Memorise the four numbers, then enter all of them.
+  VI prompt: Ghi nhớ bốn số, sau đó nhập lại cả bốn.
+  EN instr: Two pairs are easier to hold than four single digits.
+  VI instr: Hai cặp dễ nhớ hơn bốn chữ số rời.
+  EN expl: The sequence was 7, 2, 4, 1.
+  VI expl: Dãy là 7, 2, 4, 1.
+  EN hint: Group the numbers as two pairs.
+  VI hint: Gộp các số thành hai cặp.
+## puz_memory_easy_005 [memory_sequence/easy]
+  EN prompt: Remember the three numbers, then enter the first one.
+  VI prompt: Ghi nhớ ba số, sau đó nhập số đầu tiên.
+  EN instr: Study the numbers, tap Ready, then type the number that came first.
+  VI instr: Quan sát các số, chạm Sẵn sàng, rồi nhập số xuất hiện đầu tiên.
+  EN expl: The sequence was 9, 0, 3, so the first number is 9.
+  VI expl: Dãy là 9, 0, 3 nên số đầu tiên là 9.
+  EN hint: Focus on the very first tile.
+  VI hint: Tập trung vào ô đầu tiên.
+  EN revealSequence: [9, 0, 3]
+  VI revealSequence: [9, 0, 3]
+## puz_memory_easy_006 [memory_sequence/easy]
+  EN prompt: Remember the four numbers, then enter the last one.
+  VI prompt: Ghi nhớ bốn số, sau đó nhập số cuối cùng.
+  EN instr: Study the numbers, tap Ready, then type the final number.
+  VI instr: Quan sát các số, chạm Sẵn sàng, rồi nhập số cuối.
+  EN expl: The sequence was 1, 5, 7, 3, so the last number is 3.
+  VI expl: Dãy là 1, 5, 7, 3 nên số cuối là 3.
+  EN hint: Notice the last tile before the numbers hide.
+  VI hint: Để ý ô cuối trước khi các số ẩn đi.
+  EN revealSequence: [1, 5, 7, 3]
+  VI revealSequence: [1, 5, 7, 3]
+## puz_memory_medium_002 [memory_sequence/medium]
+  EN prompt: Study the four numbers, then enter them in reverse order.
+  VI prompt: Quan sát bốn số, sau đó nhập theo thứ tự ngược.
+  EN instr: Tap Ready when you are done memorising.
+  VI instr: Chạm Sẵn sàng khi đã nhớ xong.
+  EN expl: The sequence was 2, 8, 5, 3; reversed it is 3, 5, 8, 2.
+  VI expl: Dãy là 2, 8, 5, 3; đảo ngược là 3, 5, 8, 2.
+  EN hint: Read the sequence backwards before you hide it.
+  VI hint: Đọc ngược dãy trước khi các số ẩn đi.
+  EN revealSequence: [2, 8, 5, 3]
+  VI revealSequence: [2, 8, 5, 3]
+## puz_memory_medium_003 [memory_sequence/medium]
+  EN prompt: Study the four numbers, then enter the numbers in positions 1 and 3.
+  VI prompt: Quan sát bốn số, sau đó nhập các số ở vị trí 1 và 3.
+  EN instr: Attach each number to its position number.
+  VI instr: Gắn mỗi số với số thứ tự của nó.
+  EN expl: The sequence was 4, 1, 9, 6, so positions 1 and 3 are 4 and 9.
+  VI expl: Dãy là 4, 1, 9, 6 nên vị trí 1 và 3 là 4 và 9.
+  EN hint: Ignore the even positions completely.
+  VI hint: Bỏ qua hoàn toàn các vị trí chẵn.
+  EN revealSequence: [4, 1, 9, 6]
+  VI revealSequence: [4, 1, 9, 6]
+## puz_memory_medium_004 [memory_sequence/medium]
+  EN prompt: Memorise the five numbers, then enter all of them.
+  VI prompt: Ghi nhớ năm số, sau đó nhập lại cả năm.
+  EN instr: Five digits need a rhythm, not repetition.
+  VI instr: Năm chữ số cần nhịp điệu thay vì đọc lặp.
+  EN expl: The sequence was 6, 3, 8, 0, 2.
+  VI expl: Dãy là 6, 3, 8, 0, 2.
+  EN hint: Say the digits as one short phrase.
+  VI hint: Đọc các chữ số thành một cụm ngắn.
+## puz_memory_medium_005 [memory_sequence/medium]
+  EN prompt: Study the four numbers, then enter the numbers in positions 2 and 4.
+  VI prompt: Quan sát bốn số, sau đó nhập các số ở vị trí 2 và 4.
+  EN instr: Number the positions from the left.
+  VI instr: Đánh số vị trí từ trái sang.
+  EN expl: The sequence was 2, 7, 5, 9, so positions 2 and 4 are 7 and 9.
+  VI expl: Dãy là 2, 7, 5, 9 nên vị trí 2 và 4 là 7 và 9.
+  EN hint: Skip the first number on purpose.
+  VI hint: Chủ động bỏ qua số đầu tiên.
+  EN revealSequence: [2, 7, 5, 9]
+  VI revealSequence: [2, 7, 5, 9]
+## puz_memory_medium_006 [memory_sequence/medium]
+  EN prompt: Study the five numbers, then enter them in reverse order.
+  VI prompt: Quan sát năm số, sau đó nhập theo thứ tự ngược.
+  EN instr: Hold the whole sequence, then read it backwards.
+  VI instr: Ghi nhớ cả dãy rồi đọc ngược.
+  EN expl: The sequence was 8, 4, 6, 1, 3; reversed it is 3, 1, 6, 4, 8.
+  VI expl: Dãy là 8, 4, 6, 1, 3; đảo ngược là 3, 1, 6, 4, 8.
+  EN hint: Chunk it as 84, 61, 3 before reversing.
+  VI hint: Gộp thành 84, 61, 3 trước khi đảo.
+  EN revealSequence: [8, 4, 6, 1, 3]
+  VI revealSequence: [8, 4, 6, 1, 3]
+## puz_memory_hard_002 [memory_sequence/hard]
+  EN prompt: Study the five numbers, then enter the numbers in positions 2 and 4.
+  VI prompt: Quan sát năm số, sau đó nhập các số ở vị trí 2 và 4.
+  EN instr: Track positions while the sequence is still visible.
+  VI instr: Theo dõi vị trí khi dãy còn hiển thị.
+  EN expl: The sequence was 5, 9, 2, 6, 4, so positions 2 and 4 are 9 and 6.
+  VI expl: Dãy là 5, 9, 2, 6, 4 nên vị trí 2 và 4 là 9 và 6.
+  EN hint: Count aloud from one to five.
+  VI hint: Đếm to từ một đến năm.
+  EN revealSequence: [5, 9, 2, 6, 4]
+  VI revealSequence: [5, 9, 2, 6, 4]
+## puz_memory_hard_003 [memory_sequence/hard]
+  EN prompt: Study the six numbers, then enter them in reverse order.
+  VI prompt: Quan sát sáu số, sau đó nhập theo thứ tự ngược.
+  EN instr: Six digits is the hardest reverse in the bank.
+  VI instr: Sáu chữ số là bài đảo ngược khó nhất trong bộ câu hỏi.
+  EN expl: The sequence was 1, 4, 8, 3, 7, 2; reversed it is 2, 7, 3, 8, 4, 1.
+  VI expl: Dãy là 1, 4, 8, 3, 7, 2; đảo ngược là 2, 7, 3, 8, 4, 1.
+  EN hint: Practise the reversed order before tapping Ready.
+  VI hint: Tập đọc ngược trước khi chạm Sẵn sàng.
+  EN revealSequence: [1, 4, 8, 3, 7, 2]
+  VI revealSequence: [1, 4, 8, 3, 7, 2]
+## puz_memory_hard_004 [memory_sequence/hard]
+  EN prompt: Study the five numbers, then enter the numbers in odd positions.
+  VI prompt: Quan sát năm số, sau đó nhập các số ở vị trí lẻ.
+  EN instr: Positions 1, 3 and 5 hold the answer.
+  VI instr: Vị trí 1, 3 và 5 chứa đáp án.
+  EN expl: The sequence was 7, 3, 9, 1, 5, so the odd positions are 7, 9, 5.
+  VI expl: Dãy là 7, 3, 9, 1, 5 nên các vị trí lẻ là 7, 9, 5.
+  EN hint: Skip every second number as you read.
+  VI hint: Bỏ qua mỗi số thứ hai khi đọc.
+  EN revealSequence: [7, 3, 9, 1, 5]
+  VI revealSequence: [7, 3, 9, 1, 5]
+## puz_memory_hard_005 [memory_sequence/hard]
+  EN prompt: Study the six numbers, then enter the numbers in positions 1, 3 and 5.
+  VI prompt: Quan sát sáu số, sau đó nhập các số ở vị trí 1, 3 và 5.
+  EN instr: Number the positions before the sequence hides.
+  VI instr: Đánh số vị trí trước khi dãy ẩn đi.
+  EN expl: The sequence was 4, 6, 2, 8, 1, 9, so positions 1, 3 and 5 are 4, 2, 1.
+  VI expl: Dãy là 4, 6, 2, 8, 1, 9 nên vị trí 1, 3, 5 là 4, 2, 1.
+  EN hint: Group each odd position with its even neighbour.
+  VI hint: Gộp mỗi vị trí lẻ với số chẵn bên cạnh.
+  EN revealSequence: [4, 6, 2, 8, 1, 9]
+  VI revealSequence: [4, 6, 2, 8, 1, 9]
+## puz_memory_hard_006 [memory_sequence/hard]
+  EN prompt: Study the five numbers, then enter the middle three.
+  VI prompt: Quan sát năm số, sau đó nhập ba số ở giữa.
+  EN instr: Drop the first and the last number.
+  VI instr: Bỏ số đầu và số cuối.
+  EN expl: The sequence was 3, 8, 1, 4, 7, so the middle three are 8, 1, 4.
+  VI expl: Dãy là 3, 8, 1, 4, 7 nên ba số giữa là 8, 1, 4.
+  EN hint: Find the edges, then keep what is inside.
+  VI hint: Xác định hai đầu rồi giữ phần bên trong.
+  EN revealSequence: [3, 8, 1, 4, 7]
+  VI revealSequence: [3, 8, 1, 4, 7]

@@ -1,0 +1,44 @@
+## puz_memory_hard_003 [memory_sequence/hard]
+  EN prompt: Study the six numbers, then enter them in reverse order.
+  VI prompt: Quan sát sáu số, sau đó nhập theo thứ tự ngược.
+  EN instr: Six digits is the hardest reverse in the bank.
+  VI instr: Sáu chữ số là bài đảo ngược khó nhất trong bộ câu hỏi.
+  EN expl: The sequence was 1, 4, 8, 3, 7, 2; reversed it is 2, 7, 3, 8, 4, 1.
+  VI expl: Dãy là 1, 4, 8, 3, 7, 2; đảo ngược là 2, 7, 3, 8, 4, 1.
+  EN hint: Practise the reversed order before tapping Ready.
+  VI hint: Tập đọc ngược trước khi chạm Sẵn sàng.
+  EN revealSequence: [1, 4, 8, 3, 7, 2]
+  VI revealSequence: [1, 4, 8, 3, 7, 2]
+## puz_memory_hard_004 [memory_sequence/hard]
+  EN prompt: Study the five numbers, then enter the numbers in odd positions.
+  VI prompt: Quan sát năm số, sau đó nhập các số ở vị trí lẻ.
+  EN instr: Positions 1, 3 and 5 hold the answer.
+  VI instr: Vị trí 1, 3 và 5 chứa đáp án.
+  EN expl: The sequence was 7, 3, 9, 1, 5, so the odd positions are 7, 9, 5.
+  VI expl: Dãy là 7, 3, 9, 1, 5 nên các vị trí lẻ là 7, 9, 5.
+  EN hint: Skip every second number as you read.
+  VI hint: Bỏ qua mỗi số thứ hai khi đọc.
+  EN revealSequence: [7, 3, 9, 1, 5]
+  VI revealSequence: [7, 3, 9, 1, 5]
+## puz_memory_hard_005 [memory_sequence/hard]
+  EN prompt: Study the six numbers, then enter the numbers in positions 1, 3 and 5.
+  VI prompt: Quan sát sáu số, sau đó nhập các số ở vị trí 1, 3 và 5.
+  EN instr: Number the positions before the sequence hides.
+  VI instr: Đánh số vị trí trước khi dãy ẩn đi.
+  EN expl: The sequence was 4, 6, 2, 8, 1, 9, so positions 1, 3 and 5 are 4, 2, 1.
+  VI expl: Dãy là 4, 6, 2, 8, 1, 9 nên vị trí 1, 3, 5 là 4, 2, 1.
+  EN hint: Group each odd position with its even neighbour.
+  VI hint: Gộp mỗi vị trí lẻ với số chẵn bên cạnh.
+  EN revealSequence: [4, 6, 2, 8, 1, 9]
+  VI revealSequence: [4, 6, 2, 8, 1, 9]
+## puz_memory_hard_006 [memory_sequence/hard]
+  EN prompt: Study the five numbers, then enter the middle three.
+  VI prompt: Quan sát năm số, sau đó nhập ba số ở giữa.
+  EN instr: Drop the first and the last number.
+  VI instr: Bỏ số đầu và số cuối.
+  EN expl: The sequence was 3, 8, 1, 4, 7, so the middle three are 8, 1, 4.
+  VI expl: Dãy là 3, 8, 1, 4, 7 nên ba số giữa là 8, 1, 4.
+  EN hint: Find the edges, then keep what is inside.
+  VI hint: Xác định hai đầu rồi giữ phần bên trong.
+  EN revealSequence: [3, 8, 1, 4, 7]
+  VI revealSequence: [3, 8, 1, 4, 7]

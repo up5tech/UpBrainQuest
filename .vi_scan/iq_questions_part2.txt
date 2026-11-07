@@ -1,0 +1,794 @@
+
+## iq_logic_easy_007 [logical_deduction/easy]
+  EN prompt: Every student has a notebook. Kim is a student. What follows?
+  VI prompt: Mọi học sinh đều có vở. Kim là học sinh. Suy ra điều gì?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: Kim has a notebook  |  VI: Kim có vở
+  b EN: Kim has two notebooks  |  VI: Kim có hai quyển vở
+  c EN: Kim has no notebook  |  VI: Kim không có vở
+  d EN: Only Kim has a notebook  |  VI: Chỉ Kim có vở
+  EN expl: The rule covers every student, and Kim is a student, so Kim has a notebook.
+  VI expl: Quy tắc áp dụng cho mọi học sinh, Kim là học sinh, nên Kim có vở.
+  EN hint: Replace "student" with the name.
+  VI hint: Thay "học sinh" bằng tên được nêu.
+## iq_logic_easy_008 [logical_deduction/easy]
+  EN prompt: A stands to the left of B. B stands to the left of C. Who stands in the middle?
+  VI prompt: A đứng bên trái B. B đứng bên trái C. Ai đứng giữa?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: A  |  VI: A
+  b EN: B  |  VI: B
+  c EN: C  |  VI: C
+  d EN: Cannot be determined  |  VI: Không thể xác định
+  EN expl: The order is A, B, C, so B is in the middle.
+  VI expl: Thứ tự là A, B, C nên B đứng giữa.
+  EN hint: Place all three on one line before answering.
+  VI hint: Đặt cả ba lên một hàng trước khi trả lời.
+## iq_logic_medium_003 [logical_deduction/medium]
+  EN prompt: All zips are waps. No waps are tums. Which statement must be true?
+  VI prompt: Mọi zip đều là wap. Không wap nào là tum. Câu nào chắc chắn đúng?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: All tums are zips  |  VI: Mọi tum đều là zip
+  b EN: No zips are tums  |  VI: Không zip nào là tum
+  c EN: Some zips are tums  |  VI: Một số zip là tum
+  d EN: Some tums are waps  |  VI: Một số tum là wap
+  EN expl: Every zip is a wap, and no wap is a tum, so no zip can be a tum.
+  VI expl: Mọi zip là wap, không wap nào là tum, nên không zip nào có thể là tum.
+  EN hint: Chain the two rules instead of testing each option separately.
+  VI hint: Nối hai quy tắc lại thay vì thử từng đáp án.
+## iq_logic_medium_004 [logical_deduction/medium]
+  EN prompt: Ana is not the youngest. Bo is neither the youngest nor the oldest. Who is the oldest?
+  VI prompt: Ana không phải người nhỏ tuổi nhất. Bo không phải nhỏ nhất cũng không phải lớn nhất. Ai lớn tuổi nhất?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: Ana  |  VI: Ana
+  b EN: Bo  |  VI: Bo
+  c EN: Cem  |  VI: Cem
+  d EN: Cannot be determined  |  VI: Không thể xác định
+  EN expl: Bo is in the middle, so Ana and Cem fill the ends; Ana is not the youngest, so Ana is oldest.
+  VI expl: Bo ở giữa nên Ana và Cem ở hai đầu; Ana không phải nhỏ nhất nên Ana lớn nhất.
+  EN hint: Fill the fixed position first.
+  VI hint: Điền vị trí đã xác định trước.
+## iq_logic_medium_005 [logical_deduction/medium]
+  EN prompt: If the lamp is on, the door is locked. The door is not locked. What follows?
+  VI prompt: Nếu đèn sáng thì cửa đã khóa. Cửa chưa khóa. Suy ra điều gì?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: The lamp is on  |  VI: Đèn đang sáng
+  b EN: The lamp is off  |  VI: Đèn đang tắt
+  c EN: The door is broken  |  VI: Cửa bị hỏng
+  d EN: Nothing can be concluded  |  VI: Không thể kết luận gì
+  EN expl: A locked door is required for the lamp to be on; since it is not locked, the lamp is off.
+  VI expl: Đèn sáng đòi hỏi cửa đã khóa; cửa chưa khóa nên đèn đang tắt.
+  EN hint: Work backwards from the failed result.
+  VI hint: Làm ngược từ kết quả không xảy ra.
+## iq_logic_medium_006 [logical_deduction/medium]
+  EN prompt: P finished before Q. R finished after Q. S finished before P. Who finished first?
+  VI prompt: P về trước Q. R về sau Q. S về trước P. Ai về đầu tiên?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: P  |  VI: P
+  b EN: Q  |  VI: Q
+  c EN: R  |  VI: R
+  d EN: S  |  VI: S
+  EN expl: S < P < Q < R, so S finished first.
+  VI expl: S < P < Q < R, nên S về đầu tiên.
+  EN hint: Build the full finishing order.
+  VI hint: Dựng thứ tự về đích đầy đủ.
+## iq_logic_medium_007 [logical_deduction/medium]
+  EN prompt: Everyone who plays chess also plays go. Nobody who plays go plays darts. Ravi plays chess. What follows?
+  VI prompt: Ai chơi cờ cũng chơi cờ vây. Không ai chơi cờ vây mà chơi phi tiêu. Ravi chơi cờ. Suy ra điều gì?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: Ravi plays darts  |  VI: Ravi chơi phi tiêu
+  b EN: Ravi does not play darts  |  VI: Ravi không chơi phi tiêu
+  c EN: Ravi plays only chess  |  VI: Ravi chỉ chơi cờ
+  d EN: Ravi may play darts  |  VI: Ravi có thể chơi phi tiêu
+  EN expl: Chess leads to go, and go rules out darts, so Ravi does not play darts.
+  VI expl: Chơi cờ kéo theo cờ vây, cờ vây loại trừ phi tiêu, nên Ravi không chơi phi tiêu.
+  EN hint: Two rules apply one after the other.
+  VI hint: Hai quy tắc nối tiếp nhau.
+## iq_logic_medium_008 [logical_deduction/medium]
+  EN prompt: Two boxes are on a table: one holds a coin and the other is empty. The red box is not empty. Where is the coin?
+  VI prompt: Hai chiếc hộp trên bàn: một hộp có đồng xu, hộp kia rỗng. Hộp đỏ không rỗng. Đồng xu ở đâu?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: In the red box  |  VI: Trong hộp đỏ
+  b EN: In the other box  |  VI: Trong hộp còn lại
+  c EN: In neither box  |  VI: Không ở hộp nào
+  d EN: Cannot be determined  |  VI: Không thể xác định
+  EN expl: The red box is not empty, and a coin is the only thing available, so the coin is in the red box.
+  VI expl: Hộp đỏ không rỗng, và đồng xu là thứ duy nhất có thể có, nên đồng xu ở hộp đỏ.
+  EN hint: Eliminate the empty box first.
+  VI hint: Loại hộp rỗng trước.
+## iq_logic_hard_002 [logical_deduction/hard]
+  EN prompt: A says "B is lying". B says "C is lying". C says "A and B are both lying". Exactly one of them tells the truth. Who is it?
+  VI prompt: A nói "B đang nói dối". B nói "C đang nói dối". C nói "A và B đều nói dối". Đúng một người nói thật. Đó là ai?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: A  |  VI: A
+  b EN: B  |  VI: B
+  c EN: C  |  VI: C
+  d EN: Cannot be determined  |  VI: Không thể xác định
+  EN expl: If B tells the truth then C lies and A lies, which makes A's claim false as required. The other two assumptions each force two truths.
+  VI expl: Nếu B nói thật thì C nói dối và A nói dối, đúng như yêu cầu. Hai giả định còn lại đều cho hai người nói thật.
+  EN hint: Test each speaker as the single truth-teller.
+  VI hint: Thử từng người là người duy nhất nói thật.
+## iq_logic_hard_003 [logical_deduction/hard]
+  EN prompt: Ava, Ben, Cid and Dee each own a different pet: cat, dog, fish, bird. Ava owns no furry pet. Ben's pet barks. Cid owns the bird. Who owns the cat?
+  VI prompt: Ava, Ben, Cid và Dee mỗi người nuôi một con khác nhau: mèo, chó, cá, chim. Ava không nuôi con có lông. Con của Ben sủa. Cid nuôi chim. Ai nuôi mèo?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: Ava  |  VI: Ava
+  b EN: Ben  |  VI: Ben
+  c EN: Cid  |  VI: Cid
+  d EN: Dee  |  VI: Dee
+  EN expl: Ava takes the fish (the only non-furry pet left), Ben the dog, Cid the bird, so Dee has the cat.
+  VI expl: Ava nhận cá (con duy nhất không có lông còn lại), Ben nhận chó, Cid nhận chim, nên Dee nuôi mèo.
+  EN hint: Assign the most specific clues before the vague one.
+  VI hint: Gán các dữ kiện cụ thể nhất trước dữ kiện mơ hồ.
+## iq_logic_hard_004 [logical_deduction/hard]
+  EN prompt: Five books sit on a shelf. D is left of E; E is left of B; B is left of A; A is left of C. Which book is first?
+  VI prompt: Năm cuốn sách trên kệ. D ở trái E; E ở trái B; B ở trái A; A ở trái C. Cuốn nào đứng đầu?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: A  |  VI: A
+  b EN: B  |  VI: B
+  c EN: C  |  VI: C
+  d EN: D  |  VI: D
+  EN expl: The chain forces D, E, B, A, C from left to right, so D is first.
+  VI expl: Chuỗi cho ra D, E, B, A, C từ trái sang phải, nên D đứng đầu.
+  EN hint: Join the comparisons into a single chain.
+  VI hint: Nối các so sánh thành một chuỗi duy nhất.
+## iq_logic_hard_005 [logical_deduction/hard]
+  EN prompt: If the server is on, the fan runs. If the fan runs, the light flickers. The light is not flickering. What must be true?
+  VI prompt: Nếu máy chủ bật thì quạt chạy. Nếu quạt chạy thì đèn nhấp nháy. Đèn không nhấp nháy. Điều gì chắc chắn đúng?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: The server is on  |  VI: Máy chủ đang bật
+  b EN: The server is off  |  VI: Máy chủ đang tắt
+  c EN: The fan is running  |  VI: Quạt đang chạy
+  d EN: The fan is broken  |  VI: Quạt bị hỏng
+  EN expl: No flicker means the fan is not running, which means the server is off.
+  VI expl: Không nhấp nháy nghĩa là quạt không chạy, nghĩa là máy chủ đang tắt.
+  EN hint: Walk the chain backwards from the last fact.
+  VI hint: Đi ngược chuỗi từ dữ kiện cuối.
+## iq_logic_hard_006 [logical_deduction/hard]
+  EN prompt: Three switches A, B and C control lamps 1, 2 and 3, one each. A does not control lamp 1. B controls neither lamp 1 nor lamp 2. Which switch controls lamp 1?
+  VI prompt: Ba công tắc A, B, C điều khiển ba đèn 1, 2, 3, mỗi công tắc một đèn. A không điều khiển đèn 1. B không điều khiển đèn 1 và đèn 2. Công tắc nào điều khiển đèn 1?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: A  |  VI: A
+  b EN: B  |  VI: B
+  c EN: C  |  VI: C
+  d EN: Cannot be determined  |  VI: Không thể xác định
+  EN expl: B cannot be lamp 1 or 2, so B is lamp 3; A is not lamp 1, so A is lamp 2 and C is lamp 1.
+  VI expl: B không thể là đèn 1 hay 2 nên B là đèn 3; A không phải đèn 1 nên A là đèn 2 và C là đèn 1.
+  EN hint: Start with the switch that has the fewest options.
+  VI hint: Bắt đầu với công tắc ít lựa chọn nhất.
+## iq_logic_hard_007 [logical_deduction/hard]
+  EN prompt: In a race, exactly one is true: either Dee finished first, or Eve finished last (not both). Dee did not finish first. What follows?
+  VI prompt: Trong một cuộc đua, đúng một điều đúng: hoặc Dee về nhất, hoặc Eve về cuối (không cùng lúc). Dee không về nhất. Suy ra điều gì?
+  EN instr: Use only the stated facts; do not add outside assumptions.
+  VI instr: Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.
+  a EN: Eve finished last  |  VI: Eve về cuối
+  b EN: Eve did not finish last  |  VI: Eve không về cuối
+  c EN: Dee finished last  |  VI: Dee về cuối
+  d EN: Nothing follows  |  VI: Không suy ra được gì
+  EN expl: With the first option false, exactly one true leaves the second option true: Eve finished last.
+  VI expl: Khi điều thứ nhất sai, chỉ còn điều thứ hai đúng: Eve về cuối.
+  EN hint: Cross out the option you already know is false.
+  VI hint: Gạch bỏ lựa chọn bạn đã biết là sai.
+## iq_analogy_easy_002 [verbal_analogies/easy]
+  EN prompt: Hot is to cold as tall is to ___?
+  VI prompt: Nóng đối lập với lạnh, cao đối lập với ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: High  |  VI: Cao vút
+  b EN: Short  |  VI: Thấp
+  c EN: Long  |  VI: Dài
+  d EN: Wide  |  VI: Rộng
+  EN expl: Hot and cold are opposites; the opposite of tall is short.
+  VI expl: Nóng và lạnh là cặp đối lập; đối lập của cao là thấp.
+  EN hint: Look for an opposite pair.
+  VI hint: Tìm một cặp đối lập.
+## iq_analogy_easy_003 [verbal_analogies/easy]
+  EN prompt: Pen is to write as knife is to ___?
+  VI prompt: Bút dùng để viết, dao dùng để ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Cut  |  VI: Cắt
+  b EN: Draw  |  VI: Vẽ
+  c EN: Carry  |  VI: Mang
+  d EN: Measure  |  VI: Đo
+  EN expl: A pen is the tool for writing; a knife is the tool for cutting.
+  VI expl: Bút là dụng cụ để viết; dao là dụng cụ để cắt.
+  EN hint: Ask what each object is used for.
+  VI hint: Hỏi mỗi vật được dùng để làm gì.
+## iq_analogy_easy_004 [verbal_analogies/easy]
+  EN prompt: Fish is to water as bird is to ___?
+  VI prompt: Cá sống trong nước, chim sống trong ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Air  |  VI: Không khí
+  b EN: Nest  |  VI: Tổ
+  c EN: Tree  |  VI: Cây
+  d EN: Sand  |  VI: Cát
+  EN expl: Fish move through water; birds move through air.
+  VI expl: Cá di chuyển trong nước; chim di chuyển trong không khí.
+  EN hint: Where does each animal move?
+  VI hint: Mỗi con vật di chuyển ở đâu?
+## iq_analogy_easy_005 [verbal_analogies/easy]
+  EN prompt: Teacher is to school as doctor is to ___?
+  VI prompt: Giáo viên làm việc ở trường, bác sĩ làm việc ở ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Hospital  |  VI: Bệnh viện
+  b EN: Library  |  VI: Thư viện
+  c EN: Office  |  VI: Văn phòng
+  d EN: Market  |  VI: Chợ
+  EN expl: A teacher works in a school; a doctor works in a hospital.
+  VI expl: Giáo viên làm việc ở trường; bác sĩ làm việc ở bệnh viện.
+  EN hint: Match each job to its workplace.
+  VI hint: Ghép mỗi nghề với nơi làm việc.
+## iq_analogy_easy_006 [verbal_analogies/easy]
+  EN prompt: A glove is a close-fitting cover for a hand. What is the close-fitting cover for a foot?
+  VI prompt: Găng tay là lớp phủ ôm sát bàn tay. Vật nào là lớp phủ ôm sát bàn chân?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Sock  |  VI: Tất
+  b EN: Shoe  |  VI: Giày
+  c EN: Hat  |  VI: Mũ
+  d EN: Scarf  |  VI: Khăn
+  EN expl: A glove covers a hand the way a sock covers a foot.
+  VI expl: Găng tay che bàn tay giống như tất che bàn chân.
+  EN hint: Think of the layer worn directly against the skin.
+  VI hint: Nghĩ đến lớp mặc sát da, không phải lớp đi bên ngoài.
+## iq_analogy_easy_007 [verbal_analogies/easy]
+  EN prompt: Fast is to slow as early is to ___?
+  VI prompt: Nhanh đối lập với chậm, sớm đối lập với ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Late  |  VI: Muộn
+  b EN: Soon  |  VI: Sớm chút
+  c EN: Quick  |  VI: Mau
+  d EN: Near  |  VI: Gần
+  EN expl: Fast and slow are opposites; the opposite of early is late.
+  VI expl: Nhanh và chậm đối lập; đối lập của sớm là muộn.
+  EN hint: Find the pair of opposites.
+  VI hint: Tìm cặp từ đối lập.
+## iq_analogy_easy_008 [verbal_analogies/easy]
+  EN prompt: Wheel is to car as wing is to ___?
+  VI prompt: Bánh xe là bộ phận của ô tô, cánh là bộ phận của ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Plane  |  VI: Máy bay
+  b EN: Road  |  VI: Con đường
+  c EN: Engine  |  VI: Động cơ
+  d EN: Wheel  |  VI: Bánh xe
+  EN expl: A wheel is a part of a car; a wing is a part of a plane.
+  VI expl: Bánh xe là bộ phận của ô tô; cánh là bộ phận của máy bay.
+  EN hint: The second word names the whole object.
+  VI hint: Từ thứ hai gọi tên vật thể hoàn chỉnh.
+## iq_analogy_medium_001 [verbal_analogies/medium]
+  EN prompt: Author is to book as composer is to ___?
+  VI prompt: Tác giả viết ra cuốn sách, nhà soạn nhạc viết ra ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Symphony  |  VI: Bản giao hưởng
+  b EN: Museum  |  VI: Bảo tàng
+  c EN: Violin  |  VI: Cây vĩ cầm
+  d EN: Audience  |  VI: Khán giả
+  EN expl: An author creates a book; a composer creates a symphony.
+  VI expl: Tác giả tạo ra cuốn sách; nhà soạn nhạc tạo ra bản giao hưởng.
+  EN hint: Both first words name creators.
+  VI hint: Cả hai từ đầu đều chỉ người sáng tạo.
+## iq_analogy_medium_002 [verbal_analogies/medium]
+  EN prompt: Seed is to tree as egg is to ___?
+  VI prompt: Hạt phát triển thành cây, trứng phát triển thành ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Bird  |  VI: Con chim
+  b EN: Nest  |  VI: Cái tổ
+  c EN: Shell  |  VI: Vỏ trứng
+  d EN: Feather  |  VI: Lông vũ
+  EN expl: A seed grows into a tree; an egg develops into a bird.
+  VI expl: Hạt phát triển thành cây; trứng phát triển thành chim.
+  EN hint: What does each thing become?
+  VI hint: Mỗi thứ sẽ trở thành gì?
+## iq_analogy_medium_003 [verbal_analogies/medium]
+  EN prompt: Thermometer is to temperature as scale is to ___?
+  VI prompt: Nhiệt kế đo nhiệt độ, cân đo ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Weight  |  VI: Khối lượng
+  b EN: Height  |  VI: Chiều cao
+  c EN: Length  |  VI: Chiều dài
+  d EN: Time  |  VI: Thời gian
+  EN expl: A thermometer measures temperature; a scale measures weight.
+  VI expl: Nhiệt kế đo nhiệt độ; cân đo khối lượng.
+  EN hint: Both first words name measuring tools.
+  VI hint: Cả hai từ đầu đều là dụng cụ đo.
+## iq_analogy_medium_004 [verbal_analogies/medium]
+  EN prompt: Library is to books as gallery is to ___?
+  VI prompt: Thư viện chứa sách, phòng tranh chứa ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Paintings  |  VI: Tranh
+  b EN: Visitors  |  VI: Khách tham quan
+  c EN: Tickets  |  VI: Vé
+  d EN: Walls  |  VI: Tường
+  EN expl: A library holds books; a gallery holds paintings.
+  VI expl: Thư viện chứa sách; phòng tranh chứa tranh.
+  EN hint: The second pair names what the place displays.
+  VI hint: Cặp thứ hai nêu thứ mà nơi đó trưng bày.
+## iq_analogy_medium_005 [verbal_analogies/medium]
+  EN prompt: Whisper is to shout as stroll is to ___?
+  VI prompt: Thì thầm đối lập với hét, đi dạo đối lập với ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Sprint  |  VI: Chạy nước rút
+  b EN: Walk  |  VI: Đi bộ
+  c EN: Stand  |  VI: Đứng
+  d EN: Sit  |  VI: Ngồi
+  EN expl: A whisper is a quiet voice and a shout is a loud voice; a stroll is slow walking and a sprint is fast running.
+  VI expl: Thì thầm là giọng nhỏ, hét là giọng lớn; đi dạo là đi chậm, chạy nước rút là chạy nhanh.
+  EN hint: The pair moves from quiet to loud, and slow to fast.
+  VI hint: Cặp từ đi từ nhẹ đến mạnh, từ chậm đến nhanh.
+## iq_analogy_medium_006 [verbal_analogies/medium]
+  EN prompt: Sculptor is to stone as potter is to ___?
+  VI prompt: Nhà điêu khắc nặn đá, thợ gốm nặn ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Clay  |  VI: Đất sét
+  b EN: Kiln  |  VI: Lò nung
+  c EN: Brush  |  VI: Cọ vẽ
+  d EN: Canvas  |  VI: Vải vẽ
+  EN expl: A sculptor shapes stone; a potter shapes clay.
+  VI expl: Nhà điêu khắc tạo hình từ đá; thợ gốm tạo hình từ đất sét.
+  EN hint: Name the material each maker shapes.
+  VI hint: Nêu chất liệu mà mỗi người tạo hình.
+## iq_analogy_medium_007 [verbal_analogies/medium]
+  EN prompt: Recipe is to meal as blueprint is to ___?
+  VI prompt: Công thức là kế hoạch cho món ăn, bản thiết kế là kế hoạch cho ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Building  |  VI: Tòa nhà
+  b EN: Architect  |  VI: Kiến trúc sư
+  c EN: Paper  |  VI: Giấy
+  d EN: Ruler  |  VI: Thước
+  EN expl: A recipe is the plan for a meal; a blueprint is the plan for a building.
+  VI expl: Công thức là kế hoạch cho món ăn; bản thiết kế là kế hoạch cho tòa nhà.
+  EN hint: Both first words are plans, not the result.
+  VI hint: Cả hai từ đầu đều là kế hoạch, không phải kết quả.
+## iq_analogy_medium_008 [verbal_analogies/medium]
+  EN prompt: Drought is to water as famine is to ___?
+  VI prompt: Hạn hán là thiếu nước, nạn đói là thiếu ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Food  |  VI: Thức ăn
+  b EN: Weather  |  VI: Thời tiết
+  c EN: Farm  |  VI: Nông trại
+  d EN: Harvest  |  VI: Vụ mùa
+  EN expl: A drought is a serious shortage of water; a famine is a serious shortage of food.
+  VI expl: Hạn hán là thiếu nước nghiêm trọng; nạn đói là thiếu thức ăn nghiêm trọng.
+  EN hint: Both first words describe a shortage.
+  VI hint: Cả hai từ đầu đều mô tả sự thiếu hụt.
+## iq_analogy_hard_001 [verbal_analogies/hard]
+  EN prompt: Playwright is to script as architect is to ___?
+  VI prompt: Nhà viết kịch tạo ra kịch bản, kiến trúc sư tạo ra ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Blueprint  |  VI: Bản thiết kế
+  b EN: Building  |  VI: Tòa nhà
+  c EN: Brick  |  VI: Viên gạch
+  d EN: Crane  |  VI: Cần cẩu
+  EN expl: A playwright produces the script, which guides the production; an architect produces the blueprint, which guides the build.
+  VI expl: Nhà viết kịch tạo ra kịch bản dẫn dắt buổi diễn; kiến trúc sư tạo ra bản thiết kế dẫn dắt việc xây dựng.
+  EN hint: The second word is what the first person hands over, not the final object.
+  VI hint: Từ thứ hai là thứ người thứ nhất bàn giao, không phải vật thể cuối cùng.
+## iq_analogy_hard_002 [verbal_analogies/hard]
+  EN prompt: Ephemeral is to lasting as scarce is to ___?
+  VI prompt: Phù du đối lập với bền lâu, khan hiếm đối lập với ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Abundant  |  VI: Dồi dào
+  b EN: Costly  |  VI: Đắt đỏ
+  c EN: Rare  |  VI: Hiếm có
+  d EN: Useful  |  VI: Hữu ích
+  EN expl: Ephemeral and lasting are opposites; the opposite of scarce is abundant.
+  VI expl: Phù du và bền lâu đối lập; đối lập của khan hiếm là dồi dào.
+  EN hint: Find the antonym, not the synonym.
+  VI hint: Tìm từ trái nghĩa, không phải từ đồng nghĩa.
+## iq_analogy_hard_003 [verbal_analogies/hard]
+  EN prompt: Meticulous is to careless as frugal is to ___?
+  VI prompt: Tỉ mỉ đối lập với cẩu thả, tiết kiệm đối lập với ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Wasteful  |  VI: Hoang phí
+  b EN: Thrifty  |  VI: Tằn tiện
+  c EN: Wealthy  |  VI: Giàu có
+  d EN: Careful  |  VI: Cẩn thận
+  EN expl: Meticulous and careless are opposites; the opposite of frugal is wasteful.
+  VI expl: Tỉ mỉ và cẩu thả đối lập; đối lập của tiết kiệm là hoang phí.
+  EN hint: One option is a synonym, which is the trap.
+  VI hint: Một đáp án là từ đồng nghĩa, đó là bẫy.
+## iq_analogy_hard_004 [verbal_analogies/hard]
+  EN prompt: Censor is to suppress as edit is to ___?
+  VI prompt: Kiểm duyệt là nhằm chặn nội dung, biên tập là nhằm ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Refine  |  VI: Trau chuốt
+  b EN: Erase  |  VI: Xóa bỏ
+  c EN: Publish  |  VI: Xuất bản
+  d EN: Copy  |  VI: Sao chép
+  EN expl: To censor is to suppress content; to edit is to refine it. The relationship is purpose, not removal.
+  VI expl: Kiểm duyệt nhằm chặn nội dung; biên tập nhằm trau chuốt nội dung. Quan hệ là mục đích, không phải xóa bỏ.
+  EN hint: The pair shares a purpose, not an absence.
+  VI hint: Cặp từ chia sẻ mục đích, không phải sự vắng mặt.
+## iq_analogy_hard_005 [verbal_analogies/hard]
+  EN prompt: Oasis is to desert as island is to ___?
+  VI prompt: Ốc đảo là nơi nhỏ giữa sa mạc, hòn đảo là nơi nhỏ giữa ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Ocean  |  VI: Đại dương
+  b EN: Beach  |  VI: Bãi biển
+  c EN: Boat  |  VI: Con thuyền
+  d EN: Coast  |  VI: Bờ biển
+  EN expl: An oasis is a small habitable place surrounded by desert; an island is surrounded by ocean.
+  VI expl: Ốc đảo là nơi nhỏ giữa sa mạc; hòn đảo là nơi nhỏ giữa đại dương.
+  EN hint: Both second words name the surrounding mass.
+  VI hint: Cả hai từ thứ hai đều gọi khối bao quanh.
+## iq_analogy_hard_006 [verbal_analogies/hard]
+  EN prompt: Camouflage is to conceal as beacon is to ___?
+  VI prompt: Ngụy trang để che giấu, hải đăng để ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Signal  |  VI: Phát tín hiệu
+  b EN: Hide  |  VI: Che giấu
+  c EN: Reflect  |  VI: Phản chiếu
+  d EN: Warn  |  VI: Cảnh báo
+  EN expl: Camouflage hides; a beacon signals. The pair contrasts hiding with drawing attention.
+  VI expl: Ngụy trang che giấu; hải đăng phát tín hiệu. Cặp từ đối lập che giấu với gây chú ý.
+  EN hint: What does a beacon exist to do?
+  VI hint: Hải đăng tồn tại để làm gì?
+## iq_analogy_hard_007 [verbal_analogies/hard]
+  EN prompt: Anecdote is to narrative as sketch is to ___?
+  VI prompt: Giai thoại là một câu chuyện ngắn, bản phác là một ___ ngắn?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Drawing  |  VI: Bức vẽ
+  b EN: Painting  |  VI: Bức tranh
+  c EN: Frame  |  VI: Khung
+  d EN: Museum  |  VI: Bảo tàng
+  EN expl: An anecdote is a short narrative; a sketch is a short drawing. Both are brief versions of the second term.
+  VI expl: Giai thoại là câu chuyện ngắn; bản phác là bức vẽ ngắn. Cả hai là phiên bản rút gọn của từ thứ hai.
+  EN hint: The first term is a brief form of the second.
+  VI hint: Từ đầu là dạng rút gọn của từ thứ hai.
+## iq_analogy_hard_008 [verbal_analogies/hard]
+  EN prompt: Catalyst is to accelerate as damper is to ___?
+  VI prompt: Chất xúc tác làm phản ứng nhanh hơn, bộ giảm chấn làm chuyển động ___?
+  EN instr: Find the relationship in the first pair and apply it to the second.
+  VI instr: Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.
+  a EN: Slow down  |  VI: Chậm lại
+  b EN: Speed up  |  VI: Nhanh lên
+  c EN: Measure  |  VI: Đo được
+  d EN: Repeat  |  VI: Lặp lại
+  EN expl: A catalyst speeds a reaction up; a damper slows movement down.
+  VI expl: Chất xúc tác làm phản ứng nhanh hơn; bộ giảm chấn làm chuyển động chậm lại.
+  EN hint: The two terms work in opposite directions.
+  VI hint: Hai từ tác động theo hai hướng ngược nhau.
+## iq_spatial_easy_001 [spatial_reasoning/easy]
+  EN prompt: A row of blocks reads A B C D. What does it read in a vertical mirror?
+  VI prompt: Một hàng khối xếp là A B C D. Nhìn qua gương dựng đứng sẽ đọc là gì?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: D C B A  |  VI: D C B A
+  b EN: A B C D  |  VI: A B C D
+  c EN: B A D C  |  VI: B A D C
+  d EN: C D A B  |  VI: C D A B
+  EN expl: A mirror reverses the order, so the row reads D C B A.
+  VI expl: Gương đảo ngược thứ tự, nên hàng đọc là D C B A.
+  EN hint: Reflection reverses the order of the row.
+  VI hint: Phản chiếu đảo ngược thứ tự của hàng.
+## iq_spatial_easy_002 [spatial_reasoning/easy]
+  EN prompt: A 2x2 grid reads: row 1 "A B", row 2 "C D". What does it read after a quarter turn clockwise?
+  VI prompt: Lưới 2x2: hàng 1 "A B", hàng 2 "C D". Sau khi xoay 90° theo chiều kim đồng hồ thì đọc thế nào?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: row 1 "C A", row 2 "D B"  |  VI: hàng 1 "C A", hàng 2 "D B"
+  b EN: row 1 "A B", row 2 "C D"  |  VI: hàng 1 "A B", hàng 2 "C D"
+  c EN: row 1 "B D", row 2 "A C"  |  VI: hàng 1 "B D", hàng 2 "A C"
+  d EN: row 1 "D C", row 2 "B A"  |  VI: hàng 1 "D C", hàng 2 "B A"
+  EN expl: A quarter turn clockwise lifts the left column to the top: C A on top, D B below.
+  VI expl: Xoay 90° theo chiều kim đồng hồ đưa cột trái lên trên: C A ở trên, D B ở dưới.
+  EN hint: Follow where the top-left cell lands.
+  VI hint: Theo dõi ô trên-trái di chuyển về đâu.
+## iq_spatial_easy_003 [spatial_reasoning/easy]
+  EN prompt: How many squares of any size are in a 2x2 grid of small squares?
+  VI prompt: Có bao nhiêu hình vuông mọi kích cỡ trong lưới 2x2 ô nhỏ?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 4  |  VI: 4
+  b EN: 5  |  VI: 5
+  c EN: 6  |  VI: 6
+  d EN: 8  |  VI: 8
+  EN expl: Four small squares plus the one large square make 5.
+  VI expl: Bốn ô vuông nhỏ cộng một hình vuông lớn là 5.
+  EN hint: Do not forget the outer square.
+  VI hint: Đừng quên hình vuông bên ngoài.
+## iq_spatial_easy_004 [spatial_reasoning/easy]
+  EN prompt: Which capital letter has a vertical line of symmetry?
+  VI prompt: Chữ cái Latin viết hoa nào có trục đối xứng dọc?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: T  |  VI: T
+  b EN: B  |  VI: B
+  c EN: C  |  VI: C
+  d EN: F  |  VI: F
+  EN expl: T is the same when mirrored left to right; B, C and F are not.
+  VI expl: T giữ nguyên khi soi gương trái-phải; B, C và F thì không.
+  EN hint: Picture folding each letter in half left to right.
+  VI hint: Hình dung gấp đôi từng chữ theo chiều trái-phải.
+## iq_spatial_easy_005 [spatial_reasoning/easy]
+  EN prompt: A square is cut along one diagonal. What are the two pieces?
+  VI prompt: Một hình vuông bị cắt theo một đường chéo. Hai mảnh là gì?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: Two triangles  |  VI: Hai hình tam giác
+  b EN: Two squares  |  VI: Hai hình vuông
+  c EN: Four triangles  |  VI: Bốn hình tam giác
+  d EN: One triangle  |  VI: Một hình tam giác
+  EN expl: A diagonal splits a square into two equal right triangles.
+  VI expl: Đường chéo chia hình vuông thành hai tam giác vuông bằng nhau.
+  EN hint: A diagonal runs corner to corner.
+  VI hint: Đường chéo chạy từ góc này sang góc kia.
+## iq_spatial_easy_006 [spatial_reasoning/easy]
+  EN prompt: Five blocks in a row are labelled A B C D E. Block B is swapped with block D. Which block is now fourth?
+  VI prompt: Năm khối xếp thành hàng A B C D E. Đổi chỗ khối B và khối D. Khối nào đứng thứ tư?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: B  |  VI: B
+  b EN: C  |  VI: C
+  c EN: D  |  VI: D
+  d EN: E  |  VI: E
+  EN expl: After the swap the row reads A D C B E, so B is fourth.
+  VI expl: Sau khi đổi chỗ, hàng là A D C B E, nên B đứng thứ tư.
+  EN hint: Write the new row before checking the position.
+  VI hint: Viết hàng mới ra trước khi kiểm tra vị trí.
+## iq_spatial_easy_007 [spatial_reasoning/easy]
+  EN prompt: Which shape has the most sides: triangle, square, pentagon or hexagon?
+  VI prompt: Hình nào nhiều cạnh nhất: tam giác, hình vuông, ngũ giác hay lục giác?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: Triangle  |  VI: Tam giác
+  b EN: Square  |  VI: Hình vuông
+  c EN: Pentagon  |  VI: Ngũ giác
+  d EN: Hexagon  |  VI: Lục giác
+  EN expl: The sides are 3, 4, 5 and 6, so the hexagon has the most.
+  VI expl: Số cạnh là 3, 4, 5 và 6, nên lục giác nhiều nhất.
+  EN hint: Match each name to its side count.
+  VI hint: Ghép mỗi tên với số cạnh của nó.
+## iq_spatial_easy_008 [spatial_reasoning/easy]
+  EN prompt: A page is turned upside down. Where does its top edge end up?
+  VI prompt: Một trang giấy bị lật ngược. Cạnh trên của nó nằm ở đâu?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: At the bottom  |  VI: Ở dưới
+  b EN: At the top  |  VI: Ở trên
+  c EN: On the left  |  VI: Bên trái
+  d EN: On the right  |  VI: Bên phải
+  EN expl: A half turn in the plane sends the top edge to the bottom.
+  VI expl: Xoay nửa vòng trong mặt phẳng đưa cạnh trên xuống dưới.
+  EN hint: A half turn swaps opposite edges.
+  VI hint: Xoay nửa vòng đổi chỗ hai cạnh đối diện.
+## iq_spatial_medium_001 [spatial_reasoning/medium]
+  EN prompt: A 3x3 grid is numbered 1 to 9 across the rows: "1 2 3 / 4 5 6 / 7 8 9". What does it read after a quarter turn clockwise?
+  VI prompt: Lưới 3x3 đánh số 1 đến 9 theo hàng: "1 2 3 / 4 5 6 / 7 8 9". Sau khi xoay 90° theo chiều kim đồng hồ thì đọc thế nào?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: "7 4 1 / 8 5 2 / 9 6 3"  |  VI: "7 4 1 / 8 5 2 / 9 6 3"
+  b EN: "3 6 9 / 2 5 8 / 1 4 7"  |  VI: "3 6 9 / 2 5 8 / 1 4 7"
+  c EN: "9 8 7 / 6 5 4 / 3 2 1"  |  VI: "9 8 7 / 6 5 4 / 3 2 1"
+  d EN: "1 2 3 / 4 5 6 / 7 8 9"  |  VI: "1 2 3 / 4 5 6 / 7 8 9"
+  EN expl: Clockwise, the left column becomes the top row read upwards: 7 4 1, then 8 5 2, then 9 6 3.
+  VI expl: Theo chiều kim đồng hồ, cột trái thành hàng trên đọc từ dưới lên: 7 4 1, rồi 8 5 2, rồi 9 6 3.
+  EN hint: Track the corner 1 — it moves to the top-right.
+  VI hint: Theo dõi góc số 1 — nó chuyển lên góc trên-phải.
+## iq_spatial_medium_002 [spatial_reasoning/medium]
+  EN prompt: How many squares of any size are in a 3x3 grid of small squares?
+  VI prompt: Có bao nhiêu hình vuông mọi kích cỡ trong lưới 3x3 ô nhỏ?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 9  |  VI: 9
+  b EN: 13  |  VI: 13
+  c EN: 14  |  VI: 14
+  d EN: 16  |  VI: 16
+  EN expl: Nine 1x1, four 2x2 and one 3x3 make 14.
+  VI expl: Chín ô 1x1, bốn ô 2x2 và một ô 3x3 là 14.
+  EN hint: Count each size separately.
+  VI hint: Đếm riêng từng kích cỡ.
+## iq_spatial_medium_003 [spatial_reasoning/medium]
+  EN prompt: A cube has six faces. Two faces are painted red and the rest blue. How many faces are blue?
+  VI prompt: Một khối lập phương có sáu mặt. Hai mặt sơn đỏ, phần còn lại sơn xanh. Có bao nhiêu mặt xanh?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 2  |  VI: 2
+  b EN: 3  |  VI: 3
+  c EN: 4  |  VI: 4
+  d EN: 5  |  VI: 5
+  EN expl: Six faces minus two red ones leaves four blue.
+  VI expl: Sáu mặt trừ hai mặt đỏ còn bốn mặt xanh.
+  EN hint: Use the total number of faces.
+  VI hint: Dùng tổng số mặt.
+## iq_spatial_medium_004 [spatial_reasoning/medium]
+  EN prompt: A row shows: up, left, down. What does it show in a vertical mirror?
+  VI prompt: Một hàng ghi: lên, trái, xuống. Nhìn qua gương dựng đứng sẽ là gì?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: Down, right, up  |  VI: Xuống, phải, lên
+  b EN: Up, left, down  |  VI: Lên, trái, xuống
+  c EN: Down, left, up  |  VI: Xuống, trái, lên
+  d EN: Up, right, down  |  VI: Lên, phải, xuống
+  EN expl: The mirror reverses the order and flips left/right, giving down, right, up.
+  VI expl: Gương đảo thứ tự và lật trái/phải, cho ra xuống, phải, lên.
+  EN hint: Reflection changes both order and horizontal direction.
+  VI hint: Phản chiếu đổi cả thứ tự và hướng ngang.
+## iq_spatial_medium_005 [spatial_reasoning/medium]
+  EN prompt: A 4x4 grid has its outer ring of cells shaded. How many cells are shaded?
+  VI prompt: Lưới 4x4 có vòng ngoài được tô. Có bao nhiêu ô được tô?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 8  |  VI: 8
+  b EN: 10  |  VI: 10
+  c EN: 12  |  VI: 12
+  d EN: 14  |  VI: 14
+  EN expl: All 16 cells minus the 2x2 unshaded centre gives 12.
+  VI expl: Tổng 16 ô trừ phần giữa 2x2 không tô còn 12.
+  EN hint: Count the shaded ring as top, bottom and two sides.
+  VI hint: Đếm vòng tô gồm trên, dưới và hai bên.
+## iq_spatial_medium_006 [spatial_reasoning/medium]
+  EN prompt: A square is turned a quarter turn clockwise twice. Which single turn gives the same result?
+  VI prompt: Một hình vuông xoay 90° theo chiều kim đồng hồ hai lần. Một lần xoay nào cho kết quả tương đương?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: Half turn  |  VI: Nửa vòng
+  b EN: Quarter turn clockwise  |  VI: 90° theo chiều kim đồng hồ
+  c EN: Quarter turn anticlockwise  |  VI: 90° ngược chiều kim đồng hồ
+  d EN: Three-quarter turn  |  VI: Ba phần tư vòng
+  EN expl: Two quarter turns make half a turn.
+  VI expl: Hai lần 90° là nửa vòng.
+  EN hint: Add the two turns together.
+  VI hint: Cộng hai lần xoay lại.
+## iq_spatial_medium_007 [spatial_reasoning/medium]
+  EN prompt: In a 3x3 grid, a cell sits at row 2, column 3. Which cell is diagonally opposite it through the centre?
+  VI prompt: Trong lưới 3x3, một ô ở hàng 2, cột 3. Ô nào đối xứng qua tâm?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: Row 2, column 1  |  VI: Hàng 2, cột 1
+  b EN: Row 1, column 3  |  VI: Hàng 1, cột 3
+  c EN: Row 3, column 3  |  VI: Hàng 3, cột 3
+  d EN: Row 2, column 2  |  VI: Hàng 2, cột 2
+  EN expl: The centre is row 2, column 2, so the opposite cell mirrors the column to 1.
+  VI expl: Tâm là hàng 2, cột 2, nên ô đối diện lật cột thành 1.
+  EN hint: The move to the opposite corner is symmetric on both axes.
+  VI hint: Đi tới ô đối diện đối xứng trên cả hai trục.
+## iq_spatial_medium_008 [spatial_reasoning/medium]
+  EN prompt: A square sheet is folded in half twice, then one hole is punched through all layers. How many holes appear when it is unfolded?
+  VI prompt: Một tờ giấy vuông gấp đôi hai lần, rồi dùi một lỗ xuyên qua mọi lớp. Khi mở ra có bao nhiêu lỗ?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 1  |  VI: 1
+  b EN: 2  |  VI: 2
+  c EN: 3  |  VI: 3
+  d EN: 4  |  VI: 4
+  EN expl: Two folds make four layers, so one punch leaves four holes.
+  VI expl: Hai lần gấp tạo bốn lớp, nên một lỗ dùi cho bốn lỗ.
+  EN hint: Count the layers, not the folds.
+  VI hint: Đếm số lớp, không phải số lần gấp.
+## iq_spatial_hard_001 [spatial_reasoning/hard]
+  EN prompt: A 3x3 grid reads "1 2 3 / 4 5 6 / 7 8 9". After a half turn, which cell sits at the top-left?
+  VI prompt: Lưới 3x3 đọc "1 2 3 / 4 5 6 / 7 8 9". Sau khi xoay nửa vòng, ô nào ở góc trên-trái?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 9  |  VI: 9
+  b EN: 1  |  VI: 1
+  c EN: 3  |  VI: 3
+  d EN: 7  |  VI: 7
+  EN expl: A half turn swaps every cell with the one diagonally opposite, so 9 replaces 1 at the top-left.
+  VI expl: Xoay nửa vòng đổi mỗi ô với ô đối diện qua tâm, nên 9 thay 1 ở góc trên-trái.
+  EN hint: Follow the centre cell — it stays put.
+  VI hint: Theo dõi ô giữa — nó đứng yên.
+## iq_spatial_hard_002 [spatial_reasoning/hard]
+  EN prompt: A square has both diagonals drawn. How many triangles of any size can you count?
+  VI prompt: Một hình vuông có cả hai đường chéo. Đếm được bao nhiêu hình tam giác mọi kích cỡ?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 4  |  VI: 4
+  b EN: 6  |  VI: 6
+  c EN: 8  |  VI: 8
+  d EN: 10  |  VI: 10
+  EN expl: The four small corner triangles plus four larger half-square triangles make 8.
+  VI expl: Bốn tam giác nhỏ ở góc cộng bốn tam giác lớn bằng nửa hình vuông là 8.
+  EN hint: Count the small ones and the ones built from pairs.
+  VI hint: Đếm các tam giác nhỏ và các tam giác ghép từ hai mảnh.
+## iq_spatial_hard_003 [spatial_reasoning/hard]
+  EN prompt: A cube is painted on all faces, then cut into 27 equal small cubes. How many small cubes have exactly one painted face?
+  VI prompt: Một khối lập phương sơn mọi mặt rồi cắt thành 27 khối nhỏ bằng nhau. Bao nhiêu khối nhỏ có đúng một mặt sơn?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 6  |  VI: 6
+  b EN: 8  |  VI: 8
+  c EN: 12  |  VI: 12
+  d EN: 26  |  VI: 26
+  EN expl: Only the centre cube of each face has one painted face, and there are six faces.
+  VI expl: Chỉ khối giữa mỗi mặt có đúng một mặt sơn, và có sáu mặt.
+  EN hint: Face centres, edges and corners behave differently.
+  VI hint: Tâm mặt, cạnh và góc xử sự khác nhau.
+## iq_spatial_hard_004 [spatial_reasoning/hard]
+  EN prompt: A cube is painted on all faces, then cut into 27 equal small cubes. How many small cubes have no paint at all?
+  VI prompt: Một khối lập phương sơn mọi mặt rồi cắt thành 27 khối nhỏ. Bao nhiêu khối nhỏ không có sơn?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 0  |  VI: 0
+  b EN: 1  |  VI: 1
+  c EN: 6  |  VI: 6
+  d EN: 8  |  VI: 8
+  EN expl: Only the single cube at the very centre is hidden from every face.
+  VI expl: Chỉ khối duy nhất ở chính giữa là không lộ ra mặt nào.
+  EN hint: Which cubes never touch the surface?
+  VI hint: Khối nào không chạm bề mặt?
+## iq_spatial_hard_005 [spatial_reasoning/hard]
+  EN prompt: On a 4x4 grid of cells, how many shortest paths run from the top-left cell to the bottom-right cell, moving only right or down?
+  VI prompt: Trên lưới 4x4 ô, có bao nhiêu đường đi ngắn nhất từ ô trên-trái đến ô dưới-phải, chỉ đi sang phải hoặc xuống dưới?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 12  |  VI: 12
+  b EN: 16  |  VI: 16
+  c EN: 20  |  VI: 20
+  d EN: 24  |  VI: 24
+  EN expl: Each path uses three right moves and three down moves; choosing which three of six are down gives 20.
+  VI expl: Mỗi đường gồm ba bước phải và ba bước xuống; chọn ba trong sáu bước là xuống cho 20.
+  EN hint: Every path is three rights and three downs in some order.
+  VI hint: Mỗi đường gồm ba bước phải và ba bước xuống theo thứ tự nào đó.
+## iq_spatial_hard_006 [spatial_reasoning/hard]
+  EN prompt: A shape is turned 90° clockwise, then 180°, then 90° anticlockwise. What is the net turn?
+  VI prompt: Một hình xoay 90° theo chiều kim đồng hồ, rồi 180°, rồi 90° ngược chiều kim đồng hồ. Tổng độ xoay là bao nhiêu?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 0°  |  VI: 0°
+  b EN: 90° clockwise  |  VI: 90° theo chiều kim đồng hồ
+  c EN: 180°  |  VI: 180°
+  d EN: 270° clockwise  |  VI: 270° theo chiều kim đồng hồ
+  EN expl: +90 + 180 - 90 = 180, so the net turn is 180°.
+  VI expl: +90 + 180 - 90 = 180, nên tổng độ xoay là 180°.
+  EN hint: Give clockwise turns a plus sign and the other direction a minus.
+  VI hint: Cho chiều kim đồng hồ dấu cộng và chiều ngược lại dấu trừ.
+## iq_spatial_hard_007 [spatial_reasoning/hard]
+  EN prompt: A cube painted on all faces is cut into 64 equal small cubes. How many small cubes have no paint at all?
+  VI prompt: Một khối lập phương sơn mọi mặt được cắt thành 64 khối nhỏ bằng nhau. Bao nhiêu khối nhỏ không có sơn?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 0  |  VI: 0
+  b EN: 4  |  VI: 4
+  c EN: 8  |  VI: 8
+  d EN: 16  |  VI: 16
+  EN expl: The unpainted core is 2x2x2, which is 8 cubes.
+  VI expl: Phần lõi không sơn là 2x2x2, tức 8 khối.
+  EN hint: Remove one layer from every side before counting.
+  VI hint: Bỏ một lớp ở mỗi phía trước khi đếm.
+## iq_spatial_hard_008 [spatial_reasoning/hard]
+  EN prompt: A 5x5 grid has its outer border of cells removed. How many cells remain?
+  VI prompt: Lưới 5x5 bị bỏ vòng ô ngoài cùng. Còn lại bao nhiêu ô?
+  EN instr: Picture the figure in your head and transform it step by step.
+  VI instr: Hình dung hình trong đầu và biến đổi từng bước một.
+  a EN: 7  |  VI: 7
+  b EN: 9  |  VI: 9
+  c EN: 16  |  VI: 16
+  d EN: 21  |  VI: 21
+  EN expl: Removing the border leaves the inner 3x3, which is 9 cells.
+  VI expl: Bỏ vòng ngoài còn lưới 3x3 bên trong, tức 9 ô.
+  EN hint: The width shrinks by two in each direction.
+  VI hint: Mỗi chiều giảm đi hai ô.
