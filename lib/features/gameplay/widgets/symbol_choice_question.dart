@@ -67,9 +67,10 @@ class _SymbolChoiceQuestionWidgetState
     final PlayerAnswer? submission = widget.submission;
     if (submission is SelectedOptionAnswer) {
       _selectedId = submission.optionId;
-    } else if (widget.submission == null) {
-      _selectedId = null;
     }
+    // A null submission only means the parent has not committed an answer yet;
+    // the local selection stays authoritative, otherwise the highlight would
+    // vanish on the rebuild that every tap triggers.
   }
 
   void _select(String id) {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:up_brain_quest/core/localization/app_strings.dart';
+import 'package:up_brain_quest/core/theme/app_colors.dart';
 import 'package:up_brain_quest/domain/content/content_enums.dart';
 import 'package:up_brain_quest/domain/content/question_models.dart';
 import 'package:up_brain_quest/domain/session/answer_evaluation.dart';
@@ -12,6 +13,15 @@ import '../support/test_app.dart';
 
 /// English strings used by assertions (the app default locale).
 final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
+/// Border colour of the option tile whose text is [label].
+Color? _tileBorder(WidgetTester tester, String label) {
+  final Container container = tester.widget<Container>(
+    find.ancestor(of: find.text(label), matching: find.byType(Container)).first,
+  );
+  final BoxDecoration decoration = container.decoration! as BoxDecoration;
+  return (decoration.border! as Border).top.color;
+}
 
 EqScenarioItem _item() => const EqScenarioItem(
   id: 'eq1',
@@ -113,6 +123,26 @@ void main() {
       await tester.tap(find.text('Option A'));
       await tester.pumpAndSettle();
       expect(tapped, isFalse);
+    });
+
+    testWidgets('keeps the chosen tile highlighted across parent rebuilds', (
+      WidgetTester tester,
+    ) async {
+      final EqScenarioItem item = _item();
+      Widget tree() => localizedTestApp(
+        Scaffold(
+          body: EqScenarioQuestionWidget(item: item, onChanged: (_) {}),
+        ),
+      );
+
+      await tester.pumpWidget(tree());
+      await tester.tap(find.text('Option B'));
+      await tester.pumpAndSettle();
+      expect(_tileBorder(tester, 'Option B'), AppColors.primary);
+
+      await tester.pumpWidget(tree());
+      await tester.pumpAndSettle();
+      expect(_tileBorder(tester, 'Option B'), AppColors.primary);
     });
   });
 }

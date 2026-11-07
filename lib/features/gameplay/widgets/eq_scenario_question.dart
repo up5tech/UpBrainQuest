@@ -53,9 +53,10 @@ class _EqScenarioQuestionWidgetState extends State<EqScenarioQuestionWidget> {
     final PlayerAnswer? sub = widget.submission;
     if (sub is SelectedOptionAnswer) {
       _selectedId = sub.optionId;
-    } else if (widget.submission == null) {
-      _selectedId = null;
     }
+    // A null submission only means the parent has not committed an answer yet;
+    // the local selection stays authoritative, otherwise the highlight would
+    // vanish on the rebuild that every tap triggers.
   }
 
   void _select(String id) {

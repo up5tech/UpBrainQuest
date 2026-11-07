@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:up_brain_quest/core/localization/app_strings.dart';
+import 'package:up_brain_quest/core/theme/app_colors.dart';
 import 'package:up_brain_quest/domain/content/content_enums.dart';
 import 'package:up_brain_quest/domain/content/question_models.dart';
 import 'package:up_brain_quest/domain/session/answer_evaluation.dart';
@@ -12,6 +13,15 @@ import '../support/test_app.dart';
 
 /// English strings used by assertions (the app default locale).
 final AppLocalizations enStrings = lookupAppLocalizations(const Locale('en'));
+
+/// Border colour of the option tile whose text is [label].
+Color? _tileBorder(WidgetTester tester, String label) {
+  final Container container = tester.widget<Container>(
+    find.ancestor(of: find.text(label), matching: find.byType(Container)).first,
+  );
+  final BoxDecoration decoration = container.decoration! as BoxDecoration;
+  return (decoration.border! as Border).top.color;
+}
 
 MultipleChoiceItem _item() => const MultipleChoiceItem(
   id: 'q1',
@@ -91,6 +101,28 @@ void main() {
       await tester.tap(find.text('Option B'));
       await tester.pumpAndSettle();
       expect(tapped, isFalse);
+    });
+
+    testWidgets('keeps the chosen tile highlighted across parent rebuilds', (
+      WidgetTester tester,
+    ) async {
+      final MultipleChoiceItem item = _item();
+      Widget tree() => localizedTestApp(
+        Scaffold(
+          body: MultipleChoiceQuestionWidget(item: item, onChanged: (_) {}),
+        ),
+      );
+
+      await tester.pumpWidget(tree());
+      await tester.tap(find.text('Option B'));
+      await tester.pumpAndSettle();
+      expect(_tileBorder(tester, 'Option B'), AppColors.primary);
+
+      // The page holds the pending answer itself, so it rebuilds with a null
+      // submission right after the tap; the highlight must survive that.
+      await tester.pumpWidget(tree());
+      await tester.pumpAndSettle();
+      expect(_tileBorder(tester, 'Option B'), AppColors.primary);
     });
   });
 }
