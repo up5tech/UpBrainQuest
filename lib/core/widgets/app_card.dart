@@ -27,22 +27,29 @@ class AppCard extends StatelessWidget {
     final EdgeInsetsGeometry resolvedPadding =
         padding ?? const EdgeInsets.all(AppSpacing.md);
 
-    final Widget content = Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.card),
-        gradient: gradient,
-        color: gradient == null ? AppColors.surface : null,
+    final BorderRadius radius = BorderRadius.circular(AppRadii.card);
+    final Widget content = Padding(padding: resolvedPadding, child: child);
+    // A Material paints the card surface, so ink effects from a nested
+    // ListTile or ExpansionTile stay visible instead of being hidden behind
+    // an opaque Container (and taps get a ripple on the card itself).
+    final Widget tappable = onTap == null
+        ? content
+        : InkWell(onTap: onTap, borderRadius: radius, child: content);
+
+    if (gradient == null) {
+      return Material(
+        color: AppColors.surface,
+        borderRadius: radius,
+        child: tappable,
+      );
+    }
+
+    return Material(
+      type: MaterialType.transparency,
+      child: Ink(
+        decoration: BoxDecoration(gradient: gradient, borderRadius: radius),
+        child: tappable,
       ),
-      padding: resolvedPadding,
-      child: child,
-    );
-
-    if (onTap == null) return content;
-
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(AppRadii.card),
-      child: content,
     );
   }
 }
