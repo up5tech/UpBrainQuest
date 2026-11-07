@@ -71,9 +71,11 @@ Five mechanics share the `puzzle` domain and each has its own interaction:
   `interactionConfig.tiles` (list of the same ids); every answer entry must be
   one of those tiles.
 - `visual_pattern` — `options` of symbol ids (`circle`, `square`, `triangle`,
-  `pentagon`, `star`, `moon`, `leaf`), `expectedAnswer` exactly one option id,
-  and optional `interactionConfig.previewSymbols` (use `blank` for the missing
-  slot).
+  `pentagon`, `star`, `moon`, `leaf`, `sun`, `cloud`, `drop`, `heart`,
+  `diamond`, `hexagon`, `bolt`), `expectedAnswer` exactly one option id, and
+  optional `interactionConfig.previewSymbols` (use `blank` for the missing
+  slot). An option id outside that set renders its `text` instead, which is how
+  number-pattern items are authored.
 - `odd_one_out` — same shape as `visual_pattern`; the prompt must state the
   property being tested.
 - `matching_pairs` — `expectedAnswer`: at least two unique pair ids, each placed

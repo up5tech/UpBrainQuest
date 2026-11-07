@@ -1,8 +1,7 @@
 # Content QA, Accessibility, and Localization Readiness
 
-_Phase 8 deliverable. Last verified with the Phase 8 test run (`flutter test` →
-96/96; after this phase's additions the suite is re-run and recorded in the phase
-notes)._
+_Phase 8 deliverable. Last verified with the current suite (`flutter test` →
+132/132, `flutter analyze` clean)._
 
 ## 1. Content inventory
 
@@ -28,8 +27,9 @@ and symbol IDs across languages.
   rubric);
 - **no duplicate IDs** across the pack;
 - per-domain counts match the manifest;
-- every draft item surfaces a `draftContent` warning (so labels are visible in the
-  UI rather than silently shipped as final).
+- every draft item surfaces a `draftContent` warning in the load result's issue
+  list. The list is diagnostic: no UI badge reads it, so `status: draft` is a
+  release gate, not a player-visible label.
 
 ## 3. EQ content review (PLAN §4.6)
 
@@ -82,15 +82,15 @@ Review findings:
 - **Neutralized framing.** The group-chat scenario was reworded to remove a
   political topic, keeping it about de-escalation only.
 - **Vietnamese copy review.** All 120 Vietnamese scenarios were read against
-- **IQ and puzzle copy review:** every Vietnamese prompt, instruction, option,
-  explanation and hint across the 120 IQ and 90 puzzle items was read against the
-  English source. Fixes were wording only; numbers, tiles, expected answers and
-  correct options are identical across locales.
   the English source - context, prompt, every option and every feedback. 25
   strings were corrected: `posts` rendered as photos, a dropped "please",
   "replay the loss" flattened into "think again", a polite question turned into
   an instruction, a cousin described as a friend, and pronouns drifting between
   `bạn` and `họ` inside one item. Scores and feedback meaning are unchanged.
+- **IQ and puzzle copy review.** Every Vietnamese prompt, instruction, option,
+  explanation and hint across the 120 IQ and 90 puzzle items was read against the
+  English source. Fixes were wording only; numbers, tiles, expected answers and
+  correct options are identical across locales.
 - **Copy-edit note.** All content remains `status: draft`; a human copy-edit pass is
   still recommended before a release build (wording, tone, and locale review).
 
