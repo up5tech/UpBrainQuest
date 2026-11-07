@@ -759,7 +759,7 @@
           "text": "Ngôi sao"
         }
       ],
-      "explanation": "Mỗi nhóm thêm một cạnh: tam giác, tứ giác, ngũ giác. Sau tam giác và tứ giác là ngũ giác.",
+      "explanation": "Mỗi nhóm thêm một cạnh: tam giác, hình vuông, ngũ giác. Sau tam giác và hình vuông là ngũ giác.",
       "hint": "Ba cạnh, bốn cạnh, rồi bao nhiêu?",
       "estimatedSeconds": 35,
       "pointsWeight": 1,
@@ -1402,7 +1402,7 @@
       "locale": "vi",
       "status": "draft",
       "prompt": "Số nào không phải số chính phương?",
-      "instructions": "Hỏi số nào là tích của một số nguyên với chính nó.",
+      "instructions": "Hỏi số nào là tích của một số tự nhiên với chính nó.",
       "expectedAnswer": [
         "d"
       ],
@@ -2636,7 +2636,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Sắp xếp các ngày theo thứ tự trong tuần.",
+      "prompt": "Sắp xếp các ngày theo thứ tự từ đầu tuần.",
       "instructions": "Thứ Hai là ngày làm việc đầu tiên trong danh sách.",
       "expectedAnswer": [
         "Thứ Hai",
@@ -2703,7 +2703,7 @@
       "locale": "vi",
       "status": "draft",
       "prompt": "Sắp xếp các bước đi lại theo đúng thứ tự.",
-      "instructions": "Mỗi bước tạo lý do cho bước tiếp theo.",
+      "instructions": "Mỗi bước là điều kiện cho bước tiếp theo.",
       "expectedAnswer": [
         "Đặt vé",
         "Chuẩn bị hành lý",
@@ -2770,8 +2770,8 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Sắp xếp mọi người từ lớn tuổi nhất đến nhỏ nhất.",
-      "instructions": "Mai lớn hơn Lan; Lan lớn hơn Hoa.",
+      "prompt": "Sắp xếp ba người từ lớn tuổi nhất đến trẻ nhất.",
+      "instructions": "Mai lớn tuổi hơn Lan; Lan lớn tuổi hơn Hoa.",
       "expectedAnswer": [
         "Mai",
         "Lan",
@@ -2784,7 +2784,7 @@
           "Hoa"
         ]
       },
-      "explanation": "Lớn nhất trước: Mai, rồi Lan, rồi Hoa.",
+      "explanation": "Lớn tuổi nhất trước: Mai, rồi Lan, rồi Hoa.",
       "hint": "Nối hai so sánh lại với nhau.",
       "estimatedSeconds": 35,
       "pointsWeight": 1,
@@ -2903,22 +2903,22 @@
       "locale": "vi",
       "status": "draft",
       "prompt": "Sắp xếp các bước của dự án.",
-      "instructions": "Không thể góp ý trước khi có bản thảo.",
+      "instructions": "Không thể rà soát trước khi có bản thảo.",
       "expectedAnswer": [
         "Soạn báo cáo",
-        "Góp ý báo cáo",
+        "Rà soát báo cáo",
         "Chỉnh sửa báo cáo",
         "Công bố báo cáo"
       ],
       "interactionConfig": {
         "tiles": [
           "Soạn báo cáo",
-          "Góp ý báo cáo",
+          "Rà soát báo cáo",
           "Chỉnh sửa báo cáo",
           "Công bố báo cáo"
         ]
       },
-      "explanation": "Soạn thảo, góp ý, chỉnh sửa, rồi công bố.",
+      "explanation": "Soạn thảo, rà soát, chỉnh sửa, rồi công bố.",
       "hint": "Công bố cần bản đã chỉnh sửa.",
       "estimatedSeconds": 45,
       "pointsWeight": 1,

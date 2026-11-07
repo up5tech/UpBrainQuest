@@ -82,6 +82,10 @@ Review findings:
 - **Neutralized framing.** The group-chat scenario was reworded to remove a
   political topic, keeping it about de-escalation only.
 - **Vietnamese copy review.** All 120 Vietnamese scenarios were read against
+- **IQ and puzzle copy review:** every Vietnamese prompt, instruction, option,
+  explanation and hint across the 120 IQ and 90 puzzle items was read against the
+  English source. Fixes were wording only; numbers, tiles, expected answers and
+  correct options are identical across locales.
   the English source - context, prompt, every option and every feedback. 25
   strings were corrected: `posts` rendered as photos, a dropped "please",
   "replay the loss" flattened into "think again", a polite question turned into

@@ -142,7 +142,7 @@
         },
         {
           "id": "c",
-          "text": "Mỗi bông hồng đều là một loài hoa"
+          "text": "Mỗi bông hồng đều là hoa"
         },
         {
           "id": "d",
@@ -1176,7 +1176,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 4 7 2. Bây giờ đảo ngược các chữ số, sau đó cộng 2 vào chữ số thứ nhất. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 4 7 2. Bây giờ đảo ngược các chữ số, sau đó cộng 2 vào chữ số thứ nhất. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1215,7 +1215,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 6 1 9. Bây giờ đổi chỗ chữ số thứ nhất và thứ ba. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 6 1 9. Bây giờ đổi chỗ chữ số thứ nhất và thứ ba. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1254,7 +1254,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 5 8 3. Bây giờ bỏ chữ số đầu. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 5 8 3. Bây giờ bỏ chữ số đầu. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1293,7 +1293,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 2 9 4. Bây giờ sắp các chữ số từ lớn đến nhỏ. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 2 9 4. Bây giờ sắp các chữ số từ lớn đến nhỏ. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1332,7 +1332,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 7 4 1. Bây giờ đảo ngược các chữ số, sau đó trừ 1 khỏi chữ số thứ ba. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 7 4 1. Bây giờ đảo ngược các chữ số, sau đó trừ 1 khỏi chữ số thứ ba. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1371,7 +1371,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 3 6 2. Bây giờ cộng 3 vào chữ số thứ hai, sau đó đảo ngược các chữ số. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 3 6 2. Bây giờ cộng 3 vào chữ số thứ hai, sau đó đảo ngược các chữ số. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1410,7 +1410,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 9 2 5. Bây giờ đổi chỗ chữ số thứ hai và thứ nhất. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 9 2 5. Bây giờ đổi chỗ chữ số thứ hai và thứ nhất. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1449,7 +1449,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 8 1 6. Bây giờ bỏ chữ số cuối, sau đó đảo ngược các chữ số. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 8 1 6. Bây giờ bỏ chữ số cuối, sau đó đảo ngược các chữ số. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1488,7 +1488,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 3 8 1 6. Bây giờ đảo ngược các chữ số, sau đó đổi chỗ chữ số thứ nhất và thứ hai. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 3 8 1 6. Bây giờ đảo ngược các chữ số, sau đó đổi chỗ chữ số thứ nhất và thứ hai. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1527,7 +1527,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 7 2 9 4. Bây giờ sắp các chữ số từ nhỏ đến lớn, sau đó đảo ngược các chữ số. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 7 2 9 4. Bây giờ sắp các chữ số từ nhỏ đến lớn, sau đó đảo ngược các chữ số. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1566,7 +1566,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 5 3 8 2. Bây giờ cộng 4 vào chữ số thứ nhất, sau đó bỏ chữ số cuối. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 5 3 8 2. Bây giờ cộng 4 vào chữ số thứ nhất, sau đó bỏ chữ số cuối. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1605,7 +1605,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 6 4 1 9. Bây giờ đổi chỗ chữ số thứ nhất và thứ tư, sau đó đảo ngược các chữ số. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 6 4 1 9. Bây giờ đổi chỗ chữ số thứ nhất và thứ tư, sau đó đảo ngược các chữ số. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1644,7 +1644,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 2 7 5 3. Bây giờ trừ 2 khỏi chữ số thứ hai, sau đó đổi chỗ chữ số thứ ba và thứ tư. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 2 7 5 3. Bây giờ trừ 2 khỏi chữ số thứ hai, sau đó đổi chỗ chữ số thứ ba và thứ tư. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1683,7 +1683,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 9 1 4 7. Bây giờ đảo ngược các chữ số, sau đó cộng 1 vào chữ số thứ nhất, sau đó trừ 1 khỏi chữ số thứ tư. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 9 1 4 7. Bây giờ đảo ngược các chữ số, sau đó cộng 1 vào chữ số thứ nhất, sau đó trừ 1 khỏi chữ số thứ tư. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1722,7 +1722,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 4 6 8 2. Bây giờ bỏ chữ số đầu, sau đó sắp các chữ số từ lớn đến nhỏ. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 4 6 8 2. Bây giờ bỏ chữ số đầu, sau đó sắp các chữ số từ lớn đến nhỏ. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1761,7 +1761,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 8 3 6 1. Bây giờ đổi chỗ chữ số thứ hai và thứ tư, sau đó trừ 3 khỏi chữ số thứ nhất. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 8 3 6 1. Bây giờ đổi chỗ chữ số thứ hai và thứ tư, sau đó trừ 3 khỏi chữ số thứ nhất. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1800,7 +1800,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 3 9 5 2 7. Bây giờ đảo ngược các chữ số, sau đó đổi chỗ chữ số thứ hai và thứ ba, sau đó bỏ chữ số cuối. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 3 9 5 2 7. Bây giờ đảo ngược các chữ số, sau đó đổi chỗ chữ số thứ hai và thứ ba, sau đó bỏ chữ số cuối. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1839,7 +1839,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 6 1 8 4 9. Bây giờ sắp các chữ số từ nhỏ đến lớn, sau đó cộng 1 vào chữ số thứ nhất, sau đó đảo ngược các chữ số. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 6 1 8 4 9. Bây giờ sắp các chữ số từ nhỏ đến lớn, sau đó cộng 1 vào chữ số thứ nhất, sau đó đảo ngược các chữ số. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1878,7 +1878,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 7 5 2 9 3. Bây giờ cộng 2 vào chữ số thứ ba, sau đó đảo ngược các chữ số, sau đó bỏ chữ số đầu. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 7 5 2 9 3. Bây giờ cộng 2 vào chữ số thứ ba, sau đó đảo ngược các chữ số, sau đó bỏ chữ số đầu. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1917,7 +1917,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 4 8 1 7 6. Bây giờ đổi chỗ chữ số thứ nhất và thứ năm, sau đó đổi chỗ chữ số thứ hai và thứ tư, sau đó cộng 2 vào chữ số thứ ba. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 4 8 1 7 6. Bây giờ đổi chỗ chữ số thứ nhất và thứ năm, sau đó đổi chỗ chữ số thứ hai và thứ tư, sau đó cộng 2 vào chữ số thứ ba. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1956,7 +1956,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 9 2 6 3 8. Bây giờ đảo ngược các chữ số, sau đó cộng 2 vào chữ số thứ hai, sau đó bỏ chữ số cuối. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 9 2 6 3 8. Bây giờ đảo ngược các chữ số, sau đó cộng 2 vào chữ số thứ hai, sau đó bỏ chữ số cuối. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -1995,7 +1995,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 1 6 4 9 5. Bây giờ sắp các chữ số từ lớn đến nhỏ, sau đó bỏ chữ số cuối, sau đó đảo ngược các chữ số. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 1 6 4 9 5. Bây giờ sắp các chữ số từ lớn đến nhỏ, sau đó bỏ chữ số cuối, sau đó đảo ngược các chữ số. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -2034,7 +2034,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 5 7 3 8 2. Bây giờ đổi chỗ chữ số thứ hai và thứ ba, sau đó đảo ngược các chữ số. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 5 7 3 8 2. Bây giờ đổi chỗ chữ số thứ hai và thứ ba, sau đó đảo ngược các chữ số. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -2073,7 +2073,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Đọc một lần dãy sau mà không ghi ra: 8 4 9 1 6. Bây giờ đảo ngược các chữ số, sau đó trừ 2 khỏi chữ số thứ nhất, sau đó bỏ chữ số cuối. Bạn được dãy nào?",
+      "prompt": "Đọc một lần dãy sau mà không ghi ra: 8 4 9 1 6. Bây giờ đảo ngược các chữ số, sau đó trừ 2 khỏi chữ số thứ nhất, sau đó bỏ chữ số cuối. Bạn nhận được dãy nào?",
       "instructions": "Giữ các chữ số trong đầu; thực hiện các bước theo đúng thứ tự.",
       "options": [
         {
@@ -2424,7 +2424,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Ana không phải người nhỏ tuổi nhất. Bo không phải nhỏ nhất cũng không phải lớn nhất. Ai lớn tuổi nhất?",
+      "prompt": "Ana không phải người nhỏ tuổi nhất. Bo không phải người nhỏ nhất, cũng không phải người lớn nhất. Ai lớn tuổi nhất?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2658,7 +2658,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Ava, Ben, Cid và Dee mỗi người nuôi một con khác nhau: mèo, chó, cá, chim. Ava không nuôi con có lông. Con của Ben sủa. Cid nuôi chim. Ai nuôi mèo?",
+      "prompt": "Ava, Ben, Cid và Dee mỗi người nuôi một con khác nhau: mèo, chó, cá, chim. Ava không nuôi con vật nào có lông. Vật nuôi của Ben sủa. Cid nuôi chim. Ai nuôi mèo?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2679,7 +2679,7 @@
         }
       ],
       "correctOptionId": "d",
-      "explanation": "Ava nhận cá (con duy nhất không có lông còn lại), Ben nhận chó, Cid nhận chim, nên Dee nuôi mèo.",
+      "explanation": "Ava nhận cá (vật nuôi duy nhất không có lông còn lại), Ben nhận chó, Cid nhận chim, nên Dee nuôi mèo.",
       "hint": "Gán các dữ kiện cụ thể nhất trước dữ kiện mơ hồ.",
       "estimatedSeconds": 50,
       "pointsWeight": 1,
@@ -2697,7 +2697,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Năm cuốn sách trên kệ. D ở trái E; E ở trái B; B ở trái A; A ở trái C. Cuốn nào đứng đầu?",
+      "prompt": "Có năm cuốn sách trên kệ. D ở trái E; E ở trái B; B ở trái A; A ở trái C. Cuốn nào đứng đầu?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2775,7 +2775,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Ba công tắc A, B, C điều khiển ba đèn 1, 2, 3, mỗi công tắc một đèn. A không điều khiển đèn 1. B không điều khiển đèn 1 và đèn 2. Công tắc nào điều khiển đèn 1?",
+      "prompt": "Ba công tắc A, B, C điều khiển ba đèn 1, 2, 3, mỗi công tắc một đèn. A không điều khiển đèn 1. B không điều khiển đèn 1 lẫn đèn 2. Công tắc nào điều khiển đèn 1?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2814,7 +2814,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Trong một cuộc đua, đúng một điều đúng: hoặc Dee về nhất, hoặc Eve về cuối (không cùng lúc). Dee không về nhất. Suy ra điều gì?",
+      "prompt": "Trong một cuộc đua, chỉ một điều đúng: hoặc Dee về nhất, hoặc Eve về cuối (không cùng lúc). Dee không về nhất. Suy ra điều gì?",
       "instructions": "Chỉ dùng các dữ kiện đã nêu; không thêm giả định bên ngoài.",
       "options": [
         {
@@ -2858,7 +2858,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Cao vút"
+          "text": "Cao"
         },
         {
           "id": "b",
@@ -3057,7 +3057,7 @@
         },
         {
           "id": "b",
-          "text": "Sớm chút"
+          "text": "Chẳng mấy chốc"
         },
         {
           "id": "c",
@@ -3321,7 +3321,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Nhà điêu khắc nặn đá, thợ gốm nặn ___?",
+      "prompt": "Nhà điêu khắc tạc đá, thợ gốm nặn ___?",
       "instructions": "Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.",
       "options": [
         {
@@ -3672,7 +3672,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "prompt": "Giai thoại là một câu chuyện ngắn, bản phác là một ___ ngắn?",
+      "prompt": "Giai thoại là một câu chuyện ngắn, bản phác thảo là một ___ ngắn?",
       "instructions": "Tìm quan hệ trong cặp đầu rồi áp dụng cho cặp sau.",
       "options": [
         {
@@ -3693,7 +3693,7 @@
         }
       ],
       "correctOptionId": "a",
-      "explanation": "Giai thoại là câu chuyện ngắn; bản phác là bức vẽ ngắn. Cả hai là phiên bản rút gọn của từ thứ hai.",
+      "explanation": "Giai thoại là câu chuyện ngắn; bản phác thảo là bức vẽ ngắn. Cả hai là phiên bản rút gọn của từ thứ hai.",
       "hint": "Từ đầu là dạng rút gọn của từ thứ hai.",
       "estimatedSeconds": 35,
       "pointsWeight": 1,
@@ -4266,11 +4266,11 @@
         },
         {
           "id": "b",
-          "text": "90° theo chiều kim đồng hồ"
+          "text": "Một phần tư vòng theo chiều kim đồng hồ"
         },
         {
           "id": "c",
-          "text": "90° ngược chiều kim đồng hồ"
+          "text": "Một phần tư vòng ngược chiều kim đồng hồ"
         },
         {
           "id": "d",
