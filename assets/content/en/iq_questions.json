@@ -21,18 +21,18 @@
         },
         {
           "id": "b",
-          "text": "10"
+          "text": "11"
         },
         {
           "id": "c",
-          "text": "11"
+          "text": "10"
         },
         {
           "id": "d",
           "text": "12"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "c",
       "explanation": "Add 2 at every step: 2, 4, 6, 8, so the next number is 10.",
       "hint": "Compare each number with the one before it.",
       "estimatedSeconds": 20,
@@ -99,18 +99,18 @@
         },
         {
           "id": "b",
-          "text": "Hive"
-        },
-        {
-          "id": "c",
           "text": "Burrow"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Den"
+        },
+        {
+          "id": "d",
+          "text": "Hive"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "d",
       "explanation": "A nest is a bird's home; a hive is home to a bee colony.",
       "hint": "The first pair names a home.",
       "estimatedSeconds": 20,
@@ -134,22 +134,22 @@
       "options": [
         {
           "id": "a",
-          "text": "All flowers are roses"
+          "text": "Every rose is a flower"
         },
         {
           "id": "b",
-          "text": "Some roses are not flowers"
+          "text": "All flowers are roses"
         },
         {
           "id": "c",
-          "text": "Every rose is a flower"
+          "text": "Some roses are not flowers"
         },
         {
           "id": "d",
           "text": "No flowers are roses"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "This restates the premise instead of reversing it.",
       "hint": "Only one option keeps the direction of the premise.",
       "estimatedSeconds": 25,
@@ -220,14 +220,14 @@
         },
         {
           "id": "c",
-          "text": "35"
+          "text": "36"
         },
         {
           "id": "d",
-          "text": "36"
+          "text": "35"
         }
       ],
-      "correctOptionId": "d",
+      "correctOptionId": "c",
       "explanation": "These are square numbers: 1, 4, 9, 16, 25, then 36.",
       "hint": "The gaps are 3, 5, 7, 9, so the next gap is 11.",
       "estimatedSeconds": 30,
@@ -251,11 +251,11 @@
       "options": [
         {
           "id": "a",
-          "text": "All vens are glips"
+          "text": "All glips are vens"
         },
         {
           "id": "b",
-          "text": "All glips are vens"
+          "text": "All vens are glips"
         },
         {
           "id": "c",
@@ -266,7 +266,7 @@
           "text": "Some norks are not vens"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "explanation": "Each group is inside the next, so every glip is also a ven.",
       "hint": "The smallest group sits inside both larger groups.",
       "estimatedSeconds": 40,
@@ -298,14 +298,14 @@
         },
         {
           "id": "c",
-          "text": "Chi"
+          "text": "Cannot be determined"
         },
         {
           "id": "d",
-          "text": "Cannot be determined"
+          "text": "Chi"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "From oldest to youngest the order is Ana, Bao, Chi.",
       "hint": "The last name in the chain is the youngest.",
       "estimatedSeconds": 25,
@@ -368,11 +368,11 @@
       "options": [
         {
           "id": "a",
-          "text": "T"
+          "text": "U"
         },
         {
           "id": "b",
-          "text": "U"
+          "text": "T"
         },
         {
           "id": "c",
@@ -383,7 +383,7 @@
           "text": "W"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "explanation": "Positions are 3, 6, 10, 15; the jumps are +3, +4, +5, then +6 = 21, which is U.",
       "hint": "The gaps grow by one letter each time.",
       "estimatedSeconds": 40,
@@ -446,18 +446,18 @@
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "C"
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "B"
         },
         {
           "id": "d",
           "text": "E"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "The clues force D before A before B, with E between B and C, so C is last.",
       "hint": "Only one person is placed after B and E.",
       "estimatedSeconds": 50,
@@ -479,11 +479,11 @@
       "options": [
         {
           "id": "a",
-          "text": "14"
+          "text": "15"
         },
         {
           "id": "b",
-          "text": "15"
+          "text": "14"
         },
         {
           "id": "c",
@@ -494,7 +494,7 @@
           "text": "18"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "explanation": "Each step adds 3: 12 + 3 = 15.",
       "hint": "Subtract each number from the next one.",
       "estimatedSeconds": 20,
@@ -522,18 +522,18 @@
         },
         {
           "id": "b",
-          "text": "2"
+          "text": "4"
         },
         {
           "id": "c",
-          "text": "4"
+          "text": "2"
         },
         {
           "id": "d",
           "text": "6"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Each step subtracts 4: 8 - 4 = 4.",
       "hint": "The numbers get smaller by the same amount.",
       "estimatedSeconds": 20,
@@ -600,18 +600,18 @@
         },
         {
           "id": "b",
-          "text": "17"
+          "text": "18"
         },
         {
           "id": "c",
-          "text": "18"
+          "text": "17"
         },
         {
           "id": "d",
           "text": "20"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "c",
       "explanation": "The steps alternate +2, +3: 15 + 2 = 17.",
       "hint": "The gap changes at every step.",
       "estimatedSeconds": 25,
@@ -639,18 +639,18 @@
         },
         {
           "id": "b",
-          "text": "10"
+          "text": "11"
         },
         {
           "id": "c",
-          "text": "11"
+          "text": "10"
         },
         {
           "id": "d",
           "text": "13"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "The numbers rise by 4, so 7 + 4 = 11.",
       "hint": "Use the step between 15 and 19.",
       "estimatedSeconds": 20,
@@ -721,14 +721,14 @@
         },
         {
           "id": "c",
-          "text": "31"
+          "text": "33"
         },
         {
           "id": "d",
-          "text": "33"
+          "text": "31"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "Each step doubles the number and adds 1: 15 x 2 + 1 = 31.",
       "hint": "Try doubling the number before comparing.",
       "estimatedSeconds": 30,
@@ -873,18 +873,18 @@
         },
         {
           "id": "b",
-          "text": "24"
+          "text": "26"
         },
         {
           "id": "c",
-          "text": "26"
+          "text": "24"
         },
         {
           "id": "d",
           "text": "30"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "c",
       "explanation": "The gaps grow by 2: -6, -8, -10, so -12 gives 24.",
       "hint": "The decreases get bigger each time.",
       "estimatedSeconds": 35,
@@ -1181,22 +1181,22 @@
       "options": [
         {
           "id": "a",
-          "text": "4 7 2"
+          "text": "4 7 4"
         },
         {
           "id": "b",
-          "text": "2 7 4"
+          "text": "4 7 2"
         },
         {
           "id": "c",
-          "text": "4 7 4"
+          "text": "2 7 4"
         },
         {
           "id": "d",
           "text": "5 7 4"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Applying the steps in order: 4 7 2 -> 2 7 4 -> 4 7 4.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 25,
@@ -1228,14 +1228,14 @@
         },
         {
           "id": "c",
-          "text": "9 1 6"
+          "text": "9 1 7"
         },
         {
           "id": "d",
-          "text": "9 1 7"
+          "text": "9 1 6"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "Applying the steps in order: 6 1 9 -> 9 1 6.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 25,
@@ -1259,22 +1259,22 @@
       "options": [
         {
           "id": "a",
-          "text": "5 8 3"
+          "text": "8 3"
         },
         {
           "id": "b",
-          "text": "9 3"
+          "text": "5 8 3"
         },
         {
           "id": "c",
-          "text": "8 3"
+          "text": "9 3"
         },
         {
           "id": "d",
           "text": "7 3"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Applying the steps in order: 5 8 3 -> 8 3.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 25,
@@ -1302,18 +1302,18 @@
         },
         {
           "id": "b",
-          "text": "8 4 2"
+          "text": "9 4 2"
         },
         {
           "id": "c",
-          "text": "9 4 2"
+          "text": "8 4 2"
         },
         {
           "id": "d",
           "text": "9 4 3"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Applying the steps in order: 2 9 4 -> 9 4 2.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 30,
@@ -1341,18 +1341,18 @@
         },
         {
           "id": "b",
-          "text": "1 4 7"
+          "text": "1 4 6"
         },
         {
           "id": "c",
-          "text": "1 4 6"
+          "text": "1 4 7"
         },
         {
           "id": "d",
           "text": "2 4 6"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Applying the steps in order: 7 4 1 -> 1 4 7 -> 1 4 6.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 25,
@@ -1384,14 +1384,14 @@
         },
         {
           "id": "c",
-          "text": "2 9 3"
+          "text": "3 9 3"
         },
         {
           "id": "d",
-          "text": "3 9 3"
+          "text": "2 9 3"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "Applying the steps in order: 3 6 2 -> 3 9 2 -> 2 9 3.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 30,
@@ -1415,22 +1415,22 @@
       "options": [
         {
           "id": "a",
-          "text": "9 2 5"
+          "text": "2 9 5"
         },
         {
           "id": "b",
-          "text": "3 9 5"
+          "text": "9 2 5"
         },
         {
           "id": "c",
-          "text": "2 9 5"
+          "text": "3 9 5"
         },
         {
           "id": "d",
           "text": "1 9 5"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Applying the steps in order: 9 2 5 -> 2 9 5.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 25,
@@ -1454,22 +1454,22 @@
       "options": [
         {
           "id": "a",
-          "text": "8 1 6"
+          "text": "1 8"
         },
         {
           "id": "b",
-          "text": "8 1"
+          "text": "8 1 6"
         },
         {
           "id": "c",
-          "text": "1 8"
+          "text": "8 1"
         },
         {
           "id": "d",
           "text": "2 8"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Applying the steps in order: 8 1 6 -> 8 1 -> 1 8.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 30,
@@ -1497,18 +1497,18 @@
         },
         {
           "id": "b",
-          "text": "6 1 8 3"
+          "text": "1 6 8 3"
         },
         {
           "id": "c",
-          "text": "1 6 8 3"
+          "text": "6 1 8 3"
         },
         {
           "id": "d",
           "text": "2 6 8 3"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Applying the steps in order: 3 8 1 6 -> 6 1 8 3 -> 1 6 8 3.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 40,
@@ -1540,14 +1540,14 @@
         },
         {
           "id": "c",
-          "text": "9 7 4 2"
+          "text": "8 7 4 2"
         },
         {
           "id": "d",
-          "text": "8 7 4 2"
+          "text": "9 7 4 2"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "Applying the steps in order: 7 2 9 4 -> 2 4 7 9 -> 9 7 4 2.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 40,
@@ -1571,22 +1571,22 @@
       "options": [
         {
           "id": "a",
-          "text": "5 3 8 2"
+          "text": "9 3 8"
         },
         {
           "id": "b",
-          "text": "9 3 8 2"
+          "text": "5 3 8 2"
         },
         {
           "id": "c",
-          "text": "9 3 8"
+          "text": "9 3 8 2"
         },
         {
           "id": "d",
           "text": "8 3 8"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Applying the steps in order: 5 3 8 2 -> 9 3 8 2 -> 9 3 8.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 40,
@@ -1653,18 +1653,18 @@
         },
         {
           "id": "b",
-          "text": "2 5 5 3"
+          "text": "2 5 3 5"
         },
         {
           "id": "c",
-          "text": "2 5 3 5"
+          "text": "2 5 5 3"
         },
         {
           "id": "d",
           "text": "3 5 3 5"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Applying the steps in order: 2 7 5 3 -> 2 5 5 3 -> 2 5 3 5.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 40,
@@ -1813,14 +1813,14 @@
         },
         {
           "id": "c",
-          "text": "7 5 2 9"
+          "text": "7 5 2 9 3"
         },
         {
           "id": "d",
-          "text": "7 5 2 9 3"
+          "text": "7 5 2 9"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "Applying the steps in order: 3 9 5 2 7 -> 7 2 5 9 3 -> 7 5 2 9 3 -> 7 5 2 9.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 55,
@@ -1848,18 +1848,18 @@
         },
         {
           "id": "b",
-          "text": "1 4 6 8 9"
+          "text": "9 8 6 4 2"
         },
         {
           "id": "c",
-          "text": "9 8 6 4 2"
+          "text": "1 4 6 8 9"
         },
         {
           "id": "d",
           "text": "2 4 6 8 9"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Applying the steps in order: 6 1 8 4 9 -> 1 4 6 8 9 -> 2 4 6 8 9 -> 9 8 6 4 2.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 55,
@@ -1883,22 +1883,22 @@
       "options": [
         {
           "id": "a",
-          "text": "7 5 2 9 3"
+          "text": "9 4 5 7"
         },
         {
           "id": "b",
-          "text": "7 5 4 9 3"
+          "text": "7 5 2 9 3"
         },
         {
           "id": "c",
-          "text": "9 4 5 7"
+          "text": "7 5 4 9 3"
         },
         {
           "id": "d",
           "text": "3 9 4 5 7"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Applying the steps in order: 7 5 2 9 3 -> 7 5 4 9 3 -> 3 9 4 5 7 -> 9 4 5 7.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 60,
@@ -1930,14 +1930,14 @@
         },
         {
           "id": "c",
-          "text": "6 7 3 8 4"
+          "text": "6 7 1 8 4"
         },
         {
           "id": "d",
-          "text": "6 7 1 8 4"
+          "text": "6 7 3 8 4"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "Applying the steps in order: 4 8 1 7 6 -> 6 8 1 7 4 -> 6 7 1 8 4 -> 6 7 3 8 4.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 55,
@@ -1965,18 +1965,18 @@
         },
         {
           "id": "b",
-          "text": "8 3 6 2 9"
+          "text": "8 5 6 2"
         },
         {
           "id": "c",
-          "text": "8 5 6 2"
+          "text": "8 3 6 2 9"
         },
         {
           "id": "d",
           "text": "8 5 6 2 9"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Applying the steps in order: 9 2 6 3 8 -> 8 3 6 2 9 -> 8 5 6 2 9 -> 8 5 6 2.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 60,
@@ -2000,22 +2000,22 @@
       "options": [
         {
           "id": "a",
-          "text": "1 6 4 9 5"
+          "text": "4 5 6 9"
         },
         {
           "id": "b",
-          "text": "9 6 5 4 1"
+          "text": "1 6 4 9 5"
         },
         {
           "id": "c",
-          "text": "4 5 6 9"
+          "text": "9 6 5 4 1"
         },
         {
           "id": "d",
           "text": "9 6 5 4"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Applying the steps in order: 1 6 4 9 5 -> 9 6 5 4 1 -> 9 6 5 4 -> 4 5 6 9.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 55,
@@ -2047,14 +2047,14 @@
         },
         {
           "id": "c",
-          "text": "2 8 7 3 5"
+          "text": "3 8 7 3 5"
         },
         {
           "id": "d",
-          "text": "3 8 7 3 5"
+          "text": "2 8 7 3 5"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "d",
       "explanation": "Applying the steps in order: 5 7 3 8 2 -> 5 3 7 8 2 -> 2 8 7 3 5.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 60,
@@ -2082,18 +2082,18 @@
         },
         {
           "id": "b",
-          "text": "6 1 9 4 8"
+          "text": "4 1 9 4"
         },
         {
           "id": "c",
-          "text": "4 1 9 4"
+          "text": "6 1 9 4 8"
         },
         {
           "id": "d",
           "text": "4 1 9 4 8"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Applying the steps in order: 8 4 9 1 6 -> 6 1 9 4 8 -> 4 1 9 4 8 -> 4 1 9 4.",
       "hint": "Redo the sequence one step at a time in your head.",
       "estimatedSeconds": 60,
@@ -2160,18 +2160,18 @@
         },
         {
           "id": "b",
-          "text": "Jae"
+          "text": "Sol"
         },
         {
           "id": "c",
-          "text": "Sol"
+          "text": "Jae"
         },
         {
           "id": "d",
           "text": "Cannot be determined"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Mia > Jae > Sol, so Sol is the shortest.",
       "hint": "Write the three names in one line.",
       "estimatedSeconds": 20,
@@ -2199,18 +2199,18 @@
         },
         {
           "id": "b",
-          "text": "Fluffy is not a reptile"
-        },
-        {
-          "id": "c",
           "text": "Some cats are reptiles"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Fluffy may be a reptile"
+        },
+        {
+          "id": "d",
+          "text": "Fluffy is not a reptile"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "d",
       "explanation": "If no cat is a reptile and Fluffy is a cat, Fluffy cannot be a reptile.",
       "hint": "Apply the rule to the named individual.",
       "estimatedSeconds": 25,
@@ -2312,11 +2312,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Kim has a notebook"
+          "text": "Kim has two notebooks"
         },
         {
           "id": "b",
-          "text": "Kim has two notebooks"
+          "text": "Kim has a notebook"
         },
         {
           "id": "c",
@@ -2327,7 +2327,7 @@
           "text": "Only Kim has a notebook"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "b",
       "explanation": "The rule covers every student, and Kim is a student, so Kim has a notebook.",
       "hint": "Replace \"student\" with the name.",
       "estimatedSeconds": 20,
@@ -2351,11 +2351,11 @@
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "B"
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "A"
         },
         {
           "id": "c",
@@ -2366,7 +2366,7 @@
           "text": "Cannot be determined"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "explanation": "The order is A, B, C, so B is in the middle.",
       "hint": "Place all three on one line before answering.",
       "estimatedSeconds": 20,
@@ -2429,11 +2429,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Ana"
+          "text": "Bo"
         },
         {
           "id": "b",
-          "text": "Bo"
+          "text": "Ana"
         },
         {
           "id": "c",
@@ -2444,7 +2444,7 @@
           "text": "Cannot be determined"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "b",
       "explanation": "Bo is in the middle, so Ana and Cem fill the ends; Ana is not the youngest, so Ana is oldest.",
       "hint": "Fill the fixed position first.",
       "estimatedSeconds": 35,
@@ -2468,11 +2468,11 @@
       "options": [
         {
           "id": "a",
-          "text": "The lamp is on"
+          "text": "The lamp is off"
         },
         {
           "id": "b",
-          "text": "The lamp is off"
+          "text": "The lamp is on"
         },
         {
           "id": "c",
@@ -2483,7 +2483,7 @@
           "text": "Nothing can be concluded"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "explanation": "A locked door is required for the lamp to be on; since it is not locked, the lamp is off.",
       "hint": "Work backwards from the failed result.",
       "estimatedSeconds": 35,
@@ -2511,18 +2511,18 @@
         },
         {
           "id": "b",
-          "text": "Q"
+          "text": "S"
         },
         {
           "id": "c",
-          "text": "R"
+          "text": "Q"
         },
         {
           "id": "d",
-          "text": "S"
+          "text": "R"
         }
       ],
-      "correctOptionId": "d",
+      "correctOptionId": "b",
       "explanation": "S < P < Q < R, so S finished first.",
       "hint": "Build the full finishing order.",
       "estimatedSeconds": 35,
@@ -2550,18 +2550,18 @@
         },
         {
           "id": "b",
-          "text": "Ravi does not play darts"
-        },
-        {
-          "id": "c",
           "text": "Ravi plays only chess"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Ravi may play darts"
+        },
+        {
+          "id": "d",
+          "text": "Ravi does not play darts"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "d",
       "explanation": "Chess leads to go, and go rules out darts, so Ravi does not play darts.",
       "hint": "Two rules apply one after the other.",
       "estimatedSeconds": 40,
@@ -2585,11 +2585,11 @@
       "options": [
         {
           "id": "a",
-          "text": "In the red box"
+          "text": "In the other box"
         },
         {
           "id": "b",
-          "text": "In the other box"
+          "text": "In the red box"
         },
         {
           "id": "c",
@@ -2600,7 +2600,7 @@
           "text": "Cannot be determined"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "b",
       "explanation": "The red box is not empty, and a coin is the only thing available, so the coin is in the red box.",
       "hint": "Eliminate the empty box first.",
       "estimatedSeconds": 30,
@@ -2667,18 +2667,18 @@
         },
         {
           "id": "b",
-          "text": "Ben"
+          "text": "Dee"
         },
         {
           "id": "c",
-          "text": "Cid"
+          "text": "Ben"
         },
         {
           "id": "d",
-          "text": "Dee"
+          "text": "Cid"
         }
       ],
-      "correctOptionId": "d",
+      "correctOptionId": "b",
       "explanation": "Ava takes the fish (the only non-furry pet left), Ben the dog, Cid the bird, so Dee has the cat.",
       "hint": "Assign the most specific clues before the vague one.",
       "estimatedSeconds": 50,
@@ -2706,18 +2706,18 @@
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "D"
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "B"
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "C"
         }
       ],
-      "correctOptionId": "d",
+      "correctOptionId": "b",
       "explanation": "The chain forces D, E, B, A, C from left to right, so D is first.",
       "hint": "Join the comparisons into a single chain.",
       "estimatedSeconds": 60,
@@ -2745,18 +2745,18 @@
         },
         {
           "id": "b",
-          "text": "The server is off"
-        },
-        {
-          "id": "c",
           "text": "The fan is running"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "The fan is broken"
+        },
+        {
+          "id": "d",
+          "text": "The server is off"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "d",
       "explanation": "No flicker means the fan is not running, which means the server is off.",
       "hint": "Walk the chain backwards from the last fact.",
       "estimatedSeconds": 50,
@@ -2784,18 +2784,18 @@
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "C"
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "B"
         },
         {
           "id": "d",
           "text": "Cannot be determined"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "B cannot be lamp 1 or 2, so B is lamp 3; A is not lamp 1, so A is lamp 2 and C is lamp 1.",
       "hint": "Start with the switch that has the fewest options.",
       "estimatedSeconds": 50,
@@ -2862,18 +2862,18 @@
         },
         {
           "id": "b",
-          "text": "Short"
-        },
-        {
-          "id": "c",
           "text": "Long"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Wide"
+        },
+        {
+          "id": "d",
+          "text": "Short"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "d",
       "explanation": "Hot and cold are opposites; the opposite of tall is short.",
       "hint": "Look for an opposite pair.",
       "estimatedSeconds": 15,
@@ -2897,22 +2897,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Cut"
-        },
-        {
-          "id": "b",
           "text": "Draw"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Carry"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Measure"
+        },
+        {
+          "id": "d",
+          "text": "Cut"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "A pen is the tool for writing; a knife is the tool for cutting.",
       "hint": "Ask what each object is used for.",
       "estimatedSeconds": 15,
@@ -2936,22 +2936,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Air"
-        },
-        {
-          "id": "b",
           "text": "Nest"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Tree"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Sand"
+        },
+        {
+          "id": "d",
+          "text": "Air"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "Fish move through water; birds move through air.",
       "hint": "Where does each animal move?",
       "estimatedSeconds": 15,
@@ -2975,22 +2975,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Hospital"
-        },
-        {
-          "id": "b",
           "text": "Library"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Office"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Market"
+        },
+        {
+          "id": "d",
+          "text": "Hospital"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "A teacher works in a school; a doctor works in a hospital.",
       "hint": "Match each job to its workplace.",
       "estimatedSeconds": 15,
@@ -3014,22 +3014,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Sock"
-        },
-        {
-          "id": "b",
           "text": "Shoe"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Hat"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Scarf"
+        },
+        {
+          "id": "d",
+          "text": "Sock"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "A glove covers a hand the way a sock covers a foot.",
       "hint": "Think of the layer worn directly against the skin.",
       "estimatedSeconds": 15,
@@ -3053,22 +3053,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Late"
-        },
-        {
-          "id": "b",
           "text": "Soon"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Quick"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Near"
+        },
+        {
+          "id": "d",
+          "text": "Late"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "Fast and slow are opposites; the opposite of early is late.",
       "hint": "Find the pair of opposites.",
       "estimatedSeconds": 15,
@@ -3092,22 +3092,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Plane"
-        },
-        {
-          "id": "b",
           "text": "Road"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Engine"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Wheel"
+        },
+        {
+          "id": "d",
+          "text": "Plane"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "A wheel is a part of a car; a wing is a part of a plane.",
       "hint": "The second word names the whole object.",
       "estimatedSeconds": 20,
@@ -3131,22 +3131,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Symphony"
-        },
-        {
-          "id": "b",
           "text": "Museum"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Violin"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Audience"
+        },
+        {
+          "id": "d",
+          "text": "Symphony"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "An author creates a book; a composer creates a symphony.",
       "hint": "Both first words name creators.",
       "estimatedSeconds": 25,
@@ -3170,22 +3170,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Bird"
-        },
-        {
-          "id": "b",
           "text": "Nest"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Shell"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Feather"
+        },
+        {
+          "id": "d",
+          "text": "Bird"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "A seed grows into a tree; an egg develops into a bird.",
       "hint": "What does each thing become?",
       "estimatedSeconds": 25,
@@ -3248,11 +3248,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Paintings"
+          "text": "Visitors"
         },
         {
           "id": "b",
-          "text": "Visitors"
+          "text": "Paintings"
         },
         {
           "id": "c",
@@ -3263,7 +3263,7 @@
           "text": "Walls"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "b",
       "explanation": "A library holds books; a gallery holds paintings.",
       "hint": "The second pair names what the place displays.",
       "estimatedSeconds": 25,
@@ -3443,22 +3443,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Blueprint"
-        },
-        {
-          "id": "b",
           "text": "Building"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Brick"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Crane"
+        },
+        {
+          "id": "d",
+          "text": "Blueprint"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "A playwright produces the script, which guides the production; an architect produces the blueprint, which guides the build.",
       "hint": "The second word is what the first person hands over, not the final object.",
       "estimatedSeconds": 35,
@@ -3482,22 +3482,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Abundant"
-        },
-        {
-          "id": "b",
           "text": "Costly"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Rare"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Useful"
+        },
+        {
+          "id": "d",
+          "text": "Abundant"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "Ephemeral and lasting are opposites; the opposite of scarce is abundant.",
       "hint": "Find the antonym, not the synonym.",
       "estimatedSeconds": 35,
@@ -3521,22 +3521,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Wasteful"
-        },
-        {
-          "id": "b",
           "text": "Thrifty"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Wealthy"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Careful"
+        },
+        {
+          "id": "d",
+          "text": "Wasteful"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "Meticulous and careless are opposites; the opposite of frugal is wasteful.",
       "hint": "One option is a synonym, which is the trap.",
       "estimatedSeconds": 35,
@@ -3560,22 +3560,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Refine"
-        },
-        {
-          "id": "b",
           "text": "Erase"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Publish"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Copy"
+        },
+        {
+          "id": "d",
+          "text": "Refine"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "To censor is to suppress content; to edit is to refine it. The relationship is purpose, not removal.",
       "hint": "The pair shares a purpose, not an absence.",
       "estimatedSeconds": 35,
@@ -3599,22 +3599,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Ocean"
-        },
-        {
-          "id": "b",
           "text": "Beach"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Boat"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Coast"
+        },
+        {
+          "id": "d",
+          "text": "Ocean"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "An oasis is a small habitable place surrounded by desert; an island is surrounded by ocean.",
       "hint": "Both second words name the surrounding mass.",
       "estimatedSeconds": 30,
@@ -3638,22 +3638,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Signal"
-        },
-        {
-          "id": "b",
           "text": "Hide"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Reflect"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Warn"
+        },
+        {
+          "id": "d",
+          "text": "Signal"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "Camouflage hides; a beacon signals. The pair contrasts hiding with drawing attention.",
       "hint": "What does a beacon exist to do?",
       "estimatedSeconds": 30,
@@ -3677,22 +3677,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Drawing"
-        },
-        {
-          "id": "b",
           "text": "Painting"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Frame"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Museum"
+        },
+        {
+          "id": "d",
+          "text": "Drawing"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "An anecdote is a short narrative; a sketch is a short drawing. Both are brief versions of the second term.",
       "hint": "The first term is a brief form of the second.",
       "estimatedSeconds": 35,
@@ -3716,11 +3716,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Slow down"
+          "text": "Speed up"
         },
         {
           "id": "b",
-          "text": "Speed up"
+          "text": "Slow down"
         },
         {
           "id": "c",
@@ -3731,7 +3731,7 @@
           "text": "Repeat"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "b",
       "explanation": "A catalyst speeds a reaction up; a damper slows movement down.",
       "hint": "The two terms work in opposite directions.",
       "estimatedSeconds": 35,
@@ -3755,22 +3755,22 @@
       "options": [
         {
           "id": "a",
-          "text": "D C B A"
-        },
-        {
-          "id": "b",
           "text": "A B C D"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "B A D C"
+        },
+        {
+          "id": "c",
+          "text": "D C B A"
         },
         {
           "id": "d",
           "text": "C D A B"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "c",
       "explanation": "A mirror reverses the order, so the row reads D C B A.",
       "hint": "Reflection reverses the order of the row.",
       "estimatedSeconds": 25,
@@ -3794,22 +3794,22 @@
       "options": [
         {
           "id": "a",
-          "text": "row 1 \"C A\", row 2 \"D B\""
-        },
-        {
-          "id": "b",
           "text": "row 1 \"A B\", row 2 \"C D\""
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "row 1 \"B D\", row 2 \"A C\""
+        },
+        {
+          "id": "c",
+          "text": "row 1 \"C A\", row 2 \"D B\""
         },
         {
           "id": "d",
           "text": "row 1 \"D C\", row 2 \"B A\""
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "c",
       "explanation": "A quarter turn clockwise lifts the left column to the top: C A on top, D B below.",
       "hint": "Follow where the top-left cell lands.",
       "estimatedSeconds": 30,
@@ -3833,11 +3833,11 @@
       "options": [
         {
           "id": "a",
-          "text": "4"
+          "text": "5"
         },
         {
           "id": "b",
-          "text": "5"
+          "text": "4"
         },
         {
           "id": "c",
@@ -3848,7 +3848,7 @@
           "text": "8"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "explanation": "Four small squares plus the one large square make 5.",
       "hint": "Do not forget the outer square.",
       "estimatedSeconds": 30,
@@ -3872,11 +3872,11 @@
       "options": [
         {
           "id": "a",
-          "text": "T"
+          "text": "B"
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "T"
         },
         {
           "id": "c",
@@ -3887,7 +3887,7 @@
           "text": "F"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "b",
       "explanation": "T is the same when mirrored left to right; B, C and F are not.",
       "hint": "Picture folding each letter in half left to right.",
       "estimatedSeconds": 20,
@@ -3989,22 +3989,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Triangle"
+          "text": "Hexagon"
         },
         {
           "id": "b",
-          "text": "Square"
+          "text": "Triangle"
         },
         {
           "id": "c",
-          "text": "Pentagon"
+          "text": "Square"
         },
         {
           "id": "d",
-          "text": "Hexagon"
+          "text": "Pentagon"
         }
       ],
-      "correctOptionId": "d",
+      "correctOptionId": "a",
       "explanation": "The sides are 3, 4, 5 and 6, so the hexagon has the most.",
       "hint": "Match each name to its side count.",
       "estimatedSeconds": 20,
@@ -4028,22 +4028,22 @@
       "options": [
         {
           "id": "a",
-          "text": "At the bottom"
-        },
-        {
-          "id": "b",
           "text": "At the top"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "On the left"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "On the right"
+        },
+        {
+          "id": "d",
+          "text": "At the bottom"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "A half turn in the plane sends the top edge to the bottom.",
       "hint": "A half turn swaps opposite edges.",
       "estimatedSeconds": 20,
@@ -4067,11 +4067,11 @@
       "options": [
         {
           "id": "a",
-          "text": "\"7 4 1 / 8 5 2 / 9 6 3\""
+          "text": "\"3 6 9 / 2 5 8 / 1 4 7\""
         },
         {
           "id": "b",
-          "text": "\"3 6 9 / 2 5 8 / 1 4 7\""
+          "text": "\"7 4 1 / 8 5 2 / 9 6 3\""
         },
         {
           "id": "c",
@@ -4082,7 +4082,7 @@
           "text": "\"1 2 3 / 4 5 6 / 7 8 9\""
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "b",
       "explanation": "Clockwise, the left column becomes the top row read upwards: 7 4 1, then 8 5 2, then 9 6 3.",
       "hint": "Track the corner 1 — it moves to the top-right.",
       "estimatedSeconds": 45,
@@ -4106,22 +4106,22 @@
       "options": [
         {
           "id": "a",
-          "text": "9"
+          "text": "14"
         },
         {
           "id": "b",
-          "text": "13"
+          "text": "9"
         },
         {
           "id": "c",
-          "text": "14"
+          "text": "13"
         },
         {
           "id": "d",
           "text": "16"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "Nine 1x1, four 2x2 and one 3x3 make 14.",
       "hint": "Count each size separately.",
       "estimatedSeconds": 40,
@@ -4184,22 +4184,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Down, right, up"
-        },
-        {
-          "id": "b",
           "text": "Up, left, down"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Down, left, up"
+        },
+        {
+          "id": "c",
+          "text": "Down, right, up"
         },
         {
           "id": "d",
           "text": "Up, right, down"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "c",
       "explanation": "The mirror reverses the order and flips left/right, giving down, right, up.",
       "hint": "Reflection changes both order and horizontal direction.",
       "estimatedSeconds": 40,
@@ -4223,22 +4223,22 @@
       "options": [
         {
           "id": "a",
-          "text": "8"
+          "text": "12"
         },
         {
           "id": "b",
-          "text": "10"
+          "text": "8"
         },
         {
           "id": "c",
-          "text": "12"
+          "text": "10"
         },
         {
           "id": "d",
           "text": "14"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "All 16 cells minus the 2x2 unshaded centre gives 12.",
       "hint": "Count the shaded ring as top, bottom and two sides.",
       "estimatedSeconds": 35,
@@ -4262,22 +4262,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Half turn"
-        },
-        {
-          "id": "b",
           "text": "Quarter turn clockwise"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Quarter turn anticlockwise"
+        },
+        {
+          "id": "c",
+          "text": "Half turn"
         },
         {
           "id": "d",
           "text": "Three-quarter turn"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "c",
       "explanation": "Two quarter turns make half a turn.",
       "hint": "Add the two turns together.",
       "estimatedSeconds": 30,
@@ -4340,22 +4340,22 @@
       "options": [
         {
           "id": "a",
-          "text": "1"
+          "text": "4"
         },
         {
           "id": "b",
-          "text": "2"
+          "text": "1"
         },
         {
           "id": "c",
-          "text": "3"
+          "text": "2"
         },
         {
           "id": "d",
-          "text": "4"
+          "text": "3"
         }
       ],
-      "correctOptionId": "d",
+      "correctOptionId": "a",
       "explanation": "Two folds make four layers, so one punch leaves four holes.",
       "hint": "Count the layers, not the folds.",
       "estimatedSeconds": 40,
@@ -4418,22 +4418,22 @@
       "options": [
         {
           "id": "a",
-          "text": "4"
+          "text": "8"
         },
         {
           "id": "b",
-          "text": "6"
+          "text": "4"
         },
         {
           "id": "c",
-          "text": "8"
+          "text": "6"
         },
         {
           "id": "d",
           "text": "10"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "explanation": "The four small corner triangles plus four larger half-square triangles make 8.",
       "hint": "Count the small ones and the ones built from pairs.",
       "estimatedSeconds": 50,
@@ -4457,22 +4457,22 @@
       "options": [
         {
           "id": "a",
-          "text": "6"
-        },
-        {
-          "id": "b",
           "text": "8"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "12"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "26"
+        },
+        {
+          "id": "d",
+          "text": "6"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "d",
       "explanation": "Only the centre cube of each face has one painted face, and there are six faces.",
       "hint": "Face centres, edges and corners behave differently.",
       "estimatedSeconds": 55,
@@ -4496,11 +4496,11 @@
       "options": [
         {
           "id": "a",
-          "text": "0"
+          "text": "1"
         },
         {
           "id": "b",
-          "text": "1"
+          "text": "0"
         },
         {
           "id": "c",
@@ -4511,7 +4511,7 @@
           "text": "8"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "explanation": "Only the single cube at the very centre is hidden from every face.",
       "hint": "Which cubes never touch the surface?",
       "estimatedSeconds": 55,
@@ -4539,18 +4539,18 @@
         },
         {
           "id": "b",
-          "text": "16"
+          "text": "20"
         },
         {
           "id": "c",
-          "text": "20"
+          "text": "16"
         },
         {
           "id": "d",
           "text": "24"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "b",
       "explanation": "Each path uses three right moves and three down moves; choosing which three of six are down gives 20.",
       "hint": "Every path is three rights and three downs in some order.",
       "estimatedSeconds": 60,
@@ -4656,18 +4656,18 @@
         },
         {
           "id": "b",
-          "text": "9"
+          "text": "16"
         },
         {
           "id": "c",
-          "text": "16"
+          "text": "9"
         },
         {
           "id": "d",
           "text": "21"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "c",
       "explanation": "Removing the border leaves the inner 3x3, which is 9 cells.",
       "hint": "The width shrinks by two in each direction.",
       "estimatedSeconds": 55,
