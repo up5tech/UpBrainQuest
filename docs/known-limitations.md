@@ -4,6 +4,10 @@ These are current gaps, not defects. They are tracked so a release decision is e
 
 ## Content
 
+- **EQ Practice Scores are comparable only within one content pack version.**
+  Pack `0.8.1-draft` re-scored 110 scenarios dimension by dimension, so a score
+  from an earlier pack is not directly comparable; the session history stores the
+  pack version alongside each result.
 - **All content is `status: draft`.** A human copy-edit and EQ safety review is
   still recommended before a store release: `tool/eq_audit.py` checks the rubric
   structure and scans for diagnostic wording, but it cannot judge tone, cultural fit

@@ -49,7 +49,8 @@ answer from a poor one, duplicate option wording, feedback too short to teach
 anything, near-duplicate scenarios, an uneven difficulty split, and any
 clinical/diagnostic/personality-labelling language in either locale.
 
-Audit of the 120-scenario expansion (all findings fixed):
+Audit of the 120-scenario expansion (all findings fixed), followed by a
+per-dimension re-scoring pass:
 
 - Ten scenarios shipped with only two options, so no option represented the weakest
   response and the rubric could not span the full 0-3 range. Each gained a third,
@@ -61,6 +62,13 @@ Audit of the 120-scenario expansion (all findings fixed):
 
 Review findings:
 
+- **Per-dimension rubrics.** Every option is scored separately on all five
+  dimensions, so the summary on the result screen reflects what a response does
+  and does not demonstrate. From pack `0.8.1-draft` the 110 generated scenarios
+  were re-scored from their earlier three-tier template (684 of their 1650
+  dimension scores changed): a strong answer is no longer automatically 3 on all
+  five dimensions, and a partially good answer can score 2 on one dimension and
+  0 on another.
 - **Non-binary framing.** Options are scored by rubric points; the result screen
   never labels an EQ response "correct/incorrect", and review copy shows "Your
   response" plus a per-dimension rubric summary.

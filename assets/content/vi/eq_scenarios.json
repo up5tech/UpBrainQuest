@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.8.0-draft",
+  "contentPackVersion": "0.8.1-draft",
   "items": [
     {
       "status": "draft",
@@ -710,11 +710,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Một lời quy kết chung chung hiếm khi giúp ai mở lòng."
         },
@@ -722,7 +722,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -780,10 +780,10 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Một nhãn dán đóng lại câu chuyện thay vì mở ra."
         },
@@ -799,11 +799,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
+            "perspective_taking": 0,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này rút lại thiện cảm trước khi biết chuyện gì xảy ra."
         }
@@ -848,9 +848,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
+            "emotion_awareness": 2,
+            "self_regulation": 1,
+            "perspective_taking": 1,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
@@ -868,11 +868,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 2
           },
           "feedback": "Câu này chấp nhận câu trả lời bề mặt và lặng lẽ bỏ mặc cô ấy."
         }
@@ -917,11 +917,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Đáp lại bằng giọng mình chưa hiểu biến một chuyện nhỏ thành xung đột."
         },
@@ -939,8 +939,8 @@
           "scores": {
             "emotion_awareness": 2,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "Gán sự thô lỗ cho một tin nhắn là leo thang khi chưa biết gì."
@@ -986,9 +986,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
@@ -998,18 +998,18 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "Bạn nhận ra câu đùa có thể đang che một điều gì đó và mời cảm xúc thật."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "Câu này thưởng cho việc lảng tránh và đóng cửa cảm xúc."
@@ -1124,11 +1124,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 2
           },
           "feedback": "Câu này nêu giới hạn nhưng không cho bạn ấy điểm tựa nào."
         },
@@ -1193,10 +1193,10 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "Câu này giấu đi tổn thương và để mọi chuyện lặp lại."
@@ -1215,7 +1215,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -1262,7 +1262,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
@@ -1282,11 +1282,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 2
           },
           "feedback": "Câu này tin vào lời nói và rời khỏi khoảnh khắc đó."
         }
@@ -1331,7 +1331,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -1400,18 +1400,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Một khoảng dừng ngắn thường đổi cả điều bạn có thể nói."
         },
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -1470,7 +1470,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -1479,21 +1479,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Thành thật sớm cho người kia chỗ để sắp xếp."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Im lặng chuyển cái giá sang người đang chờ."
         }
@@ -1548,21 +1548,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "Nêu giới hạn sớm giữ được cả cuộc họp và sự chú ý của bạn."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Lướt điện thoại giấu đi vấn đề và chia đôi sự chú ý."
         }
@@ -1617,21 +1617,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 2,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "Hạ nhiệt trước giúp việc phân tích có ích."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Suy nghĩ vòng vo giữ cơn bực mà không thêm thông tin."
         }
@@ -1688,16 +1688,16 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Nói ra ý định khiến lựa chọn rõ ràng và dễ giữ."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -1745,7 +1745,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -1756,7 +1756,7 @@
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -1816,7 +1816,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -1825,10 +1825,10 @@
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 0
           },
           "feedback": "Nhận quá nhiều biến sự quan tâm thành ấm ức âm thầm."
         },
@@ -1883,21 +1883,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Một tin nhắn rõ ràng, dựa trên sự thật dễ được trả lời hơn cả loạt phản ứng."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Trả lời theo nhịp tin nhắn giữ bạn trong cơn sóng."
         },
@@ -1966,17 +1966,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Nêu quy luật mà không trách móc mở đường cho câu trả lời thật."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Giấu tổn thương để nó tích thành khoảng cách."
         }
@@ -2021,11 +2021,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Bỏ đi kết thúc khoảnh khắc mà không cho ai thông tin."
         },
@@ -2033,7 +2033,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -2041,11 +2041,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Cười quá mức dạy người khác rằng câu đùa đó ổn."
         }
@@ -2091,7 +2091,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2100,11 +2100,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Phản ứng đó có thể thuộc về vấn đề khác, nên bạn để mở khả năng ấy."
         },
@@ -2112,9 +2112,9 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một khoảnh khắc gắt gỏng là bằng chứng mỏng cho kết luận về bạn."
         }
@@ -2159,11 +2159,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một kết luận chung về sự tôn trọng vượt xa bằng chứng."
         },
@@ -2179,11 +2179,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Để mở khả năng có chuyện bất ngờ giữ câu hỏi được mở."
         }
@@ -2228,18 +2228,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Ý định làm xấu hổ là giả định, không phải điều họ nói."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2248,11 +2248,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Sự phản đối thường chứa thông tin đáng đọc."
         }
@@ -2298,7 +2298,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2307,21 +2307,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "Một lời chào bị bỏ lỡ có nhiều cách giải thích bình thường."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Thô lỗ chỉ là một cách hiểu, và là cách ít thiện ý nhất."
         }
@@ -2366,7 +2366,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -2376,11 +2376,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Khẳng định về thứ hạng biến nỗi thất vọng thành phán quyết công khai."
         },
@@ -2439,17 +2439,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Gọi đó là lo lắng thay vì kiểm soát là thử cách hiểu tử tế trước."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Kiểm soát có thể là một phần, nhưng ý định vẫn là phỏng đoán."
         },
@@ -2514,21 +2514,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn giữ mở hai cách giải thích thường gặp và hỏi thay vì kết luận."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Ghen tị là có thể, nhưng coi nó là chắc chắn là bỏ qua bước hỏi."
         }
@@ -2574,7 +2574,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2587,17 +2587,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn xem phần đóng góp của mình trước khi gán ý định."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Gây chuyện là một khả năng, và nó kết thúc việc tìm hiểu quá sớm."
         }
@@ -2642,9 +2642,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -2652,18 +2652,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Khẳng định về quy luật biến một khoảnh khắc thành lời phàn nàn về họ."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2721,11 +2721,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn nêu nhu cầu và thời hạn, vẫn để chỗ cho thực tế của họ."
         },
@@ -2734,7 +2734,7 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "Một yêu cầu trống không bỏ qua khối lượng việc bạn đã biết."
@@ -2790,20 +2790,20 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn nêu tác động cụ thể và đề nghị một thay đổi cụ thể."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "Lời đe mời gọi cãi vã thay vì giải pháp."
@@ -2850,7 +2850,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2859,21 +2859,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn hỏi lý do và nêu góc nhìn mà không đòi đảo ngược quyết định."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Bác bỏ thẳng thừng mời gọi phòng thủ và đóng cuộc trao đổi."
         }
@@ -2920,16 +2920,16 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Trấn an mơ hồ khiến họ không biết sửa gì."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2938,9 +2938,9 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -2988,18 +2988,18 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Từ chối thẳng đọc như từ chối con người, không phải công việc."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3010,7 +3010,7 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "Nêu lý do mà không có giới hạn để lời nhờ vẫn mở."
@@ -3059,8 +3059,8 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hy vọng để xung đột lớn lên và cuộc họp không có kết quả."
         },
@@ -3127,16 +3127,16 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Nói chung chung bảo vệ người góp ý và để người nghe đoán."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -3145,7 +3145,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -3194,10 +3194,10 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "Một quy tắc chung chung tốn tình bạn hơn cả câu đùa."
@@ -3216,7 +3216,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3263,21 +3263,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Nêu rõ lỗi của mình tách nó khỏi những phần còn tranh cãi."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Đổi chủ đề để lại khẳng định sai nguyên chỗ."
         },
@@ -3332,9 +3332,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3346,7 +3346,7 @@
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 1
           },
           "feedback": "Một câu “chắc” mơ hồ vẫn để lời nhờ vay còn ngỏ, và sự khó chịu ở lại với bạn."
         },
@@ -3401,9 +3401,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3411,11 +3411,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "Đưa rồi đổi để lại một khoảng thời gian tài khoản bị lộ."
         },
@@ -3470,9 +3470,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3483,18 +3483,18 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Cười cho qua giữ lời bình phẩm bạn không thích tiếp tục xuất hiện."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Rời đi truyền tải tổn thương nhưng không truyền tải giới hạn."
         }
@@ -3539,11 +3539,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Trả lời ngay luyện cho họ thói quen đó và tiêu mất giờ nghỉ của bạn."
         },
@@ -3559,9 +3559,9 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3609,7 +3609,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -3620,7 +3620,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3628,11 +3628,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hủy phút cuối tốn của họ hơn một giới hạn thật thà."
         }
@@ -3677,29 +3677,29 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Nhận rồi thất bại phá niềm tin hơn một lời từ chối rõ."
-        },
-        "b": {
-          "scores": {
             "emotion_awareness": 0,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
+          "feedback": "Nhận rồi thất bại phá niềm tin hơn một lời từ chối rõ."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
           "feedback": "Từ chối trống không để nhu cầu không được giải quyết."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3746,9 +3746,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3759,8 +3759,8 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "Nói bóng gió để lời nhờ dễ bị bỏ qua."
         },
@@ -3815,29 +3815,29 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Im lặng làm theo giấu cái giá đến khi thành khủng hoảng."
-        },
-        "b": {
-          "scores": {
             "emotion_awareness": 0,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
+          "feedback": "Im lặng làm theo giấu cái giá đến khi thành khủng hoảng."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
           "feedback": "Ra về không lời trông như thiếu trách nhiệm chứ không như giới hạn."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3884,11 +3884,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hành động im lặng lấy đi lựa chọn và giấu nỗi ấm ức."
         },
@@ -3904,7 +3904,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -3963,9 +3963,9 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3973,11 +3973,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "Rút lại sau đó tốn niềm tin hơn một lần hoãn ngắn."
         }
@@ -4022,18 +4022,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Dán nhãn phản ứng là phủ nhận nó và kết thúc cuộc nói chuyện."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4042,11 +4042,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn xem lại phần của mình trước khi vội giải thích phản ứng của họ."
         }
@@ -4091,11 +4091,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một nhãn công khai bỏ qua cả sự thật và cuộc nói chuyện."
         },
@@ -4111,11 +4111,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn để mở một cách giải thích bình thường và tách sự thật khỏi ý định."
         }
@@ -4161,27 +4161,27 @@
         "a": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn nêu điều mình thấy và hỏi mở."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này biến sự im lặng của họ thành chuyện giá trị của bạn."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4230,20 +4230,20 @@
         "a": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn nêu sự thay đổi mà không phán xét và đưa lý do để họ nắm lấy."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này làm họ xấu hổ vì tâm trạng họ không chọn."
         },
@@ -4299,7 +4299,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4310,7 +4310,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4318,11 +4318,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này giả định họ tránh bạn khi chưa biết gì."
         }
@@ -4368,7 +4368,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4379,7 +4379,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4387,11 +4387,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này phán xét phản ứng trước khi hiểu nó."
         }
@@ -4437,7 +4437,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4450,17 +4450,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn nêu khoảng cách như sự tò mò chứ không phải phản bội, để họ có chỗ giải thích."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này nghe như cái bẫy và mời gọi một lời bao biện."
         }
@@ -4508,18 +4508,18 @@
             "emotion_awareness": 3,
             "self_regulation": 3,
             "perspective_taking": 3,
-            "constructive_communication": 3,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "Bạn nêu điều mình thấy và mở đường cho họ rút lui mà không biến thành chuyện của bạn."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu hỏi bắt họ trấn an bạn thay vì trả lời thật."
         },
@@ -4574,11 +4574,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Xả bực với người lạ không đổi được gì và lan sự bực ra."
         },
@@ -4594,11 +4594,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Một kế hoạch ngắn và một tin nhắn giảm thiệt hại."
         }
@@ -4643,9 +4643,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4653,11 +4653,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Tăng âm lượng biến một va chạm nhỏ thành cảnh tượng."
         },
@@ -4712,28 +4712,28 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Sửa nhanh bảo vệ tính chính xác và cho nhóm thấy cách nhận sai."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Bảo vệ một dữ kiện sai tốn uy tín hơn chính lỗi đó."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4791,21 +4791,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Thương lượng nhanh giữ được hạn chót và quan hệ."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Viết lại lặng lẽ lấy đi quyền sở hữu của họ và giấu vấn đề."
         }
@@ -4850,9 +4850,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4860,18 +4860,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Thách thức xoay cả phòng chống lại người kia và làm mọi chuyện căng hơn."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4929,21 +4929,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Một kế hoạch ngắn giữ được sự chú ý và thể hiện sự bình tĩnh."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Xin lỗi lặp lại chuyển sự chú ý từ nội dung sang sự khó chịu của bạn."
         }
@@ -4998,11 +4998,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Một câu trả lời ngắn có nhiều cách giải thích bình thường."
         },
@@ -5010,9 +5010,9 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một chữ là bằng chứng mỏng cho việc ai đó quan tâm đến đâu."
         }
@@ -5057,21 +5057,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Việc hỏi lại thường là dấu hiệu chưa chắc, không phải thờ ơ."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Không chú ý là một cách hiểu, và là cách ít thiện ý nhất."
         },
@@ -5136,21 +5136,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Muốn ở một mình và muốn gặp bạn có thể cùng tồn tại."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Nói dối là gán ý định mà bài đăng không chứng minh được."
         }
@@ -5195,18 +5195,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Làm bẽ mặt là ý định bạn không nhìn thấy từ bên ngoài."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -5219,7 +5219,7 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Gọi tên một nỗi sợ có thể giữ cuộc nói chuyện về phía họ, không thành phán quyết."
         }
@@ -5268,17 +5268,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Hỏi họ nghe được gì tách giới hạn khỏi câu chuyện về nó."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Trừng phạt là một cách giải thích; bối rối hay tổn thương cũng có thể như vậy."
         },
@@ -5333,21 +5333,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Để mở một lý do không thấy được giữ quan hệ công việc nguyên vẹn."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Thiếu tôn trọng là kết luận mà riêng việc hủy không chống đỡ được."
         },
@@ -5404,7 +5404,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5412,18 +5412,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu trả lời từ chối cả con người lẫn lời khuyên."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -5471,28 +5471,28 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn nêu sự thật và đưa hai bước tiếp theo khả thi."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Chữ \"lại\" biến cập nhật công việc thành nhận xét về con người."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -5550,7 +5550,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -5560,11 +5560,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một phán quyết về quyết định của họ mời gọi phòng thủ."
         }
@@ -5610,18 +5610,18 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Chờ đợi biến căn nhà thành cuộc thử ai nhịn lâu hơn."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5629,11 +5629,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một lời buộc tội chung mở ra phòng thủ, không phải lịch trực nhật."
         }
@@ -5678,11 +5678,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Viện một cái cớ khiến thỏa thuận vẫn còn hiệu lực."
         },
@@ -5698,7 +5698,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -5747,11 +5747,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một nhãn dán mời gọi phòng thủ về giọng điệu thay vì giải quyết quy luật."
         },
@@ -5767,11 +5767,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Mời một cuộc nói chuyện ngắn giữ trọng tâm ở tác động, không phải phán quyết."
         }
@@ -5816,9 +5816,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5826,21 +5826,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Im lặng để họ chờ và không sắp xếp được."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "constructive_communication": 1,
+            "boundaries_and_agency": 1
           },
           "feedback": "Đồng ý kèm món nợ biến việc giúp thành đòn bẩy."
         }
@@ -5885,9 +5885,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5899,7 +5899,7 @@
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 1
           },
           "feedback": "Số giả tránh được khoảnh khắc nhưng để lại sự khó chịu."
         },
@@ -5954,7 +5954,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -5964,21 +5964,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Đồng ý không giới hạn biến bạn thành một phần của vấn đề."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Đóng lại cuộc nói chuyện để họ một mình với rủi ro mà bạn đã biết."
         }
@@ -6023,19 +6023,19 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một cái gật đầu không giới hạn tạo quy luật bạn sẽ thấy ấm ức."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -6092,17 +6092,17 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "Câu này rút lui và để cơn giận không được giải quyết."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -6113,7 +6113,7 @@
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -6161,9 +6161,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -6171,17 +6171,17 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hủy kế hoạch của mình nhiều lần dạy người khác rằng giới hạn này mềm."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
@@ -6240,7 +6240,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -6300,7 +6300,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -6311,19 +6311,19 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "Bạn mô tả sự thay đổi và hỏi thẳng về nó."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 1,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này đọc ra một kết luận từ quy luật bạn chưa kiểm chứng."
         }
@@ -6368,11 +6368,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Bỏ qua dạy cả phòng rằng mối lo này là tùy chọn."
         },
@@ -6390,7 +6390,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -6447,7 +6447,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -6457,7 +6457,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
@@ -6526,11 +6526,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 2
           },
           "feedback": "Giữ file là hợp lý nhưng để câu hỏi không được hỏi."
         }
@@ -6585,7 +6585,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -6654,21 +6654,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "Lái ổn định giữ rủi ro thấp và cảm xúc dễ kiểm hơn."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Bấm còi lâu để xả cơn giận và thêm rủi ro."
         }
@@ -6713,11 +6713,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Ăn luôn giấu đi lỗi và để sự bực lớn dần."
         },
@@ -6727,17 +6727,17 @@
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Leo thang vì một món sai tốn hơn cả món ăn."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 1,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Một yêu cầu bình tĩnh, cụ thể thường được sửa đúng."
         }
@@ -6803,7 +6803,7 @@
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -6851,18 +6851,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Một khoảng dừng ngắn giúp lời xin góp ý dễ được trả lời."
         },
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -6920,9 +6920,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
@@ -6930,7 +6930,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -6940,11 +6940,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Danh sách lỗi của nhóm kia chuyển trách nhiệm mà không sửa chậm trễ."
         }
@@ -6989,21 +6989,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Bản nháp giữ được ý của bạn và bỏ đi cơn nóng."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Gửi đi tốn niềm tin mà lời xin lỗi có thể không lấy lại được."
         },
@@ -7059,7 +7059,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7068,21 +7068,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "Cách giải thích đơn giản nhất không cần động cơ ẩn."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Câu này đọc ra một phán xét về bạn từ một cử chỉ nhỏ."
         }
@@ -7127,18 +7127,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Ác cảm cá nhân là phỏng đoán mà các cuộc thảo luận không chứng minh."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7147,11 +7147,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Tò mò về lý lẽ của họ biến ma sát thành trao đổi."
         }
@@ -7196,21 +7196,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Hỏi trước giữ quyết định công bằng và có thể lộ ra một ràng buộc thật."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Giải thích bằng tính cách bỏ qua câu hỏi điều gì đã thay đổi."
         },
@@ -7276,20 +7276,20 @@
         "b": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Bạn tách một lần sơ suất khỏi cả quá khứ và nêu nhu cầu của mình."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Kết luận về nhiều năm quan tâm từ một ngày là bước nhảy lớn."
         }
@@ -7344,21 +7344,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Giữ hai sự thật cùng lúc giúp bạn không biến họ thành kẻ xấu phẳng lì."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một nhãn công khai xóa đi khả năng có cuộc nói chuyện thật thà."
         }
@@ -7403,7 +7403,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7413,11 +7413,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Giả định điều xấu nhất biến cuộc nói chuyện thành chuyện nghi ngờ của bạn."
         },
@@ -7472,9 +7472,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7482,11 +7482,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Ra ngoài lặng lẽ để phần của bạn không được bàn."
         },
@@ -7541,9 +7541,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7551,11 +7551,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Một câu trả lời nhạt đóng lại cuộc nói chuyện họ mở ra."
         },
@@ -7610,7 +7610,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7620,10 +7620,10 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "Một phán quyết về kế hoạch mời gọi phòng thủ thay vì điều chỉnh."
@@ -7679,11 +7679,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Thở dài để họ tự đoán điều bạn cần."
         },
@@ -7699,11 +7699,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Một yêu cầu cụ thể, lịch sự thường giải quyết được va chạm đặt phòng."
         }
@@ -7748,7 +7748,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7761,7 +7761,7 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "Báo muộn giới hạn lựa chọn của họ và giống như né tránh."
@@ -7818,7 +7818,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7827,7 +7827,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7839,9 +7839,9 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Nói bóng gió để vấn đề không được gọi tên và cả nhóm phải đoán."
         }
@@ -7886,9 +7886,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7896,18 +7896,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Giấu đi né lời nhờ và tạo ra một trò kỳ lạ."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7965,9 +7965,9 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7979,7 +7979,7 @@
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 1
           },
           "feedback": "Một câu “chắc” mơ hồ khiến cả hai cùng phải chờ."
         }
@@ -8025,19 +8025,19 @@
         "a": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 1,
+            "self_regulation": 0,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Chia sẻ để tránh ngượng để lại sự khó chịu."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "Bạn đưa một lựa chọn khả thi mà không chia sẻ nhiều hơn mình muốn."
@@ -8045,10 +8045,10 @@
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Một câu hỏi nghi ngờ biến lời nhờ bình thường thành lời buộc tội."
         }
@@ -8094,7 +8094,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
@@ -8103,21 +8103,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Chuyển lời khiến bạn chịu trách nhiệm cho kết quả mình không kiểm soát được."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Rút hẳn ra lấy đi sự quan tâm khỏi cả hai tình bạn."
         }
@@ -8162,11 +8162,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Tắt thông báo giấu giới hạn thay vì đặt ra nó."
         },
@@ -8182,9 +8182,9 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -8231,11 +8231,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Biến mất không giải thích làm quan hệ căng hơn."
         },
@@ -8251,8 +8251,8 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 3

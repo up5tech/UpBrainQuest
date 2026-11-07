@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.8.0-draft",
+  "contentPackVersion": "0.8.1-draft",
   "items": [
     {
       "status": "draft",
@@ -710,11 +710,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "A generalised accusation rarely helps someone open up."
         },
@@ -722,7 +722,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -780,10 +780,10 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "A label shuts the conversation instead of opening it."
         },
@@ -799,11 +799,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
+            "perspective_taking": 0,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 0
           },
           "feedback": "This withdraws affection before you know what happened."
         }
@@ -848,9 +848,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
+            "emotion_awareness": 2,
+            "self_regulation": 1,
+            "perspective_taking": 1,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
@@ -868,11 +868,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 2
           },
           "feedback": "This accepts the surface answer and quietly leaves her alone."
         }
@@ -917,11 +917,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Matching a tone you have not understood turns a blip into a conflict."
         },
@@ -939,8 +939,8 @@
           "scores": {
             "emotion_awareness": 2,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "Reading rudeness into one message escalates before you know anything."
@@ -986,9 +986,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
@@ -998,18 +998,18 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "You notice the joke may be protecting something and invite the real feeling."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "This rewards the deflection and closes the door on the feeling."
@@ -1124,11 +1124,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 2
           },
           "feedback": "This states a limit but gives the friend nothing to work with."
         },
@@ -1193,10 +1193,10 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "This hides the hurt and leaves the pattern to repeat."
@@ -1215,7 +1215,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -1262,7 +1262,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
@@ -1282,11 +1282,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 2
           },
           "feedback": "This takes the words at face value and steps away from the moment."
         }
@@ -1331,7 +1331,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -1400,18 +1400,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "A short pause usually changes what you are able to say."
         },
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -1470,7 +1470,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -1479,21 +1479,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Early honesty gives the other person room to plan."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Silence shifts the cost to whoever was waiting."
         }
@@ -1548,21 +1548,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "Naming the limit early keeps the meeting and your attention usable."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Scrolling hides the problem and divides your attention."
         }
@@ -1617,21 +1617,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 2,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "Lowering the heat first makes the analysis useful."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Rumination keeps the frustration alive without adding information."
         }
@@ -1688,16 +1688,16 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Naming the intention makes the choice visible and easy to keep."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -1745,7 +1745,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -1756,7 +1756,7 @@
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -1816,7 +1816,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -1825,10 +1825,10 @@
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "boundaries_and_agency": 0
           },
           "feedback": "Overcommitting turns care into quiet resentment."
         },
@@ -1883,21 +1883,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "One clear, factual message is easier to answer than a stream of reactions."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Answering in real time keeps you inside the surge."
         },
@@ -1966,17 +1966,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Naming the pattern without blame makes an honest answer possible."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hiding the hurt lets it build into distance."
         }
@@ -2021,11 +2021,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Walking out ends the moment without giving anyone information."
         },
@@ -2033,7 +2033,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -2041,11 +2041,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "The extra laughter teaches people the joke is fine."
         }
@@ -2091,7 +2091,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2100,11 +2100,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Their reaction may belong to a different problem, so you leave room for that."
         },
@@ -2112,9 +2112,9 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "One sharp moment is thin evidence for a conclusion about you."
         }
@@ -2159,11 +2159,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A general judgement about respect goes far beyond the evidence."
         },
@@ -2179,11 +2179,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Allowing for an unexpected cause keeps the question open."
         }
@@ -2228,18 +2228,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Intent to embarrass is an assumption, not something they said."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2248,11 +2248,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Disagreement often carries information worth reading."
         }
@@ -2298,7 +2298,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2307,21 +2307,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "A missed greeting has several ordinary explanations."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Rudeness is one reading of many, and the least generous."
         }
@@ -2366,7 +2366,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -2376,11 +2376,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A ranking claim turns a disappointment into a public verdict."
         },
@@ -2439,17 +2439,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Naming worry instead of control tests a kinder explanation first."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Control may be part of it, but the intent is still a guess."
         },
@@ -2514,21 +2514,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You hold two ordinary explanations open and check instead of concluding."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Jealousy is possible but reading it as proven skips the asking."
         }
@@ -2574,7 +2574,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2587,17 +2587,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You consider your own contribution before assigning motive."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Trolling is one possibility, and it ends the inquiry early."
         }
@@ -2642,9 +2642,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -2652,18 +2652,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A pattern claim makes one moment into a complaint about them."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2721,11 +2721,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You state the need and the timing, and leave room for their reality."
         },
@@ -2734,7 +2734,7 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "A bare demand ignores the workload you already know about."
@@ -2790,20 +2790,20 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You describe the specific effect and ask for a specific change."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "A threat invites a fight rather than a fix."
@@ -2850,7 +2850,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2859,21 +2859,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You ask for the reasoning and offer your view without demanding a reversal."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A flat dismissal invites defence and closes the discussion."
         }
@@ -2920,16 +2920,16 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Vague reassurance leaves them unable to improve."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -2938,9 +2938,9 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -2988,18 +2988,18 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "A flat refusal reads as rejection of the person, not the task."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3010,7 +3010,7 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "A reason without a boundary leaves the request technically open."
@@ -3059,8 +3059,8 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hoping leaves the conflict to grow and the meeting without an outcome."
         },
@@ -3127,16 +3127,16 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Generality protects the giver and leaves the receiver guessing."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -3145,7 +3145,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -3194,10 +3194,10 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
             "boundaries_and_agency": 1
           },
           "feedback": "A blanket rule costs the friendship more than the joke does."
@@ -3216,7 +3216,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3263,21 +3263,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Naming your error separates it from the parts still in dispute."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Changing the subject leaves the false claim standing."
         },
@@ -3332,9 +3332,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3346,7 +3346,7 @@
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 1
           },
           "feedback": "A vague maybe keeps the request alive and the discomfort with you."
         },
@@ -3401,9 +3401,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3411,11 +3411,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "Sharing then changing leaves a window where the account is exposed."
         },
@@ -3470,9 +3470,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3483,18 +3483,18 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Laughing keeps a comment you dislike in circulation."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Leaving communicates hurt but not the boundary."
         }
@@ -3539,11 +3539,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Answering trains the expectation and spends your rest."
         },
@@ -3559,9 +3559,9 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3609,7 +3609,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -3620,7 +3620,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3628,11 +3628,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Last-minute cancelling costs them more than an honest limit."
         }
@@ -3677,29 +3677,29 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Agreeing then failing damages trust more than a clear no."
-        },
-        "b": {
-          "scores": {
             "emotion_awareness": 0,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
+          "feedback": "Agreeing then failing damages trust more than a clear no."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
           "feedback": "A bare refusal leaves the need unaddressed."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3746,9 +3746,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3759,8 +3759,8 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "A hint leaves the request easy to miss."
         },
@@ -3815,29 +3815,29 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
-          },
-          "feedback": "Silent compliance hides the cost until it becomes a crisis."
-        },
-        "b": {
-          "scores": {
             "emotion_awareness": 0,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
+          "feedback": "Silent compliance hides the cost until it becomes a crisis."
+        },
+        "b": {
+          "scores": {
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
+          },
           "feedback": "Leaving wordlessly looks like unreliability rather than a boundary."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3884,11 +3884,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Silent action removes the choice and hides the resentment."
         },
@@ -3904,7 +3904,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -3963,9 +3963,9 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -3973,11 +3973,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "A later withdrawal costs more trust than a short delay."
         }
@@ -4022,18 +4022,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Labelling the reaction dismisses it and ends the conversation."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4042,11 +4042,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You consider your own part before explaining their reaction away."
         }
@@ -4091,11 +4091,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A public label skips both the facts and the conversation."
         },
@@ -4111,11 +4111,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You allow an ordinary explanation and separate facts from motive."
         }
@@ -4161,27 +4161,27 @@
         "a": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "You name what you saw and ask openly."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "This makes their silence about your worth."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4230,20 +4230,20 @@
         "a": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "self_regulation": 2,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "You name the change without judging it and offer a reason they can take up."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "This shames them for a mood they did not choose."
         },
@@ -4299,7 +4299,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4310,7 +4310,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4318,11 +4318,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "This assumes avoidance before you know anything."
         }
@@ -4368,7 +4368,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4379,7 +4379,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4387,11 +4387,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "This judges the reaction before understanding it."
         }
@@ -4437,7 +4437,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4450,17 +4450,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You name the gap as curiosity rather than betrayal, leaving room to explain."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "This sounds like a trap and invites an excuse."
         }
@@ -4508,18 +4508,18 @@
             "emotion_awareness": 3,
             "self_regulation": 3,
             "perspective_taking": 3,
-            "constructive_communication": 3,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "You name what you see and offer them an exit without making it about you."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "The question asks them to reassure you instead of answering honestly."
         },
@@ -4574,11 +4574,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Venting at a stranger changes nothing and spreads the frustration."
         },
@@ -4594,11 +4594,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "A short plan and one message reduce the damage."
         }
@@ -4643,9 +4643,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4653,11 +4653,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Escalating volume turns a small friction into a scene."
         },
@@ -4712,28 +4712,28 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "A quick correction protects accuracy and shows the group how to handle being wrong."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Defending a wrong fact costs more credibility than the error."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4791,21 +4791,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "A quick negotiation keeps the deadline and the relationship."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Silent rewriting removes their ownership and hides the problem."
         }
@@ -4850,9 +4850,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -4860,18 +4860,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A challenge turns the room against the person and escalates it."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -4929,21 +4929,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "A short plan keeps attention and shows composure under pressure."
         },
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Repeated apology shifts attention from content to your discomfort."
         }
@@ -4998,11 +4998,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "A short reply has several ordinary explanations."
         },
@@ -5010,9 +5010,9 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "One word is thin evidence for how much someone cares."
         }
@@ -5057,21 +5057,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Repetition often signals uncertainty, not indifference."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Inattention is one reading and the least generous."
         },
@@ -5136,21 +5136,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Wanting solitude and wanting your company can coexist."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Lying assumes intent that the post does not prove."
         }
@@ -5195,18 +5195,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Humiliation is an intent you cannot see from the outside."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -5219,7 +5219,7 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Naming a possible fear keeps the conversation about them, not a verdict."
         }
@@ -5268,17 +5268,17 @@
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Checking what they heard separates the limit from the story about it."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Punishment is one explanation; confusion or hurt are just as likely."
         },
@@ -5333,21 +5333,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Allowing for an unseen reason keeps the working relationship intact."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Disrespect is a conclusion the cancellation alone cannot support."
         },
@@ -5404,7 +5404,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5412,18 +5412,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "The reply rejects the person along with the advice."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -5471,28 +5471,28 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You state the fact and offer two workable next steps."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "The \"again\" turns a task update into a character note."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -5550,7 +5550,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -5560,11 +5560,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A verdict on their decision invites defence."
         }
@@ -5610,18 +5610,18 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Waiting turns the flat into a test of who gives in."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5629,11 +5629,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A sweeping accusation starts a defence, not a schedule."
         }
@@ -5678,11 +5678,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "An excuse leaves the arrangement technically alive."
         },
@@ -5698,7 +5698,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -5747,11 +5747,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A label invites defence about tone instead of solving the pattern."
         },
@@ -5767,11 +5767,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Inviting a short conversation keeps the focus on the effect, not a verdict."
         }
@@ -5816,9 +5816,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5826,21 +5826,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Silence leaves them waiting and unable to plan."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
-            "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "constructive_communication": 1,
+            "boundaries_and_agency": 1
           },
           "feedback": "Agreeing with a debt attached turns help into leverage."
         }
@@ -5885,9 +5885,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -5899,7 +5899,7 @@
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 1
           },
           "feedback": "A fake number avoids the moment but leaves the discomfort unresolved."
         },
@@ -5954,7 +5954,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -5964,21 +5964,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Agreeing without limits makes you part of the problem."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Shutting the conversation down leaves them alone with a risk you now know about."
         }
@@ -6023,19 +6023,19 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "An open-ended yes sets a pattern you will resent."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -6092,17 +6092,17 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 1
           },
           "feedback": "This withdraws and leaves the anger unresolved."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -6113,7 +6113,7 @@
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -6161,9 +6161,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -6171,17 +6171,17 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Repeatedly cancelling your own plans teaches others the boundary is flexible."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
@@ -6240,7 +6240,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -6300,7 +6300,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -6311,19 +6311,19 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "You describe the change and ask about it directly."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 1,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "This reads a conclusion into a pattern you have not checked."
         }
@@ -6368,11 +6368,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Dropping it teaches the room the concern is optional."
         },
@@ -6390,7 +6390,7 @@
           "scores": {
             "emotion_awareness": 3,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -6447,7 +6447,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -6457,7 +6457,7 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 0,
+            "emotion_awareness": 1,
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
@@ -6526,11 +6526,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 2,
-            "self_regulation": 1,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "constructive_communication": 0,
+            "boundaries_and_agency": 2
           },
           "feedback": "Guarding your files is sensible but leaves the question unasked."
         }
@@ -6585,7 +6585,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 2,
+            "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
@@ -6654,21 +6654,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "Steady driving keeps the risk low and the feeling manageable."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A long horn expresses the surge and adds risk."
         }
@@ -6713,11 +6713,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 1,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Eating it hides the error and leaves the frustration to grow."
         },
@@ -6727,17 +6727,17 @@
             "self_regulation": 0,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Escalating over a wrong dish costs more than the dish."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 1,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "A calm, specific request usually gets the order fixed."
         }
@@ -6803,7 +6803,7 @@
         "c": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -6851,18 +6851,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "A short pause keeps the request for feedback likely to be answered."
         },
         "b": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 2,
+            "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
             "boundaries_and_agency": 1
@@ -6920,9 +6920,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 0,
-            "self_regulation": 0,
-            "perspective_taking": 0,
+            "emotion_awareness": 1,
+            "self_regulation": 1,
+            "perspective_taking": 1,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
@@ -6930,7 +6930,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -6940,11 +6940,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A list of the other team shifts blame without fixing the delay."
         }
@@ -6989,21 +6989,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "perspective_taking": 1,
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "A draft keeps your points and removes the heat."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 2,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Sending costs trust that an apology may not restore."
         },
@@ -7059,7 +7059,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7068,21 +7068,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 1,
+            "boundaries_and_agency": 2
           },
           "feedback": "The simplest explanation needs no hidden motive."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "This reads a judgement about you into a small courtesy."
         }
@@ -7127,18 +7127,18 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Personal dislike is a guess the discussions do not establish."
         },
         "b": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7147,11 +7147,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Curiosity about their reasoning turns friction into exchange."
         }
@@ -7196,21 +7196,21 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "Asking first keeps the decision fair and may reveal a real constraint."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A trait explanation skips the question of what changed."
         },
@@ -7276,20 +7276,20 @@
         "b": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "You separate one lapse from the whole history and state your need."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A verdict about years of care from one date is a big leap."
         }
@@ -7344,21 +7344,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
-            "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "constructive_communication": 2,
+            "boundaries_and_agency": 2
           },
           "feedback": "Holding two truths keeps you from flattening them into a villain."
         },
         "c": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A public label removes any chance of an honest conversation."
         }
@@ -7403,7 +7403,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7413,11 +7413,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 2,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Assuming the worst makes the conversation about your suspicion."
         },
@@ -7472,9 +7472,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7482,11 +7482,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Leaving quietly leaves your item undiscussed."
         },
@@ -7541,9 +7541,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7551,11 +7551,11 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "A flat answer closes the conversation they opened."
         },
@@ -7610,7 +7610,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7620,10 +7620,10 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "A verdict on the plan invites defence instead of adjustment."
@@ -7679,11 +7679,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Sighing asks them to guess what you need."
         },
@@ -7699,11 +7699,11 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
-            "boundaries_and_agency": 3
+            "boundaries_and_agency": 2
           },
           "feedback": "A specific, polite request usually resolves a booking clash."
         }
@@ -7748,7 +7748,7 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7761,7 +7761,7 @@
             "emotion_awareness": 1,
             "self_regulation": 1,
             "perspective_taking": 1,
-            "constructive_communication": 2,
+            "constructive_communication": 1,
             "boundaries_and_agency": 1
           },
           "feedback": "Late news limits their options and feels like avoidance."
@@ -7818,7 +7818,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7827,7 +7827,7 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 2,
             "self_regulation": 3,
             "perspective_taking": 3,
             "constructive_communication": 3,
@@ -7839,9 +7839,9 @@
           "scores": {
             "emotion_awareness": 1,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 2,
-            "boundaries_and_agency": 1
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hinting leaves the issue unnamed and the group guessing."
         }
@@ -7886,9 +7886,9 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7896,18 +7896,18 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Hiding avoids the request and creates a strange game."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
             "boundaries_and_agency": 0
@@ -7965,9 +7965,9 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
-            "perspective_taking": 3,
+            "emotion_awareness": 1,
+            "self_regulation": 2,
+            "perspective_taking": 1,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -7979,7 +7979,7 @@
             "self_regulation": 1,
             "perspective_taking": 1,
             "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "boundaries_and_agency": 1
           },
           "feedback": "A vague maybe keeps you both waiting."
         }
@@ -8025,19 +8025,19 @@
         "a": {
           "scores": {
             "emotion_awareness": 1,
-            "self_regulation": 1,
+            "self_regulation": 0,
             "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Sharing to avoid awkwardness leaves you uncomfortable."
         },
         "b": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
-            "constructive_communication": 3,
+            "perspective_taking": 2,
+            "constructive_communication": 2,
             "boundaries_and_agency": 3
           },
           "feedback": "You offer a workable alternative without sharing more than you want."
@@ -8045,10 +8045,10 @@
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "A suspicious question makes an ordinary request feel like an accusation."
         }
@@ -8094,7 +8094,7 @@
         "a": {
           "scores": {
             "emotion_awareness": 3,
-            "self_regulation": 3,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
@@ -8103,21 +8103,21 @@
         },
         "b": {
           "scores": {
-            "emotion_awareness": 1,
-            "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "emotion_awareness": 0,
+            "self_regulation": 0,
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Carrying messages makes you responsible for an outcome you cannot control."
         },
         "c": {
           "scores": {
             "emotion_awareness": 0,
-            "self_regulation": 0,
+            "self_regulation": 1,
             "perspective_taking": 0,
             "constructive_communication": 0,
-            "boundaries_and_agency": 0
+            "boundaries_and_agency": 1
           },
           "feedback": "Stepping out entirely withdraws care from both friendships."
         }
@@ -8162,11 +8162,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Muting hides the boundary instead of setting it."
         },
@@ -8182,9 +8182,9 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
+            "emotion_awareness": 1,
             "self_regulation": 3,
-            "perspective_taking": 3,
+            "perspective_taking": 2,
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
@@ -8231,11 +8231,11 @@
       "rubricByOption": {
         "a": {
           "scores": {
-            "emotion_awareness": 1,
+            "emotion_awareness": 0,
             "self_regulation": 1,
-            "perspective_taking": 1,
-            "constructive_communication": 1,
-            "boundaries_and_agency": 2
+            "perspective_taking": 0,
+            "constructive_communication": 0,
+            "boundaries_and_agency": 0
           },
           "feedback": "Disappearing without explanation strains the relationship more."
         },
@@ -8251,8 +8251,8 @@
         },
         "c": {
           "scores": {
-            "emotion_awareness": 3,
-            "self_regulation": 3,
+            "emotion_awareness": 2,
+            "self_regulation": 2,
             "perspective_taking": 3,
             "constructive_communication": 3,
             "boundaries_and_agency": 3

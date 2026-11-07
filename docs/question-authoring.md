@@ -255,6 +255,14 @@ Rules (PLAN §4.6):
 - **Every option must have a rubric entry**; the parser rejects an EQ item when an
   option lacks one.
 - Dimension scores are integers `0..3`.
+- **Score each dimension on its own merits.** The same option is rarely equally
+  strong everywhere: a boundary stated calmly can be a 3 for
+  `boundaries_and_agency` and a 1 for `emotion_awareness` if it names no feeling.
+  Copying one score across all five dimensions turns the per-dimension summary on
+  the result screen into decoration.
+- **Keep the spread on the item's primary dimension.** Exactly one option scores
+  3 there, at least one scores 0 or 1, and the gap is at least 2 points. That is
+  what lets the rubric separate a good answer from a weak one.
 - Feedback explains trade-offs ("may help because…", "one risk is…"); never shame the
   player or assert a single universally correct response.
 - No clinical, diagnostic, or mental-health claims; no stereotypes.
@@ -266,6 +274,7 @@ Run:
 
 ```sh
 flutter test test/unit/content_scan_test.dart
+python3 tool/eq_audit.py          # EQ rubric spread, duplicates, wording
 ```
 
 The test parses every file through the real parser and asserts no error issues, unique

@@ -25,7 +25,7 @@ reads the `<locale>/` files for the active language.
 ```json
 {
   "schemaVersion": 1,
-  "contentPackVersion": "0.8.0-draft",
+  "contentPackVersion": "0.8.1-draft",
   "supportedLocales": ["en", "vi"],
   "files": [
     "en/iq_questions.json", "en/puzzle_questions.json", "en/eq_scenarios.json",
