@@ -208,6 +208,11 @@ class _PairCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // A matched card is filled with the bright positive colour, so its icon
+    // and label need the near-black on-accent text to stay readable.
+    final Color foreground = matched
+        ? AppColors.textOnAccent
+        : AppColors.textPrimary;
     return Semantics(
       button: !faceUp,
       label: faceUp ? label : context.l10n.sessionPairsHiddenCard,
@@ -227,14 +232,14 @@ class _PairCard extends StatelessWidget {
                   children: <Widget>[
                     Icon(
                       puzzleSymbolIcon(symbol) ?? Icons.help_outline,
-                      color: AppColors.textPrimary,
+                      color: foreground,
                       size: 32,
                     ),
                     const SizedBox(height: AppSpacing.xxs),
                     Text(
                       label,
                       textAlign: TextAlign.center,
-                      style: AppTypography.caption,
+                      style: AppTypography.caption.copyWith(color: foreground),
                     ),
                   ],
                 )

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:up_brain_quest/core/localization/app_strings.dart';
+import 'package:up_brain_quest/core/theme/app_colors.dart';
 import 'package:up_brain_quest/domain/content/content_enums.dart';
 import 'package:up_brain_quest/domain/content/question_models.dart';
 import 'package:up_brain_quest/domain/session/answer_evaluation.dart';
@@ -116,6 +117,15 @@ void main() {
       expect(answer.pairIds.toSet(), _pairs.toSet());
       expect(answer.flips, 6);
       expect(find.text(enStrings.sessionPairsFound(3, 3)), findsOneWidget);
+
+      // A matched card is filled with the bright positive colour, so its symbol
+      // and label must switch to the dark on-accent text to stay readable.
+      final Icon star = tester.widget<Icon>(
+        find.byIcon(Icons.star_border).first,
+      );
+      expect(star.color, AppColors.textOnAccent);
+      final Text label = tester.widget<Text>(find.text('Star').first);
+      expect(label.style?.color, AppColors.textOnAccent);
     });
 
     testWidgets('stops after the flip budget and reports a partial answer', (
