@@ -81,6 +81,12 @@ Review findings:
   "one risk is…") rather than asserting a single universally right answer.
 - **Neutralized framing.** The group-chat scenario was reworded to remove a
   political topic, keeping it about de-escalation only.
+- **Vietnamese copy review.** All 120 Vietnamese scenarios were read against
+  the English source - context, prompt, every option and every feedback. 25
+  strings were corrected: `posts` rendered as photos, a dropped "please",
+  "replay the loss" flattened into "think again", a polite question turned into
+  an instruction, a cousin described as a friend, and pronouns drifting between
+  `bạn` and `họ` inside one item. Scores and feedback meaning are unchanged.
 - **Copy-edit note.** All content remains `status: draft`; a human copy-edit pass is
   still recommended before a release build (wording, tone, and locale review).
 

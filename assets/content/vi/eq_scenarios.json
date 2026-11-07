@@ -47,7 +47,7 @@
             "constructive_communication": 3,
             "boundaries_and_agency": 3
           },
-          "feedback": "Bạn nêu điều mình nhận thấy và để người bạn ấy tự chọn, tôn trọng việc họ có thể không muốn nói."
+          "feedback": "Bạn nêu điều mình nhận thấy và để bạn ấy tự chọn, tôn trọng việc họ có thể không muốn nói."
         },
         "c": {
           "scores": {
@@ -429,7 +429,7 @@
         },
         {
           "id": "b",
-          "text": "Giả vờ không sao, rồi để trong lòng."
+          "text": "Giả vờ không sao, rồi âm thầm trách họ."
         },
         {
           "id": "c",
@@ -765,7 +765,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Bạn chẳng bao giờ giữ lời, tôi hết muốn lên kế hoạch rồi."
+          "text": "Bạn không đáng tin, tôi hết muốn lên kế hoạch rồi."
         },
         {
           "id": "b",
@@ -903,7 +903,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Tôi sẽ trả lời cùng giọng đó xem bạn thấy thế nào."
+          "text": "Tôi sẽ trả lời cùng giọng đó xem họ thấy thế nào."
         },
         {
           "id": "b",
@@ -1041,7 +1041,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Bạn im lặng khi tôi nhắc đến chuyến đi. Bạn đang nghĩ gì vậy?"
+          "text": "Bạn im lặng khi tôi nhắc đến chuyến đi. Trong bạn đang có điều gì vậy?"
         },
         {
           "id": "b",
@@ -1311,7 +1311,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn quản lý trực tiếp sắp khóc trong buổi đánh giá.",
+      "scenarioContext": "Một nhân viên do bạn quản lý trực tiếp sắp khóc trong buổi đánh giá.",
       "prompt": "Bạn có thể nói hoặc làm gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -1601,7 +1601,7 @@
         },
         {
           "id": "c",
-          "text": "Cả buổi tối nghĩ lại trong đầu với cơn bực."
+          "text": "Cả buổi tối tua lại thất bại trong đầu với cơn bực."
         }
       ],
       "rubricByOption": {
@@ -1869,7 +1869,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Chờ đã, rồi gửi một tin nhắn dựa trên sự thật, không công kích ai."
+          "text": "Chờ một lúc, rồi gửi một tin nhắn dựa trên sự thật, không công kích ai."
         },
         {
           "id": "b",
@@ -2346,7 +2346,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn hủy hẹn với bạn rồi đăng ảnh đi chơi với người khác.",
+      "scenarioContext": "Một người bạn hủy hẹn với bạn rồi đăng bài về việc đi chơi với người khác.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -2415,7 +2415,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Gần đây bố mẹ bạn chất vấn gần như mọi lựa chọn của bạn.",
+      "scenarioContext": "Gần đây bố hoặc mẹ bạn chất vấn gần như mọi lựa chọn của bạn.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -2553,7 +2553,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn tranh luận trên mạng viết một trả lời dài và giận dữ.",
+      "scenarioContext": "Một người đang tranh luận với bạn trên mạng viết một trả lời dài và giận dữ.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -2628,7 +2628,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Cho mình kể hết đoạn này, rồi mình muốn nghe bạn."
+          "text": "Mình kể hết đoạn này rồi nghe bạn nói, được không?"
         },
         {
           "id": "b",
@@ -2705,7 +2705,7 @@
         },
         {
           "id": "c",
-          "text": "Gửi ngay đi."
+          "text": "Làm ơn gửi ngay đi."
         }
       ],
       "rubricByOption": {
@@ -3683,7 +3683,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Nhận rồi thất bại phá niềm tin hơn một lời từ chối rõ."
+          "feedback": "Đồng ý rồi không làm được phá niềm tin hơn một lời từ chối rõ ràng."
         },
         "b": {
           "scores": {
@@ -4215,7 +4215,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Giọng bạn nghe khác mọi khi — hôm nay mệt lắm phải không?"
+          "text": "Giọng bạn nghe phẳng hơn mọi khi — hôm nay mệt lắm phải không?"
         },
         {
           "id": "b",
@@ -4284,7 +4284,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Người ta thật khó hiểu."
+          "text": "Người ta thật thất thường."
         },
         {
           "id": "b",
@@ -4347,7 +4347,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người anh em họ cười to về một cuộc cãi vã trong nhà, rồi vội rời phòng.",
+      "scenarioContext": "Một người họ hàng cười to về một cuộc cãi vã trong nhà, rồi vội rời phòng.",
       "prompt": "Bạn có thể nói hoặc làm gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -4554,7 +4554,7 @@
       "difficulty": "easy",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Xe buýt đến muộn và bạn sẽ vào lớp đã trả tiền muộn.",
+      "scenarioContext": "Xe buýt đến muộn và bạn sẽ trễ giờ vào lớp mình đã trả tiền.",
       "prompt": "Bước tiếp theo hữu ích nhất là gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -5106,7 +5106,7 @@
       "difficulty": "medium",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một người bạn từ chối lời mời của bạn rồi đăng ảnh ở nhà một mình.",
+      "scenarioContext": "Một người bạn từ chối lời mời của bạn rồi đăng bài về việc ở nhà một mình.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -5727,7 +5727,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Một đồng nghiệp luôn trả lời email của bạn theo cách nghe như xem thường.",
+      "scenarioContext": "Một đồng nghiệp cứ trả lời email của bạn theo cách nghe như xem thường.",
       "prompt": "Bạn có thể nói gì?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -6082,7 +6082,7 @@
         },
         {
           "id": "b",
-          "text": "Mình nói thật vì bạn hỏi. Quyết định là của bạn, và mình sẽ không tranh cãi thay bạn."
+          "text": "Mình nói thật vì bạn hỏi. Quyết định là của bạn, và mình sẽ không tranh cãi để bảo vệ nó."
         },
         {
           "id": "c",
@@ -6926,7 +6926,7 @@
             "constructive_communication": 0,
             "boundaries_and_agency": 0
           },
-          "feedback": "Im lặng để cách hiểu sai đứng nguyên, và cả phòng sẽ nhớ nó."
+          "feedback": "Im lặng để bản ghi sai đứng nguyên, và cả phòng sẽ nhớ nó."
         },
         "b": {
           "scores": {
@@ -7383,7 +7383,7 @@
       "difficulty": "hard",
       "locale": "vi",
       "status": "draft",
-      "scenarioContext": "Anh/chị/em của bạn bỗng hào phóng bất thường ngay trước khi nhờ một việc.",
+      "scenarioContext": "Một người anh chị em trong nhà bỗng hào phóng bất thường ngay trước khi nhờ bạn một việc.",
       "prompt": "Điều gì có thể đang diễn ra với họ?",
       "instructions": "Không có đáp án hoàn hảo; hãy chọn cách bạn thật sự có thể làm.",
       "options": [
@@ -7669,7 +7669,7 @@
         },
         {
           "id": "b",
-          "text": "Cứ bắt đầu cuộc họp của mình đè lên họ."
+          "text": "Cứ bắt đầu cuộc họp của mình chồng lên giờ của họ."
         },
         {
           "id": "c",
@@ -7872,7 +7872,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Mình để dụng cụ cho việc của mình; gần đây có cửa hàng cho thuê."
+          "text": "Mình để dụng cụ cho việc của mình; ở gần đây có cửa hàng cho mượn."
         },
         {
           "id": "b",
