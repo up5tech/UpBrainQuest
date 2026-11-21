@@ -1,0 +1,6 @@
+# Copy to android/key.properties and fill in both passwords locally.
+# MYAPP_UPLOAD_STORE_FILE is relative to android/app, or an absolute path.
+MYAPP_UPLOAD_STORE_FILE=android-key.keystore
+MYAPP_UPLOAD_KEY_ALIAS=android-key-alias
+MYAPP_UPLOAD_STORE_PASSWORD=
+MYAPP_UPLOAD_KEY_PASSWORD=

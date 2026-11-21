@@ -8,8 +8,8 @@ no account, no analytics, and no network access: every question, illustration, a
 ships inside the app.
 
 > **Status: feature-complete through Phase 8; Phase 9 release readiness verified.**
-> Debug and release artifacts build and the full test suite passes. Store signing is
-> the remaining step — see [`docs/release-checklist.md`](docs/release-checklist.md) and
+> Debug and release artifacts build and the full test suite passes. See
+> [`docs/release-checklist.md`](docs/release-checklist.md) and
 > [`docs/known-limitations.md`](docs/known-limitations.md).
 
 ---
@@ -113,11 +113,18 @@ flutter build ios --release --no-codesign
 # -> build/ios/iphoneos/Runner.app
 ```
 
-Verified artifacts: **`app-release.apk` (61.1 MB)** and **`Runner.app` (20.1 MB)**.
+Verified artifacts: **`app-release.apk` (61.8 MB)** and **`Runner.app` (20.1 MB)**.
 
-**Signing is not configured for the store yet.** `android/app/build.gradle.kts` still
-uses the debug key for release; replace it with a real keystore before uploading. See
-[`docs/release-checklist.md`](docs/release-checklist.md).
+Android release builds use the upload keystore configured in the gitignored
+`android/key.properties`; copy `android/key.properties.example` and fill in the
+passwords locally. Place `android-key.keystore` in `android/app/`. Missing signing
+settings fail release builds; debug builds use the normal debug key. Gradle properties
+or environment variables with the same `MYAPP_UPLOAD_*` names can supply credentials
+in CI. See [`docs/release-checklist.md`](docs/release-checklist.md).
+
+Both platforms use the display name **Up Brain Quest**, identifier
+`com.up5.upbrainquest`, and version/build from `pubspec.yaml` (`1.0.0+1`). Use
+`--build-name` and `--build-number` to override the version for a build.
 
 ---
 
@@ -244,7 +251,8 @@ Regenerate with `dart run build_runner build`. Never hand-edit `*.g.dart`.
 - The question bank reaches the PLAN §5.3 Version 1 quota (330 items: 120 IQ,
   90 puzzle, 120 EQ), all still `status: draft`. Puzzle Sprint is not playable yet.
 - Dark theme only; UI and content ship in English and Vietnamese; no audio assets.
-- Release signing is not configured (debug key on Android, unsigned iOS).
+- Android release signing requires the local upload keystore and credentials;
+  iOS distribution requires a signed archive.
 - The Android toolchain on this machine has no emulator; the iOS simulator is the
   verified runtime target.
 

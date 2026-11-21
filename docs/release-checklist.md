@@ -36,6 +36,29 @@ _Re-verified on 2026-11-07 after the content QA pass._
 | Android release | `flutter build apk --release` | **`app-release.apk` (61.7 MB)** |
 | iOS release (unsigned) | `flutter build ios --release --no-codesign` | **`Runner.app` (21.3 MB)** |
 
+### Android configuration verification (2026-11-21)
+
+Verified with Flutter **3.47.9**, Dart **3.13.7**, and Flutter's configured JDK
+**21** (Java source/target remains 17). Android Command-line Tools **22.0** were
+installed from the [official download](https://developer.android.com/studio), with
+the published SHA-256 verified, to enable Flutter's final AAB symbols check.
+
+| Check | Result |
+| --- | --- |
+| Formatting / static analysis | Clean / no issues |
+| Host tests | **143/143 passed** |
+| Release APK / AAB | **61.8 MB / 60.3 MB**, signed with the upload key |
+| Packaged metadata | `Up Brain Quest`, `com.up5.upbrainquest`, `1.0.0` / `1` |
+| Release permissions | No `INTERNET` permission |
+| Missing credentials / missing keystore | Both rejected by release validation |
+| Debug APK without upload credentials | Builds successfully |
+| iOS integration test (iPhone 17, iOS 27.0) | Pass |
+| iOS simulator debug build / launch | Pass |
+
+For direct `./gradlew` commands, set `JAVA_HOME` to the `jdk-dir` reported by
+`flutter config --list`. Flutter builds already use that JDK; this machine's shell
+otherwise selects GraalVM 24, which fails Android's debug JDK image transform.
+
 All commands must be prefixed with the localhost proxy bypass on this machine:
 
 ```sh
@@ -44,17 +67,26 @@ NO_PROXY="localhost,127.0.0.1,::1" no_proxy="localhost,127.0.0.1,::1" <command>
 
 ## 4. Identifiers
 
-| Platform | Identifier |
+| Setting | Value |
 | --- | --- |
+| App display name (Android and iOS) | `Up Brain Quest` |
 | Dart package | `up_brain_quest` |
-| Android `applicationId` / namespace | `com.upbrainquest.up_brain_quest` |
-| iOS `PRODUCT_BUNDLE_IDENTIFIER` | `com.upbrainquest.up_brain_quest` (aligned in Phase 9) |
+| Android `applicationId` / namespace | `com.up5.upbrainquest` |
+| iOS `PRODUCT_BUNDLE_IDENTIFIER` | `com.up5.upbrainquest` |
+| Version / build (both platforms) | `1.0.0` / `1`, from `pubspec.yaml` |
 
-## 5. Signing (blocking for store upload)
+## 5. Signing
 
-- **Android:** `android/app/build.gradle.kts` signs release builds with the **debug
-  key** (Flutter template default). Create a keystore, add a `release` signing config,
-  and remove the debug fallback before uploading.
+- **Android:** `android/app/build.gradle.kts` uses the `release` upload signing config.
+  Place the existing upload keystore at `android/app/android-key.keystore`, copy
+  `android/key.properties.example` to `android/key.properties`, and fill in both
+  passwords. The configured alias is `android-key-alias`. The keystore and
+  `key.properties` are gitignored; keep a backup outside the repository.
+  `MYAPP_UPLOAD_STORE_FILE` accepts an absolute path or a path relative to
+  `android/app`. Gradle properties override environment variables, which override
+  `key.properties`, using the same four `MYAPP_UPLOAD_*` names. Release builds fail
+  if a setting or keystore is missing; they never fall back to the debug key.
+  Debug builds do not require upload credentials.
 - **iOS:** the artifact is built with `--no-codesign`. Distribution needs an Apple
   Developer team, provisioning profile, and a signed archive.
 
@@ -85,7 +117,8 @@ dart format --output=none --set-exit-if-changed .
 flutter analyze
 flutter test
 python3 tool/content_release_gate.py   # must pass before a store build
-flutter build apk --release            # or --split-per-abi / appbundle
+flutter build apk --release            # or --split-per-abi
+flutter build appbundle --release      # upload-key-signed Google Play bundle
 flutter build ios --release --no-codesign
 ```
 

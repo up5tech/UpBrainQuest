@@ -26,15 +26,15 @@ These are current gaps, not defects. They are tracked so a release decision is e
 
 ## Platforms and release
 
-- **Release signing is not configured.** `android/app/build.gradle.kts` signs release
-  builds with the debug key (the Flutter template default). Replace it with a real
-  keystore before uploading to Google Play.
-- **The Android toolchain on this machine is incomplete** (`cmdline-tools` missing, SDK
-  licences not accepted). Debug and release APKs build, but no emulator image is
-  available; the iOS simulator is the verified runtime target.
+- **Android release signing requires local credentials.** Supply the upload keystore
+  and gitignored `android/key.properties` (or the equivalent Gradle properties or
+  environment variables); see [`release-checklist.md`](release-checklist.md).
+- **No Android emulator image is available on this machine.** Android artifacts
+  build; runtime verification uses the iOS simulator. An Android device playthrough
+  remains part of the manual release checks.
 - **iOS builds are unsigned here** (`--no-codesign`). App Store distribution requires
   an Apple Developer team, provisioning profile, and signing.
-- **The release APK is a universal 61.1 MB build.** Use `--split-per-abi` (or an App
+- **The release APK is a universal 61.8 MB build.** Use `--split-per-abi` (or an App
   Bundle) for smaller store downloads.
 
 ## UI and features

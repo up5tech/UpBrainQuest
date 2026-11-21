@@ -1,11 +1,54 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+val uploadProperties = Properties()
+val uploadPropertiesFile = rootProject.file("key.properties")
+if (uploadPropertiesFile.isFile) {
+    uploadPropertiesFile.inputStream().use { uploadProperties.load(it) }
+}
+
+// Keep credentials local; Gradle properties and environment variables support CI.
+val uploadSigningValues = listOf(
+    "MYAPP_UPLOAD_STORE_FILE",
+    "MYAPP_UPLOAD_KEY_ALIAS",
+    "MYAPP_UPLOAD_STORE_PASSWORD",
+    "MYAPP_UPLOAD_KEY_PASSWORD",
+).associateWith { name ->
+    (providers.gradleProperty(name)
+        .orElse(providers.environmentVariable(name))
+        .orNull ?: uploadProperties.getProperty(name))?.takeIf { it.isNotBlank() }
+}
+// Relative keystore paths resolve from android/app, matching the supplied key.
+val uploadStoreFile = uploadSigningValues["MYAPP_UPLOAD_STORE_FILE"]?.let { file(it) }
+
+val validateReleaseSigning by tasks.registering {
+    group = "verification"
+    description = "Checks the upload keystore configuration for release builds."
+    doLast {
+        val missing = uploadSigningValues.filterValues { it == null }.keys
+        if (missing.isNotEmpty()) {
+            throw GradleException(
+                "Missing Android release signing properties: ${missing.joinToString()}. " +
+                    "Configure android/key.properties using key.properties.example, " +
+                    "or supply Gradle properties/environment variables.",
+            )
+        }
+        if (uploadStoreFile?.isFile != true) {
+            throw GradleException(
+                "Upload keystore not found: $uploadStoreFile. " +
+                    "MYAPP_UPLOAD_STORE_FILE is relative to android/app or absolute.",
+            )
+        }
+    }
+}
+
 android {
-    namespace = "com.upbrainquest.up_brain_quest"
+    namespace = "com.up5.upbrainquest"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -15,10 +58,7 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.upbrainquest.up_brain_quest"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        applicationId = "com.up5.upbrainquest"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         // Uses the version code from pubspec.yaml. When using split APKs, 1000 * ABI_VERSION
@@ -29,14 +69,24 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = uploadStoreFile
+            keyAlias = uploadSigningValues["MYAPP_UPLOAD_KEY_ALIAS"]
+            storePassword = uploadSigningValues["MYAPP_UPLOAD_STORE_PASSWORD"]
+            keyPassword = uploadSigningValues["MYAPP_UPLOAD_KEY_PASSWORD"]
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 }
+
+tasks.matching { it.name == "preReleaseBuild" || it.name == "validateSigningRelease" }
+    .configureEach { dependsOn(validateReleaseSigning) }
 
 kotlin {
     compilerOptions {

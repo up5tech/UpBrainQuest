@@ -5,7 +5,8 @@ Durable facts only. Dated work logs live in `YYYY-MM-DD.md` beside this file.
 ## Identity & hard constraints
 
 Fully offline, single-player IQ & EQ Challenge game (Flutter, Android + iOS).
-Package `com.upbrainquest.up_brain_quest`, Dart package `up_brain_quest`.
+App name `Up Brain Quest`; Android/iOS ID `com.up5.upbrainquest`;
+Dart package `up_brain_quest`.
 `PLAN.md` = product intent (wins on product), `AGENTS.md` = engineering contract
 (wins on practice). Phases 0–9 complete and verified: `flutter analyze` clean,
 `flutter test` 109/109, release APK + iOS builds OK.
